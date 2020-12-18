@@ -7,10 +7,8 @@ $.ajax({
     }),
     success: function (data) {
         // store current id to session storage
-        sessionStorage.setItem("current_nid", data.current_nid);
-
-        // update the questionaire
-        updateQuestions(data.option_nodes);
+        sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+        updateQuestions(data.current_node, data.option_nodes);
     },
     error: function (jqXHR, exception) {
         // TODO add error handling
@@ -19,15 +17,6 @@ $.ajax({
     }
 });
 
-
-function updateQuestions(option_nodes){
-    $("#survey-options").empty();
-    option_nodes.forEach(function(option, index){
-        $("#survey-options").append(
-        `<input type="radio" name="choice" value="` + option["_identifier"]+ `"> ` + option["_tag"]
-        );
-    });
-}
 
 $("#next").on("click", function () {
     var selectedNid = $("#survey-options input[name=choice]:checked").val();
@@ -40,11 +29,8 @@ $("#next").on("click", function () {
                 "selected_nid": selectedNid
             }),
             success: function (data) {
-                // store current id to session storage
-                sessionStorage.setItem("current_nid", data.current_nid);
-
-                // update the questionaire
-                updateQuestions(data.option_nodes);
+                sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+                updateQuestions(data.current_node, data.option_nodes);
             },
             error: function (jqXHR, exception) {
                  // TODO add error handling
@@ -67,11 +53,8 @@ $("#prev").on("click", function () {
             "current_nid": currentNid
         }),
         success: function (data) {
-            // store current id to session storage
-            sessionStorage.setItem("current_nid", data.current_nid);
-
-            // update the questionaire
-            updateQuestions(data.option_nodes);
+            sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+            updateQuestions(data.current_node, data.option_nodes);
         },
         error: function (jqXHR, exception) {
              // TODO add error handling
@@ -80,3 +63,14 @@ $("#prev").on("click", function () {
         }
     });
 });
+
+
+function updateQuestions(current_node, option_nodes){
+    $("#survey-title").empty().append(current_node["_tag"] + "?");
+    $("#survey-options").empty();
+    option_nodes.forEach(function(option, index){
+        $("#survey-options").append(
+        `<input type="radio" name="choice" value="` + option["_identifier"]+ `"> ` + option["_tag"]
+        );
+    });
+}

@@ -8,18 +8,18 @@ class Testing_Decision_Tree:
         self.tree = Tree()
         self.tree.create_node(tag="Will You Test", identifier=1)  # root node
 
-        self.tree.create_node("Required?", 2, parent=1)
-        self.tree.create_node("Who?", 3, parent=1)
-        self.tree.create_node("Where?", 4, parent=1)
-        self.tree.create_node("How often?", 5, parent=1)
-        self.tree.create_node("How to share results?", 6, parent=1)
-        self.tree.create_node("Which test?", 7, parent=1)
+        self.tree.create_node("Required", 2, parent=1)
+        self.tree.create_node("Who", 3, parent=1)
+        self.tree.create_node("Where", 4, parent=1)
+        self.tree.create_node("How often", 5, parent=1)
+        self.tree.create_node("How to share results", 6, parent=1)
+        self.tree.create_node("Which test", 7, parent=1)
 
         self.tree.create_node("Mandatory", 8, parent=2)
         self.tree.create_node("Voluntary", 9, parent=2)
         self.tree.create_node("all", 10, parent=8)
-        self.tree.create_node("In-person only?", 11, parent=8)
-        self.tree.create_node("Expected number?", 12, parent=9)
+        self.tree.create_node("In-person only", 11, parent=8)
+        self.tree.create_node("Expected number", 12, parent=9)
 
         self.tree.create_node("All", 13, parent=3)
         self.tree.create_node("Adults", 14, parent=3)
