@@ -29,7 +29,7 @@ function updateQuestions(option_nodes){
     });
 }
 
-$("#next button").on("click", function () {
+$("#next").on("click", function () {
     var selectedNid = $("#survey-options input[name=choice]:checked").val();
     if (selectedNid !== "" && selectedNid !== undefined) {
         $.ajax({
@@ -57,7 +57,7 @@ $("#next button").on("click", function () {
     }
 });
 
-$("#prev button").on("click", function () {
+$("#prev").on("click", function () {
     var currentNid = sessionStorage.getItem("current_nid");
     $.ajax({
         url: "prev",

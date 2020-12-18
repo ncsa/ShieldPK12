@@ -37,7 +37,11 @@ def update_questions():
 def next():
     if request.get_json() and request.get_json()['selected_nid']:
         selected_nid = request.get_json()['selected_nid']
-        return redirect(url_for("questions", current_nid=selected_nid))
+        option_nodes = testing_decision_tree.tree.children((int(selected_nid)))
+        return {
+            "current_nid": selected_nid,
+            "option_nodes": [vars(node) for node in option_nodes]
+        }
     else:
         abort(403, 'need to provide the selected identifier')
 
@@ -47,6 +51,10 @@ def prev():
     if request.get_json() and request.get_json()['current_nid']:
         current_nid = request.get_json()['current_nid']
         current = testing_decision_tree.tree.get_node(current_nid)
-        return redirect(url_for("questions", current_nid=current.bpointer))
+        option_nodes = testing_decision_tree.tree.children((int(current.bpointer)))
+        return {
+            "current_nid": current.bpointer,
+            "option_nodes": [vars(node) for node in option_nodes]
+        }
     else:
         abort(403, 'need to provide the current identifier')
