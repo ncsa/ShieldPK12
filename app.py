@@ -15,14 +15,22 @@ def homepage():
 
 @app.route('/questions', methods=['GET'])
 def questions():
-    current_nid = request.args.get('current_nid')
+    return render_template('questions.html')
+
+
+@app.route('/questions', methods=['POST'])
+def update_questions():
+    current_nid = request.get_json()['current_nid']
 
     # if not given then default to root
     if not current_nid:
         current_nid = testing_decision_tree.tree.root
 
     option_nodes = testing_decision_tree.tree.children(int(current_nid))
-    return render_template('questions.html', current_nid=current_nid, option_nodes=[vars(node) for node in option_nodes])
+    return {
+        "current_nid": current_nid,
+        "option_nodes": [vars(node) for node in option_nodes]
+    }
 
 
 @app.route('/next', methods=['POST'])

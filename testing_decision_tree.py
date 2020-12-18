@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     # get node given id
     current = testing_decision_tree.tree.get_node(25)
-    print("current:", current)
+    print("current:", vars(current))
 
     # check if it's the end
     print("is the end:", current.is_leaf())
