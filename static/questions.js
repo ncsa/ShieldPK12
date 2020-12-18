@@ -3,11 +3,11 @@ $.ajax({
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
-        "current_nid":sessionStorage.getItem("current_nid")
+        "current_nid":localStorage.getItem("current_nid")
     }),
     success: function (data) {
         // store current id to session storage
-        sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+        localStorage.setItem("current_nid", data.current_node["_identifier"]);
         updateQuestions(data.current_node, data.option_nodes);
     },
     error: function (jqXHR, exception) {
@@ -29,7 +29,7 @@ $("#next").on("click", function () {
                 "selected_nid": selectedNid
             }),
             success: function (data) {
-                sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+                localStorage.setItem("current_nid", data.current_node["_identifier"]);
                 updateQuestions(data.current_node, data.option_nodes);
             },
             error: function (jqXHR, exception) {
@@ -44,7 +44,7 @@ $("#next").on("click", function () {
 });
 
 $("#prev").on("click", function () {
-    var currentNid = sessionStorage.getItem("current_nid");
+    var currentNid = localStorage.getItem("current_nid");
     $.ajax({
         url: "prev",
         type: "POST",
@@ -53,7 +53,7 @@ $("#prev").on("click", function () {
             "current_nid": currentNid
         }),
         success: function (data) {
-            sessionStorage.setItem("current_nid", data.current_node["_identifier"]);
+            localStorage.setItem("current_nid", data.current_node["_identifier"]);
             updateQuestions(data.current_node, data.option_nodes);
         },
         error: function (jqXHR, exception) {
