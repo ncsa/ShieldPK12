@@ -21,7 +21,6 @@ def questions():
 @app.route('/questions', methods=['POST'])
 def update_questions():
     current_nid = request.get_json()['current_nid']
-    print(current_nid)
     # if not given then default to root
     if not current_nid:
         current_nid = testing_decision_tree.tree.root
@@ -30,6 +29,7 @@ def update_questions():
 
     option_nodes = testing_decision_tree.tree.children(current_nid)
     return {
+        "root_nid": testing_decision_tree.tree.root,
         "current_node": vars(testing_decision_tree.tree.get_node(current_nid)),
         "option_nodes": [vars(node) for node in option_nodes]
     }
@@ -41,6 +41,7 @@ def next():
         selected_nid = int(request.get_json()['selected_nid'])
         option_nodes = testing_decision_tree.tree.children((selected_nid))
         return {
+            "root_nid": testing_decision_tree.tree.root,
             "current_node": vars(testing_decision_tree.tree.get_node(selected_nid)),
             "option_nodes": [vars(node) for node in option_nodes]
         }
@@ -55,6 +56,7 @@ def prev():
         current = testing_decision_tree.tree.get_node(current_nid)
         option_nodes = testing_decision_tree.tree.children((current.bpointer))
         return {
+            "root_nid": testing_decision_tree.tree.root,
             "current_node": vars(testing_decision_tree.tree.get_node(current.bpointer)),
             "option_nodes": [vars(node) for node in option_nodes]
         }
