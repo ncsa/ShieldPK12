@@ -1,13 +1,17 @@
-from flask import Flask, render_template, request, abort, send_from_directory
-
+from flask import Flask, render_template, request, abort, send_file, send_from_directory
+import zipfile
 from testing_decision_tree import Testing_Decision_Tree
 import os
+import io
+import time
 
 app = Flask(__name__)
 
 # initialize the tree
 testing_decision_tree = Testing_Decision_Tree()
 
+# resource folder name
+resource_foldername = "resources"
 
 @app.route('/', methods=['GET'])
 def homepage():
@@ -96,12 +100,34 @@ def submit():
 
 @app.route("/download/<filename>", methods=['GET'])
 def download(filename):
-    resources_path = os.path.join(app.root_path, "static/resources/")
+    resources_path = os.path.join(app.static_folder, resource_foldername)
     try:
         return send_from_directory(directory=resources_path, filename=filename)
     except FileNotFoundError:
         abort(404, "file not found")
-        
+
+
+@app.route("/download-zip", methods=['POST'])
+def download_list_of_files():
+    if request.get_json() and request.get_json()['filename_list']:
+        filename_list = request.get_json()['filename_list']
+        resources_path = os.path.join(app.static_folder, resource_foldername)
+        memory_file = io.BytesIO()
+        with zipfile.ZipFile(memory_file, 'w') as zf:
+            for filename in filename_list:
+                # check if file exist in the resources folder
+                if os.path.isfile(os.path.join(resources_path, filename)):
+                    data = zipfile.ZipInfo(filename)
+                    data.date_time = time.localtime(time.time())[:6]
+                    data.compress_type = zipfile.ZIP_DEFLATED
+                    zf.write(os.path.join(resources_path, filename),
+                             arcname=os.path.join(resource_foldername, filename))
+        memory_file.seek(0)
+        return send_file(memory_file, attachment_filename='resources.zip',
+                         as_attachment=True)
+    else:
+        abort(403, "You need to provide a list of filenames to download!")
+
 
 def _node_to_dict(node):
     temp = {
