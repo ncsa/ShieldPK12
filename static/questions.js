@@ -74,15 +74,13 @@ $("#submit").on("click", function () {
                 // update resource list
                 $("#resource-list").empty();
                 data.past_nodes.forEach(function(pastNode, i) {
-                    if (pastNode.data["file_list"] !== undefined && pastNode.data["file_list"].length > 0){
-                        var element = $(`<div class="resource">
-                                            <h4>` + pastNode["tag"] + `</h4>
-                                            <ul class="resource-file-list"></ul></div>`);
-                        pastNode.data["file_list"].forEach(function(filename, j){
-                            element.find(".resource-file-list").append(`<li><a href="">`+ filename + `</a></li>`);
-                        });
-                        $("#resource-list").append(element);
-                    }
+                    var element = $(`<div class="resource">
+                                        <h2>` + pastNode["tag"] + `</h2><p>` + pastNode.data["explanation"] + `</p>
+                                        <ul class="resource-file-list"></ul></div>`);
+                    pastNode.data["file_list"].forEach(function(filename, j){
+                        element.find(".resource-file-list").append(`<li><a href="">`+ filename + `</a></li>`);
+                    });
+                    $("#resource-list").append(element);
                 });
             },
             error: function (jqXHR, exception) {
