@@ -11,7 +11,7 @@ $.ajax({
             localStorage.setItem("root_nid", data.root_nid);
         }
         localStorage.setItem("current_nid", data.current_node["_identifier"]);
-        updateQuestions(data.current_node, data.option_nodes);
+        updateQuestions(data.current_node, data.option_nodes, data.root_nid);
     },
     error: function (jqXHR, exception) {
         // TODO add error handling
@@ -35,7 +35,7 @@ $("#next").on("click", function () {
             }),
             success: function (data) {
                 localStorage.setItem("current_nid", data.current_node["_identifier"]);
-                updateQuestions(data.current_node, data.option_nodes);
+                updateQuestions(data.current_node, data.option_nodes, data.root_nid);
             },
             error: function (jqXHR, exception) {
                  // TODO add error handling
@@ -87,7 +87,7 @@ $("#restart").on("click", function () {
         }),
         success: function (data) {
             localStorage.setItem("current_nid", data.current_node["_identifier"]);
-            updateQuestions(data.current_node, data.option_nodes);
+            updateQuestions(data.current_node, data.option_nodes, data.root_nid);
         },
         error: function (jqXHR, exception) {
             // TODO add error handling
@@ -97,7 +97,15 @@ $("#restart").on("click", function () {
     });
 });
 
-function updateQuestions(current_node, option_nodes){
+function updateQuestions(current_node, option_nodes, root_nid=1){
+    // if it's the root node hide prev button
+    if (current_node["_identifier"] === root_nid){
+        $("#prev").hide();
+    }
+    else{
+        $("#prev").show();
+    }
+
     // if no options meaning reach the end of the node
     if (option_nodes.length === 0) {
         $("#next").hide();
