@@ -62,3 +62,20 @@ def prev():
         }
     else:
         abort(403, 'need to provide the current identifier')
+
+
+@app.route("/submit", methods=['POST'])
+def submit():
+    if request.get_json() and request.get_json()['submitted_nid']:
+        submitted_nid = int(request.get_json()['submitted_nid'])
+        past_nodes = []
+        for nid in testing_decision_tree.tree.rsearch(submitted_nid):
+            # flip the order of nodes; parent - child
+            past_nodes.insert(0, vars(testing_decision_tree.tree.get_node(nid)))
+        return {
+            "root_nid": testing_decision_tree.tree.root,
+            "current_node": vars(testing_decision_tree.tree.get_node(submitted_nid)),
+            "past_nodes": past_nodes
+        }
+    else:
+        abort(403, 'need to provide the submitted identifier')

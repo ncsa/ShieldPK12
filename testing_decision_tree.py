@@ -69,3 +69,8 @@ if __name__ == "__main__":
     print(testing_decision_tree.tree.children(current.bpointer))
 
     print(testing_decision_tree.tree.root)
+
+    # test when submit find it's path
+    print("\nstart traversing...")
+    for node in testing_decision_tree.tree.rsearch(nid=25):
+        print(node)
