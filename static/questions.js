@@ -10,7 +10,7 @@ $.ajax({
         if (localStorage.getItem("root_nid") === null){
             localStorage.setItem("root_nid", data.root_nid);
         }
-        localStorage.setItem("current_nid", data.current_node["_identifier"]);
+        localStorage.setItem("current_nid", data.current_node["identifier"]);
         updateQuestions(data.current_node, data.option_nodes, data.root_nid);
     },
     error: function (jqXHR, exception) {
@@ -34,7 +34,7 @@ $("#next").on("click", function () {
                 "selected_nid": selectedNid
             }),
             success: function (data) {
-                localStorage.setItem("current_nid", data.current_node["_identifier"]);
+                localStorage.setItem("current_nid", data.current_node["identifier"]);
                 updateQuestions(data.current_node, data.option_nodes, data.root_nid);
             },
             error: function (jqXHR, exception) {
@@ -62,14 +62,27 @@ $("#submit").on("click", function () {
                 "submitted_nid": submittedNid
             }),
             success: function (data) {
-                data.past_nodes.forEach(function(pastNode, index) {
-                    $("#resource-list").append(`
-                        <div class="resource">
-                            <p>(` + pastNode["_tag"] + `)</p>
-                            <button>Download</button>
-                            <a href="">Read More...</a>
-                        </div>
-                    `);
+                $("#survey-title").empty();
+                $("#survey-description").empty();
+                $("#survey-options").empty();
+
+                // hide all buttons except restart
+                $("#prev").hide();
+                $("#next").hide();
+                $("#submit").hide();
+
+                // update resource list
+                $("#resource-list").empty();
+                data.past_nodes.forEach(function(pastNode, i) {
+                    if (pastNode.data["file_list"] !== undefined && pastNode.data["file_list"].length > 0){
+                        var element = $(`<div class="resource">
+                                            <h4>` + pastNode["tag"] + `</h4>
+                                            <ul class="resource-file-list"></ul></div>`);
+                        pastNode.data["file_list"].forEach(function(filename, j){
+                            element.find(".resource-file-list").append(`<li><a href="">`+ filename + `</a></li>`);
+                        });
+                        $("#resource-list").append(element);
+                    }
                 });
             },
             error: function (jqXHR, exception) {
@@ -96,7 +109,7 @@ $("#prev").on("click", function () {
             "current_nid": currentNid
         }),
         success: function (data) {
-            localStorage.setItem("current_nid", data.current_node["_identifier"]);
+            localStorage.setItem("current_nid", data.current_node["identifier"]);
             updateQuestions(data.current_node, data.option_nodes);
         },
         error: function (jqXHR, exception) {
@@ -121,7 +134,7 @@ $("#restart").on("click", function () {
             "current_nid":localStorage.getItem("current_nid")
         }),
         success: function (data) {
-            localStorage.setItem("current_nid", data.current_node["_identifier"]);
+            localStorage.setItem("current_nid", data.current_node["identifier"]);
             updateQuestions(data.current_node, data.option_nodes, data.root_nid);
         },
         error: function (jqXHR, exception) {
@@ -134,7 +147,7 @@ $("#restart").on("click", function () {
 
 function updateQuestions(current_node, option_nodes, root_nid=1){
     // if it's the root node hide prev button
-    if (current_node["_identifier"] === root_nid){
+    if (current_node["identifier"] === root_nid){
         $("#prev").hide();
     }
     else{
@@ -151,12 +164,14 @@ function updateQuestions(current_node, option_nodes, root_nid=1){
          $("#submit").hide();
     }
 
-    $("#survey-title").empty().append(current_node["_tag"] + "?");
+    $("#survey-title").empty().append(current_node["tag"] + "?");
+    $("#survey-description").empty().append(current_node["data"]["explanation"])
     $("#survey-options").empty();
     $("#resource-list").empty();
     option_nodes.forEach(function(option, index){
         $("#survey-options").append(
-        `<input type="radio" name="choice" value="` + option["_identifier"]+ `"> ` + option["_tag"]
+        `<div class="survey-option"><input type="radio" name="choice" value="` + option["identifier"]+ `">
+         <label>` + option["tag"] + `</label></div>`
         );
     });
 }
