@@ -145,6 +145,54 @@ $("#restart").on("click", function () {
     });
 });
 
+/**
+ * download complete resources in a zipfile
+ */
+$("#download-zip").on("click", function(){
+     $.ajax({
+        url: "download-zip",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({
+            "filename_list":[""]
+        }),
+        success: function (data) {
+            // TODO
+            var URL = window.URL || window.webkitURL;
+            var downloadUrl = URL.createObjectURL(blob);
+
+            if (filename) {
+                // use HTML5 a[download] attribute to specify filename
+                var a = document.createElement("a");
+                // safari doesn't support this yet
+                if (typeof a.download === 'undefined') {
+                    window.location.href = downloadUrl;
+                } else {
+                    a.href = downloadUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                }
+            } else {
+                window.location.href = downloadUrl;
+            }
+
+            setTimeout(function () { URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
+        },
+        error: function (jqXHR, exception) {
+            // TODO add error handling
+            $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+            $("#error").modal("show");
+        }
+    });
+});
+
+/**
+ *
+ * @param current_node
+ * @param option_nodes
+ * @param root_nid
+ */
 function updateQuestions(current_node, option_nodes, root_nid=1){
     // if it's the root node hide prev button
     if (current_node["identifier"] === root_nid){
