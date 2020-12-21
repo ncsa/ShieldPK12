@@ -27,7 +27,8 @@ class Testing_Decision_Tree:
                                                         "choices you make must be based on your circumstances, "
                                                         "including financial and social constraints. Below, we present "
                                                         "some considerations related to these choices, as well as some "
-                                                        "examples.", file_list=["Consent document"]))  # root node
+                                                        "examples.", file_list=["Consent document",
+                                                                                "Guidance for Cleaning and Disinfecting _ CDC.pdf"]))  # root node
 
         self.tree.create_node("Will you require testing", 2, parent=1,
                               data=Resource(explanation="The CDC has ruled that employers may require COVID-19 tests of"

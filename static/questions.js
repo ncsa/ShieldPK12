@@ -78,7 +78,9 @@ $("#submit").on("click", function () {
                                         <h2>` + pastNode["tag"] + `</h2><p>` + pastNode.data["explanation"] + `</p>
                                         <ul class="resource-file-list"></ul></div>`);
                     pastNode.data["file_list"].forEach(function(filename, j){
-                        element.find(".resource-file-list").append(`<li><a href="">`+ filename + `</a></li>`);
+                        var fileURL = "/download/".concat(filename);
+                        element.find(".resource-file-list").append(`<li><a href="` + fileURL + `" target="_blank">`
+                            + filename + `</a></li>`);
                     });
                     $("#resource-list").append(element);
                 });

@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, abort, redirect, url_for
+from flask import Flask, render_template, request, abort, send_from_directory
 
 from testing_decision_tree import Testing_Decision_Tree
+import os
 
 app = Flask(__name__)
 
@@ -92,6 +93,15 @@ def submit():
     else:
         abort(403, 'need to provide the submitted identifier')
 
+
+@app.route("/download/<filename>", methods=['GET'])
+def download(filename):
+    resources_path = os.path.join(app.root_path, "static/resources/")
+    try:
+        return send_from_directory(directory=resources_path, filename=filename)
+    except FileNotFoundError:
+        abort(404, "file not found")
+        
 
 def _node_to_dict(node):
     temp = {
