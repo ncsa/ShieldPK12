@@ -123,8 +123,7 @@ def download_list_of_files():
                     zf.write(os.path.join(resources_path, filename),
                              arcname=os.path.join(resource_foldername, filename))
         memory_file.seek(0)
-        return send_file(memory_file, attachment_filename='resources.zip',
-                         as_attachment=True)
+        return send_file(memory_file, attachment_filename='resources.zip')
     else:
         abort(403, "You need to provide a list of filenames to download!")
 

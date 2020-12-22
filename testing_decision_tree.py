@@ -142,7 +142,7 @@ class Testing_Decision_Tree:
                               data=Resource(explanation="When during the day and week will testing happen? Where will students "
                                             "and teachers be tested?",
                                             file_list=["Ventilation plan", "Signs for sample collection",
-                                                       "Cleaning protocol"]))
+                                                       "Cleaning protocol", "FAQ-schools-child-care.pdf"]))
         self.tree.create_node("Collection kits", 19, parent=17,
                               data=Resource(explanation="A collection kit should contain everything needed to collect "
                                                         "a sample, including clear instructions (example instructions "
