@@ -71,6 +71,9 @@ $("#submit").on("click", function () {
                 $("#next").hide();
                 $("#submit").hide();
 
+                // show download zip button
+                $("#download-zip").show();
+
                 // update resource list
                 $("#resource-list").empty();
                 data.past_nodes.forEach(function(pastNode, i) {
@@ -198,6 +201,9 @@ $("#download-zip").on("click", function(){
  * @param root_nid
  */
 function updateQuestions(current_node, option_nodes, root_nid=1){
+    // hide download button
+    $("#download-zip").hide();
+
     // if it's the root node hide prev button
     if (current_node["identifier"] === root_nid){
         $("#prev").hide();
