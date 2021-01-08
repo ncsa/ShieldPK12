@@ -10,12 +10,14 @@
         "answerID": "1a",
         "answer": "Yes",
         "description": "Follow the remaining questions below to develop your testing protocol.",
+        "resources": [],
         "nextQuestionID": "2"
       },
       {
         "answerID": "1b",
         "answer": "No",
         "description": "You should have a protocol in place as to how external test results would be reported. The process for reporting isolation and quarantine orders could be as simple as calling the school office. We recommend providing the person(s) fielding those calls be provided with basic information about how students in isolation and quarantine will be supported (such as the example here). <br>The school should also have an established format for collecting information (the number of days the person will be out, how they can be reached during that time, and, in the case of an infected person, the date of the positive test). Contact tracing within the school should happen for any person diagnosed with COVID-19 that was in the school building for 48 hours prior to the positive test. See the contact tracing flow charts (here) for more detail.<br>When a positive case has been found, Public Health will often perform contact tracing, in which any close contacts are informed 1) that they may have been exposed, 2) the day of the exposure, and 3) the regulations regarding quarantine. You should contact your local Public Health district to determine if you can help with their contact tracing process. If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.<br>One tension between preserving privacy and protecting health will arise with those who are able to identify the potential case. Teachers will likely fall into this category – they will recognize the student who is missing from their class. However, it is good practice to inform teachers that a student of theirs has tested positive, as they may need to take extra precautions to protect their family members.<br>Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult. Aggregation is the best technique to use to preserve privacy. This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.<br>",
+        "resources": [],
         "nextQuestionID": null
       }
     ]
@@ -30,6 +32,7 @@
       {
         "answerID": "2a",
         "answer": "All (teachers, staff, and students)",
+        "resources": [],
         "description": "This is recommended.",
         "nextQuestionID": "3"
       },
@@ -37,18 +40,21 @@
         "answerID": "2b",
         "answer": "Adults only",
         "description": "Testing the teachers and staff only allows you to avoid the process of obtaining consent from and communicating test results to parents. However, children are known to be infectious even if not symptomatic, and it is possible for a large outbreak to develop among students before it becomes apparent in the teachers and staff.",
+        "resources": [],
         "nextQuestionID": "3"
       },
       {
         "answerID": "2c",
         "answer": "Sample",
         "description": "If testing is limited, it is possible to use a sampling technique. This could be performed by selecting a cohort of individuals to be tested regularly, but that will limit the effectiveness of testing. A better option is to select a different sample of the population each week. This could be done by selecting from a list of eligible individuals each week, but it would be better to schedule each eligible person to testing days at the beginning of the quarter.<br>If using this method, you may want to have excess tests available for the contacts of any positive individuals, as well as any symptomatic individuals.<br>",
+        "resources": [],
         "nextQuestionID": "3"
       },
       {
         "answerID": "2d",
         "answer": "Only high-risk individuals",
         "description": "With very limited testing, it is possible to limit yourself to those most likely to transmit within school. This would include any groups that have close contact (such as sports teams), who may have to be around unmasked students (such as speech pathologists or lunchroom workers), or those who participate in aerosol-generating activities (such as choir members).",
+        "resources": [],
         "nextQuestionID": "3"
       }
     ]
@@ -64,12 +70,14 @@
         "answerID": "3a",
         "answer": "Mandatory",
         "description": "It would be assumed that all in-person individuals will be required to test. You should ensure a sufficient supply of tests. <br>Will you also provide testing for those who remain remote? If so, you will need to establish a process for collecting test samples from those not in the building regularly.<br>An enforcement mechanism must be in place. For students, this could be as simple as an attendance list updated each week to flag any student who has missed a test. For staff, a roster may be the easiest mechanism. <br>",
+        "resources": [],
         "nextQuestionID": "4"
       },
-       {
+      {
         "answerID": "3b",
         "answer": "Voluntary",
         "description": "You will need to determine the expected number of people wanting access to testing. This could be found through a survey or through return of consent forms. Again, you will need to ensure a sufficient supply of tests.<br>Will testing be on demand, or will it be scheduled? If on demand, you may want to establish a system for individuals to self-schedule test times; otherwise, testing locations may be overwhelmed at certain times of day.  If scheduled, you will need a procedure to avoid collecting samples from students whose parents have not consented. Again, a simple roster or list will be sufficient. You will also need to be careful about social pressure (either for or against testing) being used to support bullying.<br>Will testing be for symptomatic individuals only, or will asymptomatic individuals be allowed testing? Remember that younger people are unlikely to develop symptoms but do appear to be infectious. In addition, asymptomatic adults are just as infectious as symptomatic adults. We do not advise limiting testing to symptomatic individuals.<br>",
+        "resources": [],
         "nextQuestionID": "4"
       }
     ]
@@ -85,12 +93,14 @@
         "answerID": "4a",
         "answer": "At home",
         "description": "",
+        "resources": [],
         "nextQuestionID": "4a-i"
       },
-       {
+      {
         "answerID": "4b",
         "answer": " In person (at school)",
         "description": "",
+        "resources": [],
         "nextQuestionID": "4b-i"
       }
     ]
@@ -106,12 +116,14 @@
         "answerID": "4a-i-1",
         "answer": "Weekly Supply",
         "description": "Weekly Supply",
+        "resources": [],
         "nextQuestionID": "4a-ii"
       },
-       {
+      {
         "answerID": "4a-i-2",
         "answer": "Quarterly Supply",
-        "description": "Quarterly Supploy",
+        "description": "Quarterly Supply",
+        "resources": [],
         "nextQuestionID": "4a-ii"
       }
     ]
@@ -127,6 +139,7 @@
         "answerID": "4a-ii-1",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "4a-iii"
       }
     ]
@@ -142,6 +155,7 @@
         "answerID": "4a-iii-1",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "5"
       }
     ]
@@ -157,6 +171,7 @@
         "answerID": "4b-i-1",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "4b-ii"
       }
     ]
@@ -172,12 +187,14 @@
         "answerID": "4b-ii-1",
         "answer": "In the classroom",
         "description": "The testing personnel should have a schedule to move to each location. They will need a cart of some kind to carry the collection materials and the collected samples. The cart should also contain instruction signs to assist students in sample collection, cleaning equipment for spills, and biohazard bins or bags for collecting waste.<br>Be aware that some teachers may be uncomfortable remaining in the room while students provide test samples. The testing personnel should be sufficient in number to supervise the class during the testing process if needed.",
+        "resources": [],
         "nextQuestionID": "5"
       },
       {
         "answerID": "4b-ii-2",
         "answer": "In a testing center",
         "description": "The testing center must be a central location with a clear traffic flow pattern to avoid mixing at entrance and exit. Signs should make the flow pattern clear.<br>Depending on the number to be tested and the time required, it is possible that a testing center could be made available only one day a week, which would ensure availability of that space for other activities the rest of the week. If that is the case, thorough cleaning should be performed before and after the testing center is run. <br>",
+        "resources": [],
         "nextQuestionID": "5"
       }
     ]
@@ -193,6 +210,7 @@
         "answerID": "5a",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "6"
       }
     ]
@@ -208,24 +226,28 @@
         "answerID": "6a",
         "answer": "With parents/staff",
         "description": "You cannot provide medical test results directly to minors, so student results will need to be shared with parents. However, because medical test results are protected information, the means by which you share results must be HIPAA-compliant. You should work with your test provider to determine the best method. Here are some options:<br><li>Email: Be aware that most email providers are NOT HIPAA-compliant. However, there are paid end-to-end encryption services that can provide the appropriate protections<br></li><li>Online portal: often medical providers will send an email informing the patient or their authorized representative that results are available on a password-protected <br></li><li>App: Several organizations have created phone-based apps for relaying test results securely</li><br><li>Text message: Like email, most texting is NOT HIPAA-compliant, but there are paid services that can provide appropriate protections</li><br><li>Phone call: A direct phone call to the number on record is appropriate if the recipient has consented to receive results by phone. The call should begin with name and contact details, and should be short. If the caller reaches voicemail, they must leave a toll-free number that can be called to receive results.</li><br>When deciding on a communications strategy, remember the need for accessibility. Online or smartphone systems will not be available to those with limited internet access. Often, multiple contact methods can be combined, with parents choosing their preferred method.<br>",
+        "resources": [],
         "nextQuestionID": "7"
       },
-       {
+      {
         "answerID": "6b",
         "answer": "With Public Health",
         "description": "If you are working with a medical laboratory, they will be reporting test results directly to Public Health. It would be good to discuss this process with them, so you are aware of their procedures.<br><br>If you are using in-house rapid tests, you may be responsible for reporting to Public Health. It is best to contact your local Public Health department as you are making your plans so you know the information you must report, the method of reporting, and your legal obligations.<br>",
+        "resources": [],
         "nextQuestionID": "7"
       },
-       {
+      {
         "answerID": "6c",
         "answer": "With the community",
         "description": "Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult.<br><br>Aggregation is the best technique to use to preserve privacy. This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.<br>",
+        "resources": [],
         "nextQuestionID": "7"
       },
       {
         "answerID": "6d",
         "answer": "With close contacts",
         "description": "When a positive case has been found, Public Health will often perform contact tracing, in which any close contacts are informed 1) that they may have been exposed, 2) the day of the exposure, and 3) the regulations regarding quarantine. You should contact your local Public Health district to determine if you can help with their contact tracing process.<br><br>If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.<br><br>One tension between preserving privacy and protecting health will arise with those who are able to identify the potential case. Teachers will likely fall into this category – they will recognize the student who is missing from their class. However, it is good practice to inform teachers that a student of theirs has tested positive, as they may need to take extra precautions to protect their family members.<br>",
+        "resources": [],
         "nextQuestionID": "7"
       }
     ]
@@ -241,6 +263,7 @@
         "answerID": "7",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "7a"
       }
     ]
@@ -256,6 +279,7 @@
         "answerID": "7a-i",
         "answer": "",
         "description": "You will likely need either saliva or a nasal swab. Both can be self-collected, although younger students may struggle with self-collection. A nasal swab can also be collected by a health professional.<br>If collecting nasal swabs, be aware that nose bleeds can occur. Have a protocol in place (example here) for dealing with nose bleeds.<br>If collecting saliva, some individuals struggle with sufficient saliva production. Privacy may be needed by some. Others will need a testing exemption or an alternative, as several medical conditions can interfere.<br>",
+        "resources": [],
         "nextQuestionID": "7b"
       }
     ]
@@ -271,6 +295,7 @@
         "answerID": "7b-i",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "7c"
       }
     ]
@@ -286,6 +311,7 @@
         "answerID": "7c-i",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": "7d"
       }
     ]
@@ -301,6 +327,7 @@
         "answerID": "7d-i",
         "answer": "",
         "description": "",
+        "resources": [],
         "nextQuestionID": null
       }
     ]
