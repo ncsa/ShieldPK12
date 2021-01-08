@@ -1,7 +1,9 @@
 // Default root ID always 1
 ROOT_QUESTION_ID = "1"
-if (localStorage.getItem("questionID") === null){
-    localStorage.setItem("questionID", ROOT_QUESTION_ID);
+if (localStorage.getItem("QID") === null){
+    localStorage.setItem("QID", ROOT_QUESTION_ID);
+}
+if (localStorage.getItem("pastQNA") === null){
     localStorage.setItem("pastQNA", "[]");
 }
 
@@ -10,10 +12,10 @@ $.ajax({
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
-        "questionID":localStorage.getItem("questionID")
+        "QID":localStorage.getItem("QID")
     }),
     success: function (data) {
-        localStorage.setItem("questionID", data["questionID"]);
+        localStorage.setItem("QID", data["QID"]);
         updateQuestions(data);
     },
     error: function (jqXHR, exception) {
@@ -27,25 +29,25 @@ $.ajax({
  * submit the selection and go to next step
  */
 $("#next").on("click", function () {
-    var questionID = localStorage.getItem("questionID");
-    var answerID = $("#answers input[name=choice]:checked").val();
-    if (answerID !== "" && answerID !== undefined && answerID !== null) {
+    var QID = localStorage.getItem("QID");
+    var AID = $("#answers input[name=choice]:checked").val();
+    if (AID !== "" && AID !== undefined && AID !== null) {
         $.ajax({
             url: "next",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
-                "questionID": questionID,
-                "answerID": answerID
+                "QID": QID,
+                "AID": AID
             }),
             success: function (data) {
                 // add past question and answer to the stack
                 let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
-                pastQNA.unshift({"questionID": questionID, "answerID": answerID});
+                pastQNA.unshift({"QID": QID, "AID": AID});
                 localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
 
                 // point current page to the new id
-                localStorage.setItem("questionID", data["questionID"]);
+                localStorage.setItem("QID", data["QID"]);
                 updateQuestions(data);
             },
             error: function (jqXHR, exception) {
@@ -65,13 +67,13 @@ $("#next").on("click", function () {
 $("#prev").on("click", function () {
     // look at the stack top to see what's the preivous question ID
     let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
-    var prevQuestionID = pastQNA[0]["questionID"];
+    var prevQID = pastQNA[0]["QID"];
     $.ajax({
         url: "prev",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "prevQuestionID": prevQuestionID
+            "prevQID": prevQID
         }),
         success: function (data) {
             // pop the fisrt item in stack
@@ -79,7 +81,7 @@ $("#prev").on("click", function () {
             localStorage.set("pastQNA", JSON.stringify(pastQNA));
 
             // update the current page id
-            localStorage.setItem("questionID", data["questionID"]);
+            localStorage.setItem("QID", data["QID"]);
             updateQuestions(data);
         },
         error: function (jqXHR, exception) {
@@ -94,7 +96,7 @@ $("#prev").on("click", function () {
 //  * submit the final result and generate a checklist of resources
 //  */
 // $("#submit").on("click", function () {
-//     var submittedNid = localStorage.getItem("questionID");
+//     var submittedNid = localStorage.getItem("QID");
 //     if (submittedNid !== "" && submittedNid !== undefined && submittedNid !== null) {
 //         $.ajax({
 //             url: "submit",
@@ -143,16 +145,17 @@ $("#prev").on("click", function () {
 
 
 /**
- * jump to the root and restart the survey questions
+ * jump to the root and restart the survey questions, clear all past histories
  */
 $("#restart").on("click", function () {
-    localStorage.setItem("questionID", ROOT_QUESTION_ID);
+    localStorage.setItem("QID", ROOT_QUESTION_ID);
+    localStorage.setItem("pastQNA", "[]");
     $.ajax({
         url: "questions",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "questionID":localStorage.getItem("questionID")
+            "QID":localStorage.getItem("QID")
         }),
         success: function (data) {
             updateQuestions(data);
@@ -220,7 +223,7 @@ function updateQuestions(data){
     $("#download-zip").hide();
 
     // if it's the root node hide prev button
-    if (data["questionID"] === ROOT_QUESTION_ID){
+    if (data["QID"] === ROOT_QUESTION_ID){
         $("#prev").hide();
     }
     else{
@@ -232,7 +235,7 @@ function updateQuestions(data){
     $("#answers").empty();
     data["answers"].forEach(function(option, index){
         $("#answers").append(
-        `<div class="answer"><input type="radio" name="choice" value="` + option["answerID"]+ `">
+        `<div class="answer"><input type="radio" name="choice" value="` + option["AID"]+ `">
          <label>` + option["answer"] + `</label>
          <p>` + option["description"] + `</p>
          </div>`

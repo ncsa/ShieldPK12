@@ -8,7 +8,7 @@ class Module:
 
     def get_current_page(self, question_id="1"):
         for page in self.module:
-            if page["questionID"] == question_id:
+            if page["QID"] == question_id:
                 return page
         raise ValueError("current page id: " + question_id + " cannot be found!")
 
@@ -17,13 +17,13 @@ class Module:
         current_page = None
         current_answer = None
         for page in self.module:
-            if page["questionID"] == question_id:
+            if page["QID"] == question_id:
                 current_page = page
 
                 for answer in page["answers"]:
-                    if answer["answerID"] == answer_id:
+                    if answer["AID"] == answer_id:
                         current_answer = answer
-                        next_page_id = answer["nextQuestionID"]
+                        next_page_id = answer["nextQID"]
                         break
                     break
                 if current_answer is None:
@@ -34,7 +34,7 @@ class Module:
 
         if next_page_id:
             for page in self.module:
-                if page["questionID"] == next_page_id:
+                if page["QID"] == next_page_id:
                     return page
             raise ValueError("Next page id: " + next_page_id + " cannot be found!")
         else:
@@ -44,7 +44,7 @@ class Module:
     def prev_page(self, prev_question_id):
         if prev_question_id:
             for page in self.module:
-                if page["questionID"] == prev_question_id:
+                if page["QID"] == prev_question_id:
                     return page
             raise ValueError("Previous page id: " + prev_question_id + " cannot be found!")
         else:
@@ -54,7 +54,7 @@ class Module:
     def get_all_past_questions_answers(self, qa_map):
         """
         given question and answer map get their details
-        :param qa_map: [{ "questionID": xxx, "answerID":xxx }, ...]
+        :param qa_map: [{ "QID": xxx, "AID":xxx }, ...]
         :return:
         """
         response = []
@@ -62,13 +62,13 @@ class Module:
             found_page = False
             for page in self.module:
 
-                if page["questionID"] == question_id:
+                if page["QID"] == question_id:
                     found_page = True
 
                     found_answer = False
                     for answer in page["answers"]:
 
-                        if answer["answerID"] == answer_id:
+                        if answer["AID"] == answer_id:
                             found_answer = True
                             response.append({
                                 "question": page["question"],
@@ -79,10 +79,10 @@ class Module:
                                 "answerResources": page["resources"]
                             })
                     if not found_answer:
-                        raise ValueError("answerID: " + answer_id + "not found!")
+                        raise ValueError("AID: " + answer_id + "not found!")
 
             if not found_page:
-                raise ValueError("questionID: " + question_id + " not found!")
+                raise ValueError("QID: " + question_id + " not found!")
 
         return response
 

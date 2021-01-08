@@ -24,7 +24,7 @@ def questions():
 
 @app.route('/questions', methods=['POST'])
 def update_questions():
-    question_id = request.get_json()['questionID']
+    question_id = request.get_json()['QID']
     page = testing_decision.get_current_page(question_id)
 
     return page
@@ -32,9 +32,9 @@ def update_questions():
 
 @app.route('/next', methods=['POST'])
 def next_question():
-    if request.get_json() and request.get_json()['questionID'] and request.get_json()['answerID']:
-        question_id = request.get_json()['questionID']
-        answer_id = request.get_json()['answerID']
+    if request.get_json() and request.get_json()['QID'] and request.get_json()['AID']:
+        question_id = request.get_json()['QID']
+        answer_id = request.get_json()['AID']
         return testing_decision.next_page(question_id, answer_id)
     else:
         abort(403, 'Incomplete question id and answer id!')
@@ -42,8 +42,8 @@ def next_question():
 
 @app.route('/prev', methods=['POST'])
 def prev_question():
-    if request.get_json() and request.get_json()['prevQuestionID']:
-        question_id = request.get_json()['prevQuestionID']
+    if request.get_json() and request.get_json()['prevQID']:
+        question_id = request.get_json()['prevQID']
         return testing_decision.prev_page(question_id)
     else:
         abort(403, 'need to provide the correct previous question id!')
