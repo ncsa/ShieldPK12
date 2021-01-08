@@ -51,24 +51,25 @@ class Module:
             # reach the beginning
             return None
 
-    def get_all_past_questions_answers(self, qa_map):
+    def get_all_past_questions_answers(self, pastQNA):
         """
         given question and answer map get their details
-        :param qa_map: [{ "QID": xxx, "AID":xxx }, ...]
+        :param pastQNA: [{ "QID": xxx, "AID":xxx }, ...]
         :return:
         """
         response = []
-        for question_id, answer_id in qa_map.items():
+        for qna in pastQNA:
+
             found_page = False
             for page in self.module:
 
-                if page["QID"] == question_id:
+                if page["QID"] == qna["QID"]:
                     found_page = True
 
                     found_answer = False
                     for answer in page["answers"]:
 
-                        if answer["AID"] == answer_id:
+                        if answer["AID"] == qna["AID"]:
                             found_answer = True
                             response.append({
                                 "question": page["question"],
@@ -78,11 +79,12 @@ class Module:
                                 "answerDescription": answer["description"],
                                 "answerResources": page["resources"]
                             })
+
                     if not found_answer:
-                        raise ValueError("AID: " + answer_id + "not found!")
+                        raise ValueError("AID: " + qna["AID"] + "not found!")
 
             if not found_page:
-                raise ValueError("QID: " + question_id + " not found!")
+                raise ValueError("QID: " + qna["QID"] + " not found!")
 
         return response
 
@@ -92,3 +94,4 @@ if __name__ == "__main__":
    print(testing_decision_module.get_current_page("7d"))
    print(testing_decision_module.next_page(question_id="2", answer_id="2b"))
    print(testing_decision_module.prev_page(prev_question_id="7c"))
+   print(testing_decision_module.get_all_past_questions_answers([{"QID":"2","AID":"2c"},{"QID":"1","AID":"1a"}]))
