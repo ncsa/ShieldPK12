@@ -31,6 +31,7 @@ $.ajax({
 $("#next").on("click", function () {
     var QID = localStorage.getItem("QID");
     var AID = $("#answers input[name=choice]:checked").val();
+
     if (AID !== "" && AID !== undefined && AID !== null) {
         $.ajax({
             url: "next",
@@ -59,6 +60,7 @@ $("#next").on("click", function () {
     } else {
         alert("You have to select an option!");
     }
+
 });
 
 /**
@@ -234,14 +236,22 @@ function updateQuestions(data){
     $("#question-description").empty().append(data["description"])
     $("#answers").empty();
     data["answers"].forEach(function(option, index){
-        $("#answers").append(
-        `<div class="answer"><input type="radio" name="choice" value="` + option["AID"]+ `">
-         <label>` + option["answer"] + `</label>
-         <p>` + option["description"] + `</p>
-         </div>`
-        );
+        // do not display empty question
+        if (option["answer"] !== ""){
+             $("#answers").append(
+            `<div class="answer"><input type="radio" name="choice" value="` + option["AID"]+ `">
+                <label>` + option["answer"] + `</label>
+                <p>` + option["description"] + `</p>
+            </div>`
+            );
+        }
+        else{
+             $("#answers").append(`<div class="answer">
+                <input type="radio" name="choice" value="` + option["AID"]+ `" hidden checked></div>`);
+        }
     });
+
+    // TODO add question resource list and answer resource list
     $("#question-resource-list").empty();
     $("#answer-resource-list").empty();
-
 }
