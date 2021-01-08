@@ -8,10 +8,12 @@ class Testing_Decision_Tree:
     def __init__(self):
         # read from json and auto populate a tree
         self.tree = Tree()
+
         self.tree.create_node(
             identifier="1",
             tag="Will You Test",
             data=Resource(
+                question_type="single",
                 explanation="This is a major choice you have to make. Will you provide in-school testing? There are "
                             "pros and cons to this option. By providing in-school testing, you will increase access "
                             "to tests for the families in your district, and you will decrease the likelihood of "
@@ -29,8 +31,7 @@ class Testing_Decision_Tree:
                             "<br>"
                             "There is no single testing protocol that will work for every school. The choices you "
                             "make must be based on your circumstances, including financial and social constraints. "
-                            "Below, we present some considerations related to these choices, as well as some examples."
-                ,
+                            "Below, we present some considerations related to these choices, as well as some examples.",
                 file_list=[]))  # root node
 
         self.tree.create_node(
@@ -38,6 +39,7 @@ class Testing_Decision_Tree:
             tag="Yes",
             parent="1",
             data=Resource(
+                question_type="multiple",
                 explanation="Follow the remaining questions below to develop your testing protocol.",
                 file_list=[]))
 
@@ -91,6 +93,7 @@ class Testing_Decision_Tree:
             tag="Who will you be testing",
             parent="1a",
             data=Resource(
+                question_type="single",
                 explanation="CDC has established that you may not ethically test students without parental consent. "
                             "Therefore, you will need a consent document, signed by parents, that stipulates what "
                             "testing will be done, how the results will be reported, and what will be done to protect "
@@ -146,6 +149,7 @@ class Testing_Decision_Tree:
             identifier="3",
             parent="1a",
             data=Resource(
+                question_type="single",
                 explanation="The CDC has ruled that employers may require COVID-19 tests of their employees, but the "
                             "legality of mandatory testing of students has not been firmly established. Therefore, "
                             "the decision to require testing of students will depend in part on the opinions "
@@ -157,6 +161,7 @@ class Testing_Decision_Tree:
             identifier="3a",
             parent="3",
             data=Resource(
+                question_type="single",
                 explanation="It would be assumed that all in-person individuals will be required to test. "
                             "You should ensure a sufficient supply of tests."
                             "<br>"
@@ -174,6 +179,7 @@ class Testing_Decision_Tree:
             identifier="3b",
             parent="3",
             data=Resource(
+                question_type="single",
                 explanation="You will need to determine the expected number of people wanting access to testing. "
                             "This could be found through a survey or through return of consent forms. Again, you will "
                             "need to ensure a sufficient supply of tests."
@@ -196,19 +202,23 @@ class Testing_Decision_Tree:
             identifier="4",
             parent="1a",
             data=Resource(
+                question_type="single",
                 explanation="You can choose to collect test samples at home or at school."))
 
         self.tree.create_node(
             tag="At home",
             identifier="4a",
             parent="4",
-            data=Resource())
+            data=Resource(
+                question_type="multiple"
+            ))
 
         self.tree.create_node(
             tag="Collection kits",
             identifier="4a-i",
             parent="4a",
             data=Resource(
+                question_type="single",
                 explanation="A collection kit should contain everything needed to collect a sample, including clear "
                             "instructions (example instructions for nasal swab here, saliva sample here)."
                             "<br>"
@@ -261,7 +271,9 @@ class Testing_Decision_Tree:
             tag="In person",
             identifier="4b",
             parent="4",
-            data=Resource()
+            data=Resource(
+                question_type="multiple"
+            )
         )
 
         self.tree.create_node(
@@ -284,6 +296,7 @@ class Testing_Decision_Tree:
             identifier="4b-ii",
             parent="4b",
             data=Resource(
+                question_type="multiple",
                 explanation="Sample collection could happen in the classroom or in a centralized testing center."
                             "<br>"
                             "One consideration in making this choice is ventilation. While saliva sampling does not "
