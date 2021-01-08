@@ -41,23 +41,12 @@ class Module:
             # reach the end
             return None
 
-    def prev_page(self, question_id):
-        prev_page_id = None
-        current_page = None
-        for page in self.module:
-            if page["questionID"] == question_id:
-                current_page = page
-                prev_page_id = page["prevQuestionID"]
-                break
-
-        if current_page is None:
-            raise ValueError("Current page id: " + question_id + " cannot be found!")
-
-        if prev_page_id:
+    def prev_page(self, prev_question_id):
+        if prev_question_id:
             for page in self.module:
-                if page["questionID"] == prev_page_id:
+                if page["questionID"] == prev_question_id:
                     return page
-            raise ValueError("Previous page id: " + prev_page_id + " cannot be found!")
+            raise ValueError("Previous page id: " + prev_question_id + " cannot be found!")
         else:
             # reach the beginning
             return None
@@ -65,7 +54,7 @@ class Module:
     def get_all_past_questions_answers(self, qa_map):
         """
         given question and answer map get their details
-        :param qa_map: { questionID: answerID }
+        :param qa_map: [{ "questionID": xxx, "answerID":xxx }, ...]
         :return:
         """
         response = []
@@ -101,5 +90,5 @@ class Module:
 if __name__ == "__main__":
    testing_decision_module = Module("decisiontrees/testing_decision.json")
    print(testing_decision_module.get_current_page("7d"))
-   print(testing_decision_module.next_page(question_id="7d", answer_id="7d-i"))
-   print(testing_decision_module.prev_page(question_id="7a"))
+   print(testing_decision_module.next_page(question_id="2", answer_id="2b"))
+   print(testing_decision_module.prev_page(prev_question_id="7a"))

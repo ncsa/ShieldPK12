@@ -1,17 +1,20 @@
+// Default root ID always 1
+ROOT_QUESTION_ID = "1"
+if (localStorage.getItem("questionID") === null){
+    localStorage.setItem("questionID", ROOT_QUESTION_ID);
+    localStorage.setItem("pastQNA", "[]");
+}
+
 $.ajax({
     url: "questions",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
-        "current_nid":localStorage.getItem("current_nid")
+        "questionID":localStorage.getItem("questionID")
     }),
     success: function (data) {
-        // store current id to session storage
-        if (localStorage.getItem("root_nid") === null){
-            localStorage.setItem("root_nid", data.root_nid);
-        }
-        localStorage.setItem("current_nid", data.current_node["identifier"]);
-        updateQuestions(data.current_node, data.option_nodes, data.root_nid);
+        localStorage.setItem("questionID", data["questionID"]);
+        updateQuestions(data);
     },
     error: function (jqXHR, exception) {
         // TODO add error handling
@@ -24,18 +27,26 @@ $.ajax({
  * submit the selection and go to next step
  */
 $("#next").on("click", function () {
-    var selectedNid = $("#survey-options input[name=choice]:checked").val();
-    if (selectedNid !== "" && selectedNid !== undefined && selectedNid !== null) {
+    var questionID = localStorage.getItem("questionID");
+    var answerID = $("#answers input[name=choice]:checked").val();
+    if (answerID !== "" && answerID !== undefined && answerID !== null) {
         $.ajax({
             url: "next",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
-                "selected_nid": selectedNid
+                "questionID": questionID,
+                "answerID": answerID
             }),
             success: function (data) {
-                localStorage.setItem("current_nid", data.current_node["identifier"]);
-                updateQuestions(data.current_node, data.option_nodes, data.root_nid);
+                // add past question and answer to the stack
+                let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+                pastQNA.unshift({"questionID": questionID, "answerID": answerID});
+                localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
+
+                // point current page to the new id
+                localStorage.setItem("questionID", data["questionID"]);
+                updateQuestions(data);
             },
             error: function (jqXHR, exception) {
                  // TODO add error handling
@@ -49,71 +60,27 @@ $("#next").on("click", function () {
 });
 
 /**
- * submit the final result and generate a checklist of resources
- */
-$("#submit").on("click", function () {
-    var submittedNid = localStorage.getItem("current_nid");
-    if (submittedNid !== "" && submittedNid !== undefined && submittedNid !== null) {
-        $.ajax({
-            url: "submit",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({
-                "submitted_nid": submittedNid
-            }),
-            success: function (data) {
-                $("#survey-title").empty();
-                $("#survey-description").empty();
-                $("#survey-options").empty();
-
-                // hide all buttons except restart
-                $("#prev").hide();
-                $("#next").hide();
-                $("#submit").hide();
-
-                // show download zip button
-                $("#download-zip").show();
-
-                // update resource list
-                $("#resource-list").empty();
-                data.past_nodes.forEach(function(pastNode, i) {
-                    var element = $(`<div class="resource">
-                                        <h2>` + pastNode["tag"] + `</h2><p>` + pastNode.data["explanation"] + `</p>
-                                        <ul class="resource-file-list"></ul></div>`);
-                    pastNode.data["file_list"].forEach(function(filename, j){
-                        var fileURL = "/download/".concat(filename);
-                        element.find(".resource-file-list").append(`<li><a href="` + fileURL + `" target="_blank">`
-                            + filename + `</a></li>`);
-                    });
-                    $("#resource-list").append(element);
-                });
-            },
-            error: function (jqXHR, exception) {
-                 // TODO add error handling
-                $("#error").find(".modal-body").empty().append(jqXHR.responseText);
-                $("#error").modal("show");
-            }
-        });
-    } else {
-        alert("You did not identify what node id to submit!");
-    }
-});
-
-/**
- * going to the last option
+ * going to the previous option
  */
 $("#prev").on("click", function () {
-    var currentNid = localStorage.getItem("current_nid");
+    // look at the stack top to see what's the preivous question ID
+    let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+    var prevQuestionID = pastQNA[0]["questionID"];
     $.ajax({
         url: "prev",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "current_nid": currentNid
+            "prevQuestionID": prevQuestionID
         }),
         success: function (data) {
-            localStorage.setItem("current_nid", data.current_node["identifier"]);
-            updateQuestions(data.current_node, data.option_nodes);
+            // pop the fisrt item in stack
+            pastQNA.shift();
+            localStorage.set("pastQNA", JSON.stringify(pastQNA));
+
+            // update the current page id
+            localStorage.setItem("questionID", data["questionID"]);
+            updateQuestions(data);
         },
         error: function (jqXHR, exception) {
              // TODO add error handling
@@ -123,22 +90,72 @@ $("#prev").on("click", function () {
     });
 });
 
+// /**
+//  * submit the final result and generate a checklist of resources
+//  */
+// $("#submit").on("click", function () {
+//     var submittedNid = localStorage.getItem("questionID");
+//     if (submittedNid !== "" && submittedNid !== undefined && submittedNid !== null) {
+//         $.ajax({
+//             url: "submit",
+//             type: "POST",
+//             contentType: "application/json",
+//             data: JSON.stringify({
+//                 "submitted_nid": submittedNid
+//             }),
+//             success: function (data) {
+//                 $("#survey-title").empty();
+//                 $("#survey-description").empty();
+//                 $("#answers").empty();
+//
+//                 // hide all buttons except restart
+//                 $("#prev").hide();
+//                 $("#next").hide();
+//                 $("#submit").hide();
+//
+//                 // show download zip button
+//                 $("#download-zip").show();
+//
+//                 // update resource list
+//                 $("#resource-list").empty();
+//                 data.past_nodes.forEach(function(pastNode, i) {
+//                     var element = $(`<div class="resource">
+//                                         <h2>` + pastNode["tag"] + `</h2><p>` + pastNode.data["explanation"] + `</p>
+//                                         <ul class="resource-file-list"></ul></div>`);
+//                     pastNode.data["file_list"].forEach(function(filename, j){
+//                         var fileURL = "/download/".concat(filename);
+//                         element.find(".resource-file-list").append(`<li><a href="` + fileURL + `" target="_blank">`
+//                             + filename + `</a></li>`);
+//                     });
+//                     $("#resource-list").append(element);
+//                 });
+//             },
+//             error: function (jqXHR, exception) {
+//                  // TODO add error handling
+//                 $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+//                 $("#error").modal("show");
+//             }
+//         });
+//     } else {
+//         alert("You did not identify what node id to submit!");
+//     }
+// });
+
+
 /**
  * jump to the root and restart the survey questions
  */
 $("#restart").on("click", function () {
-    var rootNid = localStorage.getItem("root_nid");
-    localStorage.setItem("current_nid", rootNid);
+    localStorage.setItem("questionID", ROOT_QUESTION_ID);
     $.ajax({
         url: "questions",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "current_nid":localStorage.getItem("current_nid")
+            "questionID":localStorage.getItem("questionID")
         }),
         success: function (data) {
-            localStorage.setItem("current_nid", data.current_node["identifier"]);
-            updateQuestions(data.current_node, data.option_nodes, data.root_nid);
+            updateQuestions(data);
         },
         error: function (jqXHR, exception) {
             // TODO add error handling
@@ -195,41 +212,33 @@ $("#download-zip").on("click", function(){
 });
 
 /**
- *
- * @param current_node
- * @param option_nodes
- * @param root_nid
+ * update questions page with new data
+ * @param data
  */
-function updateQuestions(current_node, option_nodes, root_nid=1){
+function updateQuestions(data){
     // hide download button
     $("#download-zip").hide();
 
     // if it's the root node hide prev button
-    if (current_node["identifier"] === root_nid){
+    if (data["questionID"] === ROOT_QUESTION_ID){
         $("#prev").hide();
     }
     else{
         $("#prev").show();
     }
 
-    // if no options meaning reach the end of the node
-    if (option_nodes.length === 0) {
-        $("#next").hide();
-        $("#submit").show();
-    }
-    else{
-         $("#next").show();
-         $("#submit").hide();
-    }
-
-    $("#survey-title").empty().append(current_node["tag"] + "?");
-    $("#survey-description").empty().append(current_node["data"]["explanation"])
-    $("#survey-options").empty();
-    $("#resource-list").empty();
-    option_nodes.forEach(function(option, index){
-        $("#survey-options").append(
-        `<div class="survey-option"><input type="radio" name="choice" value="` + option["identifier"]+ `">
-         <label>` + option["tag"] + `</label></div>`
+    $("#question-title").empty().append(data["question"]);
+    $("#question-description").empty().append(data["description"])
+    $("#answers").empty();
+    data["answers"].forEach(function(option, index){
+        $("#answers").append(
+        `<div class="answer"><input type="radio" name="choice" value="` + option["answerID"]+ `">
+         <label>` + option["answer"] + `</label>
+         <p>` + option["description"] + `</p>
+         </div>`
         );
     });
+    $("#question-resource-list").empty();
+    $("#answer-resource-list").empty();
+
 }

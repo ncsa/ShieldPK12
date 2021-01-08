@@ -42,11 +42,11 @@ def next_question():
 
 @app.route('/prev', methods=['POST'])
 def prev_question():
-    if request.get_json() and request.get_json()['questionID']:
-        question_id = request.get_json()['questionID']
+    if request.get_json() and request.get_json()['prevQuestionID']:
+        question_id = request.get_json()['prevQuestionID']
         return testing_decision.prev_page(question_id)
     else:
-        abort(403, 'need to provide the current identifier')
+        abort(403, 'need to provide the correct previous question id!')
 
 
 @app.route("/submit", methods=['POST'])
