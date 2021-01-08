@@ -25,7 +25,7 @@ class Module:
                         current_answer = answer
                         next_page_id = answer["nextQID"]
                         break
-                    break
+
                 if current_answer is None:
                     raise ValueError("Current answer id: " + answer_id + " cannot be found!")
 
