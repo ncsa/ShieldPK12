@@ -43,8 +43,8 @@ def next_question():
 @app.route('/prev', methods=['POST'])
 def prev_question():
     if request.get_json() and request.get_json()['prevQID']:
-        question_id = request.get_json()['prevQID']
-        return testing_decision.prev_page(question_id)
+        prev_question_id = request.get_json()['prevQID']
+        return testing_decision.prev_page(prev_question_id)
     else:
         abort(403, 'need to provide the correct previous question id!')
 

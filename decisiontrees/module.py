@@ -91,4 +91,4 @@ if __name__ == "__main__":
    testing_decision_module = Module("decisiontrees/testing_decision.json")
    print(testing_decision_module.get_current_page("7d"))
    print(testing_decision_module.next_page(question_id="2", answer_id="2b"))
-   print(testing_decision_module.prev_page(prev_question_id="7a"))
+   print(testing_decision_module.prev_page(prev_question_id="7c"))

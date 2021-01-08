@@ -78,7 +78,7 @@ $("#prev").on("click", function () {
         success: function (data) {
             // pop the fisrt item in stack
             pastQNA.shift();
-            localStorage.set("pastQNA", JSON.stringify(pastQNA));
+            localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
 
             // update the current page id
             localStorage.setItem("QID", data["QID"]);

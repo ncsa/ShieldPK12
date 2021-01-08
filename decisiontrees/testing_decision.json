@@ -4,7 +4,6 @@
     "question":"Will You Test?",
     "description": "This is a major choice you have to make. Will you provide in-school testing? There are pros and cons to this option. By providing in-school testing, you will increase access to tests for the families in your district, and you will decrease the likelihood of transmission within your school building. You will also be able to better control your knowledge of infection levels in your school.<br>However, when you test, you WILL find cases. You will have to provide careful messaging to your staff, students, and parents regarding the meaning of test results. Remember, a negative test simply means that there was not sufficient virus to be detected at that time – it is no guarantee of safety, nor is it a free pass to relax other important controls (such as masks and distancing). <br>You will also need to develop policies around testing. Who will be tested, where, when, and how? How will test results be reported? What test will be used?<br>There is no single testing protocol that will work for every school. The choices you make must be based on your circumstances, including financial and social constraints. Below, we present some considerations related to these choices, as well as some examples.",
     "resources": [],
-    "prevQID": null,
     "answers": [
       {
         "AID": "1a",
@@ -27,7 +26,6 @@
     "question":"Who will you be testing?",
     "description": "CDC has established that you may not ethically test students without parental consent. Therefore, you will need a consent document, signed by parents, that stipulates what testing will be done, how the results will be reported, and what will be done to protect privacy and safety. Examples of these documents are available here.",
     "resources": [],
-    "prevQID": ["1"],
     "answers": [
       {
         "AID": "2a",
@@ -64,7 +62,6 @@
     "question": "Will you require testing?",
     "description":"The CDC has ruled that employers may require COVID-19 tests of their employees, but the legality of mandatory testing of students has not been firmly established. Therefore, the decision to require testing of students will depend in part on the opinions and support of the parents.",
     "resources": [],
-    "prevQID": ["2"],
     "answers": [
       {
         "AID": "3a",
@@ -87,7 +84,6 @@
     "question":"Where will testing happen",
     "description": "You can choose to collect test samples at home or at school.",
     "resources": [],
-    "prevQID": ["3"],
     "answers": [
       {
         "AID": "4a",
@@ -110,7 +106,6 @@
     "question":"Using Collection kits",
     "description": "A collection kit should contain everything needed to collect a sample, including clear instructions (example instructions for nasal swab here, saliva sample here). <br>You can choose to make collection kits that contain all testing supplies for a quarter or a semester, or you can provide single-use testing kits. If the former, you should provide extras in case of mistakes. You should also post the instructions online, in case the instructions are lost, and you should have extra supplies to replace lost kits.<br>You will need to assemble the collection kits, especially if you are providing a quarterly supply. Zip-top bags are useful for this. Assembly can easily be done by volunteers or using an assembly line process, just make sure that the assembly team is distancing during the process.<br>Ensuring a sufficient supply of kits requires estimating the number needing a test, the frequency of testing, and the duration of testing. The spreadsheet here can help you calculate the number of supplies needed.<br>",
     "resources": [],
-    "prevQID": ["4"],
     "answers": [
       {
         "AID": "4a-i-1",
@@ -133,7 +128,6 @@
     "question":"How will you maintain chain of custody?",
     "description": "Chain of custody means the process of ensuring that the sample being tested came from the person whose information is attached to the sample. It is difficult to establish with home testing. We would recommend that an agreement to ensure the test sample is appropriately collected and labeled be signed by an adult (either staff member or parent); while this does not guarantee chain of custody, it discourages misbehavior.<br>How might chain of custody be broken? Be on the lookout for:<br><li>Using a “clean” sample to avoid isolation</li><br><li>Using a sample from another family member to expand testing access within the family</li><br><li>Mistakes, such as siblings putting samples in each other’s labeled tubes</li>",
     "resources": [],
-    "prevQID": ["4a-i"],
     "answers": [
       {
         "AID": "4a-ii-1",
@@ -149,7 +143,6 @@
     "question":"How will samples be returned",
     "description": "The simplest way to return samples would be to have a secure drop point (either box or rack) at entrances. This should be an observed process, especially if testing is mandatory. Handling of samples is not advised, as it could unnecessarily expose the person collecting the samples.",
     "resources": [],
-    "prevQID": ["4a-ii"],
     "answers": [
       {
         "AID": "4a-iii-1",
@@ -165,7 +158,6 @@
     "question":"When during the day and week will testing happen?",
     "description": "It is unlikely that the entire school will test at the same time. Classes should be scheduled for testing at a regular time, so that it can become part of classroom routine and to avoid confusion. However, that means you will need a procedure for those who are not present on their scheduled testing day.<br>If using saliva tests, it is necessary to schedule sample collection around eating times, to avoid interference caused by food residue – it is recommended that people not eat or drink for an hour before saliva collection. For elementary, this would have to be between breakfast/arrival and snack time, between snack time and lunch, or after lunch. <br>",
     "resources": [],
-    "prevQID": ["4"],
     "answers": [
       {
         "AID": "4b-i-1",
@@ -181,7 +173,6 @@
     "question":"Where will students and teachers be tested?",
     "description": "Sample collection could happen in the classroom or in a centralized testing center.<br>One consideration in making this choice is ventilation. While saliva sampling does not necessarily produce aerosols, the potential is there, especially with smaller children for whom the distinction between drooling and spitting is difficult. If classrooms have poor ventilation, a centralized location (such as a gymnasium) may be preferred. If a central location with good ventilation is not available, classroom collection may be preferred.<br>The other main consideration is time. Especially with younger children, movement to and from a central testing location could require a fair amount of class time.<br>",
     "resources": [],
-    "prevQID": ["4b-i"],
     "answers": [
       {
         "AID": "4b-ii-1",
@@ -204,7 +195,6 @@
     "question":"How often will you test?",
     "description": "Testing frequency can vary based on practicalities, including availability of tests. Weekly testing would be the minimum for reliable detection of infectious individuals; daily or biweekly would be preferred.<br>It is possible to use varied testing frequency effectively. For instance, high-risk individuals (such as those in team sports) may require more frequent testing. If test supplies are limited, more frequent testing of teachers, especially those in contact with a larger number of students, could be used. <br>",
     "resources": [],
-    "prevQID": ["4a-iii","4b-ii"],
     "answers": [
       {
         "AID": "5a",
@@ -220,7 +210,6 @@
     "question":"How will you share test results?",
     "description": "When you test, the results of the tests will need to be reported. At the very least, parents will need to be informed of their child’s results and staff will need to be informed of their own results. You may need to check with your local Public Health department to determine your responsibility for sharing results with them.",
     "resources": [],
-    "prevQID": ["5"],
     "answers": [
       {
         "AID": "6a",
@@ -257,7 +246,6 @@
     "question":"Which test will you use?",
     "description": "What test is available to you? A summary of tests and their uses is available here. The test you select will determine the supplies you need, the speed at which results come, and the cost.",
     "resources": [],
-    "prevQID": ["6"],
     "answers": [
       {
         "AID": "7",
@@ -273,7 +261,6 @@
     "question":"What sample type will you need to collect?",
     "description": "",
     "resources": [],
-    "prevQID": ["7"],
     "answers": [
       {
         "AID": "7a-i",
@@ -289,7 +276,6 @@
     "question":"How fast will you get results?",
     "description": "A test with a long delay may not be of use. If test reporting delays will be longer than a few days, you may want to reconsider your testing program.",
     "resources": [],
-    "prevQID": ["7a"],
     "answers": [
       {
         "AID": "7b-i",
@@ -305,7 +291,6 @@
     "question":"What will the cost be?",
     "description": "Remember that the cost of testing includes supplies, personnel time, the laboratory process, and the reporting mechanism. Ensure that you are sufficiently funded to cover all aspects of the cost before deciding how many tests you are able to perform.",
     "resources": [],
-    "prevQID": ["7b"],
     "answers": [
       {
         "AID": "7c-i",
@@ -321,7 +306,6 @@
     "question":"Will you use pooling?",
     "description": "It is possible to test groups of samples (pools) together. If any pool tests positive, the individuals within the pool (or their samples) should then be individually tested to identify the infected person(s). This will result in slightly slower test turn-around, but will greatly reduce costs.<br>This will require a creation of pool groups that is sensible. Pools should be 3-5 people in size, so multiple pools per class/pod may be required. You will need to work with the lab to determine if pooling should be done at the sample collection or at the lab.<br>",
     "resources": [],
-    "prevQID": ["7c"],
     "answers": [
       {
         "AID": "7d-i",
