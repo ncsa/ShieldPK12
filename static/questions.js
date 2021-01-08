@@ -42,6 +42,10 @@ $("#next").on("click", function () {
                 "AID": AID
             }),
             success: function (data) {
+                // TODO if data is empty meaning reach the very end of the survey
+                // TODO need to implement actions there
+                // TODO depends on the design
+
                 // add past question and answer to the stack
                 let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
                 pastQNA.unshift({"QID": QID, "AID": AID});
@@ -170,51 +174,51 @@ $("#restart").on("click", function () {
     });
 });
 
-/**
- * download complete resources in a zipfile
- */
-$("#download-zip").on("click", function(){
-    // gathering the filename from the current page
-    var filenameList = [];
-    var aTagArray = $(".resource-file-list").find("a").toArray();
-    for (var i=0; i<aTagArray.length; i++) {
-        filenameList.push(aTagArray[i].text);
-    }
-     $.ajax({
-        url: "download-zip",
-        type: "POST",
-        contentType: "application/json",
-        xhrFields:{
-            responseType: "blob"
-        },
-        data: JSON.stringify({
-            "filename_list":filenameList
-        }),
-        success: function (data) {
-            var downloadUrl = window.URL.createObjectURL(data);
-            // TODO: might be different name or multiple names
-            var filename = "resources.zip";
-            // use HTML5 a[download] attribute to specify filename
-            var a = document.createElement("a");
-            // safari doesn't support this yet
-            if (typeof a.download === 'undefined') {
-                window.location.href = downloadUrl;
-            } else {
-                a.href = downloadUrl;
-                a.download = filename;
-                document.body.appendChild(a);
-                a.click();
-            }
-
-            setTimeout(function () { window.URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
-        },
-        error: function (jqXHR, exception) {
-            // TODO add error handling
-            $("#error").find(".modal-body").empty().append(jqXHR.responseText);
-            $("#error").modal("show");
-        }
-    });
-});
+// /**
+//  * download complete resources in a zipfile
+//  */
+// $("#download-zip").on("click", function(){
+//     // gathering the filename from the current page
+//     var filenameList = [];
+//     var aTagArray = $(".resource-file-list").find("a").toArray();
+//     for (var i=0; i<aTagArray.length; i++) {
+//         filenameList.push(aTagArray[i].text);
+//     }
+//      $.ajax({
+//         url: "download-zip",
+//         type: "POST",
+//         contentType: "application/json",
+//         xhrFields:{
+//             responseType: "blob"
+//         },
+//         data: JSON.stringify({
+//             "filename_list":filenameList
+//         }),
+//         success: function (data) {
+//             var downloadUrl = window.URL.createObjectURL(data);
+//             // TODO: might be different name or multiple names
+//             var filename = "resources.zip";
+//             // use HTML5 a[download] attribute to specify filename
+//             var a = document.createElement("a");
+//             // safari doesn't support this yet
+//             if (typeof a.download === 'undefined') {
+//                 window.location.href = downloadUrl;
+//             } else {
+//                 a.href = downloadUrl;
+//                 a.download = filename;
+//                 document.body.appendChild(a);
+//                 a.click();
+//             }
+//
+//             setTimeout(function () { window.URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
+//         },
+//         error: function (jqXHR, exception) {
+//             // TODO add error handling
+//             $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+//             $("#error").modal("show");
+//         }
+//     });
+// });
 
 /**
  * update questions page with new data
@@ -240,8 +244,8 @@ function updateQuestions(data){
         if (option["answer"] !== ""){
              $("#answers").append(
             `<div class="answer"><input type="radio" name="choice" value="` + option["AID"]+ `">
-                <label>` + option["answer"] + `</label>
-                <p>` + option["description"] + `</p>
+                <h2 class="answer-text">` + option["answer"] + `</h2>
+                <p class="answer-description">` + option["description"] + `</p>
             </div>`
             );
         }
