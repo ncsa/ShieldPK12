@@ -1,16 +1,15 @@
 from flask import Flask, render_template, request, abort, send_file, send_from_directory
 import zipfile
-from decisiontrees.testing_decision_tree import Testing_Decision_Tree
+from decisiontrees.module import Module
 import os
 import io
 import time
 
 app = Flask(__name__)
 
-# initialize the tree
-testing_decision_tree = Testing_Decision_Tree()
-
-# resource folder name
+# initialize the module
+# TODO put the path in a config file
+testing_decision = Module("decisiontrees/testing_decision.json")
 resource_foldername = "resources"
 
 @app.route('/', methods=['GET'])
@@ -25,75 +24,36 @@ def questions():
 
 @app.route('/questions', methods=['POST'])
 def update_questions():
-    current_nid = request.get_json()['current_nid']
-    # if not given then default to root
-    if not current_nid:
-        current_nid = testing_decision_tree.tree.root
-    else:
-        current_nid = current_nid
+    question_id = request.get_json()['questionID']
+    page = testing_decision.get_current_page(question_id)
 
-    option_nodes = testing_decision_tree.tree.children(current_nid)
-    option_nodes_dict =[]
-    for node in option_nodes:
-        temp = _node_to_dict(node)
-        option_nodes_dict.append(temp)
-    return {
-        "root_nid": testing_decision_tree.tree.root,
-        "current_node": _node_to_dict(testing_decision_tree.tree.get_node(current_nid)),
-        "option_nodes": option_nodes_dict
-    }
+    return page
 
 
 @app.route('/next', methods=['POST'])
-def next():
-    if request.get_json() and request.get_json()['selected_nid']:
-        selected_nid = request.get_json()['selected_nid']
-        option_nodes = testing_decision_tree.tree.children((selected_nid))
-        option_nodes_dict = []
-        for node in option_nodes:
-            temp = _node_to_dict(node)
-            option_nodes_dict.append(temp)
-        return {
-            "root_nid": testing_decision_tree.tree.root,
-            "current_node": _node_to_dict(testing_decision_tree.tree.get_node(selected_nid)),
-            "option_nodes": option_nodes_dict
-        }
+def next_question():
+    if request.get_json() and request.get_json()['questionID'] and request.get_json()['answerID']:
+        question_id = request.get_json()['questionID']
+        answer_id = request.get_json()['answerID']
+        return testing_decision.next_page(question_id, answer_id)
     else:
-        abort(403, 'need to provide the selected identifier')
+        abort(403, 'Incomplete question id and answer id!')
 
 
 @app.route('/prev', methods=['POST'])
-def prev():
-    if request.get_json() and request.get_json()['current_nid']:
-        current_nid = request.get_json()['current_nid']
-        current = testing_decision_tree.tree.get_node(current_nid)
-        option_nodes = testing_decision_tree.tree.children((current.bpointer))
-        option_nodes_dict = []
-        for node in option_nodes:
-            temp = _node_to_dict(node)
-            option_nodes_dict.append(temp)
-        return {
-            "root_nid": testing_decision_tree.tree.root,
-            "current_node": _node_to_dict(testing_decision_tree.tree.get_node(current.bpointer)),
-            "option_nodes": option_nodes_dict
-        }
+def prev_question():
+    if request.get_json() and request.get_json()['questionID']:
+        question_id = request.get_json()['questionID']
+        return testing_decision.prev_page(question_id)
     else:
         abort(403, 'need to provide the current identifier')
 
 
 @app.route("/submit", methods=['POST'])
 def submit():
-    if request.get_json() and request.get_json()['submitted_nid']:
-        submitted_nid = request.get_json()['submitted_nid']
-        past_nodes = []
-        for nid in testing_decision_tree.tree.rsearch(submitted_nid):
-            # flip the order of nodes; parent - child
-            past_nodes.insert(0, _node_to_dict(testing_decision_tree.tree.get_node(nid)))
-        return {
-            "root_nid": testing_decision_tree.tree.root,
-            "current_node": _node_to_dict(testing_decision_tree.tree.get_node(submitted_nid)),
-            "past_nodes": past_nodes
-        }
+    if request.get_json() and request.get_json()['qna']:
+        questions_n_answers = request.get_json()['qna']
+        return testing_decision.get_all_past_questions_answers(questions_n_answers)
     else:
         abort(403, 'need to provide the submitted identifier')
 
@@ -126,13 +86,3 @@ def download_list_of_files():
         return send_file(memory_file, attachment_filename='resources.zip')
     else:
         abort(403, "You need to provide a list of filenames to download!")
-
-
-def _node_to_dict(node):
-    temp = {
-        "tag":node.tag,
-        "identifier":node.identifier,
-        "data": vars(node.data)
-    }
-
-    return temp
