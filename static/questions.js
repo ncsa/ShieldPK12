@@ -232,7 +232,7 @@ function updateQuestions(data){
         $("#prev").show();
     }
 
-    $("#question-title").empty().append(data["question"]);
+    $("#question-title").empty().append(data["QID"] + ". " + data["question"]);
     $("#question-description").empty().append(data["description"])
     $("#answers").empty();
     data["answers"].forEach(function(option, index){

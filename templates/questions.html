@@ -5,34 +5,54 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous">
-
-        </script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+              integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+              crossorigin="anonymous"/>
+        <script src="https://unpkg.com/jquery"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
                 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous">
-
         </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous">
-
         </script>
+        <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}"></head>
 
-        <link rel="stylesheet" href="{{url_for('static', filename='questions.js')}}"></head>
     <body>
         <div id="survey">
-            <h1 id="question-title"></h1>
-            <p id="question-description"></p>
-            <div id="answers"></div>
-            <div id="question-resource-list"></div>
-            <div id="answer-resource-list"></div>
-            <button type="button" id="prev">prev</button>
-            <button type="button" id="next">next</button>
-            <button type="button" id="restart">restart</button>
-            <button type="button" id="download-zip">Download Complete Resources</button>
+            <div class="navigation-container">
+                <div class="navigation-btns">
+                    <button type="button" class="btn btn-outline-light" id="prev">
+                        <i class="fas fa-caret-left"></i>&nbsp;Prev</button>
+                    <button type="button" class="btn btn-outline-light" id="next">
+                        <i class="fas fa-caret-right"></i>&nbsp;Next</button>
+                    <button type="button" class="btn btn-outline-light" id="restart">
+                        <i class="fas fa-redo"></i>&nbsp;Restart</button>
+                </div>
+            </div>
+            <div class="qna-container container">
+                <div class="row">
+                    <div class="col col-lg-6 col-md-6 col-sm-12">
+                         <div class="question-container">
+                            <h1 id="question-title"></h1>
+                            <p id="question-description"></p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-md-6 col-sm-12">
+                         <div class="answer-container">
+                            <div id="answers"></div>
+                            <div id="question-resource-list"></div>
+                            <div id="answer-resource-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="footer">
+<!--             <button type="button" id="download-zip">Download Complete Resources</button>-->
         </div>
         <script type="text/javascript" src="{{url_for('static', filename='questions.js')}}"></script>
     </body>

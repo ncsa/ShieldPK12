@@ -1,0 +1,18 @@
+.navigation-container{
+    background: #20558a;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.navigation-btns{
+    float: right;
+}
+
+.qna-container{
+    padding:50px;
+}
+
+#survey{
+    margin:0 10%;
+}
+
