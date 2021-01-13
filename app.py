@@ -28,7 +28,7 @@ def questions(module):
 @app.route('/<module>/questions', methods=['POST'])
 def update_questions(module):
     question_id = request.get_json()['QID']
-    page = {}
+    page = None
     if module == "testing-decision":
         page = testing_decision.get_current_page(question_id)
     elif module == "distancing-decision":
@@ -44,7 +44,10 @@ def update_questions(module):
     else:
         abort(404, "Module does not exist!")
 
-    return page
+    if page:
+        return page
+    else:
+        abort(500, "Page does not exist!")
 
 
 @app.route('/<module>/next', methods=['POST'])
@@ -52,10 +55,11 @@ def next_question(module):
     if request.get_json() and request.get_json()['QID'] and request.get_json()['AID']:
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
+        page = None
         if module == "testing-decision":
-            return testing_decision.next_page(question_id, answer_id)
+            page = testing_decision.next_page(question_id, answer_id)
         elif module == "distancing-decision":
-            return distancing_decision.next_page(question_id, answer_id)
+            page = distancing_decision.next_page(question_id, answer_id)
         elif module == "testing":
             pass
         elif module == "prevention":
@@ -66,6 +70,11 @@ def next_question(module):
             pass
         else:
             abort(404, "Module does not exist!")
+
+        if page:
+            return page
+        else:
+            abort(500, "Reach the end of the questions!")
     else:
         abort(403, 'Incomplete question id and answer id!')
 
@@ -74,10 +83,11 @@ def next_question(module):
 def prev_question(module):
     if request.get_json() and request.get_json()['prevQID']:
         prev_question_id = request.get_json()['prevQID']
+        page = None
         if module == "testing-decision":
-            return testing_decision.prev_page(prev_question_id)
+            page = testing_decision.prev_page(prev_question_id)
         elif module == "distancing-decision":
-            return distancing_decision.prev_page(prev_question_id)
+            page = distancing_decision.prev_page(prev_question_id)
         elif module == "testing":
             pass
         elif module == "prevention":
@@ -89,6 +99,10 @@ def prev_question(module):
         else:
             abort(404, "Module does not exist!")
 
+        if page:
+            return page
+        else:
+            abort(500, "Reach the beginning of the questions!")
     else:
         abort(403, 'need to provide the correct previous question id!')
 
