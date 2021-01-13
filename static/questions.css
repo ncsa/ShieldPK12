@@ -4,7 +4,16 @@
     padding: 20px;
 }
 
-.navigation-btns{
+#navigation-dropdown{
+    float:left;
+}
+
+#navigation-dropdown #dropdownMenuLink{
+    border-radius: 20px;
+    min-width: 200px
+}
+
+#navigation-btns{
     float: right;
 }
 

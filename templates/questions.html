@@ -22,7 +22,20 @@
     <body>
         <div id="survey">
             <div class="navigation-container">
-                <div class="navigation-btns">
+                <div class="dropdown show" id="navigation-dropdown">
+                      <a class="btn btn-outline-light dropdown-toggle" href="#" role="button"
+                         id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Module
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="/testing-decision/questions">Testing Decision</a>
+                        <a class="dropdown-item" href="/distancing-decision/questions">Distancing Decision</a>
+                        <a class="dropdown-item" href="/mask-decision/questions">Mask Decision</a>
+                        <a class="dropdown-item" href="/ventilation-decision/questions">Ventilation Decision</a>
+                        <a class="dropdown-item" href="/cleaning-decision/questions">Cleaning Decision</a>
+                      </div>
+                    </div>
+                <div id="navigation-btns">
                     <button type="button" class="btn btn-outline-light" id="prev">
                         <i class="fas fa-caret-left"></i>&nbsp;Prev</button>
                     <button type="button" class="btn btn-outline-light" id="next">
