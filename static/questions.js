@@ -30,7 +30,10 @@ $.ajax({
  */
 $("#next").on("click", function () {
     var QID = localStorage.getItem("QID");
+    // if single option
     var AID = $("#answers input[name=choice]:checked").val();
+    // if multiple options
+    // TODO make AID a list
 
     if (AID !== "" && AID !== undefined && AID !== null) {
         $.ajax({
@@ -242,12 +245,19 @@ function updateQuestions(data){
     data["answers"].forEach(function(option, index){
         // do not display empty question
         if (option["answer"] !== ""){
-             $("#answers").append(
-            `<div class="answer"><input type="radio" name="choice" value="` + option["AID"]+ `">
+            if ("multiple" in data && data["multiple"] === true) {
+                $("#answers").append(
+                    `<div class="answer"><input type="checkbox" name="choice" value="` + option["AID"] + `">
                 <h2 class="answer-text">` + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
-            </div>`
-            );
+                </div>`);
+            } else {
+                $("#answers").append(
+                    `<div class="answer"><input type="radio" name="choice" value="` + option["AID"] + `">
+                <h2 class="answer-text">` + option["answer"] + `</h2>
+                <p class="answer-description">` + option["description"] + `</p>
+            </div>`);
+            }
         }
         else{
              $("#answers").append(`<div class="answer">

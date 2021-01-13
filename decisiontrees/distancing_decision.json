@@ -542,14 +542,14 @@
         "answer": "Mask-wearing",
         "description": "Mask-wearing in the parking lot should be required.",
         "resources": [],
-        "nextQID": ""
+        "nextQID": null
       },
        {
         "AID": "4d-ii",
         "answer": "Carpools",
         "description": "Information should be collected about student carpools, to assist in the contact tracing process.",
         "resources": [],
-        "nextQID": ""
+        "nextQID": null
       }
     ]
   }
