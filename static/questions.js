@@ -1,9 +1,17 @@
 // Default root ID always 1
 ROOT_QUESTION_ID = "1"
-if (localStorage.getItem("QID") === null){
+
+// GET current module
+// assume pattern will be /module/questions
+var module = $(location).attr('href').split("/").slice(-2)[0];
+
+if (localStorage.getItem("QID") === null || localStorage.getItem("module") === null
+    || localStorage.getItem("pastQNA") === null
+    || localStorage.getItem("module") !== module
+){
+    // intialized
+    localStorage.setItem("module", module);
     localStorage.setItem("QID", ROOT_QUESTION_ID);
-}
-if (localStorage.getItem("pastQNA") === null){
     localStorage.setItem("pastQNA", "[]");
 }
 
