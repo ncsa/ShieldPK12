@@ -30,12 +30,22 @@ $.ajax({
  */
 $("#next").on("click", function () {
     var QID = localStorage.getItem("QID");
+    var AID = [];
     // if single option
-    var AID = $("#answers input[name=choice]:checked").val();
-    // if multiple options
-    // TODO make AID a list
 
-    if (AID !== "" && AID !== undefined && AID !== null) {
+    if ($("#answers input").prop("type") === "radio"){
+        AID.push($("#answers:checked").val());
+    }
+    // if multiple options
+    else if ($("#answers").prop("type") === "checkbox") {
+        $("#answers input").each(function () {
+            if (this.checked) {
+                AID.push($(this).val());
+            }
+        });
+    }
+
+    if (AID !== undefined && AID !== null && AID.length > 0) {
         $.ajax({
             url: "next",
             type: "POST",
