@@ -31,18 +31,17 @@ $.ajax({
 $("#next").on("click", function () {
     var QID = localStorage.getItem("QID");
     var AID = [];
-    // if single option
 
-    if ($("#answers input").prop("type") === "radio"){
-        AID.push($("#answers:checked").val());
-    }
-    // if multiple options
-    else if ($("#answers").prop("type") === "checkbox") {
-        $("#answers input").each(function () {
+    if ($("#answers").attr("multiple-answers") === "true"){
+         $("#answers input[type='checkbox']").each(function () {
             if (this.checked) {
                 AID.push($(this).val());
             }
         });
+    }
+    else {
+        var checked = $("#answers input[type='radio']:checked").val();
+        if (checked !== undefined) AID = [checked];
     }
 
     if (AID !== undefined && AID !== null && AID.length > 0) {
@@ -251,18 +250,18 @@ function updateQuestions(data){
 
     $("#question-title").empty().append(data["QID"] + ". " + data["question"]);
     $("#question-description").empty().append(data["description"])
-    $("#answers").empty();
+    $("#answers").removeAttr("multiple-answers").empty();
     data["answers"].forEach(function(option, index){
         // do not display empty question
         if (option["answer"] !== ""){
             if ("multiple" in data && data["multiple"] === true) {
-                $("#answers").append(
+                $("#answers").attr("multiple-answers", true).append(
                     `<div class="answer"><input type="checkbox" name="choice" value="` + option["AID"] + `">
                 <h2 class="answer-text">` + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
                 </div>`);
             } else {
-                $("#answers").append(
+                $("#answers").attr("multiple-answers", false).append(
                     `<div class="answer"><input type="radio" name="choice" value="` + option["AID"] + `">
                 <h2 class="answer-text">` + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
@@ -270,7 +269,7 @@ function updateQuestions(data){
             }
         }
         else{
-             $("#answers").append(`<div class="answer">
+             $("#answers").attr("multiple-answers", false).append(`<div class="answer">
                 <input type="radio" name="choice" value="` + option["AID"]+ `" hidden checked></div>`);
         }
     });
