@@ -1,0 +1,17 @@
+[
+  {
+    "QID": "",
+    "question": "",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      }
+    ]
+  }
+]

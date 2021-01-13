@@ -10,50 +10,107 @@ app = Flask(__name__)
 # initialize the module
 # TODO put the path in a config file
 testing_decision = Module("decisiontrees/testing_decision.json")
+distancing_decision = Module("decisiontrees/distancing_decision.json")
 resource_foldername = "resources"
 
-@app.route('/', methods=['GET'])
-def homepage():
+@app.route('/<module>', methods=['GET'])
+def homepage(module):
+    # TODO can have different landing page for different modules
     return render_template('homepage.html')
 
 
-@app.route('/questions', methods=['GET'])
-def questions():
+@app.route('/<module>/questions', methods=['GET'])
+def questions(module):
+    # TODO can have different template for different modules
     return render_template('questions.html')
 
 
-@app.route('/questions', methods=['POST'])
-def update_questions():
+@app.route('/<module>/questions', methods=['POST'])
+def update_questions(module):
     question_id = request.get_json()['QID']
-    page = testing_decision.get_current_page(question_id)
+    page = {}
+    if module == "testing-decision":
+        page = testing_decision.get_current_page(question_id)
+    elif module == "distancing-decision":
+        page = distancing_decision.get_current_page(question_id)
+    elif module == "testing":
+        pass
+    elif module == "prevention":
+        pass
+    elif module == "cleaning":
+        pass
+    elif module == "data-infrastructure":
+        pass
+    else:
+        abort(404, "Module does not exist!")
 
     return page
 
 
-@app.route('/next', methods=['POST'])
-def next_question():
+@app.route('/<module>/next', methods=['POST'])
+def next_question(module):
     if request.get_json() and request.get_json()['QID'] and request.get_json()['AID']:
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
-        return testing_decision.next_page(question_id, answer_id)
+        if module == "testing-decision":
+            return testing_decision.next_page(question_id, answer_id)
+        elif module == "distancing-decision":
+            return distancing_decision.next_page(question_id, answer_id)
+        elif module == "testing":
+            pass
+        elif module == "prevention":
+            pass
+        elif module == "cleaning":
+            pass
+        elif module == "data-infrastructure":
+            pass
+        else:
+            abort(404, "Module does not exist!")
     else:
         abort(403, 'Incomplete question id and answer id!')
 
 
-@app.route('/prev', methods=['POST'])
-def prev_question():
+@app.route('/<module>/prev', methods=['POST'])
+def prev_question(module):
     if request.get_json() and request.get_json()['prevQID']:
         prev_question_id = request.get_json()['prevQID']
-        return testing_decision.prev_page(prev_question_id)
+        if module == "testing-decision":
+            return testing_decision.prev_page(prev_question_id)
+        elif module == "distancing-decision":
+            return distancing_decision.prev_page(prev_question_id)
+        elif module == "testing":
+            pass
+        elif module == "prevention":
+            pass
+        elif module == "cleaning":
+            pass
+        elif module == "data-infrastructure":
+            pass
+        else:
+            abort(404, "Module does not exist!")
+
     else:
         abort(403, 'need to provide the correct previous question id!')
 
 
-@app.route("/submit", methods=['POST'])
-def submit():
+@app.route("/<module>/submit", methods=['POST'])
+def submit(module):
     if request.get_json() and request.get_json()['qna']:
         questions_n_answers = request.get_json()['qna']
-        return testing_decision.get_all_past_questions_answers(questions_n_answers)
+        if module == "testing-decision":
+            return testing_decision.get_all_past_questions_answers(questions_n_answers)
+        elif module == "distancing-decision":
+            return distancing_decision.get_all_past_questions_answers(questions_n_answers)
+        elif module == "testing":
+            pass
+        elif module == "prevention":
+            pass
+        elif module == "cleaning":
+            pass
+        elif module == "data-infrastructure":
+            pass
+        else:
+            abort(404, "Module does not exist!")
     else:
         abort(403, 'need to provide the submitted identifier')
 

@@ -1,0 +1,89 @@
+[
+  {
+    "QID": "1",
+    "question": "How will you manage groupings/pods/bubbles/networks?",
+    "description": "One of the most effective COVID-19 controls is limiting social networks. If someone who is infected has contact with 10 people, they are more likely to transmit the virus than someone who had contact with only 5 people. If each of those original 10 people have contact with another 10 people, the original case could potentially infect up to 100 people within 2 steps. If that grouping of 10 has no outside contacts, the number of infections is limited to 10.<br>In a school setting, what does a pod look like? It might be an entire class, which would only interact with others in the class. It might be a small group of 3-5 students who work together, attend the same classes, and agree not to mix outside their pod. The important thing to consider is that the final pod size includes all contacts of the members of the pod; creating pods and then letting them mix with multiple other pods will defeat the purpose. Once formed, the group has to agree to maintain separation from others.<br>Regardless of choice, you should have a policy around specialists providing services within the school who will be meeting with individual students, such as counselors and speech therapists. If possible, provide plexiglass barriers between specialist and student, move these meetings to larger rooms with more ventilation and space, and/or move these meetings to a virtual setting.<br>",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a"
+      }
+    ]
+  },
+  {
+    "QID": "1a",
+    "question": "How will you create groupings?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-i",
+        "answer": "Classes as pods",
+        "description": "One of the simplest podding groups is classes. This is especially useful in the pre-K to 5 range, where classes are normally maintained for the full school day. In higher grade levels, the maintenance of an entire class as a pod would be more logistically challenging.<br>You will need policies around the movement of adults between rooms, so as to not counteract the pod structure. This could include assistants, substitutes, and subject-specific teachers (such as music or art). Where possible, limit the number of people moving between rooms.",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-ii",
+        "answer": "Small student pods",
+        "description": "One method that has been used successfully in France is to form small pods (3-4 students). While these pods may attend class with other pods, each pod will maintain distance from the others. For instance, students within a pod might be able to sit at the same table, share sports equipment, and move through halls together. In that way, each case would only be in close contact with 2-3 other students. <br>The formation of these pods will require a number of policy decisions. Will they be single-gender or mixed? Will students select their own group, or will they be assigned? How would regrouping work if conflict arises? <br>In higher grade levels, pods should have matching class schedules. Likewise, pods should take into account extracurricular activities to minimize mixing outside the classroom.<br>",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-iii",
+        "answer": "Grade level groups",
+        "description": "Within higher grade levels, it may be easier to ensure simply no mixing between grade levels. That could mean that courses in which grade levels usually mix be divided so that only one grade level is present at a time. Alternatively, courses could be limited to particular grade levels.",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-iv",
+        "answer": "Tracking groups",
+        "description": "It could be possible to form groups, larger than pods but smaller than grade levels, that would be able to move through classes together (or, preferably, stay in a single room and have teachers rotate).",
+        "resources": [],
+        "nextQID": "1b"
+      }
+    ]
+  },
+  {
+    "QID": "1b",
+    "question": "How will lunchroom/lunch be handled",
+    "description": "Lunch is a high-risk time, as eating requires removing masks. Typical lunchrooms do not allow proper spacing, which is intensified as masks are removed.<br>Remember that traffic flow around lunchrooms will be important to manage. If possible, set up a one-way flow so that student groups will not pass each other.<br>",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-i",
+        "answer": "No lunch",
+        "description": "If scheduling allows, avoiding students being present in the building over lunch time would be preferred. This could mean a morning-only schedule or a morning/afternoon alternation.",
+        "resources": [],
+        "nextQID": "1c"
+      },
+      {
+        "AID": "1b-ii",
+        "answer": "Staggered lunch groups",
+        "description": "If lunch times could be spread over a longer period, it would be possible to decrease the number of people in a lunchroom at a given time. It is not advisable to do this by shortening lunch times for the sake of healthy eating times.",
+        "resources": [],
+        "nextQID": "1c"
+      },
+      {
+        "AID": "1b-iii",
+        "answer": "Spreading lunch over multiple rooms",
+        "description": "Other large, well-ventilated rooms (such as gyms and auditoriums) might be used as expanded lunch space to ensure low density. If weather allows, outdoor eating areas are a good choice. This will require more observers for lunchtimes.",
+        "resources": [],
+        "nextQID": "1c"
+      },
+      {
+        "AID": "1b-iv",
+        "answer": "Lunch in classrooms",
+        "description": "Especially if classes are considered to be pods, having them remain in a classroom for lunch might be an option. Remember, though, that when masks are removed more space should be used and higher ventilation standards are needed. Another drawback to this approach is that teachers would no longer have lunch as a rest/prep period. Teachers might also object to the additional exposure associated with being in a room with unmasked students, as this is a greater risk. This will likely need union discussions.",
+        "resources": [],
+        "nextQID": "1c"
+      }
+    ]
+  }
+]
