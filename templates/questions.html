@@ -20,16 +20,33 @@
         <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}"></head>
 
     <body>
-        <div id="survey">
-            <div class="navigation-container">
-                <div class="dropdown show" id="navigation-dropdown">
-                      <a class="btn btn-outline-light dropdown-toggle" href="#" role="button"
-                         id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Module
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="/testing-decision/questions">Testing Decision</a>
-                        <a class="dropdown-item" href="/distancing-decision/questions">Distancing Decision</a>
+        <div class="modal" tabindex="-1" role="dialog" id="error">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p id="error-message"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Report</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="survey">
+        <div class="navigation-container">
+            <div class="dropdown show" id="navigation-dropdown">
+                <a class="btn btn-outline-light dropdown-toggle" href="#" role="button"
+                   id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Module
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/testing-decision/questions">Testing Decision</a>
+                    <a class="dropdown-item" href="/distancing-decision/questions">Distancing Decision</a>
                         <a class="dropdown-item" href="/mask-decision/questions">Mask Decision</a>
                         <a class="dropdown-item" href="/ventilation-decision/questions">Ventilation Decision</a>
                         <a class="dropdown-item" href="/cleaning-decision/questions">Cleaning Decision</a>

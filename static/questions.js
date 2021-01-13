@@ -27,8 +27,7 @@ $.ajax({
         updateQuestions(data);
     },
     error: function (jqXHR, exception) {
-        // TODO add error handling
-        $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+        $("#error").find("#error-message").empty().append(jqXHR.responseText);
         $("#error").modal("show");
     }
 });
@@ -76,8 +75,7 @@ $("#next").on("click", function () {
                 updateQuestions(data);
             },
             error: function (jqXHR, exception) {
-                 // TODO add error handling
-                $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+                $("#error").find("#error-message").empty().append(jqXHR.responseText);
                 $("#error").modal("show");
             }
         });
@@ -111,8 +109,7 @@ $("#prev").on("click", function () {
             updateQuestions(data);
         },
         error: function (jqXHR, exception) {
-             // TODO add error handling
-            $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+            $("#error").find("#error-message").empty().append(jqXHR.responseText);
             $("#error").modal("show");
         }
     });
@@ -187,8 +184,7 @@ $("#restart").on("click", function () {
             updateQuestions(data);
         },
         error: function (jqXHR, exception) {
-            // TODO add error handling
-            $("#error").find(".modal-body").empty().append(jqXHR.responseText);
+            $("#error").find("#error-message").empty().append(jqXHR.responseText);
             $("#error").modal("show");
         }
     });
@@ -233,9 +229,8 @@ $("#restart").on("click", function () {
 //             setTimeout(function () { window.URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
 //         },
 //         error: function (jqXHR, exception) {
-//             // TODO add error handling
-//             $("#error").find(".modal-body").empty().append(jqXHR.responseText);
-//             $("#error").modal("show");
+//              $("#error").find("#error-message").empty().append(jqXHR.responseText);
+//              $("#error").modal("show");
 //         }
 //     });
 // });
