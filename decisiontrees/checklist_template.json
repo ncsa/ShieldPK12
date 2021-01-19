@@ -1,0 +1,12 @@
+[
+  {
+    "activity": "",
+    "activityID": "",
+    "link": "",
+    "rules": {
+      "operator": "OR|AND|NOT",
+      "criteria": [
+      ]
+    }
+  }
+]
