@@ -333,6 +333,7 @@
     "QID": "3a",
     "question": "Sports",
     "description": "",
+    "multiple": true,
     "resources": [],
     "rules": {
       "operator": "AND",
@@ -383,6 +384,7 @@
   {
     "QID": "3b",
     "question": "Music and arts",
+    "multiple": true,
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -434,6 +436,7 @@
   {
     "QID": "3c",
     "question": "Other activities",
+    "multiple": true,
     "description": "",
     "resources": [],
     "rules": {
@@ -509,6 +512,7 @@
     "QID": "4a",
     "question": "Buses",
     "description": "",
+    "multiple": true,
     "resources": [],
     "rules": {
       "operator": "AND",
@@ -545,6 +549,7 @@
   {
     "QID": "4b",
     "question": "Personal Vehicle Drop-off and Pick-up",
+    "multiple": true,
     "description": "",
     "resources": [],
     "rules": {
@@ -589,6 +594,7 @@
   {
     "QID": "4c",
     "question": "Walking",
+    "multiple": true,
     "description": "",
     "resources": [],
     "rules": {
@@ -619,6 +625,7 @@
   {
     "QID": "4d",
     "question": "Student Vehicles",
+    "multiple": true,
     "description": "",
     "resources": [],
     "rules": {
