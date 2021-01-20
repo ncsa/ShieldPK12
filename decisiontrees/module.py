@@ -52,14 +52,14 @@ class Module:
             # reach the beginning
             return None
 
-    def get_all_past_questions_answers(self, pastQNA):
+    def generate_qna_report(self, past_qna):
         """
         given question and answer map get their details
-        :param pastQNA: [{ "QID": xxx, "AID":[xxx, xxx, ...]}, ...]
+        :param past_qna: [{ "QID": xxx, "AID":[xxx, xxx, ...]}, ...]
         :return:
         """
         response = []
-        for qna in pastQNA:
+        for qna in past_qna:
 
             found_page = False
             for page in self.module:
@@ -95,10 +95,61 @@ class Module:
 
         return response
 
+    def compile_checklist(self, past_qna, reference: dict):
+        """
+        given question and answer map get their checklist
+        can be connected with generate_qna_report
+        :param past_qna:
+        :param reference: [{"activity":..}]
+        :return:
+        """
+        answer_id_list = []
+        for qna in past_qna:
+            for id in qna["AID"]:
+                answer_id_list.append(id)
+                
+        checklist = []
+        for reference_item in reference:
+            operator = reference_item["rules"]["operator"]
+
+            if operator == "AND":
+                match = True
+                for criterion in reference_item["rules"]["criteria"]:
+                    if criterion["AID"] not in answer_id_list:
+                        match = False
+                if match:
+                    checklist.append(reference_item)
+
+            elif operator == "OR":
+                match = False
+                for criterion in reference_item["rules"]["criteria"]:
+                    if criterion["AID"] in answer_id_list:
+                        match = True
+                if match:
+                    checklist.append(reference_item)
+
+            elif operator == "NOT":
+                raise ValueError("Not rules not implemented yet!")
+
+            elif operator == "ALL":
+                checklist.append(reference_item)
+
+            else:
+                raise ValueError(operator + "rules not implemented yet!")
+
+        return checklist
+
 
 if __name__ == "__main__":
-   testing_decision_module = Module("decisiontrees/testing_decision.json")
-   print(testing_decision_module.get_current_page("7d"))
-   print(testing_decision_module.next_page(question_id="2", answer_id_list=["2b"]))
-   print(testing_decision_module.prev_page(prev_question_id="7c"))
-   print(testing_decision_module.get_all_past_questions_answers([{"QID":"2","AID":["2c"]},{"QID":"1","AID":["1a"]}]))
+    # testing_decision_module = Module("decisiontrees/testing_decision.json")
+    # print(testing_decision_module.get_current_page("7d"))
+    # print(testing_decision_module.next_page(question_id="2", answer_id_list=["2b"]))
+    # print(testing_decision_module.prev_page(prev_question_id="7c"))
+
+    distancing_decision_module = Module("decisiontrees/distancing_decision.json")
+    with open("decisiontrees/distancing_checklist.json", "r") as f:
+        ref = json.load(f)
+    past_qna = [{"QID": "4a", "AID": ["4a-iii"]}, {"QID": "4b", "AID": ["4b-ii"]}]
+    # report = distancing_decision_module.generate_qna_report(past_qna)
+    checklist = distancing_decision_module.compile_checklist(past_qna, ref)
+    print(checklist)

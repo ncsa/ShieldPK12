@@ -112,9 +112,9 @@ def submit(module):
     if request.get_json() and request.get_json()['qna']:
         questions_n_answers = request.get_json()['qna']
         if module == "testing-decision":
-            return testing_decision.get_all_past_questions_answers(questions_n_answers)
+            return testing_decision.generate_qna_report(questions_n_answers)
         elif module == "distancing-decision":
-            return distancing_decision.get_all_past_questions_answers(questions_n_answers)
+            return distancing_decision.generate_qna_report(questions_n_answers)
         elif module == "testing":
             pass
         elif module == "prevention":

@@ -2,7 +2,7 @@
   {
     "activity": "",
     "activityID": "",
-    "link": "",
+    "links": [],
     "rules": {
       "operator": "OR|AND|NOT|ALL",
       "criteria": [
