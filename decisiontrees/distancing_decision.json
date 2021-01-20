@@ -93,8 +93,15 @@
     "resources": [],
     "answers": [
       {
-        "AID": "1c",
-        "answer": "",
+        "AID": "1c-yes",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "2"
+      },
+      {
+        "AID": "1c-no",
+        "answer": "No",
         "description": "",
         "resources": [],
         "nextQID": "2"

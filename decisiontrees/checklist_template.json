@@ -4,8 +4,9 @@
     "activityID": "",
     "link": "",
     "rules": {
-      "operator": "OR|AND|NOT",
+      "operator": "OR|AND|NOT|ALL",
       "criteria": [
+
       ]
     }
   }

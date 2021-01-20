@@ -1,3 +1,596 @@
-{
-
-}
+[
+  {
+    "activity": "Policy for movement of adults between rooms",
+    "activityID": "1",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-i"}
+      ]
+    }
+  },
+  {
+    "activity": "Policy for specialists meeting with students",
+    "activityID": "2",
+    "link": "",
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activity": "Policy for pod formation",
+    "activityID": "3",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Assignment of all students to pods",
+    "activityID": "4",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1a-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Policy on how to avoid mixing between grade levels",
+    "activityID": "5",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1a-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Lunchroom traffic flow diagram and signage",
+    "activityID": "6",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "1b-ii"},
+         {"AID": "1b-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Lunchroom space ventilation assessment",
+    "activityID": "7",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b-ii"},
+        {"AID": "1b-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Lunch schedule by group",
+    "activityID": "8",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Lunchroom space assignment by group",
+    "activityID": "9",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1b-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Classroom space ventilation assessment",
+    "activityID": "10",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1b-iv"}
+      ]
+    }
+  },
+  {
+    "activity": "Agreement with union on lunch time supervision",
+    "activityID": "11",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "1b-iii"},
+         {"AID": "1b-iv"}
+      ]
+    }
+  },
+  {
+    "activity": "Recess schedule by group",
+    "activityID": "12",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1c-yes"}
+      ]
+    }
+  },
+  {
+    "activity": "Recess space traffic flow diagram and signage",
+    "activityID": "13",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1c-yes"}
+      ]
+    }
+  },
+  {
+    "activity": "Hygiene processes for pre-and post-recess",
+    "activityID": "14",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "1c-yes"}
+      ]
+    }
+  },
+  {
+    "activity": "IT support process for virtual students",
+    "activityID": "15",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-i"},
+         {"AID": "2a-ii"},
+         {"AID": "2a-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Criteria for allowing in-person instruction",
+    "activityID": "16",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-1-a"}
+        ]
+    }
+  },
+  {
+    "activity": "Process for allowing self-selection for in-person/virtual",
+    "activityID": "17",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-1-b"}
+        ]
+    }
+  },
+  {
+    "activity": "Process for changing from in-person to virtual or vice versa",
+    "activityID": "18",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Training for teachers on managing virtual and in-person classrooms together",
+    "activityID": "19",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-3-a"}
+        ]
+    }
+  },
+  {
+    "activity": "IT support system for classrooms",
+    "activityID": "20",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-3-a"}
+        ]
+    }
+  },
+  {
+    "activity": "Process for distributing teachers to in-person vs. virtual",
+    "activityID": "21",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-3-b"}
+        ]
+    }
+  },
+  {
+    "activity": "Assignment of teachers to student groups by virtual vs. in-person",
+    "activityID": "22",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-ii-3-b"}
+        ]
+    }
+  },
+  {
+    "activity": "Schedule structure",
+    "activityID": "23",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-iii"},
+         {"AID": "2a-iv"}
+        ]
+    }
+  },
+  {
+    "activity": "Process for assigning students to a schedule",
+    "activityID": "24",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-iii"},
+         {"AID": "2a-iv"}
+        ]
+    }
+  },
+  {
+    "activity": "Transportation arrangements by student schedule",
+    "activityID": "25",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-iii"},
+         {"AID": "2a-iv"}
+        ]
+    }
+  },
+  {
+    "activity": "Support process for students refusing in-person school",
+    "activityID": "26",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2a-v"}
+        ]
+    }
+  },
+  {
+    "activity": "Support process for high-risk teachers",
+    "activityID": "27",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-v"}
+        ]
+    }
+  },
+  {
+    "activity": "Decision process for reverting to virtual school",
+    "activityID": "28",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "2a-ii"},
+         {"AID": "2a-iii"},
+         {"AID": "2a-iv"}
+        ]
+    }
+  },
+  {
+    "activity": "Schedule for group entrance and exit",
+    "activityID": "29",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-i-1"}
+        ]
+    }
+  },
+  {
+    "activity": "Signage and communication about entry and exit points by group",
+    "activityID": "30",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-i-2"}
+        ]
+    }
+  },
+  {
+    "activity": "Ground markings and communications to enforcespacing between individuals",
+    "activityID": "31",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-i-3"}
+        ]
+    }
+  },
+  {
+    "activity": "Maps, signage, and ground markings for hallway directions",
+    "activityID": "32",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-ii-1"}
+        ]
+    }
+  },
+  {
+    "activity": "Schedule for movement of groups between rooms",
+    "activityID": "33",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-ii-2"}
+        ]
+    }
+  },
+  {
+    "activity": "Plan to minimize movement through hallways",
+    "activityID": "34",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "2b-ii-3"}
+        ]
+    }
+  },
+  {
+    "activity": "Sport-by-sport guidelines on how to minimize contact",
+    "activityID": "35",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3a-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Mask policy for all athletic facilities",
+    "activityID": "36",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3a-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Policy for when teams would be allowed to compete and when athletic competitions would be stopped",
+    "activityID": "37",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3a-iii"}
+        ]
+    }
+  },
+   {
+    "activity": "Policy for transportation to athletic competitions",
+    "activityID": "38",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3a-iv"}
+        ]
+    }
+  },
+  {
+    "activity": "Policy for non-academic staff testing and other controls",
+    "activityID": "39",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "3a-v"},
+         {"AID": "3b-iii"},
+         {"AID": "3c-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Mask policy for all music and arts facilities",
+    "activityID": "40",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3b-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Ventilation assessment for all music and arts spaces",
+    "activityID": "41",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3b-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Outdoor venue for in-person performances",
+    "activityID": "42",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3b-iv-1"}
+        ]
+    }
+  },
+  {
+    "activity": "Method to limit attendance at in-person performances",
+    "activityID": "43",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3b-iv-1"}
+        ]
+    }
+  },
+  {
+    "activity": "Space assessment for extracurriculars",
+    "activityID": "44",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "3c-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Method to enforce mask-wearing on buses",
+    "activityID": "45",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4a-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Bus schedule changes to limit capacity",
+    "activityID": "46",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4a-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Bus loading schedule by group",
+    "activityID": "47",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4a-iii"}
+        ]
+    }
+  },
+  {
+    "activity": "Bus unloading schedule by bus",
+    "activityID": "48",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4a-iii"}
+        ]
+    }
+  },
+  {
+    "activity": "Signage and communication to enforce parents remaining in cars",
+    "activityID": "49",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4b-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Signage and communication to enforce wearing masks in parking lots and walk-up areas",
+    "activityID": "50",
+    "link": "",
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+         {"AID": "4b-i"},
+         {"AID": "4c-i"}
+        ]
+    }
+  },
+  {
+    "activity": "Schedule to limit traffic during pick-up times",
+    "activityID": "51",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4b-iii"}
+        ]
+    }
+  },
+  {
+    "activity": "Form to collect information about carpool groups",
+    "activityID": "52",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4d-ii"}
+        ]
+    }
+  },
+  {
+    "activity": "Floor markings and signs for keeping distance while walking",
+    "activityID": "53",
+    "link": "",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+         {"AID": "4c-ii"}
+        ]
+    }
+  }
+]
