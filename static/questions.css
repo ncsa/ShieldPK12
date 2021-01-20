@@ -7,15 +7,25 @@
     float:left;
 }
 
+#module-name{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
 #navigation-dropdown #dropdownMenuLink{
-    border-radius: 20px;
-    min-width: 200px
+    border: none;
+    cursor: pointer;
 }
 
 #navigation-btns{
     float: right;
 }
-
 
 #survey{
     background: #F2F2F2;

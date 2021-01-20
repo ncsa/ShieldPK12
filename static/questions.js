@@ -4,6 +4,7 @@ ROOT_QUESTION_ID = "1"
 // GET current module
 // assume pattern will be /module/questions
 var module = $(location).attr('href').split("/").slice(-2)[0];
+$("#module-name").empty().text(module.split("-")[0]);
 
 if (localStorage.getItem("QID") === null || localStorage.getItem("module") === null
     || localStorage.getItem("pastQNA") === null
