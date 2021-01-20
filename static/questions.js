@@ -6,6 +6,7 @@ ROOT_QUESTION_ID = "1"
 var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module.split("-")[0]);
 
+
 if (localStorage.getItem("QID") === null || localStorage.getItem("module") === null
     || localStorage.getItem("pastQNA") === null
     || localStorage.getItem("module") !== module
@@ -24,8 +25,9 @@ $.ajax({
         "QID":localStorage.getItem("QID")
     }),
     success: function (data) {
-        localStorage.setItem("QID", data["QID"]);
-        updateQuestions(data);
+        localStorage.setItem("QID", data.page["QID"]);
+        var answerNumQ = JSON.parse(localStorage.get("pastQNA")).length();
+        updateQuestions(data, answerNumQ);
     },
     error: function (jqXHR, exception) {
         $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -73,8 +75,8 @@ $("#next").on("click", function () {
                 localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
 
                 // point current page to the new id
-                localStorage.setItem("QID", data["QID"]);
-                updateQuestions(data);
+                localStorage.setItem("QID", data.page["QID"]);
+                updateQuestions(data, pastQNA.length());
             },
             error: function (jqXHR, exception) {
                 $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -107,8 +109,8 @@ $("#prev").on("click", function () {
             localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
 
             // update the current page id
-            localStorage.setItem("QID", data["QID"]);
-            updateQuestions(data);
+            localStorage.setItem("QID", data.page["QID"]);
+            updateQuestions(data, pastQNA.length());
         },
         error: function (jqXHR, exception) {
             $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -238,28 +240,31 @@ $("#restart").on("click", function () {
 // });
 
 /**
- * update questions page with new data
- * @param data
+ * update questions page with new page
+ * @param page
  */
-function updateQuestions(data){
+function updateQuestions(data, answeredNumQ){
     // hide download button
     $("#download-zip").hide();
 
     // if it's the root node hide prev button
-    if (data["QID"] === ROOT_QUESTION_ID){
+    if (data.page["QID"] === ROOT_QUESTION_ID){
         $("#prev").hide();
     }
     else{
         $("#prev").show();
     }
 
-    $("#question-title").empty().append(data["QID"] + ". " + data["question"]);
-    $("#question-description").empty().append(data["description"])
+    // update progress bar
+    updateProgressBar(data.maxNumQ, answeredNumQ)
+
+    $("#question-title").empty().append(data.page["QID"] + ". " + data.page["question"]);
+    $("#question-description").empty().append(data.page["description"])
     $("#answers").removeAttr("multiple-answers").empty();
-    data["answers"].forEach(function(option, index){
+    data.page["answers"].forEach(function(option, index){
         // do not display empty question
         if (option["answer"] !== ""){
-            if ("multiple" in data && data["multiple"] === true) {
+            if ("multiple" in data.page && data.page["multiple"] === true) {
                 $("#answers").attr("multiple-answers", true).append(
                     `<div class="answer"><input type="checkbox" name="choice" value="` + option["AID"] + `">
                 <h2 class="answer-text">` + option["answer"] + `</h2>
@@ -282,4 +287,9 @@ function updateQuestions(data){
     // TODO add question resource list and answer resource list
     $("#question-resource-list").empty();
     $("#answer-resource-list").empty();
+}
+
+function updateProgressBar(maxNumQ, answeredNumQ){
+    var progress = String(Math.ceil(maxNumQ/answeredNumQ ) * 100);
+    $(".progress-bar").css("width", progress + "%").text(progress).attr("aria-valuenow", progress)
 }

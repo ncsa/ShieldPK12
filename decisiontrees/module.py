@@ -5,6 +5,7 @@ class Module:
     def __init__(self, json_fname):
         with open(json_fname, "r") as f:
             self.module = json.load(f)
+            self.max_num_q = len(self.module)
 
     def get_current_page(self, question_id="1"):
         for page in self.module:

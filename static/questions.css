@@ -18,14 +18,28 @@
     text-transform: capitalize;
 }
 
+.prompt{
+    font-family: Lato;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.5625px;
+    color: #FFFFFF;
+}
+
+#survey.prompt{
+    float:right;
+}
+
 #navigation-dropdown #dropdownMenuLink{
     border: none;
     cursor: pointer;
 }
 
-#navigation-btns{
-    float: right;
-}
+/*#navigation-btns{*/
+/*    float: right;*/
+/*}*/
 
 #survey{
     background: #F2F2F2;

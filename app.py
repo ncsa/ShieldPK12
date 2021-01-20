@@ -1,9 +1,11 @@
-from flask import Flask, render_template, request, abort, send_file, send_from_directory
-import zipfile
-from decisiontrees.module import Module
-import os
 import io
+import os
 import time
+import zipfile
+
+from flask import Flask, render_template, request, abort, send_file, send_from_directory
+
+from decisiontrees.module import Module
 
 app = Flask(__name__)
 
@@ -12,6 +14,7 @@ app = Flask(__name__)
 testing_decision = Module("decisiontrees/testing_decision.json")
 distancing_decision = Module("decisiontrees/distancing_decision.json")
 resource_foldername = "resources"
+
 
 @app.route('/<module>', methods=['GET'])
 def homepage(module):
@@ -29,10 +32,13 @@ def questions(module):
 def update_questions(module):
     question_id = request.get_json()['QID']
     page = None
+    max_num_q = 999
     if module == "testing-decision":
         page = testing_decision.get_current_page(question_id)
+        max_num_q = testing_decision.max_num_q
     elif module == "distancing-decision":
         page = distancing_decision.get_current_page(question_id)
+        max_num_q = distancing_decision.max_num_q
     elif module == "testing":
         pass
     elif module == "prevention":
@@ -45,7 +51,7 @@ def update_questions(module):
         abort(404, "Module does not exist!")
 
     if page:
-        return page
+        return {"page": page, "maxNumQ": max_num_q}
     else:
         abort(500, "Page does not exist!")
 
@@ -58,6 +64,7 @@ def next_question(module):
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
         page = None
+        max_num_q = 999
         if module == "testing-decision":
             page = testing_decision.next_page(question_id, answer_id, past_qna)
         elif module == "distancing-decision":
@@ -74,7 +81,7 @@ def next_question(module):
             abort(404, "Module does not exist!")
 
         if page:
-            return page
+            return {"page": page, "maxNumQ": max_num_q}
         else:
             abort(500, "Reach the end of the questions!")
     else:
@@ -86,6 +93,7 @@ def prev_question(module):
     if request.get_json() and request.get_json()['prevQID']:
         prev_question_id = request.get_json()['prevQID']
         page = None
+        max_num_q = 999
         if module == "testing-decision":
             page = testing_decision.prev_page(prev_question_id)
         elif module == "distancing-decision":
@@ -102,7 +110,7 @@ def prev_question(module):
             abort(404, "Module does not exist!")
 
         if page:
-            return page
+            return {"page": page, "maxNumQ": max_num_q}
         else:
             abort(500, "Reach the beginning of the questions!")
     else:
