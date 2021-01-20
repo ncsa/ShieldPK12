@@ -52,14 +52,16 @@ def update_questions(module):
 
 @app.route('/<module>/next', methods=['POST'])
 def next_question(module):
-    if request.get_json() and request.get_json()['QID'] and request.get_json()['AID']:
+    if request.get_json() and request.get_json()['QID'] and request.get_json()['AID'] \
+            and 'qna' in request.get_json().keys():
+        past_qna = request.get_json()['qna']
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
         page = None
         if module == "testing-decision":
-            page = testing_decision.next_page(question_id, answer_id)
+            page = testing_decision.next_page(question_id, answer_id, past_qna)
         elif module == "distancing-decision":
-            page = distancing_decision.next_page(question_id, answer_id)
+            page = distancing_decision.next_page(question_id, answer_id, past_qna)
         elif module == "testing":
             pass
         elif module == "prevention":
@@ -110,11 +112,11 @@ def prev_question(module):
 @app.route("/<module>/submit", methods=['POST'])
 def submit(module):
     if request.get_json() and request.get_json()['qna']:
-        questions_n_answers = request.get_json()['qna']
+        past_qna = request.get_json()['qna']
         if module == "testing-decision":
-            return testing_decision.generate_qna_report(questions_n_answers)
+            return testing_decision.generate_qna_report(past_qna)
         elif module == "distancing-decision":
-            return distancing_decision.generate_qna_report(questions_n_answers)
+            return distancing_decision.generate_qna_report(past_qna)
         elif module == "testing":
             pass
         elif module == "prevention":

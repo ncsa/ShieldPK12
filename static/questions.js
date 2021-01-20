@@ -58,7 +58,8 @@ $("#next").on("click", function () {
             contentType: "application/json",
             data: JSON.stringify({
                 "QID": QID,
-                "AID": AID
+                "AID": AID,
+                "qna": JSON.parse(localStorage.getItem("pastQNA"))
             }),
             success: function (data) {
                 // TODO if data is empty meaning reach the very end of the survey

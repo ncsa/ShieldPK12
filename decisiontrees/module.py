@@ -12,16 +12,16 @@ class Module:
                 return page
         raise ValueError("current page id: " + question_id + " cannot be found!")
 
-    def next_page(self, question_id, answer_id_list):
+    def next_page(self, question_id, answer_id_list, past_qna):
         next_page_id = None
         current_page = None
         current_answer = None
         for page in self.module:
             if page["QID"] == question_id:
-                current_page = page
 
+                current_page = page
                 for answer in page["answers"]:
-                    # assume all the multiple choice will lead to the same next question; hence use the first answer
+                    # if multiple answer, start with the first one
                     if answer["AID"] == answer_id_list[0]:
                         current_answer = answer
                         next_page_id = answer["nextQID"]
@@ -36,11 +36,28 @@ class Module:
         if next_page_id:
             for page in self.module:
                 if page["QID"] == next_page_id:
-                    return page
+                    # here need to check if the next page has skip rules recursively
+                    return self._skip_page(page, answer_id_list, past_qna)
             raise ValueError("Next page id: " + next_page_id + " cannot be found!")
         else:
             # reach the end
             return None
+
+    def _skip_page(self, page, curr_answer_id_list, past_qna):
+        if "rules" in page.keys():
+            past_answers_list = self._flatten_answers(past_qna)
+            if page["rules"].get("operator") == "AND":
+                match = True
+                for criterion in page["rules"]["criteria"]:
+                    if criterion["AID"] not in past_answers_list and criterion["AID"] not in curr_answer_id_list:
+                        match = False
+                if not match:
+                    # skip this question and go to the next
+                    return self.next_page(question_id=page["QID"], answer_id_list=[page["answers"][-1]["AID"]],
+                                        past_qna=past_qna)
+                else:
+                    return page
+        return page
 
     def prev_page(self, prev_question_id):
         if prev_question_id:
@@ -103,11 +120,7 @@ class Module:
         :param reference: [{"activity":..}]
         :return:
         """
-        answer_id_list = []
-        for qna in past_qna:
-            for id in qna["AID"]:
-                answer_id_list.append(id)
-                
+        answer_id_list = self._flatten_answers(past_qna)
         checklist = []
         for reference_item in reference:
             operator = reference_item["rules"]["operator"]
@@ -139,17 +152,21 @@ class Module:
 
         return checklist
 
+    @staticmethod
+    def _flatten_answers(past_qna):
+        answer_id_list = []
+        for qna in past_qna:
+            for id in qna["AID"]:
+                answer_id_list.append(id)
+
+        return answer_id_list
 
 if __name__ == "__main__":
-    # testing_decision_module = Module("decisiontrees/testing_decision.json")
-    # print(testing_decision_module.get_current_page("7d"))
-    # print(testing_decision_module.next_page(question_id="2", answer_id_list=["2b"]))
-    # print(testing_decision_module.prev_page(prev_question_id="7c"))
-
     distancing_decision_module = Module("decisiontrees/distancing_decision.json")
     with open("decisiontrees/distancing_checklist.json", "r") as f:
         ref = json.load(f)
-    past_qna = [{"QID": "4a", "AID": ["4a-iii"]}, {"QID": "4b", "AID": ["4b-ii"]}]
+    past_qna = [{"QID": "2b-ii", "AID": ["2b-ii-2"]}, {"QID": "2b-i", "AID": ["2b-i-2"]}, {"QID": "2b", "AID": ["2b"]}]
+    print(distancing_decision_module.next_page(question_id="3", answer_id_list=["3a", "3c"], past_qna=past_qna))
     # report = distancing_decision_module.generate_qna_report(past_qna)
-    checklist = distancing_decision_module.compile_checklist(past_qna, ref)
-    print(checklist)
+    # checklist = distancing_decision_module.compile_checklist(past_qna, ref)
+    # print(checklist)

@@ -334,6 +334,14 @@
     "question": "Sports",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "3a"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "3a-i",
@@ -375,6 +383,14 @@
   {
     "QID": "3b",
     "question": "Music and arts",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "3b"
+        }
+      ]
+    },
     "description": "",
     "resources": [],
     "answers": [
@@ -420,6 +436,14 @@
     "question": "Other activities",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "3c"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "3c-i",
@@ -486,6 +510,14 @@
     "question": "Buses",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "4a-i",
@@ -494,7 +526,7 @@
         "resources": [],
         "nextQID": "4b"
       },
-       {
+      {
         "AID": "4a-ii",
         "answer": "Limited capacity",
         "description": "You may need to limit capacity on buses, which would require additional bus routes or otherwise changing schedules. This may not be necessary if alternating schedules are used.",
@@ -515,6 +547,14 @@
     "question": "Personal Vehicle Drop-off and Pick-up",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "4b-i",
@@ -551,6 +591,14 @@
     "question": "Walking",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4c"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "4c-i",
@@ -559,7 +607,7 @@
         "resources": [],
         "nextQID": "4d"
       },
-       {
+      {
         "AID": "4c-ii",
         "answer": "Distancing",
         "description": "Floor markings and signs should be used to encourage and enforce distancing among those walking to school.",
@@ -573,6 +621,14 @@
     "question": "Student Vehicles",
     "description": "",
     "resources": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4d"
+        }
+      ]
+    },
     "answers": [
       {
         "AID": "4d-i",
@@ -581,7 +637,7 @@
         "resources": [],
         "nextQID": null
       },
-       {
+      {
         "AID": "4d-ii",
         "answer": "Carpools",
         "description": "Information should be collected about student carpools, to assist in the contact tracing process.",
