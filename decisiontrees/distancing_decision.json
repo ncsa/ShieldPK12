@@ -301,24 +301,38 @@
   },
   {
     "QID": "3",
-    "question": "Which extracurricular activities will you allow?",
+    "question": "Which extracurricular activities will you allow? (select all that apply)",
     "description": "",
+    "multiple": true,
     "resources": [],
     "answers": [
       {
-        "AID": "3",
-        "answer": "",
+        "AID": "3a",
+        "answer": "Sports",
         "description": "",
         "resources": [],
         "nextQID": "3a"
+      },
+      {
+        "AID": "3b",
+        "answer": "Music and arts",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b"
+      },
+      {
+        "AID": "3c",
+        "answer": "Other activities",
+        "description": "",
+        "resources": [],
+        "nextQID": "3c"
       }
     ]
   },
   {
     "QID": "3a",
-    "question": "Sports (select all that apply)",
+    "question": "Sports",
     "description": "",
-    "multiple": true,
     "resources": [],
     "answers": [
       {
@@ -360,9 +374,8 @@
   },
   {
     "QID": "3b",
-    "question": "Music and arts (select all that apply)",
+    "question": "Music and arts",
     "description": "",
-    "multiple": true,
     "resources": [],
     "answers": [
       {
@@ -404,9 +417,8 @@
   },
   {
     "QID": "3c",
-    "question": "Other activities (select all that apply)",
+    "question": "Other activities",
     "description": "",
-    "multiple": true,
     "resources": [],
     "answers": [
       {
@@ -434,23 +446,44 @@
   },
   {
     "QID": "4",
-    "question": "Transportation Types",
+    "question": "Transportation Types (select all that apply)",
+    "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "4",
-        "answer": "",
+        "AID": "4a",
+        "answer": "Buses",
         "description": "",
         "resources": [],
         "nextQID": "4a"
+      },
+      {
+        "AID": "4b",
+        "answer": "Personal Vehicle Drop-off and Pick-up",
+        "description": "",
+        "resources": [],
+        "nextQID": "4b"
+      },
+      {
+        "AID": "4c",
+        "answer": "Walking",
+        "description": "",
+        "resources": [],
+        "nextQID": "4c"
+      },
+      {
+        "AID": "4d",
+        "answer": "Student Vehicles",
+        "description": "",
+        "resources": [],
+        "nextQID": "4d"
       }
     ]
   },
   {
     "QID": "4a",
-    "question": "Buses (Select all that apply)",
-    "multiple": true,
+    "question": "Buses",
     "description": "",
     "resources": [],
     "answers": [
@@ -480,7 +513,6 @@
   {
     "QID": "4b",
     "question": "Personal Vehicle Drop-off and Pick-up",
-    "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
@@ -517,7 +549,6 @@
   {
     "QID": "4c",
     "question": "Walking",
-    "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
@@ -540,7 +571,6 @@
   {
     "QID": "4d",
     "question": "Student Vehicles",
-    "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
