@@ -78,6 +78,9 @@ class Module:
         :return:
         """
         response = []
+
+        # reverse the order so correct report order can be generated
+        past_qna.reverse()
         for qna in past_qna:
 
             found_page = False

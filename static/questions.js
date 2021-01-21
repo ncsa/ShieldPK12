@@ -298,7 +298,7 @@ function generateReport(report){
     report.forEach(function (item, index) {
         $(".report-container").append(`
             <div class="report" id="`+ item["QID"] + `">
-                <h2 class="report-question">Q: `+ item["question"] +`</h2>
+                <h2 class="report-question">`+ item["QID"] + ". " + item["question"] +`</h2>
                 <div class="report-answers"></div>
             </div>
         `);
