@@ -47,10 +47,6 @@
     border-radius: 4.5px;
 }
 
-/*#navigation-btns{*/
-/*    float: right;*/
-/*}*/
-
 #navigation-btns .btn-secondary{
     background: rgba(255, 255, 255, 0.3);
     border-radius: 8px;
@@ -92,11 +88,14 @@ p {
 }
 
 .qna-container,
-.result-container
-{
+.result-container {
     max-width: 100%;
     min-height: 90vh;
     padding: 0;
+}
+
+.result-container {
+    padding: 0 135px;
 }
 
 .question-container {
@@ -112,7 +111,7 @@ p {
 }
 
 .answer {
-    border: 2px solid  #F8F8F5;
+    border: 2px solid #F8F8F5;
     background: #F8F8F5;
     border-radius: 11px;
     padding: 36px;
@@ -120,24 +119,29 @@ p {
     cursor: pointer;
 }
 
-.answer.selected{
+.answer.selected {
     background: linear-gradient(0deg, rgba(175, 215, 255, 0.2), rgba(175, 215, 255, 0.2)), #FFFFFF;
     border: 2px solid rgba(32, 85, 138, 0.5);
     box-shadow: 0px 0px 10px rgba(32, 85, 138, 0.2);
 }
 
-.answer.selected > h2{
+.answer.selected > h2 {
     color: #20558A;
 }
+
 .answer:hover,
 .answer:focus,
-.answer:active{
+.answer:active {
     border: 2px solid rgba(32, 85, 138, 0.5);
 }
 
 /*radio and checkbox*/
 .answer > input {
-
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin-right: -5px;
 }
 
 .answer-text {
@@ -147,4 +151,74 @@ p {
 .answer-description {
     font-size: 18px;
     margin-top: 16px;
+}
+
+.result-container h1 {
+    margin:55px 0;
+}
+
+.checklist-container,
+.report{
+    border: 2px solid #CFCFCF;
+    border-radius: 11px;
+    padding: 43px;
+    margin: 27px 0;
+    background-color: #FFFFFF;
+}
+
+.checklist-container hr {
+    border: 1px solid #979797;
+}
+
+.checklist-container h3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.75px;
+    color: #000000;
+}
+
+.checklists {
+    margin: 20px 95px;
+}
+
+.checklist-activity {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: 0.75px;
+    color: #000000;
+}
+
+.report-question{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.78125px;
+    color: #000000;
+}
+
+.report h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.9375px;
+    color: #20558A;
+    margin:22px 0;
+}
+
+.report p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.65625px;
+    color: #21202C;
 }

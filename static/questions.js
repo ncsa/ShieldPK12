@@ -75,7 +75,6 @@ $("#next").on("click", function () {
                     localStorage.setItem("QID", data.page["QID"]);
                     updateQuestions(data, pastQNA.length);
                 } else if ("report" in data && "checklist" in data) {
-                    console.log(data)
                     updateResult(data);
                 }
             },
@@ -197,6 +196,7 @@ $("#restart").on("click", function () {
 function updateQuestions(data, answeredNumQ) {
     $(".result-container").hide();
     $(".qna-container").show();
+    // $(".qna-container").hide();
 
     // if it's the root node hide prev button
     if (data.page["QID"] === ROOT_QUESTION_ID) {
@@ -278,13 +278,12 @@ function updateResult(data) {
  * @param checklist
  */
 function generateChecklist(checklist) {
-    $(".checklist-container").empty();
+    $(".checklists").empty();
     checklist.forEach(function (item, index) {
-        $(".checklist-container").append(`
+        $(".checklists").append(`
             <div class="checklist">
-                <p class="checklist-activity">- ` + item["activity"] + `</p>
-                <a href="#" target="_blank">links...</a>
-                </div>
+                <a class="checklist-activity" href="#" target="_blank">` + item["activity"] + `</a>
+            </div>
         `);
     });
 }
@@ -304,7 +303,8 @@ function generateReport(report){
         `);
         item["answers"].forEach(function(answerItem, index){
             $("#" + item["QID"]).find(".report-answers").append(`
-                <p>A: `+ answerItem["answer"] +`</p>
+                <h3>`+ answerItem["answer"] +`</h3>
+                <p>` + answerItem["description"] + `</p>
             `);
         });
     });
