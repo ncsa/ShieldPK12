@@ -112,6 +112,7 @@ p {
 }
 
 .answer {
+    border: 2px solid  #F8F8F5;
     background: #F8F8F5;
     border-radius: 11px;
     padding: 36px;
@@ -119,10 +120,19 @@ p {
     cursor: pointer;
 }
 
+.answer.selected{
+    background: linear-gradient(0deg, rgba(175, 215, 255, 0.2), rgba(175, 215, 255, 0.2)), #FFFFFF;
+    border: 2px solid rgba(32, 85, 138, 0.5);
+    box-shadow: 0px 0px 10px rgba(32, 85, 138, 0.2);
+}
+
+.answer.selected > h2{
+    color: #20558A;
+}
 .answer:hover,
 .answer:focus,
 .answer:active{
-    border: 2px solid #20558A;
+    border: 2px solid rgba(32, 85, 138, 0.5);
 }
 
 /*radio and checkbox*/

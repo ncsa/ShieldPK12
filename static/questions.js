@@ -311,6 +311,11 @@ function generateReport(report){
 }
 
 $("#answers").on("click", ".answer", function(){
-    $(this).css("border", "2px solid #20558A");
-    $(this).find("input").prop("checked", true);
+    // if radio button, also need to disable other selections first
+    if ($("#answers").attr("multiple-answers") === "false") {
+        $(".answer").removeClass("selected");
+    }
+    $(this).toggleClass("selected");
+    var selection = $(this).find("input");
+    selection.prop("checked") ? selection.prop("checked", false) : selection.prop("checked", true);
 })
