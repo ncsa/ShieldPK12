@@ -13,20 +13,22 @@
     color: #FFFFFF;
     text-transform: capitalize;
     display:inline-block;
+    font-size:18px;
 }
 
 .prompt{
     font-family: Lato;
     /*font-style: italic;*/
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.5625px;
     color: #FFFFFF;
 }
 
-#survey.prompt {
-    float: right;
+#progress-container > .prompt{
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .progress {

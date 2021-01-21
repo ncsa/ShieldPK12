@@ -46,45 +46,53 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-chevron-down"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="nav-item dropdown show" id="navigation-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                           id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                        <div class="prompt" id="module-name"></div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="/testing-decision/questions">Testing Decision</a>
-                            <a class="dropdown-item" href="/distancing-decision/questions">Distancing Decision</a>
-                            <a class="dropdown-item" href="/mask-decision/questions">Mask Decision</a>
-                            <a class="dropdown-item" href="/ventilation-decision/questions">Ventilation Decision</a>
-                            <a class="dropdown-item" href="/cleaning-decision/questions">Cleaning Decision</a>
+                <span class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <div class="nav-item dropdown show" id="navigation-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                               id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/testing-decision/questions">Testing Decision</a>
+                                <a class="dropdown-item" href="/distancing-decision/questions">Distancing Decision</a>
+                                <a class="dropdown-item" href="/mask-decision/questions">Mask Decision</a>
+                                <a class="dropdown-item" href="/ventilation-decision/questions">Ventilation
+                                    Decision</a>
+                                <a class="dropdown-item" href="/cleaning-decision/questions">Cleaning Decision</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="nav-item" id="progress-container">
-                        <p class="prompt"></p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                 aria-valuemax="100"></div>
+                        <span class="navbar-text"><p class="prompt" id="module-name"></p></span>
+                    </ul>
+                    <ul class="navbar-nav mr-3">
+                        <div class="nav-item" id="progress-container">
+                            <p class="prompt"></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="nav-item" id="navigation-btns">
-                        <button type="button" class="btn btn-secondary" id="prev">
-                            <i class="fas fa-caret-left"></i>&nbsp;Back
-                        </button>
-                        <button type="button" class="btn btn-secondary" id="next">
-                            <i class="fas fa-caret-right"></i>&nbsp;Next
-                        </button>
-                        <button type="button" class="btn btn-secondary" id="restart">
-                            <i class="fas fa-redo"></i>&nbsp;Restart
-                        </button>
-                    </div>
-                    <div class="nav-item" id="explanation-container">
-                        <p class="prompt">You can leave & finish it later</p>
-                    </div>
-                </div>
+                    </ul>
+                    <ul class="navbar-nav mr-3">
+                        <div class="nav-item" id="navigation-btns">
+                            <button type="button" class="btn btn-secondary" id="prev">
+                                <i class="fas fa-caret-left"></i>&nbsp;Back
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="next">
+                                <i class="fas fa-caret-right"></i>&nbsp;Next
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="restart">
+                                <i class="fas fa-redo"></i>&nbsp;Restart
+                            </button>
+                        </div>
+                    </ul>
+                    <ul class="navbar-nav ml-auto my-auto mt-2">
+                        <span class="navbar-text"><p class="prompt">leave & finish it later</p></span>
+                    </ul>
+
+                </span>
             </nav>
 
             <div class="qna-container container">
