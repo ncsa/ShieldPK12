@@ -1,18 +1,15 @@
-.navigation-container{
+.navbar{
     background: #20558A;
     min-height: 70px;
+    width:100%;
 }
 
-#navigation-dropdown{
+#navigation-dropdown #dropdownMenuLink {
+    border: none;
+    cursor: pointer;
 }
 
 #module-name{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.75px;
     color: #FFFFFF;
     text-transform: capitalize;
     display:inline-block;
@@ -20,7 +17,7 @@
 
 .prompt{
     font-family: Lato;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
@@ -30,11 +27,6 @@
 
 #survey.prompt {
     float: right;
-}
-
-#navigation-dropdown #dropdownMenuLink {
-    border: none;
-    cursor: pointer;
 }
 
 .progress {

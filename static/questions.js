@@ -303,5 +303,5 @@ function updateProgressBar(minNumQ, answeredNumQ){
     else if(percent > 0.9) progress = "99";
 
     $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
-    $(".progress-container .prompt").text(progress + "% Complete");
+    $("#progress-container p").text(progress + "% Complete");
 }
