@@ -4,7 +4,6 @@
 }
 
 #navigation-dropdown{
-    float:left;
 }
 
 #module-name{
@@ -16,6 +15,7 @@
     letter-spacing: 0.75px;
     color: #FFFFFF;
     text-transform: capitalize;
+    display:inline-block;
 }
 
 .prompt{
@@ -28,24 +28,43 @@
     color: #FFFFFF;
 }
 
-#survey.prompt{
-    float:right;
+#survey.prompt {
+    float: right;
 }
 
-#navigation-dropdown #dropdownMenuLink{
+#navigation-dropdown #dropdownMenuLink {
     border: none;
     cursor: pointer;
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4.5px;
+    height: 5px;
+    width: 190px
+}
+
+.progress-bar {
+    background-color: #FFFFFF;
+    border-radius: 4.5px;
 }
 
 /*#navigation-btns{*/
 /*    float: right;*/
 /*}*/
 
-#survey{
+#navigation-btns .btn-secondary{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-transform: capitalize;
+    color:#FFFFFF;
+}
+
+#survey {
     background: #F2F2F2;
 }
 
-h1{
+h1 {
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
@@ -55,7 +74,7 @@ h1{
     color: #946C3B;
 }
 
-h2{
+h2 {
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
@@ -65,7 +84,7 @@ h2{
     color: #946C3B;
 }
 
-p{
+p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -75,37 +94,38 @@ p{
     color: #21202C;
 }
 
-.qna-container{
+.qna-container {
     max-width: 100%;
-    padding:0;
+    min-height: 90vh;
+    padding: 0;
 }
 
-.question-container{
-    padding:100px 32px 32px 100px;
+.question-container {
+    padding: 100px 32px 32px 100px;
 }
 
-#question-description{
-    margin-top:18px;
+#question-description {
+    margin-top: 18px;
 }
 
-.answer-container{
-    padding:32px;
+.answer-container {
+    padding: 32px;
 }
 
-.answer{
+.answer {
     background: #F8F8F5;
     border-radius: 11px;
-    padding:36px;
-    margin:30px 0;
+    padding: 36px;
+    margin: 30px 0;
 }
 
-.answer-text{
+.answer-text {
     display: inline;
 }
 
-.answer-description{
-    font-size:18px;
-    margin-top:16px;
+.answer-description {
+    font-size: 18px;
+    margin-top: 16px;
 }
 
 .answer-description{

@@ -26,7 +26,7 @@ $.ajax({
     }),
     success: function (data) {
         localStorage.setItem("QID", data.page["QID"]);
-        var answerNumQ = JSON.parse(localStorage.get("pastQNA")).length();
+        var answerNumQ = JSON.parse(localStorage.getItem("pastQNA")).length;
         updateQuestions(data, answerNumQ);
     },
     error: function (jqXHR, exception) {
@@ -76,7 +76,7 @@ $("#next").on("click", function () {
 
                 // point current page to the new id
                 localStorage.setItem("QID", data.page["QID"]);
-                updateQuestions(data, pastQNA.length());
+                updateQuestions(data, pastQNA.length);
             },
             error: function (jqXHR, exception) {
                 $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -110,7 +110,7 @@ $("#prev").on("click", function () {
 
             // update the current page id
             localStorage.setItem("QID", data.page["QID"]);
-            updateQuestions(data, pastQNA.length());
+            updateQuestions(data, pastQNA.length);
         },
         error: function (jqXHR, exception) {
             $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -185,7 +185,7 @@ $("#restart").on("click", function () {
             "QID":localStorage.getItem("QID")
         }),
         success: function (data) {
-            updateQuestions(data);
+            updateQuestions(data, JSON.parse(localStorage.getItem("pastQNA")).length);
         },
         error: function (jqXHR, exception) {
             $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -241,7 +241,8 @@ $("#restart").on("click", function () {
 
 /**
  * update questions page with new page
- * @param page
+ * @param data
+ * @param answeredNumQ
  */
 function updateQuestions(data, answeredNumQ){
     // hide download button
@@ -256,7 +257,7 @@ function updateQuestions(data, answeredNumQ){
     }
 
     // update progress bar
-    updateProgressBar(data.maxNumQ, answeredNumQ)
+    updateProgressBar(data.minNumQ, answeredNumQ)
 
     $("#question-title").empty().append(data.page["QID"] + ". " + data.page["question"]);
     $("#question-description").empty().append(data.page["description"])
@@ -272,14 +273,15 @@ function updateQuestions(data, answeredNumQ){
                 </div>`);
             } else {
                 $("#answers").attr("multiple-answers", false).append(
-                    `<div class="answer"><input type="radio" name="choice" value="` + option["AID"] + `">
+                    `<div class="answer">
+                <input type="radio" name="choice" value="` + option["AID"] + `">
                 <h2 class="answer-text">` + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
             </div>`);
             }
         }
         else{
-             $("#answers").attr("multiple-answers", false).append(`<div class="answer">
+             $("#answers").attr("multiple-answers", false).append(`<div class="answer" style="display:none;">
                 <input type="radio" name="choice" value="` + option["AID"]+ `" hidden checked></div>`);
         }
     });
@@ -289,7 +291,17 @@ function updateQuestions(data, answeredNumQ){
     $("#answer-resource-list").empty();
 }
 
-function updateProgressBar(maxNumQ, answeredNumQ){
-    var progress = String(Math.ceil(maxNumQ/answeredNumQ ) * 100);
-    $(".progress-bar").css("width", progress + "%").text(progress).attr("aria-valuenow", progress)
+function updateProgressBar(minNumQ, answeredNumQ){
+    // TODO save some energy on calculate the exact progress for future
+    // for now just roughly update
+    var progress = "0";
+    var percent = answeredNumQ/minNumQ;
+
+    if (percent > 0 && percent < 0.3) progress = "5";
+    else if (percent >= 0.3 && percent <0.6) progress = "33";
+    else if(percent >=0.6 && percent <= 0.9) progress = "66";
+    else if(percent > 0.9) progress = "99";
+
+    $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
+    $(".progress-container .prompt").text(progress + "% Complete");
 }

@@ -32,13 +32,13 @@ def questions(module):
 def update_questions(module):
     question_id = request.get_json()['QID']
     page = None
-    max_num_q = 999
+    min_num_q = 999
     if module == "testing-decision":
         page = testing_decision.get_current_page(question_id)
-        max_num_q = testing_decision.max_num_q
+        min_num_q = testing_decision.min_num_q
     elif module == "distancing-decision":
         page = distancing_decision.get_current_page(question_id)
-        max_num_q = distancing_decision.max_num_q
+        min_num_q = distancing_decision.min_num_q
     elif module == "testing":
         pass
     elif module == "prevention":
@@ -51,7 +51,7 @@ def update_questions(module):
         abort(404, "Module does not exist!")
 
     if page:
-        return {"page": page, "maxNumQ": max_num_q}
+        return {"page": page, "minNumQ": min_num_q}
     else:
         abort(500, "Page does not exist!")
 
@@ -64,11 +64,14 @@ def next_question(module):
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
         page = None
-        max_num_q = 999
+        min_num_q = 999
         if module == "testing-decision":
             page = testing_decision.next_page(question_id, answer_id, past_qna)
+            min_num_q = testing_decision.min_num_q
         elif module == "distancing-decision":
             page = distancing_decision.next_page(question_id, answer_id, past_qna)
+            min_num_q = distancing_decision.min_num_q
+
         elif module == "testing":
             pass
         elif module == "prevention":
@@ -81,7 +84,7 @@ def next_question(module):
             abort(404, "Module does not exist!")
 
         if page:
-            return {"page": page, "maxNumQ": max_num_q}
+            return {"page": page, "minNumQ": min_num_q}
         else:
             abort(500, "Reach the end of the questions!")
     else:
@@ -93,11 +96,13 @@ def prev_question(module):
     if request.get_json() and request.get_json()['prevQID']:
         prev_question_id = request.get_json()['prevQID']
         page = None
-        max_num_q = 999
+        min_num_q = 999
         if module == "testing-decision":
             page = testing_decision.prev_page(prev_question_id)
+            min_num_q = testing_decision.min_num_q
         elif module == "distancing-decision":
             page = distancing_decision.prev_page(prev_question_id)
+            min_num_q = distancing_decision.min_num_q
         elif module == "testing":
             pass
         elif module == "prevention":
@@ -110,7 +115,7 @@ def prev_question(module):
             abort(404, "Module does not exist!")
 
         if page:
-            return {"page": page, "maxNumQ": max_num_q}
+            return {"page": page, "minNumQ": min_num_q}
         else:
             abort(500, "Reach the beginning of the questions!")
     else:
