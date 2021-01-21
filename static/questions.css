@@ -116,6 +116,18 @@ p {
     border-radius: 11px;
     padding: 36px;
     margin: 30px 0;
+    cursor: pointer;
+}
+
+.answer:hover,
+.answer:focus,
+.answer:active{
+    border: 2px solid #20558A;
+}
+
+/*radio and checkbox*/
+.answer > input {
+
 }
 
 .answer-text {

@@ -309,3 +309,8 @@ function generateReport(report){
         });
     });
 }
+
+$("#answers").on("click", ".answer", function(){
+    $(this).css("border", "2px solid #20558A");
+    $(this).find("input").prop("checked", true);
+})
