@@ -17,7 +17,7 @@
 
 #module-name{
     color: #FFFFFF;
-    text-transform: capitalize;
+    text-transform: uppercase;
     display:inline-block;
     font-size:22px;
 }
@@ -91,7 +91,9 @@ p {
     color: #21202C;
 }
 
-.qna-container {
+.qna-container,
+.result-container
+{
     max-width: 100%;
     min-height: 90vh;
     padding: 0;

@@ -2,6 +2,7 @@ import io
 import os
 import time
 import zipfile
+import json
 
 from flask import Flask, render_template, request, abort, send_file, send_from_directory
 
@@ -12,7 +13,13 @@ app = Flask(__name__)
 # initialize the module
 # TODO put the path in a config file
 testing_decision = Module("decisiontrees/testing_decision.json")
+with open("decisiontrees/testing_checklist.json", "r") as f:
+    testing_checklist_ref = json.load(f)
+
 distancing_decision = Module("decisiontrees/distancing_decision.json")
+with open("decisiontrees/distancing_checklist.json", "r") as f:
+    distancing_checklist_ref = json.load(f)
+
 resource_foldername = "resources"
 
 
@@ -63,30 +70,43 @@ def next_question(module):
         past_qna = request.get_json()['qna']
         question_id = request.get_json()['QID']
         answer_id = request.get_json()['AID']
-        page = None
-        min_num_q = 999
-        if module == "testing-decision":
-            page = testing_decision.next_page(question_id, answer_id, past_qna)
-            min_num_q = testing_decision.min_num_q
-        elif module == "distancing-decision":
-            page = distancing_decision.next_page(question_id, answer_id, past_qna)
-            min_num_q = distancing_decision.min_num_q
 
+        if module == "testing-decision":
+            decision = testing_decision
+            checklist_ref = testing_checklist_ref
+        elif module == "distancing-decision":
+            decision = distancing_decision
+            checklist_ref = distancing_checklist_ref
         elif module == "testing":
-            pass
+            decision = None
+            checklist_ref = None
         elif module == "prevention":
-            pass
+            decision = None
+            checklist_ref = None
         elif module == "cleaning":
-            pass
+            decision = None
+            checklist_ref = None
         elif module == "data-infrastructure":
-            pass
+            decision = None
+            checklist_ref = None
         else:
+            decision = None
+            checklist_ref = None
             abort(404, "Module does not exist!")
 
+        page = decision.next_page(question_id, answer_id, past_qna)
+        min_num_q = decision.min_num_q
         if page:
+            # rendering next page
             return {"page": page, "minNumQ": min_num_q}
         else:
-            abort(500, "Reach the end of the questions!")
+            # reaching to the end
+            report = decision.generate_qna_report(past_qna)
+            checklist = decision.compile_checklist(past_qna, checklist_ref)
+            return {
+                "report": report,
+                "checklist":checklist
+            }
     else:
         abort(403, 'Incomplete question id and answer id!')
 
@@ -120,28 +140,6 @@ def prev_question(module):
             abort(500, "Reach the beginning of the questions!")
     else:
         abort(403, 'need to provide the correct previous question id!')
-
-
-@app.route("/<module>/submit", methods=['POST'])
-def submit(module):
-    if request.get_json() and request.get_json()['qna']:
-        past_qna = request.get_json()['qna']
-        if module == "testing-decision":
-            return testing_decision.generate_qna_report(past_qna)
-        elif module == "distancing-decision":
-            return distancing_decision.generate_qna_report(past_qna)
-        elif module == "testing":
-            pass
-        elif module == "prevention":
-            pass
-        elif module == "cleaning":
-            pass
-        elif module == "data-infrastructure":
-            pass
-        else:
-            abort(404, "Module does not exist!")
-    else:
-        abort(403, 'need to provide the submitted identifier')
 
 
 @app.route("/download/<filename>", methods=['GET'])

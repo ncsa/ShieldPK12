@@ -65,18 +65,19 @@ $("#next").on("click", function () {
                 "qna": JSON.parse(localStorage.getItem("pastQNA"))
             }),
             success: function (data) {
-                // TODO if data is empty meaning reach the very end of the survey
-                // TODO need to implement actions there
-                // TODO depends on the design
+                if ("page" in data) {
+                    // add past question and answer to the stack
+                    let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+                    pastQNA.unshift({"QID": QID, "AID": AID});
+                    localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
 
-                // add past question and answer to the stack
-                let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
-                pastQNA.unshift({"QID": QID, "AID": AID});
-                localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
-
-                // point current page to the new id
-                localStorage.setItem("QID", data.page["QID"]);
-                updateQuestions(data, pastQNA.length);
+                    // point current page to the new id
+                    localStorage.setItem("QID", data.page["QID"]);
+                    updateQuestions(data, pastQNA.length);
+                } else if ("report" in data && "checklist" in data) {
+                    console.log(data)
+                    updateResult(data);
+                }
             },
             error: function (jqXHR, exception) {
                 $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -118,57 +119,6 @@ $("#prev").on("click", function () {
         }
     });
 });
-
-// /**
-//  * submit the final result and generate a checklist of resources
-//  */
-// $("#submit").on("click", function () {
-//     var submittedNid = localStorage.getItem("QID");
-//     if (submittedNid !== "" && submittedNid !== undefined && submittedNid !== null) {
-//         $.ajax({
-//             url: "submit",
-//             type: "POST",
-//             contentType: "application/json",
-//             data: JSON.stringify({
-//                 "submitted_nid": submittedNid
-//             }),
-//             success: function (data) {
-//                 $("#survey-title").empty();
-//                 $("#survey-description").empty();
-//                 $("#answers").empty();
-//
-//                 // hide all buttons except restart
-//                 $("#prev").hide();
-//                 $("#next").hide();
-//                 $("#submit").hide();
-//
-//                 // show download zip button
-//                 $("#download-zip").show();
-//
-//                 // update resource list
-//                 $("#resource-list").empty();
-//                 data.past_nodes.forEach(function(pastNode, i) {
-//                     var element = $(`<div class="resource">
-//                                         <h2>` + pastNode["tag"] + `</h2><p>` + pastNode.data["explanation"] + `</p>
-//                                         <ul class="resource-file-list"></ul></div>`);
-//                     pastNode.data["file_list"].forEach(function(filename, j){
-//                         var fileURL = "/download/".concat(filename);
-//                         element.find(".resource-file-list").append(`<li><a href="` + fileURL + `" target="_blank">`
-//                             + filename + `</a></li>`);
-//                     });
-//                     $("#resource-list").append(element);
-//                 });
-//             },
-//             error: function (jqXHR, exception) {
-//                  // TODO add error handling
-//                 $("#error").find(".modal-body").empty().append(jqXHR.responseText);
-//                 $("#error").modal("show");
-//             }
-//         });
-//     } else {
-//         alert("You did not identify what node id to submit!");
-//     }
-// });
 
 
 /**
@@ -244,15 +194,14 @@ $("#restart").on("click", function () {
  * @param data
  * @param answeredNumQ
  */
-function updateQuestions(data, answeredNumQ){
-    // hide download button
-    $("#download-zip").hide();
+function updateQuestions(data, answeredNumQ) {
+    $(".result-container").hide();
+    $(".qna-container").show();
 
     // if it's the root node hide prev button
-    if (data.page["QID"] === ROOT_QUESTION_ID){
+    if (data.page["QID"] === ROOT_QUESTION_ID) {
         $("#prev").hide();
-    }
-    else{
+    } else {
         $("#prev").show();
     }
 
@@ -291,17 +240,72 @@ function updateQuestions(data, answeredNumQ){
     $("#answer-resource-list").empty();
 }
 
+/**
+ * progress bar in navigation
+ * @param minNumQ
+ * @param answeredNumQ
+ */
 function updateProgressBar(minNumQ, answeredNumQ){
     // TODO save some energy on calculate the exact progress for future
     // for now just roughly update
     var progress = "0";
-    var percent = answeredNumQ/minNumQ;
+    var percent = answeredNumQ / minNumQ;
 
     if (percent > 0 && percent < 0.3) progress = "5";
-    else if (percent >= 0.3 && percent <0.6) progress = "33";
-    else if(percent >=0.6 && percent <= 0.9) progress = "66";
-    else if(percent > 0.9) progress = "99";
+    else if (percent >= 0.3 && percent < 0.6) progress = "33";
+    else if (percent >= 0.6 && percent <= 0.9) progress = "66";
+    else if (percent > 0.9) progress = "99";
 
     $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
     $("#progress-container p").text(progress + "% Complete");
+}
+
+/**
+ *
+ * @param data
+ */
+function updateResult(data) {
+    $(".result-container").show();
+    $(".qna-container").hide();
+
+    updateProgressBar(1, 1);
+    generateChecklist(data.checklist);
+    generateReport(data.report);
+}
+
+/**
+ * generate checklist
+ * @param checklist
+ */
+function generateChecklist(checklist) {
+    $(".checklist-container").empty();
+    checklist.forEach(function (item, index) {
+        $(".checklist-container").append(`
+            <div class="checklist">
+                <p class="checklist-activity">- ` + item["activity"] + `</p>
+                <a href="#" target="_blank">links...</a>
+                </div>
+        `);
+    });
+}
+
+/**
+ *
+ * @param report
+ */
+function generateReport(report){
+    $(".report-container").empty();
+    report.forEach(function (item, index) {
+        $(".report-container").append(`
+            <div class="report" id="`+ item["QID"] + `">
+                <h2 class="report-question">Q: `+ item["question"] +`</h2>
+                <div class="report-answers"></div>
+            </div>
+        `);
+        item["answers"].forEach(function(answerItem, index){
+            $("#" + item["QID"]).find(".report-answers").append(`
+                <p>A: `+ answerItem["answer"] +`</p>
+            `);
+        });
+    });
 }
