@@ -222,3 +222,18 @@ p {
     letter-spacing: 0.65625px;
     color: #21202C;
 }
+
+.answer-pretty-id,
+.answer-pretty-id.selected{
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.541667px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #20558A;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: bottom;
+}

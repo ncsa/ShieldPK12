@@ -207,9 +207,12 @@ function updateQuestions(data, answeredNumQ) {
 
     // update progress bar
     updateProgressBar(data.minNumQ, answeredNumQ)
-
-    $("#question-title").empty().append(data.page["QID"] + ". " + data.page["question"]);
-    $("#question-description").empty().append(data.page["description"])
+    var questionTitle = data.page["QID"] + ". " + data.page["question"]
+    $("#question-title").text(questionTitle);
+    if ("multiple" in data.page && data.page["multiple"] === true){
+        $("#question-subtitle").text("(select all that applies)");
+    }
+    $("#question-description").text(data.page["description"])
     $("#answers").removeAttr("multiple-answers").empty();
     data.page["answers"].forEach(function(option, index){
         // do not display empty question
@@ -217,14 +220,16 @@ function updateQuestions(data, answeredNumQ) {
             if ("multiple" in data.page && data.page["multiple"] === true) {
                 $("#answers").attr("multiple-answers", true).append(
                     `<div class="answer"><input type="checkbox" name="choice" value="` + option["AID"] + `">
-                <h2 class="answer-text">` + option["answer"] + `</h2>
+                <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] +
+                    `</span>` + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
                 </div>`);
             } else {
                 $("#answers").attr("multiple-answers", false).append(
                     `<div class="answer">
                 <input type="radio" name="choice" value="` + option["AID"] + `">
-                <h2 class="answer-text">` + option["answer"] + `</h2>
+                <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] + `</span>`
+                    + option["answer"] + `</h2>
                 <p class="answer-description">` + option["description"] + `</p>
             </div>`);
             }
@@ -303,7 +308,8 @@ function generateReport(report){
         `);
         item["answers"].forEach(function(answerItem, index){
             $("#" + item["QID"]).find(".report-answers").append(`
-                <h3>`+ answerItem["answer"] +`</h3>
+                <h3><span class="answer-pretty-id">` + answerItem["prettyAID"]+ `</span>`
+                + answerItem["answer"] +`</h3>
                 <p>` + answerItem["description"] + `</p>
             `);
         });

@@ -7,7 +7,6 @@
     "answers": [
       {
         "AID": "1",
-        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -127,7 +126,6 @@
     "answers": [
       {
         "AID": "2",
-        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -215,7 +213,6 @@
     "answers": [
       {
         "AID": "2a-ii-2",
-        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -255,7 +252,6 @@
     "answers": [
       {
         "AID": "2b",
-        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -297,7 +293,7 @@
   },
   {
     "QID": "2b-ii",
-    "question": "How will you minimize contact in hallways? (select all that apply)",
+    "question": "How will you minimize contact in hallways?",
     "multiple": true,
     "description": "",
     "resources": [],
@@ -330,7 +326,7 @@
   },
   {
     "QID": "3",
-    "question": "Which extracurricular activities will you allow? (select all that apply)",
+    "question": "Which extracurricular activities will you allow?",
     "description": "",
     "multiple": true,
     "resources": [],
@@ -518,7 +514,7 @@
   },
   {
     "QID": "4",
-    "question": "Transportation Types (select all that apply)",
+    "question": "Transportation Types",
     "multiple": true,
     "description": "",
     "resources": [],

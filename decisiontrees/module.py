@@ -96,16 +96,17 @@ class Module:
                             found_answer = True
                             answer_list.append({
                                 "AID": answer["AID"],
+                                "prettyAID": answer.get("prettyAID"),
                                 "answer": answer["answer"],
                                 "description": answer["description"],
-                                "answerResources": answer["resources"]
+                                "resources": answer["resources"]
                             })
 
                     response.append({
                         "QID": page["QID"],
                         "question": page["question"],
-                        "questionDescription": page["description"],
-                        "questionResources": page["resources"],
+                        "description": page["description"],
+                        "resources": page["resources"],
                         "answers": answer_list
                     })
 
