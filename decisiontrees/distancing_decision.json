@@ -7,6 +7,7 @@
     "answers": [
       {
         "AID": "1",
+        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -22,6 +23,7 @@
     "answers": [
       {
         "AID": "1a-i",
+        "prettyAID": "a",
         "answer": "Classes as pods",
         "description": "One of the simplest podding groups is classes. This is especially useful in the pre-K to 5 range, where classes are normally maintained for the full school day. In higher grade levels, the maintenance of an entire class as a pod would be more logistically challenging.<br>You will need policies around the movement of adults between rooms, so as to not counteract the pod structure. This could include assistants, substitutes, and subject-specific teachers (such as music or art). Where possible, limit the number of people moving between rooms.",
         "resources": [],
@@ -29,6 +31,7 @@
       },
        {
         "AID": "1a-ii",
+        "prettyAID": "b",
         "answer": "Small student pods",
         "description": "One method that has been used successfully in France is to form small pods (3-4 students). While these pods may attend class with other pods, each pod will maintain distance from the others. For instance, students within a pod might be able to sit at the same table, share sports equipment, and move through halls together. In that way, each case would only be in close contact with 2-3 other students. <br>The formation of these pods will require a number of policy decisions. Will they be single-gender or mixed? Will students select their own group, or will they be assigned? How would regrouping work if conflict arises? <br>In higher grade levels, pods should have matching class schedules. Likewise, pods should take into account extracurricular activities to minimize mixing outside the classroom.<br>",
         "resources": [],
@@ -36,6 +39,7 @@
       },
        {
         "AID": "1a-iii",
+        "prettyAID": "c",
         "answer": "Grade level groups",
         "description": "Within higher grade levels, it may be easier to ensure simply no mixing between grade levels. That could mean that courses in which grade levels usually mix be divided so that only one grade level is present at a time. Alternatively, courses could be limited to particular grade levels.",
         "resources": [],
@@ -43,6 +47,7 @@
       },
        {
         "AID": "1a-iv",
+         "prettyAID": "d",
         "answer": "Tracking groups",
         "description": "It could be possible to form groups, larger than pods but smaller than grade levels, that would be able to move through classes together (or, preferably, stay in a single room and have teachers rotate).",
         "resources": [],
@@ -58,6 +63,7 @@
     "answers": [
       {
         "AID": "1b-i",
+        "prettyAID": "a",
         "answer": "No lunch",
         "description": "If scheduling allows, avoiding students being present in the building over lunch time would be preferred. This could mean a morning-only schedule or a morning/afternoon alternation.",
         "resources": [],
@@ -65,6 +71,7 @@
       },
       {
         "AID": "1b-ii",
+        "prettyAID": "b",
         "answer": "Staggered lunch groups",
         "description": "If lunch times could be spread over a longer period, it would be possible to decrease the number of people in a lunchroom at a given time. It is not advisable to do this by shortening lunch times for the sake of healthy eating times.",
         "resources": [],
@@ -72,6 +79,7 @@
       },
       {
         "AID": "1b-iii",
+        "prettyAID": "c",
         "answer": "Spreading lunch over multiple rooms",
         "description": "Other large, well-ventilated rooms (such as gyms and auditoriums) might be used as expanded lunch space to ensure low density. If weather allows, outdoor eating areas are a good choice. This will require more observers for lunchtimes.",
         "resources": [],
@@ -79,6 +87,7 @@
       },
       {
         "AID": "1b-iv",
+        "prettyAID": "d",
         "answer": "Lunch in classrooms",
         "description": "Especially if classes are considered to be pods, having them remain in a classroom for lunch might be an option. Remember, though, that when masks are removed more space should be used and higher ventilation standards are needed. Another drawback to this approach is that teachers would no longer have lunch as a rest/prep period. Teachers might also object to the additional exposure associated with being in a room with unmasked students, as this is a greater risk. This will likely need union discussions.",
         "resources": [],
@@ -94,6 +103,7 @@
     "answers": [
       {
         "AID": "1c-yes",
+        "prettyAID": "a",
         "answer": "Yes",
         "description": "",
         "resources": [],
@@ -101,6 +111,7 @@
       },
       {
         "AID": "1c-no",
+        "prettyAID": "b",
         "answer": "No",
         "description": "",
         "resources": [],
@@ -116,6 +127,7 @@
     "answers": [
       {
         "AID": "2",
+        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -131,6 +143,7 @@
     "answers": [
       {
         "AID": "2a-i",
+        "prettyAID": "a",
         "answer": "Full virtual",
         "description": "If transmission is high in your community, it may be necessary to remain virtual. In this case, you will want to ensure access to all students. This may include providing tablets or laptops, wi-fi hotspots, and technical assistance.",
         "resources": [],
@@ -138,6 +151,7 @@
       },
       {
         "AID": "2a-ii",
+        "prettyAID": "b",
         "answer": "Hybrid",
         "description": "You may wish to allow for some in-person students while others remain virtual. In this case, you will want to ensure access to all virtual students. This may include providing tablets or laptops, wi-fi hotspots, and technical assistance.",
         "resources": [],
@@ -145,6 +159,7 @@
       },
       {
         "AID": "2a-iii",
+        "prettyAID": "c",
         "answer": "A/B or alternating schedules",
         "description": "It is possible to limit group size by having students alternate between virtual and in-person classes. For example, the A group would be in-person on Monday and Thursday while the B group would be in-person on Tuesday and Friday, with Wednesday as a cleaning day. Alternately, the A group could be in-person in mornings, while the B group is in-person in afternoons, which has the advantage of avoiding in-school lunch but the disadvantage of doubling the transportation burden per day. <br>In this setup, you will want to ensure access to all students. This may include providing tablets or laptops, wi-fi hotspots, and technical assistance.<br>",
         "resources": [],
@@ -152,6 +167,7 @@
       },
       {
         "AID": "2a-iv",
+        "prettyAID": "d",
         "answer": "4/10 schedule",
         "description": "This is a schedule in which students are in person 4 days every other week, then virtual the other days. The idea is that the 10 days between in-person sessions acts as an informal quarantine period for any exposures that happen during the 4 in-person days. This could also be used with alternating schedules, such that half the students are in-person for 4 days one week, then the other half of the students are in-person the next week. Remember that this will only be effective if students are not congregating outside school.",
         "resources": [],
@@ -159,6 +175,7 @@
       },
       {
         "AID": "2a-v",
+        "prettyAID": "e",
         "answer": "Full in-person",
         "description": "If you are fully in-person, there will be teachers and parents who are uncomfortable with the risk. You will need a process to support those who are high-risk. You will also need a decision process for when to revert to hybrid or virtual teaching, based on local transmission, availability of staff, or evidence of within-school spread.",
         "resources": [],
@@ -174,6 +191,7 @@
     "answers": [
       {
         "AID": "2a-ii-1-a",
+        "prettyAID": "a",
         "answer": "Limited",
         "description": "You may wish to limit in-person students to those who are unable to participate in virtual class. This could be self-reported or based on assessment from teachers, administrators, or social workers. Potential reasons for requiring in-person instruction include: inability to connect to internet, lack of secure space to attend class, lack of guardianship during class time.",
         "resources": [],
@@ -181,6 +199,7 @@
       },
       {
         "AID": "2a-ii-1-b",
+        "prettyAID": "b",
         "answer": "Self-select",
         "description": "You may also allow parents to self-select for virtual or in-person class. This could be done via a web survey, a paper survey, or even phone calls to individual families. This may result in uneven distribution of in-person student numbers across grades and classes.",
         "resources": [],
@@ -196,6 +215,7 @@
     "answers": [
       {
         "AID": "2a-ii-2",
+        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -211,6 +231,7 @@
     "answers": [
       {
         "AID": "2a-ii-3-a",
+        "prettyAID": "a",
         "answer": "Teachers managing virtual and in-person classrooms together",
         "description": "You will need to ensure IT support within classrooms, and train your teachers on managing dual processes.",
         "resources": [],
@@ -218,6 +239,7 @@
       },
       {
         "AID": "2a-ii-3-b",
+        "prettyAID": "b",
         "answer": "Virtual classrooms be separated from in-person",
         "description": "You will need to assign teachers to virtual or in-person based on student numbers and types in each group. This may need to consider the preferences of the teachers, including identifying high-risk teachers who may need to remain virtual.",
         "resources": [],
@@ -233,6 +255,7 @@
     "answers": [
       {
         "AID": "2b",
+        "prettyAID": "a",
         "answer": "",
         "description": "",
         "resources": [],
@@ -248,6 +271,7 @@
     "answers": [
       {
         "AID": "2b-i-1",
+        "prettyAID": "a",
         "answer": "Staggered starts and ends",
         "description": "One option is to bring your smaller groups in at separate times. This may be logistically difficult, however, especially with transportation issues and multi-group families. ",
         "resources": [],
@@ -255,6 +279,7 @@
       },
       {
         "AID": "2b-i-2",
+        "prettyAID": "b",
         "answer": "Designated entrances",
         "description": "If you have multiple entry and exit points, you may want to designate a specific entrance and exit for each group, so as to minimize mixing between your groups.",
         "resources": [],
@@ -262,6 +287,7 @@
       },
       {
         "AID": "2b-i-3",
+        "prettyAID": "c",
         "answer": "Enforced spacing",
         "description": "If you have lines at entrance and exit times, it will be important to at a minimum enforce spacing between individuals.",
         "resources": [],
@@ -278,6 +304,7 @@
     "answers": [
       {
         "AID": "2b-ii-1",
+        "prettyAID": "a",
         "answer": "One-way hallways",
         "description": "You can minimize face-to-face contacts by restricting movement direction.",
         "resources": [],
@@ -285,6 +312,7 @@
       },
       {
         "AID": "2b-ii-2",
+        "prettyAID": "b",
         "answer": "Staggered movement times",
         "description": "It is best to limit the number of people in a hallway at one time. You can do this by scheduling groups to different movement times, although this could become logistically difficult.",
         "resources": [],
@@ -292,6 +320,7 @@
       },
       {
         "AID": "2b-ii-3",
+        "prettyAID": "c",
         "answer": "Minimized movement",
         "description": "The best option is to limit the amount of movement within the building. This could be done in higher grade levels through having teachers move instead of students. In earlier grades, this might be through keeping all class activities within a single room.",
         "resources": [],
@@ -308,6 +337,7 @@
     "answers": [
       {
         "AID": "3a",
+        "prettyAID": "a",
         "answer": "Sports",
         "description": "",
         "resources": [],
@@ -315,6 +345,7 @@
       },
       {
         "AID": "3b",
+        "prettyAID": "b",
         "answer": "Music and arts",
         "description": "",
         "resources": [],
@@ -322,6 +353,7 @@
       },
       {
         "AID": "3c",
+        "prettyAID": "c",
         "answer": "Other activities",
         "description": "",
         "resources": [],
@@ -346,6 +378,7 @@
     "answers": [
       {
         "AID": "3a-i",
+        "prettyAID": "a",
         "answer": "Limited contact",
         "description": "This will vary by sport, but could involve limiting contact drills, outdoor practices only, limiting coach contacts, or smaller practice groups.",
         "resources": [],
@@ -353,6 +386,7 @@
       },
       {
         "AID": "3a-ii",
+        "prettyAID": "b",
         "answer": "Mask-wearing",
         "description": "Masks are safe to be worn in most sports, and should be required for weight rooms and other enclosed spaces.",
         "resources": [],
@@ -360,6 +394,7 @@
       },
       {
         "AID": "3a-iii",
+        "prettyAID": "c",
         "answer": "Competitions",
         "description": "Will you allow your teams to compete? This should depend on the level of community spread and your comfort with the precautions taken by other teams.",
         "resources": [],
@@ -367,6 +402,7 @@
       },
       {
         "AID": "3a-iv",
+        "prettyAID": "d",
         "answer": "Transport to games",
         "description": "If competing, transportation within team buses may increase the transmission risk. Rules could include limiting the number of players per bus, mask wearing on buses, and encouraging private transportation.",
         "resources": [],
@@ -374,6 +410,7 @@
       },
       {
         "AID": "3a-v",
+        "prettyAID": "e",
         "answer": "Staff",
         "description": "You should hold your athletic staff to the same standards as your teachers with regards to testing, mask-wearing, and limited contact networks",
         "resources": [],
@@ -398,6 +435,7 @@
     "answers": [
       {
         "AID": "3b-i",
+        "prettyAID": "a",
         "answer": "Mask-wearing",
         "description": "Masks should be worn at all times when singing, in the theater, and playing non-wind instruments. If possible, special masks for wind instruments should be used. ",
         "resources": [],
@@ -405,6 +443,7 @@
       },
       {
         "AID": "3b-ii",
+        "prettyAID": "b",
         "answer": "Practice space",
         "description": "Practice space should be large enough to allow distancing. Keep practices outdoors as much as possible – get creative with spaces. Especially for choir and wind bands, ventilation should be prioritized.",
         "resources": [],
@@ -412,6 +451,7 @@
       },
       {
         "AID": "3b-iii",
+        "prettyAID": "c",
         "answer": "Staff",
         "description": "You should hold your music and arts staff to the same standards as your teachers with regards to testing, mask-wearing, and limited contact networks",
         "resources": [],
@@ -419,6 +459,7 @@
       },
       {
         "AID": "3b-iv-1",
+        "prettyAID": "d",
         "answer": "In-person Performances",
         "description": "You will need to ensure distancing and ventilation sufficient for in-person performances. At this time, outdoors only is recommended, and attendance should be limited.",
         "resources": [],
@@ -426,6 +467,7 @@
       },
        {
         "AID": "3b-iv-2",
+         "prettyAID": "e",
         "answer": "Virtual Performances",
         "description": "These are preferred at this time. Asynchronous ensures accessibility to those with limited bandwidth/data.",
         "resources": [],
@@ -450,6 +492,7 @@
     "answers": [
       {
         "AID": "3c-i",
+        "prettyAID": "a",
         "answer": "Space",
         "description": "Any extracurricular activities to be held in person should be provided sufficient space to allow distancing.",
         "resources": [],
@@ -457,6 +500,7 @@
       },
       {
         "AID": "3c-ii",
+        "prettyAID": "b",
         "answer": "Mask-wearing",
         "description": "Mask policies should apply to all extracurricular activities.",
         "resources": [],
@@ -464,6 +508,7 @@
       },
       {
         "AID": "3c-iii",
+        "prettyAID": "c",
         "answer": "Staff",
         "description": "You should hold your extracurricular staff to the same standards as your teachers with regards to testing, mask-wearing, and limited contact networks",
         "resources": [],
@@ -480,6 +525,7 @@
     "answers": [
       {
         "AID": "4a",
+        "prettyAID": "a",
         "answer": "Buses",
         "description": "",
         "resources": [],
@@ -487,6 +533,7 @@
       },
       {
         "AID": "4b",
+        "prettyAID": "b",
         "answer": "Personal Vehicle Drop-off and Pick-up",
         "description": "",
         "resources": [],
@@ -494,6 +541,7 @@
       },
       {
         "AID": "4c",
+        "prettyAID": "c",
         "answer": "Walking",
         "description": "",
         "resources": [],
@@ -501,6 +549,7 @@
       },
       {
         "AID": "4d",
+        "prettyAID": "d",
         "answer": "Student Vehicles",
         "description": "",
         "resources": [],
@@ -525,6 +574,7 @@
     "answers": [
       {
         "AID": "4a-i",
+        "prettyAID": "a",
         "answer": "Mask-wearing",
         "description": "Your mask policy should apply to all on buses, including drivers. You will need a way to enforce this policy.",
         "resources": [],
@@ -532,6 +582,7 @@
       },
       {
         "AID": "4a-ii",
+        "prettyAID": "b",
         "answer": "Limited capacity",
         "description": "You may need to limit capacity on buses, which would require additional bus routes or otherwise changing schedules. This may not be necessary if alternating schedules are used.",
         "resources": [],
@@ -539,6 +590,7 @@
       },
        {
         "AID": "4a-iii",
+         "prettyAID": "c",
         "answer": "Loading and unloading",
         "description": "Bus loading and unloading at the school building could create high-contact conditions. Timing for this process should be extended so that distancing can be maintained. Preferably only one bus would unload at a time, and only one group would load onto buses at a time, so as to avoid crossing foot traffic among bus riders.",
         "resources": [],
@@ -563,6 +615,7 @@
     "answers": [
       {
         "AID": "4b-i",
+        "prettyAID": "a",
         "answer": "Parents remain in cars",
         "description": "Preferably, if students are dropped off or picked up by parents, those parents would remain in their cars.",
         "resources": [],
@@ -570,6 +623,7 @@
       },
       {
         "AID": "4b-ii",
+        "prettyAID": "b",
         "answer": "Mask-wearing",
         "description": "Preferably, if students are dropped off or picked up by parents, those parents would remain in their cars.",
         "resources": [],
@@ -577,6 +631,7 @@
       },
       {
         "AID": "4b-iii",
+        "prettyAID": "c",
         "answer": "Loading and unloading",
         "description": "To avoid crossing foot traffic at loading, only one group at a time should be released. This may require a schedule with parents to manage car traffic at pick-up. During unloading, traffic flow should be maintained to avoid unnecessary mixing among students.",
         "resources": [],
@@ -584,6 +639,7 @@
       },
       {
         "AID": "4b-iv",
+        "prettyAID": "d",
         "answer": "Carpools",
         "description": "Information should be collected about parental carpools, to assist in the contact tracing process.",
         "resources": [],
@@ -608,6 +664,7 @@
     "answers": [
       {
         "AID": "4c-i",
+        "prettyAID": "a",
         "answer": "Mask-wearing",
         "description": "Messaging and enforcement should be used to ensure mask-wearing by all students and parents walking to school",
         "resources": [],
@@ -615,6 +672,7 @@
       },
       {
         "AID": "4c-ii",
+        "prettyAID": "b",
         "answer": "Distancing",
         "description": "Floor markings and signs should be used to encourage and enforce distancing among those walking to school.",
         "resources": [],
@@ -639,6 +697,7 @@
     "answers": [
       {
         "AID": "4d-i",
+        "prettyAID": "a",
         "answer": "Mask-wearing",
         "description": "Mask-wearing in the parking lot should be required.",
         "resources": [],
@@ -646,6 +705,7 @@
       },
       {
         "AID": "4d-ii",
+        "prettyAID": "b",
         "answer": "Carpools",
         "description": "Information should be collected about student carpools, to assist in the contact tracing process.",
         "resources": [],
