@@ -18,6 +18,9 @@ class Module:
         next_page_id = None
         current_page = None
         current_answer = None
+
+        # add current question and answer to the past qna list for further critera
+        past_qna.insert(0, {"QID": question_id, "AID": answer_id_list})
         for page in self.module:
             if page["QID"] == question_id:
 
@@ -39,19 +42,19 @@ class Module:
             for page in self.module:
                 if page["QID"] == next_page_id:
                     # here need to check if the next page has skip rules recursively
-                    return self._skip_page(page, answer_id_list, past_qna)
+                    return self._skip_page(page, past_qna)
             raise ValueError("Next page id: " + next_page_id + " cannot be found!")
         else:
             # reach the end
             return None
 
-    def _skip_page(self, page, curr_answer_id_list, past_qna):
+    def _skip_page(self, page, past_qna):
         if "rules" in page.keys():
             past_answers_list = self._flatten_answers(past_qna)
             if page["rules"].get("operator") == "AND":
                 match = True
                 for criterion in page["rules"]["criteria"]:
-                    if criterion["AID"] not in past_answers_list and criterion["AID"] not in curr_answer_id_list:
+                    if criterion["AID"] not in past_answers_list:
                         match = False
                 if not match:
                     # skip this question and go to the next
