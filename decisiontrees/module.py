@@ -19,8 +19,6 @@ class Module:
         current_page = None
         current_answer = None
 
-        # add current question and answer to the past qna list for further critera
-        past_qna.insert(0, {"QID": question_id, "AID": answer_id_list})
         for page in self.module:
             if page["QID"] == question_id:
 
@@ -174,8 +172,15 @@ if __name__ == "__main__":
     distancing_decision_module = Module("decisiontrees/distancing_decision.json")
     with open("decisiontrees/distancing_checklist.json", "r") as f:
         ref = json.load(f)
-    past_qna = [{"QID": "2b-ii", "AID": ["2b-ii-2"]}, {"QID": "2b-i", "AID": ["2b-i-2"]}, {"QID": "2b", "AID": ["2b"]}]
-    print(distancing_decision_module.next_page(question_id="3", answer_id_list=["3a", "3c"], past_qna=past_qna))
-    # report = distancing_decision_module.generate_qna_report(past_qna)
+    past_qna = [{"QID": "4b", "AID": ["4b-iv"]}, {"QID": "4", "AID": ["4b", "4c"]}, {"QID": "3c", "AID": ["3c-i"]},
+                {"QID": "3b", "AID": ["3b-iv-1"]}, {"QID": "3", "AID": ["3b", "3c"]},
+                {"QID": "2b-ii", "AID": ["2b-ii-1"]}, {"QID": "2b-i", "AID": ["2b-i-3"]}, {"QID": "2b", "AID": ["2b"]},
+                {"QID": "2a-ii-3", "AID": ["2a-ii-3-b"]}, {"QID": "2a-ii-2", "AID": ["2a-ii-2"]},
+                {"QID": "2a-ii-1", "AID": ["2a-ii-1-a"]}, {"QID": "2a", "AID": ["2a-ii"]}, {"QID": "2", "AID": ["2"]},
+                {"QID": "1c", "AID": ["1c-yes"]}, {"QID": "1b", "AID": ["1b-i"]}, {"QID": "1a", "AID": ["1a-i"]},
+                {"QID": "1", "AID": ["1"]}]
+    # print(distancing_decision_module.next_page(question_id="3", answer_id_list=["3a", "3c"], past_qna=past_qna))
+    report = distancing_decision_module.generate_qna_report(past_qna)
+    print(report)
     # checklist = distancing_decision_module.compile_checklist(past_qna, ref)
     # print(checklist)

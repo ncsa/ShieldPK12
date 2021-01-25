@@ -7,7 +7,8 @@ var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module.split("-")[0]);
 
 
-if (localStorage.getItem("QID") === null || localStorage.getItem("module") === null
+if (localStorage.getItem("QID") === null
+    || localStorage.getItem("module") === null
     || localStorage.getItem("pastQNA") === null
     || localStorage.getItem("module") !== module
 ){
@@ -65,16 +66,18 @@ $("#next").on("click", function () {
                 "qna": JSON.parse(localStorage.getItem("pastQNA"))
             }),
             success: function (data) {
-                if ("page" in data) {
-                    // add past question and answer to the stack
-                    let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
-                    pastQNA.unshift({"QID": QID, "AID": AID});
-                    localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
+                // add past question and answer to the stack
+                let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+                updatedPastQNA = addQNAtoHistory(QID, AID, pastQNA)
+                localStorage.setItem("pastQNA", JSON.stringify(updatedPastQNA));
 
+                if ("page" in data) {
                     // point current page to the new id
                     localStorage.setItem("QID", data.page["QID"]);
                     updateQuestions(data, pastQNA.length);
                 } else if ("report" in data && "checklist" in data) {
+                    // point current page to the new id
+                    localStorage.setItem("QID", null);
                     updateResult(data);
                 }
             },
@@ -212,6 +215,10 @@ function updateQuestions(data, answeredNumQ) {
     if ("multiple" in data.page && data.page["multiple"] === true){
         $("#question-subtitle").text("(select all that applies)");
     }
+    else{
+        $("#question-subtitle").text();
+    }
+
     $("#question-description").text(data.page["description"])
     $("#answers").removeAttr("multiple-answers").empty();
     data.page["answers"].forEach(function(option, index){
@@ -340,3 +347,19 @@ $("#download-pdf").on("click", function(){
         .from(document.getElementById("result-container"))
         .save();
 })
+
+function addQNAtoHistory(QID, AID, pastQNA){
+    let duplicated = false;
+    for (i=0; i<pastQNA.length; i++){
+        if (pastQNA[i]["QID"] === QID){
+            duplicated = true;
+            break;
+        }
+    }
+
+    if (!duplicated){
+        pastQNA.unshift({"QID": QID, "AID": AID});
+    }
+
+    return pastQNA
+}

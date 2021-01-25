@@ -69,7 +69,11 @@ def next_question(module):
             and 'qna' in request.get_json().keys():
         past_qna = request.get_json()['qna']
         question_id = request.get_json()['QID']
-        answer_id = request.get_json()['AID']
+        answer_id_list = request.get_json()['AID']
+
+        # add current question and answer to the past qna list for further critera
+        if {"QID": question_id, "AID": answer_id_list} not in past_qna:
+            past_qna.insert(0, {"QID": question_id, "AID": answer_id_list})
 
         if module == "testing-decision":
             decision = testing_decision
@@ -94,7 +98,7 @@ def next_question(module):
             checklist_ref = None
             abort(404, "Module does not exist!")
 
-        page = decision.next_page(question_id, answer_id, past_qna)
+        page = decision.next_page(question_id, answer_id_list, past_qna)
         min_num_q = decision.min_num_q
         if page:
             # rendering next page
