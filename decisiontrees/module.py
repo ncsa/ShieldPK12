@@ -56,8 +56,9 @@ class Module:
                         match = False
                 if not match:
                     # skip this question and go to the next
-                    return self.next_page(question_id=page["QID"], answer_id_list=[page["answers"][-1]["AID"]],
-                                        past_qna=past_qna)
+                    return self.next_page(question_id=page["QID"],
+                                          answer_id_list=[page["answers"][-1]["AID"]],
+                                          past_qna=past_qna)
                 else:
                     return page
         return page
