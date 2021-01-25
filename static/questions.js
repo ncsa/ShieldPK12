@@ -316,7 +316,7 @@ function generateReport(report){
     });
 }
 
-$("#answers").on("click", ".answer", function(){
+$("#answers").on("click", ".answer", function () {
     // if radio button, also need to disable other selections first
     if ($("#answers").attr("multiple-answers") === "false") {
         $(".answer").removeClass("selected");
@@ -324,4 +324,19 @@ $("#answers").on("click", ".answer", function(){
     $(this).toggleClass("selected");
     var selection = $(this).find("input");
     selection.prop("checked") ? selection.prop("checked", false) : selection.prop("checked", true);
+})
+
+/**
+ * generate pdf for the report page
+ */
+$("#download-pdf").on("click", function(){
+    html2pdf()
+        .set({
+            pagebreak: {mode:['avoid-all', 'css', 'legacy']},
+            filename: "my-playbook-report.pdf",
+            html2canvas:  { scale: 4 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        })
+        .from(document.getElementById("result-container"))
+        .save();
 })

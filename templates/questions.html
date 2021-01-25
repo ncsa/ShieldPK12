@@ -22,7 +22,9 @@
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous">
         </script>
-        <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}"></head>
+        <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}">
+    </head>
 
     <body>
         <div class="modal" tabindex="-1" role="dialog" id="error">
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="result-container container">
+            <div class="result-container container" id="result-container">
                 <div class="row">
                     <div class="col col-lg-12 col-md-12 col-sm-12">
                         <h1>Testing Checklist</h1>
@@ -126,6 +128,9 @@
                         <h1>Your Testing Decision Report:</h1>
                         <div class="report-container"></div>
                     </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" id="download-pdf">Download Result</button>
                 </div>
             </div>
         </div>
