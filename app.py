@@ -1,10 +1,10 @@
 import io
+import json
 import os
 import time
 import zipfile
-import json
 
-from flask import Flask, render_template, request, abort, send_file, send_from_directory
+from flask import Flask, render_template, request, abort, send_file, send_from_directory, redirect
 
 from decisiontrees.module import Module
 
@@ -23,10 +23,25 @@ with open("decisiontrees/distancing_checklist.json", "r") as f:
 resource_foldername = "resources"
 
 
-@app.route('/<module>', methods=['GET'])
-def homepage(module):
+# reserve for landing page
+@app.route('/', methods=['GET'])
+def homepage():
     # TODO can have different landing page for different modules
-    return render_template('homepage.html')
+    return render_template('landing.html')
+
+
+@app.route('/<module>', methods=['GET'])
+def module_homepage(module):
+    # TODO can have different landing page for different modules
+    return render_template('landing.html')
+
+
+@app.route('/regress', methods=['GET'])
+def regress():
+    if request.args.get("module"):
+        return redirect("/" + request.args.get("module") + "/questions")
+    else:
+        return redirect("/")
 
 
 @app.route('/<module>/questions', methods=['GET'])
@@ -37,30 +52,51 @@ def questions(module):
 
 @app.route('/<module>/questions', methods=['POST'])
 def update_questions(module):
-    question_id = request.get_json()['QID']
-    page = None
-    min_num_q = 999
-    if module == "testing-decision":
-        page = testing_decision.get_current_page(question_id)
-        min_num_q = testing_decision.min_num_q
-    elif module == "distancing-decision":
-        page = distancing_decision.get_current_page(question_id)
-        min_num_q = distancing_decision.min_num_q
-    elif module == "testing":
-        pass
-    elif module == "prevention":
-        pass
-    elif module == "cleaning":
-        pass
-    elif module == "data-infrastructure":
-        pass
-    else:
-        abort(404, "Module does not exist!")
+    if request.get_json() and request.get_json()['QID'] and 'qna' in request.get_json().keys():
+        past_qna = request.get_json()['qna']
+        question_id = request.get_json()['QID']
 
-    if page:
-        return {"page": page, "minNumQ": min_num_q}
+        if module == "testing-decision":
+            decision = testing_decision
+            checklist_ref = testing_checklist_ref
+        elif module == "distancing-decision":
+            decision = distancing_decision
+            checklist_ref = distancing_checklist_ref
+        elif module == "testing":
+            decision = None
+            checklist_ref = None
+        elif module == "prevention":
+            decision = None
+            checklist_ref = None
+        elif module == "cleaning":
+            decision = None
+            checklist_ref = None
+        elif module == "data-infrastructure":
+            decision = None
+            checklist_ref = None
+        else:
+            decision = None
+            checklist_ref = None
+            abort(404, "Module does not exist!")
+
+        if question_id != "null":
+            page = decision.get_current_page(question_id)
+            min_num_q = testing_decision.min_num_q
+            if page:
+                return {"page": page, "minNumQ": min_num_q}
+            else:
+                abort(500, "Page does not exist!")
+        else:
+            # reaching to the end
+            report = decision.generate_qna_report(past_qna)
+            checklist = decision.compile_checklist(past_qna, checklist_ref)
+            return {
+                "report": report,
+                "checklist": checklist
+            }
+
     else:
-        abort(500, "Page does not exist!")
+        abort(403, 'Incomplete question id!')
 
 
 @app.route('/<module>/next', methods=['POST'])

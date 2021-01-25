@@ -23,12 +23,18 @@ $.ajax({
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
-        "QID":localStorage.getItem("QID")
+        "QID": localStorage.getItem("QID"),
+        "qna": JSON.parse(localStorage.getItem("pastQNA"))
     }),
     success: function (data) {
-        localStorage.setItem("QID", data.page["QID"]);
-        var answerNumQ = JSON.parse(localStorage.getItem("pastQNA")).length;
-        updateQuestions(data, answerNumQ);
+        if ("page" in data) {
+            localStorage.setItem("QID", data.page["QID"]);
+            var answerNumQ = JSON.parse(localStorage.getItem("pastQNA")).length;
+            updateQuestions(data, answerNumQ);
+        } else if ("report" in data && "checklist" in data) {
+            localStorage.setItem("QID", null);
+            updateResult(data);
+        }
     },
     error: function (jqXHR, exception) {
         $("#error").find("#error-message").empty().append(jqXHR.responseText);
@@ -72,11 +78,9 @@ $("#next").on("click", function () {
                 localStorage.setItem("pastQNA", JSON.stringify(updatedPastQNA));
 
                 if ("page" in data) {
-                    // point current page to the new id
                     localStorage.setItem("QID", data.page["QID"]);
                     updateQuestions(data, pastQNA.length);
                 } else if ("report" in data && "checklist" in data) {
-                    // point current page to the new id
                     localStorage.setItem("QID", null);
                     updateResult(data);
                 }
@@ -134,7 +138,8 @@ $("#restart").on("click", function () {
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "QID":localStorage.getItem("QID")
+            "QID":localStorage.getItem("QID"),
+            "qna":[]
         }),
         success: function (data) {
             updateQuestions(data, JSON.parse(localStorage.getItem("pastQNA")).length);
@@ -199,7 +204,6 @@ $("#restart").on("click", function () {
 function updateQuestions(data, answeredNumQ) {
     $("#result-container").hide();
     $("#qna-container").show();
-    // $("#qna-container").hide();
 
     // if it's the root node hide prev button
     if (data.page["QID"] === ROOT_QUESTION_ID) {
@@ -208,8 +212,13 @@ function updateQuestions(data, answeredNumQ) {
         $("#prev").show();
     }
 
+    // enable next
+    $("#next").show();
+
     // update progress bar
     updateProgressBar(data.minNumQ, answeredNumQ)
+
+    // for questions
     var questionTitle = data.page["QID"] + ". " + data.page["question"]
     $("#question-title").text(questionTitle);
     if ("multiple" in data.page && data.page["multiple"] === true){
@@ -218,8 +227,9 @@ function updateQuestions(data, answeredNumQ) {
     else{
         $("#question-subtitle").text();
     }
+    $("#question-description").text(data.page["description"]);
 
-    $("#question-description").text(data.page["description"])
+    // for answers
     $("#answers").removeAttr("multiple-answers").empty();
     data.page["answers"].forEach(function(option, index){
         // do not display empty question
@@ -280,6 +290,10 @@ function updateResult(data) {
     $("#result-container").show();
     $("#qna-container").hide();
 
+    // hide next
+    $("#next").hide();
+
+    // update status bar
     updateProgressBar(1, 1);
     generateChecklist(data.checklist);
     generateReport(data.report);
