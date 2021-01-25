@@ -6,7 +6,6 @@ ROOT_QUESTION_ID = "1"
 var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module.split("-")[0]);
 
-
 if (localStorage.getItem("QID") === null
     || localStorage.getItem("module") === null
     || localStorage.getItem("pastQNA") === null
@@ -18,29 +17,35 @@ if (localStorage.getItem("QID") === null
     localStorage.setItem("pastQNA", "[]");
 }
 
-$.ajax({
-    url: "questions",
-    type: "POST",
-    contentType: "application/json",
-    data: JSON.stringify({
-        "QID": localStorage.getItem("QID"),
-        "qna": JSON.parse(localStorage.getItem("pastQNA"))
-    }),
-    success: function (data) {
-        if ("page" in data) {
-            localStorage.setItem("QID", data.page["QID"]);
+/**
+ * update page when document ready
+ */
+$(document).ready(function () {
+    $.ajax({
+        url: "questions",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({
+            "QID": localStorage.getItem("QID"),
+            "qna": JSON.parse(localStorage.getItem("pastQNA"))
+        }),
+        success: function (data) {
+            if ("page" in data) {
+                localStorage.setItem("QID", data.page["QID"]);
             var answerNumQ = JSON.parse(localStorage.getItem("pastQNA")).length;
             updateQuestions(data, answerNumQ);
-        } else if ("report" in data && "checklist" in data) {
-            localStorage.setItem("QID", null);
-            updateResult(data);
+            } else if ("report" in data && "checklist" in data) {
+                localStorage.setItem("QID", null);
+                updateResult(data);
+            }
+        },
+        error: function (jqXHR, exception) {
+            $("#error").find("#error-message").empty().append(jqXHR.responseText);
+            $("#error").modal("show");
         }
-    },
-    error: function (jqXHR, exception) {
-        $("#error").find("#error-message").empty().append(jqXHR.responseText);
-        $("#error").modal("show");
-    }
-});
+    });
+})
+
 
 /**
  * submit the selection and go to next step
@@ -49,7 +54,7 @@ $("#next").on("click", function () {
     var QID = localStorage.getItem("QID");
     var AID = [];
 
-    if ($("#answers").attr("multiple-answers") === "true"){
+    if ($("#answers").attr("multiple-answers") === "true") {
          $("#answers input[type='checkbox']").each(function () {
             if (this.checked) {
                 AID.push($(this).val());
@@ -151,53 +156,24 @@ $("#restart").on("click", function () {
     });
 });
 
-// /**
-//  * download complete resources in a zipfile
-//  */
-// $("#download-zip").on("click", function(){
-//     // gathering the filename from the current page
-//     var filenameList = [];
-//     var aTagArray = $(".resource-file-list").find("a").toArray();
-//     for (var i=0; i<aTagArray.length; i++) {
-//         filenameList.push(aTagArray[i].text);
-//     }
-//      $.ajax({
-//         url: "download-zip",
-//         type: "POST",
-//         contentType: "application/json",
-//         xhrFields:{
-//             responseType: "blob"
-//         },
-//         data: JSON.stringify({
-//             "filename_list":filenameList
-//         }),
-//         success: function (data) {
-//             var downloadUrl = window.URL.createObjectURL(data);
-//             // TODO: might be different name or multiple names
-//             var filename = "resources.zip";
-//             // use HTML5 a[download] attribute to specify filename
-//             var a = document.createElement("a");
-//             // safari doesn't support this yet
-//             if (typeof a.download === 'undefined') {
-//                 window.location.href = downloadUrl;
-//             } else {
-//                 a.href = downloadUrl;
-//                 a.download = filename;
-//                 document.body.appendChild(a);
-//                 a.click();
-//             }
-//
-//             setTimeout(function () { window.URL.revokeObjectURL(downloadUrl); }, 100); // cleanup
-//         },
-//         error: function (jqXHR, exception) {
-//              $("#error").find("#error-message").empty().append(jqXHR.responseText);
-//              $("#error").modal("show");
-//         }
-//     });
-// });
 
 /**
- * update questions page with new page
+ * generate pdf for the report page
+ */
+$("#download-pdf").on("click", function () {
+    html2pdf()
+        .set({
+            pagebreak: {mode: ['avoid-all', 'css', 'legacy']},
+            filename: "my-playbook-report.pdf",
+            html2canvas: {scale: 4},
+            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+        })
+        .from(document.getElementById("result-container"))
+        .save();
+})
+
+/**
+ * update questions container including question and answer
  * @param data
  * @param answeredNumQ
  */
@@ -262,28 +238,9 @@ function updateQuestions(data, answeredNumQ) {
     $("#answer-resource-list").empty();
 }
 
-/**
- * progress bar in navigation
- * @param minNumQ
- * @param answeredNumQ
- */
-function updateProgressBar(minNumQ, answeredNumQ){
-    // TODO save some energy on calculate the exact progress for future
-    // for now just roughly update
-    var progress = "0";
-    var percent = answeredNumQ / minNumQ;
-
-    if (percent > 0 && percent < 0.3) progress = "5";
-    else if (percent >= 0.3 && percent < 0.6) progress = "33";
-    else if (percent >= 0.6 && percent <= 0.9) progress = "66";
-    else if (percent > 0.9) progress = "99";
-
-    $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
-    $("#progress-container p").text(progress + "% Complete");
-}
 
 /**
- *
+ * update results container including checklist and report
  * @param data
  */
 function updateResult(data) {
@@ -327,14 +284,34 @@ function generateReport(report){
                 <div class="report-answers"></div>
             </div>
         `);
-        item["answers"].forEach(function(answerItem, index){
+        item["answers"].forEach(function (answerItem, index) {
             $("#" + item["QID"]).find(".report-answers").append(`
-                <h3><span class="answer-pretty-id">` + answerItem["prettyAID"]+ `</span>`
-                + answerItem["answer"] +`</h3>
+                <h3><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
+                + answerItem["answer"] + `</h3>
                 <p>` + answerItem["description"] + `</p>
             `);
         });
     });
+}
+
+/**
+ * progress bar in navigation
+ * @param minNumQ
+ * @param answeredNumQ
+ */
+function updateProgressBar(minNumQ, answeredNumQ) {
+    // TODO save some energy on calculate the exact progress for future
+    // for now just roughly update
+    var progress = "0";
+    var percent = answeredNumQ / minNumQ;
+
+    if (percent > 0 && percent < 0.3) progress = "5";
+    else if (percent >= 0.3 && percent < 0.6) progress = "33";
+    else if (percent >= 0.6 && percent <= 0.9) progress = "66";
+    else if (percent > 0.9) progress = "99";
+
+    $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
+    $("#progress-container p").text(progress + "% Complete");
 }
 
 $("#answers").on("click", ".answer", function () {
@@ -348,20 +325,12 @@ $("#answers").on("click", ".answer", function () {
 })
 
 /**
- * generate pdf for the report page
+ * update pastQNA
+ * @param QID
+ * @param AID
+ * @param pastQNA
+ * @returns {*}
  */
-$("#download-pdf").on("click", function(){
-    html2pdf()
-        .set({
-            pagebreak: {mode:['avoid-all', 'css', 'legacy']},
-            filename: "my-playbook-report.pdf",
-            html2canvas:  { scale: 4 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-        })
-        .from(document.getElementById("result-container"))
-        .save();
-})
-
 function addQNAtoHistory(QID, AID, pastQNA){
     let duplicated = false;
     for (i=0; i<pastQNA.length; i++){
