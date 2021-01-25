@@ -1,0 +1,441 @@
+[
+  {
+    "activity": "Written mask policy",
+    "activityID": "1",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b"}
+      ]
+    }
+  },
+  {
+    "activity": "Legal review of the mask policy",
+    "activityID": "2",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "List of allowable reasons for medical exemptions to masks",
+    "activityID": "3",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-1"}
+      ]
+    }
+  },
+   {
+    "activity": "Guidelines as to whether individual teachers may require masks",
+    "activityID": "4",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-2"}
+      ]
+    }
+  },
+  {
+    "activity": "Educational materials and curricula for all age groups on the wearing and proper removal of masks",
+    "activityID": "5",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b-ii-1"},
+        {"AID": "2c-i"}
+      ]
+    }
+  },
+  {
+    "activity": "Lists for each class of students with mask exemptions",
+    "activityID": "6",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Clear guidelines as to when masks may be removed during class",
+    "activityID": "7",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Consequence and escalation guidelines for refusal to wear masks or tampering with another’s mask",
+    "activityID": "8",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b"}
+      ]
+    }
+  },
+  {
+    "activity": "Plan for hallway mask monitors",
+    "activityID": "9",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-2"}
+      ]
+    }
+  },
+   {
+    "activity": "Plan for recess monitors to check on mask wearing",
+    "activityID": "10",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-3"}
+      ]
+    }
+  },
+  {
+    "activity": "Supply of spare/replacement masks in recess areas",
+    "activityID": "11",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-3"}
+      ]
+    }
+  },
+  {
+    "activity": "Signs for the cafeteria to show when and how to remove masks for eating",
+    "activityID": "12",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b-ii-4"},
+        {"AID": "2d-iv"}
+      ]
+    }
+  },
+  {
+    "activity": "Plan to provide paper towels or napkins for masks to be placed on during eating",
+    "activityID": "13",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-4"}
+      ]
+    }
+  },
+  {
+    "activity": "Instruction to teachers and extracurricular staff on mask wearing and safe removal",
+    "activityID": "14",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b-ii-1"},
+        {"AID": "1b-ii-5"}
+      ]
+    }
+  },
+  {
+    "activity": "Consequence guidelines for refusal to wear masks during extracurricular activities",
+    "activityID": "15",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-5"}
+      ]
+    }
+  },
+  {
+    "activity": "Guideline for each sport as to when masks may be removed for safety",
+    "activityID": "16",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-6"}
+      ]
+    }
+  },
+  {
+    "activity": "Plan for each sport for safe placement of masks when not worn, including supervision",
+    "activityID": "17",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-6"}
+      ]
+    }
+  },
+  {
+    "activity": "Email to staff with full explanation of the mask policy",
+    "activityID": "18",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a-i"}
+      ]
+    }
+  },
+  {
+    "activity": "Schedule information sessions to present and answer questions about the mask policy",
+    "activityID": "19",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Schedule for reminding staff about mask policy",
+    "activityID": "20",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Email to parents with both full and short explanations of the mask policy",
+    "activityID": "21",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b-i"}
+      ]
+    }
+  },
+  {
+    "activity": "FAQ or other written explanation of your mask policy posted on the school website and easily findable",
+    "activityID": "22",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Mailing to parent explaining the mask policy and all related information",
+    "activityID": "23",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "Wording for reminders to parents about mask policy and plan for when to send them",
+    "activityID": "24",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b-iv"}
+      ]
+    }
+  },
+  {
+    "activity": "Set of announcement messages for reminding students about the mask policy and schedule for airing them",
+    "activityID": "25",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2c-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "Entrance signs for mask policy",
+    "activityID": "26",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d-i"}
+      ]
+    }
+  },
+  {
+    "activity": "Hallway signs for mask policy",
+    "activityID": "27",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d-ii"}
+      ]
+    }
+  },
+   {
+    "activity": "Classroom signs for mask policy",
+    "activityID": "28",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d-iii"}
+      ]
+    }
+  },
+  {
+    "activity": "List of all places needing a mask sign",
+    "activityID": "29",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d-v"}
+      ]
+    }
+  },
+  {
+    "activity": "Signs for mask policy in all other areas identified",
+    "activityID": "30",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d-v"}
+      ]
+    }
+  },
+  {
+    "activity": "Bulk purchase of disposable masks",
+    "activityID": "31",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Collection of reusable masks",
+    "activityID": "32",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-i-2"}
+      ]
+    }
+  },
+  {
+    "activity": "Protocol for providing a mask when needed (where to go, and who will be responsible for the supply)",
+    "activityID": "33",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activity": "Supply of masks sufficient to provide to all students",
+    "activityID": "34",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-2"}
+      ]
+    }
+  },
+  {
+    "activity": "Supply of masks sufficient to provide to all staff",
+    "activityID": "35",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-3"}
+      ]
+    }
+  },
+  {
+    "activity": "Supply of clear facemasks for those who need them",
+    "activityID": "36",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-4"}
+      ]
+    }
+  },
+  {
+    "activity": "List of all who will need clear facemasks",
+    "activityID": "37",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-4"}
+      ]
+    }
+  },
+  {
+    "activity": "Centralized bins for mask disposal",
+    "activityID": "38",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3b-i"}
+      ]
+    }
+  },
+  {
+    "activity": "PPE for garbage collectors",
+    "activityID": "39",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+      ]
+    }
+  },
+  {
+    "activity": "Training on safe collection and disposal of discarded masks",
+    "activityID": "40",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+      ]
+    }
+  }
+]
