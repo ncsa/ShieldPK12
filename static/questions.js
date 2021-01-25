@@ -163,12 +163,12 @@ $("#restart").on("click", function () {
 $("#download-pdf").on("click", function () {
     html2pdf()
         .set({
+            margin: 1,
             pagebreak: {mode: ['avoid-all', 'css', 'legacy']},
             filename: "my-playbook-report.pdf",
-            html2canvas: {scale: 4},
             jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
         })
-        .from(document.getElementById("result-container"))
+        .from(document.getElementById("result-pdf"))
         .save();
 })
 
