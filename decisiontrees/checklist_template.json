@@ -6,7 +6,7 @@
     "rules": {
       "operator": "OR|AND|NOT|ALL",
       "criteria": [
-
+        {"AID": ""}
       ]
     }
   }

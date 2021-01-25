@@ -1,0 +1,111 @@
+[
+  {
+    "activity": "Calculate base air change rate in each room/area",
+    "activityID": "1",
+    "links": ["https://schools.forhealth.org/ventilation-guide/"],
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activity": "Assessment of rooms requiring increased ventilation",
+    "activityID": "2",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activity": "Check that all windows can be opened and remain open safely",
+    "activityID": "3",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a"}
+      ]
+    }
+  },
+  {
+    "activity": "Set central ventilation system to maximize outdoor air intake",
+    "activityID": "4",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b"}
+      ]
+    }
+  },
+  {
+    "activity": "Check with your HVAC team if your system can the airflow impact of a MERV 13 filter",
+    "activityID": "5",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2c"}
+      ]
+    }
+  },
+  {
+    "activity": "Install MERV 13 filter in HVAC",
+    "activityID": "6",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2c"}
+      ]
+    }
+  },
+  {
+    "activity": "Determine the size and type of portable air cleaner needed for each space",
+    "activityID": "7",
+    "links": ["https://docs.google.com/spreadsheets/d/1NEhk1IEdbEi_b3wa6gI_zNs8uBJjlSS-86d4b7bW098/edit#gid=1882881703"],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d"}
+      ]
+    }
+  },
+  {
+    "activity": "Purchase and place portable air cleaners in each space needed",
+    "activityID": "8",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2d"}
+      ]
+    }
+  },
+  {
+    "activity": "Schedule empty time for shared spaces",
+    "activityID": "9",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2e"}
+      ]
+    }
+  },
+  {
+    "activity": "Reassess air change rate in each room/area after mitigations in place",
+    "activityID": "10",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "2a"},
+        {"AID": "2b"},
+        {"AID": "2c"},
+        {"AID": "2d"}
+      ]
+    }
+  }
+]

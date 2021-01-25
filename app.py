@@ -16,6 +16,10 @@ distancing_decision = Module("decisiontrees/distancing_decision.json")
 with open("decisiontrees/distancing_checklist.json", "r") as f:
     distancing_checklist_ref = json.load(f)
 
+ventilation_decision = Module("decisiontrees/ventilation_decision.json")
+with open("decisiontrees/ventilation_checklist.json", "r") as f:
+    ventilation_checklist_ref = json.load(f)
+
 resource_foldername = "resources"
 
 
@@ -58,9 +62,9 @@ def update_questions(module):
         elif module == "distancing-decision":
             decision = distancing_decision
             checklist_ref = distancing_checklist_ref
-        elif module == "testing":
-            decision = None
-            checklist_ref = None
+        elif module == "ventilation-decision":
+            decision = ventilation_decision
+            checklist_ref = ventilation_checklist_ref
         elif module == "prevention":
             decision = None
             checklist_ref = None
@@ -113,9 +117,9 @@ def next_question(module):
         elif module == "distancing-decision":
             decision = distancing_decision
             checklist_ref = distancing_checklist_ref
-        elif module == "testing":
-            decision = None
-            checklist_ref = None
+        elif module == "ventilation-decision":
+            decision = ventilation_decision
+            checklist_ref = ventilation_checklist_ref
         elif module == "prevention":
             decision = None
             checklist_ref = None
@@ -159,8 +163,9 @@ def prev_question(module):
         elif module == "distancing-decision":
             page = distancing_decision.prev_page(prev_question_id)
             min_num_q = distancing_decision.min_num_q
-        elif module == "testing":
-            pass
+        elif module == "ventilation-decision":
+            decision = ventilation_decision
+            checklist_ref = ventilation_checklist_ref
         elif module == "prevention":
             pass
         elif module == "cleaning":
