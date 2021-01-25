@@ -11,7 +11,7 @@
         "answer": "No",
         "description": "This is NOT recommended.",
         "resources": [],
-        "nextQID": "null"
+        "nextQID": null
       },
       {
         "AID": "1b",
@@ -35,7 +35,7 @@
         "answer": "Yes",
         "description": "You will need to have your policy reviewed by your legal team. You will also need to add language for medical exemptions – these ought to be rare, so the conditions that are acceptable may need to be explicitly listed, and medical documentation can be required. You will also need to be able to provide back-up masks (see supplies below). You will need a list of what is considered an appropriate mask (i.e., will face shields be acceptable? Must they cover the nose? Fabric thickness? Gaping?)",
         "resources": [],
-        "nextQID": "2b-ii"
+        "nextQID": "1b-ii"
       },
       {
         "AID": "1b-i-2",
@@ -43,7 +43,7 @@
         "answer": "No",
         "description": "Your policy should still encourage mask use strongly. You may need to negotiate with your teachers /staff/building custodians/union as to whether individual teachers may require masks in their classrooms.",
         "resources": [],
-        "nextQID": "2b-ii"
+        "nextQID": "1b-ii"
       }
     ]
   },

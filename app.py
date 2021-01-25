@@ -20,6 +20,10 @@ ventilation_decision = Module("decisiontrees/ventilation_decision.json")
 with open("decisiontrees/ventilation_checklist.json", "r") as f:
     ventilation_checklist_ref = json.load(f)
 
+mask_decision = Module("decisiontrees/mask_decision.json")
+with open("decisiontrees/mask_checklist.json", "r") as f:
+    mask_checklist_ref = json.load(f)
+
 resource_foldername = "resources"
 
 
@@ -141,9 +145,9 @@ def _populate(module):
     elif module == "ventilation-decision":
         decision = ventilation_decision
         checklist_ref = ventilation_checklist_ref
-    elif module == "prevention":
-        decision = None
-        checklist_ref = None
+    elif module == "mask-decision":
+        decision = mask_decision
+        checklist_ref = mask_checklist_ref
     elif module == "cleaning":
         decision = None
         checklist_ref = None

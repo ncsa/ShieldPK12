@@ -201,7 +201,7 @@ function updateQuestions(data, answeredNumQ) {
         $("#question-subtitle").text("(select all that applies)");
     }
     else{
-        $("#question-subtitle").text();
+        $("#question-subtitle").text("");
     }
     $("#question-description").text(data.page["description"]);
 
