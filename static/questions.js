@@ -194,9 +194,9 @@ $("#restart").on("click", function () {
  * @param answeredNumQ
  */
 function updateQuestions(data, answeredNumQ) {
-    $(".result-container").hide();
-    $(".qna-container").show();
-    // $(".qna-container").hide();
+    $("#result-container").hide();
+    $("#qna-container").show();
+    // $("#qna-container").hide();
 
     // if it's the root node hide prev button
     if (data.page["QID"] === ROOT_QUESTION_ID) {
@@ -270,8 +270,8 @@ function updateProgressBar(minNumQ, answeredNumQ){
  * @param data
  */
 function updateResult(data) {
-    $(".result-container").show();
-    $(".qna-container").hide();
+    $("#result-container").show();
+    $("#qna-container").hide();
 
     updateProgressBar(1, 1);
     generateChecklist(data.checklist);

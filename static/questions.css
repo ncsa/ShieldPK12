@@ -86,14 +86,14 @@ p {
     color: #21202C;
 }
 
-.qna-container,
-.result-container {
+#qna-container,
+#result-container {
     max-width: 100%;
     min-height: 90vh;
     padding: 0;
 }
 
-.result-container {
+#result-container {
     padding: 0 135px;
 }
 
@@ -152,7 +152,7 @@ p {
     margin-top: 16px;
 }
 
-.result-container h1 {
+#result-container h1 {
     margin:55px 0;
 }
 
@@ -235,4 +235,14 @@ p {
     border-radius: 50%;
     margin-right: 15px;
     vertical-align: bottom;
+}
+
+#download-pdf{
+    color:white;
+    background: #20558A;
+    border-radius: 11px;
+    display:block;
+    margin:72px auto;
+    padding:19px 39px;
+    text-transform: capitalize;
 }
