@@ -1,0 +1,108 @@
+[
+  {
+    "QID": "1",
+    "question": "Who will be doing cleaning",
+    "description": "Throughout the day, many people may be involved in various cleaning activities. Tasks should be clearly assigned to ensure full coverage.<br>We should note that transmission of SARS-CoV-2 is primarily through aerosol and airborne droplets, not through surfaces. That said, there is a risk to spread from high-touch surfaces. Areas to be most concerned about include bathrooms (particularly door handles), drinking fountains, and elevator buttons.<br>All individuals involved in cleaning should be reminded to wear gloves and masks.  They should avoid touching their faces while wearing masks. Washing hands after or in between use of gloves is recommended. Signage next to cleaning supplies is recommended to help with compliance.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a",
+        "prettyAID": "a",
+        "answer": "Janitors",
+        "description": "The janitorial staff is the best team to ensure that shared and high-touch surfaces are regularly cleaned. However, their safety should be protected by limiting their exposure to others; this may mean careful scheduling to keep them out of hallways when students are moving at high levels (e.g., during lunch time or recess).",
+        "resources": [],
+        "nextQID": "1a-i"
+      },
+       {
+        "AID": "1b",
+        "prettyAID": "b",
+        "answer": "Teachers",
+        "description": "Throughout the day, it may be prudent to have teachers provide some amount of cleaning in their classroom.",
+        "resources": [],
+        "nextQID": "1b-i"
+      }
+    ]
+  },
+  {
+    "QID": "1a-i",
+    "question": "When will they be working",
+    "description": "",
+    "multiple": true,
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-i-1",
+        "prettyAID": "a",
+        "answer": "During school hours",
+        "description": "High-touch surfaces should be wiped down regularly throughout the day. You should provide a cleaning rotation that will allow janitors to do so while maintaining physical distance from other staff and students.",
+        "resources": [],
+        "nextQID": "1a-ii"
+      },
+      {
+        "AID": "1a-i-2",
+        "prettyAID": "b",
+        "answer": "Outside school hours",
+        "description": "Classroom cleaning should remain outside school hours, preferably with a delay of an hour to allow for room air to be cleared by the ventilation system.",
+        "resources": [],
+        "nextQID": "1a-ii"
+      }
+    ]
+  },
+  {
+    "QID": "1a-ii",
+    "question": "What PPE will you have available",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-ii-1",
+        "prettyAID": "a",
+        "answer": "Gloves",
+        "description": "Disposable gloves should be changed and discarded regularly (at least once an hour). Reusable gloves should be washed regularly, and should be used by only one person.",
+        "resources": [],
+        "nextQID": ""
+      },
+      {
+        "AID": "1a-ii-2",
+        "prettyAID": "b",
+        "answer": "Masks",
+        "description": "Any staff working during school hours should be provided with masks that cover both the nose and the chin of a worker.",
+        "resources": [],
+        "nextQID": ""
+      },
+      {
+        "AID": "1a-ii-3",
+        "prettyAID": "c",
+        "answer": "Goggles or face shields",
+        "description": "As some disinfecting chemicals may be potentially hazardous to eyes or face, goggles or face shields should be provided as needed. These should be used by only one person and cleaned after each use. Check the instructions on your cleaning solutions to determine the need.",
+        "resources": [],
+        "nextQID": ""
+      },
+      {
+        "AID": "1a-ii-4",
+        "prettyAID": "d",
+        "answer": "Gowns or clothing covers",
+        "description": "Protective gowns or clothing covers should be used for handling trash.",
+        "resources": [],
+        "nextQID": ""
+      }
+    ]
+  },
+  {
+    "QID": "1b-i",
+    "question": "How often will they be asked to clean",
+    "description": "The cleaning required of teachers should not add an unreasonable burden to their schedule.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      }
+    ]
+  }
+]
