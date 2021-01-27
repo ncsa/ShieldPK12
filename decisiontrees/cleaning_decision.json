@@ -230,7 +230,7 @@
         "AID": "2b",
         "prettyAID": "b",
         "answer": "Air Filters",
-        "description": "See the <a href='/ventilation-decision/questions'>ventilation</href> module. You should ensure that you are following filter cleaning and replacement guidelines.",
+        "description": "See the <a href='/ventilation/questions'>ventilation</href> module. You should ensure that you are following filter cleaning and replacement guidelines.",
         "resources": [],
         "nextQID": "3"
       }

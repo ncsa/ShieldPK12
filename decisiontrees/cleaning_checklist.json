@@ -1,0 +1,233 @@
+[
+  {
+    "activity": "Signs next to all cleaning supplies to remind cleaners about hand washing and not touching their face",
+    "activityID": "1",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activity": "Surface cleaning schedule that allows physical distancing",
+    "activityID": "2",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID":"1a-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Classroom cleaning schedule starting at least 1 hour after end of school",
+    "activityID": "3",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-i-2"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of gloves for janitorial staff",
+    "activityID": "4",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of masks for janitorial staff",
+    "activityID": "5",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-ii-2"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of goggles or face shields for janitorial staff",
+    "activityID": "6",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1a-ii-3"}
+      ]
+    }
+  },
+  {
+    "activity": "Instructions to teachers about cleaning expectations",
+    "activityID": "7",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b"}
+      ]
+    }
+  },
+  {
+    "activity": "Guidelines for teachers about times that extra cleaning might be needed",
+    "activityID": "8",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of disposable gloves in every classroom",
+    "activityID": "9",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Face shields for each teacher",
+    "activityID": "10",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of cleaning wipes for each classroom",
+    "activityID": "11",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b-iii-1"},
+        {"AID": "1c"}
+      ]
+    }
+  },
+  {
+    "activity": "A cleaning spray bottle and supply of paper towels in each classroom",
+    "activityID": "12",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-iii-2"}
+      ]
+    }
+  },
+  {
+    "activity": "A schedule for janitors to refill classroom cleaning supplies",
+    "activityID": "13",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "1b"},
+        {"AID": "1c"}
+      ]
+    }
+  },
+  {
+    "activity": "Instructions to students for cleaning their own space",
+    "activityID": "14",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1c"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of disinfectant",
+    "activityID": "15",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a-ii"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of EPA-approved wipes",
+    "activityID": "16",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a-i"}
+      ]
+    }
+  },
+   {
+    "activity": "Schedule for cleaning and replacing air filters",
+    "activityID": "17",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of replacement air filters",
+    "activityID": "18",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b"}
+      ]
+    }
+  },
+  {
+    "activity": "Checklists for cleaning areas posted publicly",
+    "activityID": "19",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a"}
+      ]
+    }
+  },
+  {
+    "activity": "Cleaning flip tags on all classroom doors",
+    "activityID": "20",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3b"}
+      ]
+    }
+  },
+  {
+    "activity": "SOP for requesting additional cleaning",
+    "activityID": "21",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3c"}
+      ]
+    }
+  }
+]

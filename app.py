@@ -24,6 +24,10 @@ mask_decision = Module("decisiontrees/mask_decision.json")
 with open("decisiontrees/mask_checklist.json", "r") as f:
     mask_checklist_ref = json.load(f)
 
+cleaning_decision = Module("decisiontrees/cleaning_decision.json")
+with open("decisiontrees/cleaning_checklist.json", "r") as f:
+    cleaning_checklist_ref = json.load(f)
+
 resource_foldername = "resources"
 
 
@@ -136,21 +140,21 @@ def prev_question(module):
 
 
 def _populate(module):
-    if module == "testing-decision":
+    if module == "testing":
         decision = testing_decision
         checklist_ref = testing_checklist_ref
-    elif module == "distancing-decision":
+    elif module == "distancing":
         decision = distancing_decision
         checklist_ref = distancing_checklist_ref
-    elif module == "ventilation-decision":
+    elif module == "ventilation":
         decision = ventilation_decision
         checklist_ref = ventilation_checklist_ref
-    elif module == "mask-decision":
+    elif module == "mask":
         decision = mask_decision
         checklist_ref = mask_checklist_ref
     elif module == "cleaning":
-        decision = None
-        checklist_ref = None
+        decision = cleaning_decision
+        checklist_ref = cleaning_checklist_ref
     elif module == "data-infrastructure":
         decision = None
         checklist_ref = None
