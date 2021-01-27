@@ -20,6 +20,14 @@
         "description": "Throughout the day, it may be prudent to have teachers provide some amount of cleaning in their classroom.",
         "resources": [],
         "nextQID": "1b-i"
+      },
+      {
+        "AID": "1c",
+        "prettyAID": "c",
+        "answer": "Students",
+        "description": "Older students may be asked to clean their own spaces. No student should be asked to clean communal spaces.",
+        "resources": [],
+        "nextQID": "1c-i"
       }
     ]
   },
@@ -167,22 +175,6 @@
         "description": "Spray bottles should be provided in each classroom, with a supply of paper towels and instructions for use. Spray bottles should be refilled regularly.",
         "resources": [],
         "nextQID": "2"
-      }
-    ]
-  },
-  {
-    "QID": "1c",
-    "question": "Students",
-    "description": "Older students may be asked to clean their own spaces. No student should be asked to clean communal spaces.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1c",
-        "prettyAID": "",
-        "answer": "",
-        "description": "",
-        "resources": [],
-        "nextQID": "1c-i"
       }
     ]
   },
