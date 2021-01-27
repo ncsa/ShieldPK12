@@ -1,0 +1,1195 @@
+[
+  {
+    "QID": "1",
+    "question": "Data Governance",
+    "description": "Setting up the fundamental governance, and leveraging any existing governance processes about data will be important.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-i"
+      }
+    ]
+  },
+  {
+    "QID": "1a-i",
+    "question": "Who will see any testing data that you collect",
+    "description": "This can include not only results, but the fact that someone tested, when and where, the number of times they have tested. Think about roles more so than individuals in this item.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-ii"
+      }
+    ]
+  },
+  {
+    "QID": "1a-ii",
+    "question": "Decisions based on what is shared based on role within the organization",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-ii",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-ii-1"
+      }
+    ]
+  },
+  {
+    "QID": "1a-ii-1",
+    "question": "What roles need to see any health related data",
+    "description": "Create a list of roles and the data that the role needs to be effective in their job.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-ii-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-ii-2"
+      }
+    ]
+  },
+  {
+    "QID": "1a-ii-2",
+    "question": "Mapping of people to the role(s) that they perform",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-ii-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii",
+    "question": "What training is needed based on the role and the type of information a particular person will see.",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-1"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-1",
+    "question": "Will some staff require HIPAA training",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-1-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-1-a-i"
+      },
+      {
+        "AID": "1a-iii-1-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-2"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-1-a-i",
+    "question": "Do you have HIPAA training available already in your organization",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-1-a-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "leverage that if possible.",
+        "resources": [],
+        "nextQID": "1a-iii-1-a-i-1-a"
+      },
+      {
+        "AID": "1a-iii-1-a-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "Locate HIPAA training and procure",
+        "resources": [],
+        "nextQID": "1a-iii-2"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-1-a-i-1-a",
+    "question": "Do the licenses cover then number of users that you need to take the training",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-1-a-i-1-a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-2"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-2",
+    "question": "How will you track who needs training and that they have completed it",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-2-a"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-2-a",
+    "question": "Does your training already have a module that can report who has taken the training",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-2-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "leverage that capability to create the report",
+        "resources": [],
+        "nextQID": "1a-iii-2-b"
+      },
+      {
+        "AID": "1a-iii-2-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "Set up a process for staff to report their training completion (a copy of certificate, etc.)",
+        "resources": [],
+        "nextQID": "1a-iii-2-b"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-2-b",
+    "question": "hat role is responsible for auditing training compliance",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-2-b",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iii-2-b-i"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iii-2-b-i",
+    "question": "Do you have a similar role for other credentials in your org",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iii-2-b-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "leverage this role and existing processes to track and report on compliance",
+        "resources": [],
+        "nextQID": "1a-iv"
+      },
+      {
+        "AID": "1a-iii-2-b-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "establish a role and at minimum a spreadsheet to track compliance along with what reports on training compliance are needed.  Consider if this persists over several years if training will need to be repeated by an individual.",
+        "resources": [],
+        "nextQID": "1a-iv"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv",
+    "question": "Data Retention",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iv-1"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv-1",
+    "question": "How long will you retain data within your organization",
+    "description": "Things to consider on how long you keep data:",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iv-1-a"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv-1-a",
+    "question": "Are there laws or regulations about retention of data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv-1-a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iv-1-b"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv-1-b",
+    "question": "What is the useful business life of the data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv-1-b",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iv-2"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv-2",
+    "question": "How will you age data out of your system",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a-iv-2-a"
+      }
+    ]
+  },
+  {
+    "QID": "1a-iv-2-a",
+    "question": "Do you have automatic ways to delete data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1a-iv-2-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "set up deletion in accordance with data retention policy.  Keep in mind system backups may have data which has been deleted from live systems, so document and consider this if restores are performed.",
+        "resources": [],
+        "nextQID": "2"
+      },
+      {
+        "AID": "1a-iv-2-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "<li>Create automation to delete the data if possible</li><li>Or, create and follow business processes to delete data in accordance with data retention policy</li>",
+        "resources": [],
+        "nextQID": "2"
+      }
+    ]
+  },
+  {
+    "QID": "2",
+    "question": "Data Collection",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2a"
+      }
+    ]
+  },
+  {
+    "QID": "2a",
+    "question": "What data will you collect",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2a-i",
+        "prettyAID": "a",
+        "answer": "Positive cases",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b"
+      },
+      {
+        "AID": "2a-ii",
+        "prettyAID": "b",
+        "answer": "Quarantines",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b"
+      }
+    ]
+  },
+   {
+    "QID": "2b",
+    "question": "Will you need to do correlations with data you have",
+    "description": "Siblings or household members that have someone that has tested positive for example",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b-i-1"
+      },
+      {
+        "AID": "2b-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c"
+      }
+    ]
+  },
+  {
+    "QID": "2b-i-1",
+    "question": "What correlations will you need to make, and where is the data for the correlations",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-i-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b-i-2"
+      }
+    ]
+  },
+  {
+    "QID": "2b-i-2",
+    "question": "tCan you automate correlating data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-i-2-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b-i-2-a-i"
+      },
+       {
+        "AID": "2b-i-2-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "2b-i-2-b-i"
+      }
+    ]
+  },
+  {
+    "QID": "2b-i-2-a-i",
+    "question": "What resources do you need to automate",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-i-2-a-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c"
+      }
+    ]
+  },
+  {
+    "QID": "2b-i-2-b-i",
+    "question": "Man power to do correlation",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-i-2-b-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c"
+      }
+    ]
+  },
+   {
+    "QID": "2c",
+    "question": "How will you leverage the data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c-i"
+      }
+    ]
+  },
+  {
+    "QID": "2c-i",
+    "question": "What IT processes would kick off in the event of a positive or quarantine",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c-i-1"
+      }
+    ]
+  },
+  {
+    "QID": "2c-i-1",
+    "question": "Are there emails to establish cleaning of the classroom",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c-i-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c-i-2"
+      }
+    ]
+  },
+  {
+    "QID": "2c-i-2",
+    "question": "What notifications go to staff, and how",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c-i-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c-i-3"
+      }
+    ]
+  },
+  {
+    "QID": "2c-i-3",
+    "question": "What notifications go to the parents/students and how",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c-i-3",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2c-i-4"
+      }
+    ]
+  },
+  {
+    "QID": "2c-i-4",
+    "question": "Are there other downstreams that need to notified, for example bus service",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2c-i-4",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d"
+      }
+    ]
+  },
+  {
+    "QID": "2d",
+    "question": "What current data sources will you leverage as part of the ecosystem",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-i"
+      }
+    ]
+  },
+  {
+    "QID": "2d-i",
+    "question": "What sources will you use to generate initial testing rosters",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-i-1"
+      }
+    ]
+  },
+  {
+    "QID": "2d-i-1",
+    "question": "Do you have directory information that can be leveraged easily in electronic format? Can this be exported into an easily utilized list",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-i-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii"
+      }
+    ]
+  },
+  {
+    "QID": "2d-ii",
+    "question": "How will they be kept up to date",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-ii",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-1"
+      }
+    ]
+  },
+  {
+    "QID": "2d-ii-1",
+    "question": "How do you plan to update as you have adds, moves, changes, deletes",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-ii-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-2"
+      }
+    ]
+  },
+  {
+    "QID": "2d-ii-2",
+    "question": "What frequency do you need to update",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-ii-2-a",
+        "prettyAID": "a",
+        "answer": "Daily",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-3"
+      },
+      {
+        "AID": "2d-ii-2-b",
+        "prettyAID": "b",
+        "answer": "Weekly",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-3"
+      },
+      {
+        "AID": "2d-ii-2-c",
+        "prettyAID": "c",
+        "answer": "monthly",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-3"
+      },
+      {
+        "AID": "2d-ii-2-d",
+        "prettyAID": "d",
+        "answer": "Semester",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-ii-3"
+      }
+    ]
+  },
+  {
+    "QID": "2d-ii-3",
+    "question": "Which changes are most important",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-ii-3-a",
+        "prettyAID": "a",
+        "answer": "Is adding a new person into the system more important than if someone moves and leaves the system?",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iii"
+      },
+       {
+        "AID": "2d-ii-3-b",
+        "prettyAID": "b",
+        "answer": "Is someone moving from one classroom to another important, or moving from one school to another important?",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iii"
+      }
+    ]
+  },
+  {
+    "QID": "2d-iii",
+    "question": "Will you need to do integrations",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-iii",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iii-1"
+      }
+    ]
+  },
+  {
+    "QID": "2d-iii-1",
+    "question": "Will any systems need to exchange data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-iii-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iv"
+      }
+    ]
+  },
+  {
+    "QID": "2d-iv",
+    "question": "How are you keeping contact information up to date",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-iv",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iv-1"
+      }
+    ]
+  },
+  {
+    "QID": "2d-iv-1",
+    "question": "Do you have existing processes to keep parent/student contact info up to date that are sufficient",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-iv-1-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "leverage the existing process",
+        "resources": [],
+        "nextQID": "3"
+      },
+      {
+        "AID": "2d-iv-1-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "2d-iv-1-b-i"
+      }
+    ]
+  },
+  {
+    "QID": "2d-iv-1-b-i",
+    "question": "what is the criticality in your environment of keeping this info up to date, what effort / process can you implement to improve contact info quality",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2d-iv-1-b-i",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "3"
+      }
+    ]
+  },
+  {
+    "QID": "3",
+    "question": "Using Monitoring Data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "3a"
+      }
+    ]
+  },
+  {
+    "QID": "3a",
+    "question": "Will there be any analysis of data to inform decisions about organization operations",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "3a-i-1"
+      },
+       {
+        "AID": "3a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b"
+      }
+    ]
+  },
+  {
+    "QID": "3a-i-1",
+    "question": "What is your goal/expectation of the analysis ",
+    "description": "(Why are you doing analysis?)",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3a-i-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "3a-i-2"
+      }
+    ]
+  },
+  {
+    "QID": "3a-i-2",
+    "question": "Who will do analysis of data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3a-i-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "3a-i-3"
+      }
+    ]
+  },
+  {
+    "QID": "3a-i-3",
+    "question": "Do you have the hardware, software and skills to do the analysis",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3a-i-3-a",
+        "prettyAID": "a",
+        "answer": "No",
+        "description": "Build in house or leverage a partnership",
+        "resources": [],
+        "nextQID": "3b"
+      },
+      {
+        "AID": "3a-i-3-b",
+        "prettyAID": "b",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b"
+      }
+    ]
+  },
+  {
+    "QID": "3b",
+    "question": "Are there any compliance efforts related to someone testing or not testing",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3b-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b-i-1"
+      },
+      {
+        "AID": "3b-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "4"
+      }
+    ]
+  },
+  {
+    "QID": "3b-i-1",
+    "question": "How will you determine if someone is in compliance",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3b-i-1",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b-i-2"
+      }
+    ]
+  },
+  {
+    "QID": "3b-i-2",
+    "question": "How do you notify the person of their being in or out of compliance",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "3b-i-2",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "4"
+      }
+    ]
+  },
+  {
+    "QID": "4",
+    "question": "Reporting on the data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a"
+      }
+    ]
+  },
+  {
+    "QID": "4a",
+    "question": "What formats of reports will you need",
+    "Description": "Will all reports be digital or will you need some reports to be printed out because of business processes? For example, will you print out lists of people that are not supposed to be in a building because of compliance, quarantine or isolation?",
+    "multiple": true,
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4a-i-1",
+        "prettyAID": "a",
+        "answer": "Digital",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a-i-1-a"
+      },
+      {
+        "AID": "4a-i-2",
+        "prettyAID": "b",
+        "answer": "Physical",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a-i-2-a"
+      },
+      {
+        "AID": "4a-i-3",
+        "prettyAID": "c",
+        "answer": "Hybrid",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a-i-3-a"
+      }
+    ]
+  },
+  {
+    "QID": "4a-i-1-a",
+    "question": "If digital copies how do you know they won’t be digitally copied, retained at the end of useful life",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4a-i-1-a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a-i-2-a"
+      }
+    ]
+  },
+  {
+    "QID": "4a-i-2-a",
+    "question": "If physical copies how are they handled at the end of use?  How will you know that there aren’t any copies lost? How will you limit unauthorized roles from seeing any sensitive data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4a-i-2-a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "4a-i-3-a"
+      }
+    ]
+  },
+  {
+    "QID": "4a-i-3-a",
+    "question": "Both Digital and Physical considerations come into play",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4a-i-3-a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "4b"
+      }
+    ]
+  },
+  {
+    "QID": "4b",
+    "question": "Dashboards are useful and you may want to consider having targeted dashboards based on audience",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "4b-i",
+        "prettyAID": "a",
+        "answer": "Public dashboards",
+        "description": "Public dashboards for the general public to provide overall visibility into the organization. Examples for this might be total numbers of tests provided, positivity rates. This would be aggregate data, non-personally identifying numbers. You wouldn’t need authentication for these reports",
+        "resources": [],
+        "nextQID": "5"
+      },
+      {
+        "AID": "4b-ii",
+        "prettyAID": "b",
+        "answer": "Private dashboards",
+        "description": "Private dashboards for decision makers to include more fine-grained information or the ability to drill down to make decisions. This might be the ability to drill into a location, or group, current and historical data. Authentication and Authorization for these dashboards are important.  What authentication and authorization source(s) will you use for dashboards.",
+        "resources": [],
+        "nextQID": "5"
+      }
+    ]
+  },
+  {
+    "QID": "5",
+    "question": "Security/Privacy/Safety of the data",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "5",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "5a"
+      }
+    ]
+  },
+  {
+    "QID": "5a",
+    "question": "What are the regulations laws concerning this data in your location",
+    "description": "Are there any special considerations with respect to security and privacy of this data?",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "5a",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "5b"
+      }
+    ]
+  },
+  {
+    "QID": "5b",
+    "question": "How will you secure access to the data",
+    "description": "Who will have access and to what parts of the data? How will you audit access? How do you make sure that data isn’t copied out of the system and retained somewhere else?",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "5b",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "6"
+      }
+    ]
+  },
+  {
+    "QID": "6",
+    "question": "General Infrastructure concerns",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "6a"
+      }
+    ]
+  },
+  {
+    "QID": "6a",
+    "question": "Where will your systems be located?",
+    "description": "This may be influenced by parts b&c below",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6a-i",
+        "prettyAID": "a",
+        "answer": "On-premises",
+        "description": "do you have sufficient capacity of both the facilities and the hardware/software?",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-ii",
+        "prettyAID": "b",
+        "answer": "cloud",
+        "description": "will you need additional budget?",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-iii",
+        "prettyAID": "c",
+        "answer": "hybrid",
+        "description": "",
+        "resources": [],
+        "nextQID": "6b"
+      }
+    ]
+  },
+  {
+    "QID": "6b",
+    "question": "What demand will this put on your systems",
+    "description": "Will your current infrastructure scale or do you anticipate needing additional infrastructure to handle the demand made by various components of your ecosystem?",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      }
+    ]
+  }
+]
