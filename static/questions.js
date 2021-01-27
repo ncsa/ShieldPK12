@@ -318,8 +318,9 @@ $("#answers").on("click", ".answer", function () {
     // if radio button, also need to disable other selections first
     if ($("#answers").attr("multiple-answers") === "false") {
         $(".answer").removeClass("selected");
+        $(".answer-description").removeClass("selected");
     }
-    $(this).toggleClass("selected");
+    $(this).toggleClass("selected").find(".answer-description").toggleClass("selected");
     var selection = $(this).find("input");
     selection.prop("checked") ? selection.prop("checked", false) : selection.prop("checked", true);
 })

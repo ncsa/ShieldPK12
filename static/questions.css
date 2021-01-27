@@ -150,6 +150,11 @@ p {
 .answer-description {
     font-size: 18px;
     margin-top: 16px;
+    display:none;
+}
+
+.answer-description.selected{
+    display:inherit;
 }
 
 #result-container h1 {
