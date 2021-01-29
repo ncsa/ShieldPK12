@@ -116,7 +116,7 @@
     }
   },
   {
-    "activityID": "8",
+    "activityID": "9",
     "activity": "Chain of custody agreement",
     "links": [],
     "rules": {
@@ -124,6 +124,600 @@
       "criteria": [
         {
           "AID": "4a-ii-1"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "10",
+    "activity": "Sample return protocol",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "11",
+    "activity": "Sample return drop point",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "12",
+    "activity": "Ventilation plan for testing site",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "13",
+    "activity": "Signs for sample collection",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "14",
+    "activity": "Cleaning protocol for testing site",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "15",
+    "activity": "Testing frequency plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "16",
+    "activity": "Test timing plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "16",
+    "activity": "Test timing plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "17",
+    "activity": "Supply of extra kits",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a-i-3"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "18",
+    "activity": "Union agreement",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-1"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "19",
+    "activity": "Method for transporting samples",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-1"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "20",
+    "activity": "Testing center setup",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-2"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "21",
+    "activity": "Testing center staffing",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-2"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "22",
+    "activity": "Testing center ventilation assessment",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-2"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "23",
+    "activity": "Testing center cleaning plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b-ii-2"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "24",
+    "activity": "Identification of high-risk individuals for testing",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "5d"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "25",
+    "activity": "Parent communication plan",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {
+          "AID": "2a"
+        },
+        {
+          "AID": "2c"
+        },
+        {
+          "AID": "2d"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "26",
+    "activity": "Encryption service for emails",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "27",
+    "activity": "Online portal agreement",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "28",
+    "activity": "Online portal signup",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "29",
+    "activity": "Testing app setup",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-iii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "30",
+    "activity": "Testing app recruitment",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-iii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "31",
+    "activity": "Text message service agreement",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-iv"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "32",
+    "activity": "Text script",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-iv"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "33",
+    "activity": "Phone script",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a-v"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "34",
+    "activity": "Public health reporting and coordination process",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6b-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "35",
+    "activity": "Contact tracing flow chart",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6d-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "36",
+    "activity": "Community communication plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6c"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "37",
+    "activity": "Dashboard development",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6c-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "38",
+    "activity": "Form letter/post for reporting positives",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6c-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "39",
+    "activity": "Nose bleed protocol",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7a-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "40",
+    "activity": "Exemption process for saliva testing",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7a-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "41",
+    "activity": "Immediate reporting plan for staff",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7b-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "42",
+    "activity": "Process to check test status before start of school day",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {
+          "AID": "7b-ii"
+        },
+        {
+          "AID": "7b-iii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "43",
+    "activity": "Plan to quarantine while awaiting test results",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7b-iii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "44",
+    "activity": "Test supply chain/laboratory contracts",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "45",
+    "activity": "Financial plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7c-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "46",
+    "activity": "Funding drive",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7c-ii"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "47",
+    "activity": "Pooling plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "7d-i"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "48",
+    "activity": "External test reporting protocol",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "49",
+    "activity": "Support documents for students in isolation/quarantine",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "50",
+    "activity": "Format for collecting isolation/quarantine information",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "51",
+    "activity": "Contact tracing flow chart",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "52",
+    "activity": "Public health reporting and coordination process",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "53",
+    "activity": "Communication plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b"
         }
       ]
     }

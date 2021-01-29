@@ -286,6 +286,7 @@
   },
   {
     "QID":"6",
+    "multiple": true,
     "question":"How will you share test results?",
     "description": "When you test, the results of the tests will need to be reported. At the very least, parents will need to be informed of their child’s results and staff will need to be informed of their own results. You may need to check with your local Public Health department to determine your responsibility for sharing results with them.",
     "resources": [],
@@ -294,9 +295,9 @@
         "AID": "6a",
         "prettyAID": "a",
         "answer": "With parents/staff",
-        "description": "You cannot provide medical test results directly to minors, so student results will need to be shared with parents. However, because medical test results are protected information, the means by which you share results must be HIPAA-compliant. You should work with your test provider to determine the best method. Here are some options:<li>Email: Be aware that most email providers are NOT HIPAA-compliant. However, there are paid end-to-end encryption services that can provide the appropriate protections<br></li><li>Online portal: often medical providers will send an email informing the patient or their authorized representative that results are available on a password-protected <br></li><li>App: Several organizations have created phone-based apps for relaying test results securely</li><li>Text message: Like email, most texting is NOT HIPAA-compliant, but there are paid services that can provide appropriate protections</li><li>Phone call: A direct phone call to the number on record is appropriate if the recipient has consented to receive results by phone. The call should begin with name and contact details, and should be short. If the caller reaches voicemail, they must leave a toll-free number that can be called to receive results.</li><br>When deciding on a communications strategy, remember the need for accessibility. Online or smartphone systems will not be available to those with limited internet access. Often, multiple contact methods can be combined, with parents choosing their preferred method.<br>",
+        "description": "You cannot provide medical test results directly to minors, so student results will need to be shared with parents. However, because medical test results are protected information, the means by which you share results must be HIPAA-compliant. You should work with your test provider to determine the best method. When deciding on a communications strategy, remember the need for accessibility. Online or smartphone systems will not be available to those with limited internet access. Often, multiple contact methods can be combined, with parents choosing their preferred method.",
         "resources": [],
-        "nextQID": "7"
+        "nextQID": "6a"
       },
       {
         "AID": "6b",
@@ -304,21 +305,175 @@
         "answer": "With Public Health",
         "description": "If you are working with a medical laboratory, they will be reporting test results directly to Public Health. It would be good to discuss this process with them, so you are aware of their procedures.<br><br>If you are using in-house rapid tests, you may be responsible for reporting to Public Health. It is best to contact your local Public Health department as you are making your plans so you know the information you must report, the method of reporting, and your legal obligations.<br>",
         "resources": [],
-        "nextQID": "7"
+        "nextQID": "6b"
       },
       {
         "AID": "6c",
         "prettyAID": "c",
         "answer": "With the community",
-        "description": "Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult.<br><br>Aggregation is the best technique to use to preserve privacy. This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.<br>",
+        "description": "Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult.Aggregation is the best technique to use to preserve privacy.This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.",
         "resources": [],
-        "nextQID": "7"
+        "nextQID": "6c"
       },
       {
         "AID": "6d",
         "prettyAID": "d",
         "answer": "With close contacts",
-        "description": "When a positive case has been found, Public Health will often perform contact tracing, in which any close contacts are informed 1) that they may have been exposed, 2) the day of the exposure, and 3) the regulations regarding quarantine. You should contact your local Public Health district to determine if you can help with their contact tracing process.<br><br>If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.<br><br>One tension between preserving privacy and protecting health will arise with those who are able to identify the potential case. Teachers will likely fall into this category – they will recognize the student who is missing from their class. However, it is good practice to inform teachers that a student of theirs has tested positive, as they may need to take extra precautions to protect their family members.<br>",
+        "description": "One tension between preserving privacy and protecting health will arise with those who are able to identify the potential case. Teachers will likely fall into this category –they will recognize the student who is missing from their class. However, it is good practice to inform teachers that a student of theirs has tested positive, as they may need to take extra precautions to protect their family members.",
+        "resources": [],
+        "nextQID": "6d"
+      }
+    ]
+  },
+  {
+    "QID": "6a",
+    "question": "Communication strategy with parents/staff",
+    "multiple": true,
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6a"
+        }
+      ]
+    },
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6a-i",
+        "prettyAID": "a",
+        "answer": "Email",
+        "description": "Be aware that most email providers are NOT HIPAA-compliant. However, there are paid end-to-end encryption services that can provide the appropriate protections.",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-ii",
+        "prettyAID": "b",
+        "answer": "Online portal",
+        "description": "Often medical providers will send an email informing the patient or their authorized representative that results are available on a password-protected.",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-iii",
+        "prettyAID": "c",
+        "answer": "App",
+        "description": "Several organizations have created phone-based apps for relaying test results securely.",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-iv",
+        "prettyAID": "d",
+        "answer": "Text message",
+        "description": "Like email, most texting is NOT HIPAA-compliant, but there are paid services that can provide appropriate protections.",
+        "resources": [],
+        "nextQID": "6b"
+      },
+      {
+        "AID": "6a-v",
+        "prettyAID": "e",
+        "answer": "Phone call",
+        "description": "A direct phone call to the number on recordis appropriate if the recipient has consented to receive results by phone. The call should begin with name and contact details, and should be short. If the caller reaches voicemail, they must leave a toll-free number that can be called to receive results.",
+        "resources": [],
+        "nextQID": "6b"
+      }
+    ]
+  },
+  {
+    "QID": "6b",
+    "question": "Communication strategy with public health",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6b"
+        }
+      ]
+    },
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6b-i",
+        "prettyAID": "a",
+        "answer": "Laboratory-based reporting",
+        "description": "If you are working with a medical laboratory, they will be reporting test results directly to Public Health. It would be good to discuss this process with them, so you are aware of their procedures.",
+        "resources": [],
+        "nextQID": "6c"
+      },
+      {
+        "AID": "6b-ii",
+        "prettyAID": "b",
+        "answer": "School-based reporting",
+        "description": "If you are using in-house rapid tests, you may be responsible for reporting to Public Health. It is best to contact your local Public Health department as you are making your plans so you know the information you must report, the method of reporting, and your legal obligations.",
+        "resources": [],
+        "nextQID": "6c"
+      }
+    ]
+  },
+  {
+    "QID": "6c",
+    "question": "Communication strategy with the community",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6c"
+        }
+      ]
+    },
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6c-i",
+        "prettyAID": "a",
+        "answer": "Dashboard",
+        "recommended": true,
+        "description": "An online dashboard can be useful to be transparent about the number of tests given and the number of positive results. It should be updated frequently (at least weekly, preferably on every testing day)",
+        "resources": [],
+        "nextQID": "6d"
+      },
+      {
+        "AID": "6c-ii",
+        "prettyAID": "b",
+        "answer": "Email/online post/letter",
+        "description": "Some schools choose to report publicly only when a positive individual has been identified.This could be in the form of an email, an online post, or a letter sent to the school mailing list.",
+        "resources": [],
+        "nextQID": "6d"
+      }
+    ]
+  },
+  {
+    "QID": "6d",
+    "question": "Communication strategy with close contacts",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "6d"
+        }
+      ]
+    },
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "6d-i",
+        "prettyAID": "a",
+        "answer": "Through Public Health",
+        "description": "When a positive case has been found, Public Health will often perform contact tracing, in which any close contacts are informed 1) that they may have been exposed, 2) the day of the exposure, and 3) the regulations regarding quarantine. You should contact your local Public Health district to determine if you can help with their contact tracing process.",
+        "resources": [],
+        "nextQID": "7"
+      },
+      {
+        "AID": "6d-ii",
+        "prettyAID": "b",
+        "answer": "Through the school",
+        "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of anentire class would be a strong precaution but might be justified.",
         "resources": [],
         "nextQID": "7"
       }
