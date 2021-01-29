@@ -32,9 +32,10 @@
       {
         "AID": "2a",
         "prettyAID": "a",
+        "recommended": true,
         "answer": "All (teachers, staff, and students)",
         "resources": [],
-        "description": "This is recommended.",
+        "description": "",
         "nextQID": "3"
       },
       {

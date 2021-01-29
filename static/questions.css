@@ -116,6 +116,7 @@ p {
     padding: 36px;
     margin: 30px 0;
     cursor: pointer;
+    position: relative;
 }
 
 .answer.selected {
@@ -150,21 +151,35 @@ p {
 .answer-description {
     font-size: 18px;
     visibility: hidden;
-    height:0;
+    height: 0;
 }
 
-.answer-description.selected{
-    visibility:visible;
-    height:auto;
+.answer-description.selected {
+    visibility: visible;
+    height: auto;
     margin-top: 16px;
 }
 
+.recommended {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: #946C3B;
+    color: white;
+    height: 42px;
+    width: 32px;
+    border-radius: 0;
+    text-align: center;
+    padding:5px;
+}
+
 #result-container h1 {
-    margin:55px 0;
+    margin: 55px 0;
 }
 
 .checklist-container,
-.report{
+.report {
     border: 2px solid #CFCFCF;
     border-radius: 11px;
     padding: 43px;

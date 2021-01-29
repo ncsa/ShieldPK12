@@ -9,7 +9,7 @@
         "AID": "1a",
         "prettyAID": "a",
         "answer": "No",
-        "description": "This is NOT recommended.",
+        "description": "",
         "resources": [],
         "nextQID": null
       },
@@ -17,6 +17,7 @@
         "AID": "1b",
         "prettyAID": "b",
         "answer": "Yes",
+        "recommended": true,
         "description": "You will need to put this policy in writing and share it broadly (see messaging below). You will also need enforcement guidelines, including consequences and escalation steps.",
         "resources": [],
         "nextQID": "1b-i"

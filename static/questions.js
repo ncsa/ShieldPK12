@@ -211,20 +211,26 @@ function updateQuestions(data, answeredNumQ) {
         // do not display empty question
         if (option["answer"] !== ""){
             if ("multiple" in data.page && data.page["multiple"] === true) {
-                $("#answers").attr("multiple-answers", true).append(
-                    `<div class="answer"><input type="checkbox" name="choice" value="` + option["AID"] + `">
-                <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] +
+                var answer = $(`<div class="answer">
+                    <input type="checkbox" name="choice" value="` + option["AID"] + `">
+                    <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] +
                     `</span>` + option["answer"] + `</h2>
-                <p class="answer-description">` + option["description"] + `</p>
-                </div>`);
+                    <p class="answer-description">` + option["description"] + `</p>
+                    </div>`);
+                $("#answers").attr("multiple-answers", true).append(answer);
             } else {
-                $("#answers").attr("multiple-answers", false).append(
-                    `<div class="answer">
-                <input type="radio" name="choice" value="` + option["AID"] + `">
-                <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] + `</span>`
+                var answer = $(`<div class="answer">
+                    <input type="radio" name="choice" value="` + option["AID"] + `">
+                    <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] + `</span>`
                     + option["answer"] + `</h2>
-                <p class="answer-description">` + option["description"] + `</p>
-            </div>`);
+                    <p class="answer-description">` + option["description"] + `</p>
+                    </div>`);
+                $("#answers").attr("multiple-answers", false).append(answer);
+            }
+
+            // add recommended badge
+            if ("recommended" in option && option["recommended"] === true) {
+                answer.find("h2").after(`<i class="fas fa-star recommended"></i>`);
             }
         }
         else{
@@ -232,10 +238,6 @@ function updateQuestions(data, answeredNumQ) {
                 <input type="radio" name="choice" value="` + option["AID"]+ `" hidden checked></div>`);
         }
     });
-
-    // TODO add question resource list and answer resource list
-    $("#question-resource-list").empty();
-    $("#answer-resource-list").empty();
 }
 
 
