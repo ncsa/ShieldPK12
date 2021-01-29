@@ -8,6 +8,7 @@
       {
         "AID": "1a",
         "prettyAID": "a",
+        "recommended": true,
         "answer": "Yes",
         "description": "Follow the remaining questions below to develop your testing protocol.",
         "resources": [],

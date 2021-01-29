@@ -196,14 +196,14 @@ function updateQuestions(data, answeredNumQ) {
 
     // for questions
     var questionTitle = data.page["QID"] + ". " + data.page["question"]
-    $("#question-title").text(questionTitle);
+    $("#question-title").html(questionTitle);
     if ("multiple" in data.page && data.page["multiple"] === true){
-        $("#question-subtitle").text("(select all that applies)");
+        $("#question-subtitle").html("(select all that applies)");
     }
     else{
-        $("#question-subtitle").text("");
+        $("#question-subtitle").html("");
     }
-    $("#question-description").text(data.page["description"]);
+    $("#question-description").html(data.page["description"]);
 
     // for answers
     $("#answers").removeAttr("multiple-answers").empty();
@@ -313,7 +313,7 @@ function updateProgressBar(minNumQ, answeredNumQ) {
     else if (percent > 0.9) progress = "99";
 
     $(".progress-bar").css("width", progress + "%").attr("aria-valuenow", progress);
-    $("#progress-container p").text(progress + "% Complete");
+    $("#progress-container p").html(progress + "% Complete");
 }
 
 $("#answers").on("click", ".answer", function () {
