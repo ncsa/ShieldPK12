@@ -1,1 +1,131 @@
-[]
+[
+  {
+    "activityID": "1",
+    "activity": "Consent Document",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "2",
+    "activity": "Testing population description",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "3",
+    "activity": "HR/union agreement",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {
+          "AID": "2a"
+        },
+        {
+          "AID": "2b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "4",
+    "activity": "Enforcement policy",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "3a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "5",
+    "activity": "Collection schedule",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": []
+    }
+  },
+  {
+    "activityID": "6",
+    "activity": "Collection supplykits",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "6",
+    "activity": "Collection supply kits",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "7",
+    "activity": "Collection inventory",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4b"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "8",
+    "activity": "Home collection instructions",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a"
+        }
+      ]
+    }
+  },
+  {
+    "activityID": "8",
+    "activity": "Chain of custody agreement",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "4a-ii-1"
+        }
+      ]
+    }
+  }
+]

@@ -113,24 +113,32 @@
     ]
   },
   {
-    "QID":"4a-i",
-    "question":"Using Collection kits",
+    "QID": "4a-i",
+    "question": "How many collection kits will you provide at one time",
     "description": "A collection kit should contain everything needed to collect a sample, including clear instructions (example instructions for nasal swab <a href=\"\" target=\"_blank\">here</a>, saliva sample <a href=\"\" target=\"_blank\">here</a>). <br>You can choose to make collection kits that contain all testing supplies for a quarter or a semester, or you can provide single-use testing kits. If the former, you should provide extras in case of mistakes. You should also post the instructions online, in case the instructions are lost, and you should have extra supplies to replace lost kits.<br>You will need to assemble the collection kits, especially if you are providing a quarterly supply. Zip-top bags are useful for this. Assembly can easily be done by volunteers or using an assembly line process, just make sure that the assembly team is distancing during the process.<br>Ensuring a sufficient supply of kits requires estimating the number needing a test, the frequency of testing, and the duration of testing. The spreadsheet <a href=\"\" target=\"_blank\">here</a> can help you calculate the number of supplies needed.<br>",
     "resources": [],
     "answers": [
       {
         "AID": "4a-i-1",
         "prettyAID": "a",
-        "answer": "Weekly Supply",
-        "description": "",
+        "answer": "Quarterly supply",
+        "description": "Please provide a way to get extra kits in case they are lost.",
         "resources": [],
         "nextQID": "4a-ii"
       },
       {
         "AID": "4a-i-2",
         "prettyAID": "b",
+        "answer": "Semester supply",
+        "description": "Please provide a way to get extra kits in case they are lost.",
+        "resources": [],
+        "nextQID": "4a-ii"
+      },
+      {
+        "AID": "4a-i-3",
+        "prettyAID": "c",
         "answer": "Quarterly Supply",
-        "description": "",
+        "description": "Be sure to provide extras in case of mistakes.",
         "resources": [],
         "nextQID": "4a-ii"
       }
@@ -143,8 +151,18 @@
     "resources": [],
     "answers": [
       {
-        "AID": "4a-ii",
-        "answer": "",
+        "AID": "4a-ii-1",
+        "prettyAID": "a",
+        "recommended": true,
+        "answer": "Agreement",
+        "description": "An agreement to ensure the test sample is appropriately collected and labeled be signed by an adult (either staff member or parent)",
+        "resources": [],
+        "nextQID": "4a-iii"
+      },
+      {
+        "AID": "4a-ii-2",
+        "prettyAID": "b",
+        "answer": "Honor System",
         "description": "",
         "resources": [],
         "nextQID": "4a-iii"
@@ -158,8 +176,10 @@
     "resources": [],
     "answers": [
       {
-        "AID": "4a-iii",
-        "answer": "",
+        "AID": "4a-iii-1",
+        "prettyAID": "a",
+        "recommended": true,
+        "answer": "Secure drop point",
         "description": "",
         "resources": [],
         "nextQID": "5"
@@ -173,8 +193,25 @@
     "resources": [],
     "answers": [
       {
-        "AID": "4b-i",
-        "answer": "",
+        "AID": "4b-i-1",
+        "prettyAID": "a",
+        "answer": "During school time",
+        "description": "You will need to work testing time around class schedules.",
+        "resources": [],
+        "nextQID": "4b-ii"
+      },
+      {
+        "AID": "4b-i-2",
+        "prettyAID": "b",
+        "answer": "Before school",
+        "description": "",
+        "resources": [],
+        "nextQID": "4b-ii"
+      },
+      {
+        "AID": "4b-i-3",
+        "prettyAID": "c",
+        "answer": "After school",
         "description": "",
         "resources": [],
         "nextQID": "4b-ii"
@@ -206,15 +243,42 @@
     ]
   },
   {
-    "QID":"5",
-    "question":"How often will you test?",
-    "description": "Testing frequency can vary based on practicalities, including availability of tests. Weekly testing would be the minimum for reliable detection of infectious individuals; daily or biweekly would be preferred.<br>It is possible to use varied testing frequency effectively. For instance, high-risk individuals (such as those in team sports) may require more frequent testing. If test supplies are limited, more frequent testing of teachers, especially those in contact with a larger number of students, could be used. <br>",
+    "QID": "5",
+    "question": "How often will you test?",
+    "description": "Testing frequency can vary based on practicalities, including availability of tests.",
     "resources": [],
     "answers": [
       {
-        "AID": "5",
-        "answer": "",
+        "AID": "5a",
+        "prettyAID": "a",
+        "answer": "Weekly testing",
+        "description": "This is the minimum for reliable detection of infectious individuals.",
+        "resources": [],
+        "nextQID": "6"
+      },
+      {
+        "AID": "5b",
+        "prettyAID": "b",
+        "recommended": true,
+        "answer": "Bi-weekly testing",
         "description": "",
+        "resources": [],
+        "nextQID": "6"
+      },
+      {
+        "AID": "5c",
+        "prettyAID": "c",
+        "recommended": true,
+        "answer": "Daily testing",
+        "description": "",
+        "resources": [],
+        "nextQID": "6"
+      },
+      {
+        "AID": "5d",
+        "prettyAID": "d",
+        "answer": "Varied by risk",
+        "description": "It is possible to use varied testing frequency effectively. For instance, high-risk individuals (such as those in team sports) may require more frequent testing. If test supplies arelimited, more frequent testing of teachers, especially those in contact with a larger number of students, could be used.",
         "resources": [],
         "nextQID": "6"
       }
@@ -278,13 +342,22 @@
   {
     "QID":"7a",
     "question":"What sample type will you need to collect?",
-    "description": "",
+    "description": "You will likely need either saliva or a nasal swab. Both can be self-collected, although younger students may struggle with self-collection.A nasal swab can also be collected by a health professional.",
     "resources": [],
     "answers": [
       {
         "AID": "7a-i",
-        "answer": "",
-        "description": "You will likely need either saliva or a nasal swab. Both can be self-collected, although younger students may struggle with self-collection. A nasal swab can also be collected by a health professional.<br>If collecting nasal swabs, be aware that nose bleeds can occur. Have a protocol in place (example <a href=\"\" target=\"_blank\">here</a>) for dealing with nose bleeds.<br>If collecting saliva, some individuals struggle with sufficient saliva production. Privacy may be needed by some. Others will need a testing exemption or an alternative, as several medical conditions can interfere.<br>",
+        "prettyAID": "a",
+        "answer": "Nasal",
+        "description": "If collecting nasal swabs, be aware that nose bleeds can occur. Have a protocol in place (example <a href=\"\" target=\"_blank\">here</a>) for dealing with nose bleeds.",
+        "resources": [],
+        "nextQID": "7b"
+      },
+      {
+        "AID": "7a-ii",
+        "prettyAID": "b",
+        "answer": "Saliva",
+        "description": "If collecting saliva, some individuals struggle with sufficient saliva production. Privacy may be needed by some. Others will need a testing exemption or an alternative, as several medical conditions can interfere.",
         "resources": [],
         "nextQID": "7b"
       }
@@ -298,8 +371,25 @@
     "answers": [
       {
         "AID": "7b-i",
-        "answer": "",
-        "description": "",
+        "prettyAID": "a",
+        "answer": "Rapid (15-30 minutes)",
+        "description": "Plan to report results to staff immediately. Students should still have reporting to parents, although any positives should be isolated.",
+        "resources": [],
+        "nextQID": "7c"
+      },
+      {
+        "AID": "7b-ii",
+        "prettyAID": "b",
+        "answer": "Fast (1 day)",
+        "description": "All reporting should be through your reporting system. Try to adjust the timing so you can have results before the start of the next school day.",
+        "resources": [],
+        "nextQID": "7c"
+      },
+      {
+        "AID": "7b-iii",
+        "prettyAID": "c",
+        "answer": "Slow (>1 day)",
+        "description": "If you are testing symptomatic people, or those with known contacts, you will need to quarantine those people until the test results come back. They should not remain in class.",
         "resources": [],
         "nextQID": "7c"
       }
@@ -307,13 +397,22 @@
   },
   {
     "QID":"7c",
-    "question":"What will the cost be?",
+    "question":"How will the cost be covered",
     "description": "Remember that the cost of testing includes supplies, personnel time, the laboratory process, and the reporting mechanism. Ensure that you are sufficiently funded to cover all aspects of the cost before deciding how many tests you are able to perform.",
     "resources": [],
     "answers": [
       {
         "AID": "7c-i",
-        "answer": "",
+        "prettyAID": "a",
+        "answer": "School funds",
+        "description": "",
+        "resources": [],
+        "nextQID": "7d"
+      },
+      {
+        "AID": "7c-ii",
+        "prettyAID": "b",
+        "answer": "Donations",
         "description": "",
         "resources": [],
         "nextQID": "7d"
@@ -323,12 +422,21 @@
   {
     "QID":"7d",
     "question":"Will you use pooling?",
-    "description": "It is possible to test groups of samples (pools) together. If any pool tests positive, the individuals within the pool (or their samples) should then be individually tested to identify the infected person(s). This will result in slightly slower test turn-around, but will greatly reduce costs.<br>This will require a creation of pool groups that is sensible. Pools should be 3-5 people in size, so multiple pools per class/pod may be required. You will need to work with the lab to determine if pooling should be done at the sample collection or at the lab.<br>",
+    "description": "It is possible to test groups of samples (pools) together. If any pool tests positive, the individuals within the pool (or their samples) should then be individually tested to identify the infected person(s). This will result in slightly slower test turn-around, but will greatly reduce costs.",
     "resources": [],
     "answers": [
       {
         "AID": "7d-i",
-        "answer": "",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "This will require a creation of pool groups that is sensible. Pools should be 3-5 people in size, so multiple pools per class/pod may be required. You will need to work with the lab to determine if pooling should be done at the sample collection or at the lab.",
+        "resources": [],
+        "nextQID": null
+      },
+      {
+        "AID": "7d-ii",
+        "prettyAID": "b",
+        "answer": "No",
         "description": "",
         "resources": [],
         "nextQID": null

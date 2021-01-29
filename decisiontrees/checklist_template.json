@@ -1,7 +1,7 @@
 [
   {
-    "activity": "",
     "activityID": "",
+    "activity": "",
     "links": [],
     "rules": {
       "operator": "OR|AND|NOT|ALL",
