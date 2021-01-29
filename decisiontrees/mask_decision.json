@@ -101,22 +101,6 @@
         "answer": "Contact Sports",
         "description": "It may not be safe for those participating in contact sports to wear masks. If this is the case, clear guidelines should be made for each sport as to the times when masks should and should not be worn, with a preference for mask wearing as much as possible. These sports will also require a safe place to put masks when they are not being worn, and supervision to ensure that tampering and mask swapping do not occur.",
         "resources": [],
-        "nextQID": "2"
-      }
-    ]
-  },
-  {
-    "QID": "2",
-    "question": "Messaging",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "2",
-        "prettyAID": "",
-        "answer": "",
-        "description": "",
-        "resources": [],
         "nextQID": "2a"
       }
     ]
@@ -233,7 +217,7 @@
         "answer": "Entrances",
         "description": "These signs should indicate the basics as simply as possible, and should be posted at every entrance.",
         "resources": [],
-        "nextQID": "3"
+        "nextQID": "3a"
       },
       {
         "AID": "2d-ii",
@@ -241,7 +225,7 @@
         "answer": "Hallways",
         "description": "These should be reminder signs and can be more creative and fun. A sign design competition could be used to create interest and engage students.",
         "resources": [],
-        "nextQID": "3"
+        "nextQID": "3a"
       },
       {
         "AID": "2d-iii",
@@ -249,7 +233,7 @@
         "answer": "Classrooms",
         "description": "These should be reminders and should be targeted towards the age and subject. Individual teachers may want to design their own signs.",
         "resources": [],
-        "nextQID": "3"
+        "nextQID": "3a"
       },
       {
         "AID": "2d-iv",
@@ -257,7 +241,7 @@
         "answer": "Cafeteria",
         "description": "These signs should indicate when and how to remove masks for eating.",
         "resources": [],
-        "nextQID": "3"
+        "nextQID": "3a"
       },
       {
         "AID": "2d-v",
@@ -265,39 +249,32 @@
         "answer": "Other areas",
         "description": "Any area that people within the school will regularly use should have a sign. This could include a teacher’s lounge, gym and weight room, or auditorium, for example.",
         "resources": [],
-        "nextQID": "3"
-      }
-    ]
-  },
-  {
-    "QID": "3",
-    "question": "Supplies",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "3",
-        "prettyAID": "",
-        "answer": "",
-        "description": "",
-        "resources": [],
         "nextQID": "3a"
       }
     ]
   },
   {
     "QID": "3a",
-    "question": "How will you provide masks",
+    "question": "Will you provide masks",
     "description": "You should have, at minimum, a small supply of masks for when masks break, get wet, or get dirty. You may want to provide more.",
     "resources": [],
     "answers": [
       {
-        "AID": "3a",
-        "prettyAID": "",
-        "answer": "",
+        "AID": "3a-yes",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "recommended": true,
         "description": "",
         "resources": [],
         "nextQID": "3a-i"
+      },
+      {
+        "AID": "3a-no",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "3b"
       }
     ]
   },
