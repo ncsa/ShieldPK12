@@ -149,12 +149,14 @@ p {
 
 .answer-description {
     font-size: 18px;
-    margin-top: 16px;
-    display:none;
+    visibility: hidden;
+    height:0;
 }
 
 .answer-description.selected{
-    display:inherit;
+    visibility:visible;
+    height:auto;
+    margin-top: 16px;
 }
 
 #result-container h1 {
