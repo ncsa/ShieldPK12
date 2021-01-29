@@ -1,17 +1,16 @@
-version: 'beta'
+version: '3.7'
 
 services:
   web:
-    build:
-      dockerfile: Dockerfile
+    build: .
     command: gunicorn app:app --config gunicorn.config.py
     expose:
       - 5000
   nginx:
     build: ./nginx
-    volumes:
-      - static_volume:/home/app/web/project/static
+#    volumes:
+#      - static_volume:/home/app/web/project/static
     ports:
-      - 1337:80
+      - 80:80
     depends_on:
       - web
