@@ -119,6 +119,17 @@ p {
     position: relative;
 }
 
+#answer-prompt {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.5625px;
+    color: #616265;
+    text-transform: capitalize;
+}
+
 .answer.selected {
     background: linear-gradient(0deg, rgba(175, 215, 255, 0.2), rgba(175, 215, 255, 0.2)), #FFFFFF;
     border: 2px solid rgba(32, 85, 138, 0.5);

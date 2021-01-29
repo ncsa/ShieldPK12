@@ -195,13 +195,13 @@ function updateQuestions(data, answeredNumQ) {
     updateProgressBar(data.minNumQ, answeredNumQ)
 
     // for questions
-    var questionTitle = data.page["QID"] + ". " + data.page["question"]
+    var questionTitle = data.page["question"]
     $("#question-title").html(questionTitle);
     if ("multiple" in data.page && data.page["multiple"] === true){
-        $("#question-subtitle").html("(select all that applies)");
+        $("#answer-prompt").html("Select Multiple Answer");
     }
     else{
-        $("#question-subtitle").html("");
+        $("#answer-prompt").html("Select One Answer");
     }
     $("#question-description").html(data.page["description"]);
 
@@ -282,7 +282,7 @@ function generateReport(report){
     report.forEach(function (item, index) {
         $(".report-container").append(`
             <div class="report" id="`+ item["QID"] + `">
-                <h2 class="report-question">`+ item["QID"] + ". " + item["question"] +`</h2>
+                <h2 class="report-question">`+ item["question"] +`</h2>
                 <div class="report-answers"></div>
             </div>
         `);

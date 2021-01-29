@@ -171,9 +171,9 @@
     ]
   },
   {
-    "QID":"4a-iii",
-    "question":"How will samples be returned",
-    "description": "The simplest way to return samples would be to have a secure drop point (either box or rack) at entrances. This should be an observed process, especially if testing is mandatory. Handling of samples is not advised, as it could unnecessarily expose the person collecting the samples.",
+    "QID": "4a-iii",
+    "question": "How will samples be returned",
+    "description": "",
     "resources": [],
     "answers": [
       {
@@ -181,7 +181,7 @@
         "prettyAID": "a",
         "recommended": true,
         "answer": "Secure drop point",
-        "description": "",
+        "description": "The simplest way to return samples would be to have a secure drop point (either box or rack) at entrances. This should be an observed process, especially if testing is mandatory. Handling of samples is not advised, as it could unnecessarily expose the person collecting the samples.",
         "resources": [],
         "nextQID": "5"
       }
@@ -481,8 +481,8 @@
     ]
   },
   {
-    "QID":"7",
-    "question":"Which test will you use?",
+    "QID": "7",
+    "question": "Which test will you use?",
     "description": "What test is available to you? A summary of tests and their uses is available <a href=\"\" target=\"_blank\">here</a>. The test you select will determine the supplies you need, the speed at which results come, and the cost.",
     "resources": [],
     "answers": [
