@@ -37,7 +37,7 @@
         "resources": [],
         "nextQID": "1b"
       },
-       {
+      {
         "AID": "1a-ii",
         "prettyAID": "b",
         "answer": "Small student pods",
@@ -45,7 +45,7 @@
         "resources": [],
         "nextQID": "1b"
       },
-       {
+      {
         "AID": "1a-iii",
         "prettyAID": "c",
         "answer": "Grade level groups",
@@ -53,9 +53,9 @@
         "resources": [],
         "nextQID": "1b"
       },
-       {
+      {
         "AID": "1a-iv",
-         "prettyAID": "d",
+        "prettyAID": "d",
         "answer": "Tracking groups",
         "description": "It could be possible to form groups, larger than pods but smaller than grade levels, that would be able to move through classes together (or, preferably, stay in a single room and have teachers rotate).",
         "resources": [],
@@ -234,13 +234,30 @@
   },
   {
     "QID": "2a-ii-2",
-    "question": "Process for changing in-person vs. virtual status",
-    "description": "How will parents request a change from in-person to virtual or vice versa? You may want to limit this change to only allowing one change per semester, or requiring virtual students to remain so. You should not limit the ability of students to change to virtual, as this choice may be taken based on changes in family risk.",
+    "question": "Canparents request a change from in-person to virtual or vice versa?",
+    "description": "You should not limit the ability of students to change to virtual, as this choice may be taken based on changes in family risk.",
     "resources": [],
     "answers": [
       {
-        "AID": "2a-ii-2",
-        "answer": "",
+        "AID": "2a-ii-2-a",
+        "prettyAID": "a",
+        "answer": "Unlimited changing",
+        "description": "",
+        "resources": [],
+        "nextQID": "2a-ii-3"
+      },
+      {
+        "AID": "2a-ii-2-b",
+        "prettyAID": "b",
+        "answer": "limit to only allowing one change per semester",
+        "description": "",
+        "resources": [],
+        "nextQID": "2a-ii-3"
+      },
+      {
+        "AID": "2a-ii-2-c",
+        "prettyAID": "c",
+        "answer": "requiring virtual students to remain so",
         "description": "",
         "resources": [],
         "nextQID": "2a-ii-3"
@@ -281,60 +298,87 @@
         }
       ]
     },
-    "question": "Movement",
+    "question": "How will you change movementin the school?",
+    "multiple": true,
     "description": "While much has been made of the 15-minute contact time, there is risk associated with shorter contact periods, especially when they involve congregations of large numbers in tight spaces. That makes movement through the school a critical control point to minimize transmission.",
     "resources": [],
     "answers": [
       {
-        "AID": "2b",
-        "answer": "",
+        "AID": "2b-i",
+        "prettyAID": "a",
+        "answer": "Minimize contact at entry and exit points",
         "description": "",
         "resources": [],
-        "nextQID": "2b-i"
-      }
-    ]
-  },
-  {
-    "QID": "2b-i",
-    "question": "How will you minimize contact at entry and exit points?",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "2b-i-1",
-        "prettyAID": "a",
-        "answer": "Staggered starts and ends",
-        "description": "One option is to bring your smaller groups in at separate times. This may be logistically difficult, however, especially with transportation issues and multi-group families. ",
-        "resources": [],
-        "nextQID": "2b-ii"
+        "nextQID": "2b-i-1"
       },
       {
-        "AID": "2b-i-2",
+        "AID": "2b-ii",
         "prettyAID": "b",
-        "answer": "Designated entrances",
-        "description": "If you have multiple entry and exit points, you may want to designate a specific entrance and exit for each group, so as to minimize mixing between your groups.",
+        "answer": "Minimize contact in hallways",
+        "description": "",
         "resources": [],
-        "nextQID": "2b-ii"
-      },
-      {
-        "AID": "2b-i-3",
-        "prettyAID": "c",
-        "answer": "Enforced spacing",
-        "description": "If you have lines at entrance and exit times, it will be important to at a minimum enforce spacing between individuals.",
-        "resources": [],
-        "nextQID": "2b-ii"
+        "nextQID": "2b-ii-1"
       }
     ]
   },
   {
-    "QID": "2b-ii",
-    "question": "How will you minimize contact in hallways?",
+    "QID": "2b-i-1",
+    "question": "How will you minimize contact at entry and exit points?",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "2b-i"
+        }
+      ]
+    },
     "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "2b-ii-1",
+        "AID": "2b-i-1-a",
+        "prettyAID": "a",
+        "answer": "Staggered starts and ends",
+        "description": "One option is to bring your smaller groups in at separate times. This may be logistically difficult, however, especially with transportation issues and multi-group families. ",
+        "resources": [],
+        "nextQID": "2b-ii-1"
+      },
+      {
+        "AID": "2b-i-2-b",
+        "prettyAID": "b",
+        "answer": "Designated entrances",
+        "description": "If you have multiple entry and exit points, you may want to designate a specific entrance and exit for each group, so as to minimize mixing between your groups.",
+        "resources": [],
+        "nextQID": "2b-ii-1"
+      },
+      {
+        "AID": "2b-i-3-c",
+        "prettyAID": "c",
+        "answer": "Enforced spacing",
+        "description": "If you have lines at entrance and exit times, it will be important to at a minimum enforce spacing between individuals.",
+        "resources": [],
+        "nextQID": "2b-ii-1"
+      }
+    ]
+  },
+  {
+    "QID": "2b-ii-1",
+    "question": "How will you minimize contact in hallways?",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "2b-ii"
+        }
+      ]
+    },
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "2b-ii-1-a",
         "prettyAID": "a",
         "answer": "One-way hallways",
         "description": "You can minimize face-to-face contacts by restricting movement direction.",
@@ -342,7 +386,7 @@
         "nextQID": "3"
       },
       {
-        "AID": "2b-ii-2",
+        "AID": "2b-ii-2-b",
         "prettyAID": "b",
         "answer": "Staggered movement times",
         "description": "It is best to limit the number of people in a hallway at one time. You can do this by scheduling groups to different movement times, although this could become logistically difficult.",
@@ -350,7 +394,7 @@
         "nextQID": "3"
       },
       {
-        "AID": "2b-ii-3",
+        "AID": "2b-ii-3-c",
         "prettyAID": "c",
         "answer": "Minimized movement",
         "description": "The best option is to limit the amount of movement within the building. This could be done in higher grade levels through having teachers move instead of students. In earlier grades, this might be through keeping all class activities within a single room.",
@@ -496,9 +540,9 @@
         "resources": [],
         "nextQID": "3c"
       },
-       {
+      {
         "AID": "3b-iv-2",
-         "prettyAID": "e",
+        "prettyAID": "e",
         "answer": "Virtual Performances",
         "description": "These are preferred at this time. Asynchronous ensures accessibility to those with limited bandwidth/data.",
         "resources": [],
@@ -619,9 +663,9 @@
         "resources": [],
         "nextQID": "4b"
       },
-       {
+      {
         "AID": "4a-iii",
-         "prettyAID": "c",
+        "prettyAID": "c",
         "answer": "Loading and unloading",
         "description": "Bus loading and unloading at the school building could create high-contact conditions. Timing for this process should be extended so that distancing can be maintained. Preferably only one bus would unload at a time, and only one group would load onto buses at a time, so as to avoid crossing foot traffic among bus riders.",
         "resources": [],
