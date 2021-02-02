@@ -234,7 +234,7 @@
   },
   {
     "QID": "2a-ii-2",
-    "question": "Canparents request a change from in-person to virtual or vice versa?",
+    "question": "Can parents request a change from in-person to virtual or vice versa?",
     "description": "You should not limit the ability of students to change to virtual, as this choice may be taken based on changes in family risk.",
     "resources": [],
     "answers": [
@@ -298,7 +298,7 @@
         }
       ]
     },
-    "question": "How will you change movementin the school?",
+    "question": "How will you change movement in the school?",
     "multiple": true,
     "description": "While much has been made of the 15-minute contact time, there is risk associated with shorter contact periods, especially when they involve congregations of large numbers in tight spaces. That makes movement through the school a critical control point to minimize transmission.",
     "resources": [],
@@ -345,7 +345,7 @@
         "nextQID": "2b-ii-1"
       },
       {
-        "AID": "2b-i-2-b",
+        "AID": "2b-i-1-b",
         "prettyAID": "b",
         "answer": "Designated entrances",
         "description": "If you have multiple entry and exit points, you may want to designate a specific entrance and exit for each group, so as to minimize mixing between your groups.",
@@ -353,7 +353,7 @@
         "nextQID": "2b-ii-1"
       },
       {
-        "AID": "2b-i-3-c",
+        "AID": "2b-i-1-c",
         "prettyAID": "c",
         "answer": "Enforced spacing",
         "description": "If you have lines at entrance and exit times, it will be important to at a minimum enforce spacing between individuals.",
@@ -386,7 +386,7 @@
         "nextQID": "3"
       },
       {
-        "AID": "2b-ii-2-b",
+        "AID": "2b-ii-1-b",
         "prettyAID": "b",
         "answer": "Staggered movement times",
         "description": "It is best to limit the number of people in a hallway at one time. You can do this by scheduling groups to different movement times, although this could become logistically difficult.",
@@ -394,7 +394,7 @@
         "nextQID": "3"
       },
       {
-        "AID": "2b-ii-3-c",
+        "AID": "2b-ii-1-c",
         "prettyAID": "c",
         "answer": "Minimized movement",
         "description": "The best option is to limit the amount of movement within the building. This could be done in higher grade levels through having teachers move instead of students. In earlier grades, this might be through keeping all class activities within a single room.",

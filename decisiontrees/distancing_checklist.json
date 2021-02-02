@@ -322,7 +322,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-i-1"}
+         {"AID": "2b-i-1-a"}
         ]
     }
   },
@@ -333,7 +333,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-i-2"}
+         {"AID": "2b-i-1-b"}
         ]
     }
   },
@@ -344,7 +344,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-i-3"}
+         {"AID": "2b-i-1-c"}
         ]
     }
   },
@@ -355,7 +355,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-ii-1"}
+         {"AID": "2b-ii-1-a"}
         ]
     }
   },
@@ -366,7 +366,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-ii-2"}
+         {"AID": "2b-ii-1-b"}
         ]
     }
   },
@@ -377,7 +377,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-         {"AID": "2b-ii-3"}
+         {"AID": "2b-ii-1-c"}
         ]
     }
   },
