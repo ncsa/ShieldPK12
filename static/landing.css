@@ -1,3 +1,22 @@
+body{
+    background: #F2F2F2;
+}
+
+.container{
+    padding:0;
+    max-width: none;
+    width:100%;
+}
+
+.row{
+    width:100%;
+    margin:0;
+}
+
+.col{
+    padding:0;
+}
+
 h1 {
     font-family: Merriweather;
     font-style: normal;
@@ -29,7 +48,7 @@ h4 {
     color: #21202C;
 }
 
-p {
+#landing p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -38,12 +57,10 @@ p {
     letter-spacing: 0.65625px;
     color: #21202C;
 }
-.container{
-    padding:0;
-    max-width: none;
-}
-#header-text-container{
+
+.header-container{
     position:relative;
+    width:50%;
 }
 
 #header-text{
@@ -66,8 +83,7 @@ p {
 
 #header-img{
     position:relative;
-    width:640px;
-    height:720px;
+    width:100%;
 }
 
 #header-links{
@@ -76,7 +92,7 @@ p {
     right:35px;
 }
 
-#header-links > a {
+#header-links a {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -85,5 +101,30 @@ p {
     letter-spacing: 0.65625px;
     color: #FFFFFF;
     text-transform: capitalize;
-    margin:0 10px;
+    margin:0 30px;
+}
+
+.module{
+    background: #FFFFFF;
+    border: 2px solid rgba(207, 207, 207, 0.8);
+    box-sizing: border-box;
+    border-radius: 11px;
+    padding:35px;
+    height: 260px;
+    margin:16px;
+}
+
+.module p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.65625px;
+    color: #21202C;
+}
+
+#modules h2{
+    text-align: center;
+    margin:100px auto;
 }
