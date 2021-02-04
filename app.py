@@ -34,14 +34,13 @@ resource_foldername = "resources"
 # reserve for landing page
 @app.route('/', methods=['GET'])
 def homepage():
-    # TODO can have different landing page for different modules
     return render_template('landing.html')
 
 
-@app.route('/<module>', methods=['GET'])
-def module_homepage(module):
-    # TODO can have different landing page for different modules
-    return render_template('landing.html')
+# @app.route('/<module>', methods=['GET'])
+# def module_homepage(module):
+#     # TODO can have different landing page for different modules
+#     return render_template('landing.html')
 
 
 @app.route('/regress', methods=['GET'])
@@ -49,7 +48,7 @@ def regress():
     if request.args.get("module"):
         return redirect("/" + request.args.get("module") + "/questions")
     else:
-        return redirect("/")
+        return redirect("/cleaning/questions")
 
 
 @app.route('/<module>/questions', methods=['GET'])
