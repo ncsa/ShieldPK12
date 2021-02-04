@@ -112,6 +112,11 @@ h4 {
     padding:35px;
     height: 260px;
     margin:16px;
+    position: relative;
+}
+
+.module h4{
+    margin-bottom:16px;
 }
 
 .module p{
@@ -124,7 +129,32 @@ h4 {
     color: #21202C;
 }
 
+.module a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.65625px;
+    color: #20558A;
+    position: absolute;
+    bottom:40px;
+    right:33px;
+}
 #modules h2{
     text-align: center;
     margin:100px auto;
+}
+
+.module-label{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #20558A;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
 }
