@@ -1,0 +1,89 @@
+h1 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 1.25px;
+    color: #946C3B;
+}
+
+h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #946C3B;
+}
+
+h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.65625px;
+    color: #21202C;
+}
+
+p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.65625px;
+    color: #21202C;
+}
+.container{
+    padding:0;
+    max-width: none;
+}
+#header-text-container{
+    position:relative;
+}
+
+#header-text{
+    position:absolute;
+    top:20%;
+    left:20%;
+    right:20%;
+}
+
+#header-title,
+#header-description{
+    margin:31px 0;
+}
+
+#regress{
+    background: #20558A;
+    border-radius: 11px;
+    padding:19px 39px;
+}
+
+#header-img{
+    position:relative;
+    width:640px;
+    height:720px;
+}
+
+#header-links{
+    position:absolute;
+    top:35px;
+    right:35px;
+}
+
+#header-links > a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.65625px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin:0 10px;
+}
