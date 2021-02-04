@@ -48,7 +48,7 @@ h4 {
     color: #21202C;
 }
 
-#landing p {
+.header-container p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -141,7 +141,7 @@ h4 {
     bottom:40px;
     right:33px;
 }
-#modules h2{
+.module-title h2{
     text-align: center;
     margin:100px auto;
 }
@@ -157,4 +157,32 @@ h4 {
     border-radius: 50%;
     margin-right: 15px;
     vertical-align: middle;
+}
+
+.footer{
+    margin-top: 100px;
+    background: #20558A;
+    height:82px;
+    color:#FFFFFF;
+}
+
+.footer a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.4375px;
+    color: #FFFFFF;
+}
+
+.footer p{
+    margin: auto auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.4375px;
+    color: #FFFFFF;
 }

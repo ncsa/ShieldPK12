@@ -27,7 +27,7 @@
 </head>
 
 <body>
-<div class="container" id="landing">
+<div class="container">
     <div class="row">
         <div class="header-container">
             <div id="header-text">
@@ -45,8 +45,8 @@
         </div>
     </div>
 </div>
-<div class="container" id="modules">
-    <div class="row">
+<div class="container">
+    <div class="row module-title">
         <h2>Playbook Modules</h2>
     </div>
     <div class="row module-row">
@@ -98,7 +98,28 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="container">
+    <nav class="navbar navbar-expand-md footer">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <span class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav my-auto mr-auto">
+                <a href="/contact-us">Contact Us</a>
+            </ul>
+            <ul class="navbar-nav my-auto mr-3">
+                <p><i class="far fa-copyright"></i>2021 All Rights Reserved</p>
+            </ul>
+            <ul class="navbar-nav ml-auto my-auto mt-2">
+                <p>logo</p>
+                <p>logo</p>
+                <p>logo</p>
+            </ul>
+        </span>
+    </nav>
 </div>
 <script type="text/javascript" src="{{url_for('static', filename='landing.js')}}"></script>
 </body>
