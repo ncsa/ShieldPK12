@@ -63,6 +63,12 @@ h4 {
     width:50%;
 }
 
+#header-logo{
+    position:absolute;
+    top:35px;
+    left:20%;
+}
+
 #header-text{
     position:absolute;
     top:20%;
