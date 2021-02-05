@@ -468,7 +468,7 @@
         "answer": "Through Public Health",
         "description": "When a positive case has been found, Public Health will often perform contact tracing, in which any close contacts are informed 1) that they may have been exposed, 2) the day of the exposure, and 3) the regulations regarding quarantine. You should contact your local Public Health district to determine if you can help with their contact tracing process.",
         "resources": [],
-        "nextQID": "7"
+        "nextQID": "7a"
       },
       {
         "AID": "6d-ii",
@@ -476,7 +476,7 @@
         "answer": "Through the school",
         "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of anentire class would be a strong precaution but might be justified.",
         "resources": [],
-        "nextQID": "7"
+        "nextQID": "7a"
       }
     ]
   },
