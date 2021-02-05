@@ -34,8 +34,12 @@ resource_foldername = "resources"
 # reserve for landing page
 @app.route('/', methods=['GET'])
 def homepage():
-    return render_template('landing.html')
+    return render_template("landing.html")
 
+
+@app.route('/error', methods=['GET'])
+def error():
+    return render_template("error.html")
 
 # @app.route('/<module>', methods=['GET'])
 # def module_homepage(module):
