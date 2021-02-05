@@ -160,7 +160,7 @@ $("#restart").on("click", function () {
 /**
  * generate pdf for the report page
  */
-$("#download-pdf").on("click", function () {
+$(".download-pdf").on("click", function () {
     html2pdf()
         .set({
             margin: 1,
@@ -171,6 +171,20 @@ $("#download-pdf").on("click", function () {
         .from(document.getElementById("result-pdf"))
         .save();
 })
+
+/**
+ * expand and collapse answer description in report
+ */
+$(".report-container").on("click", "i", function(){
+    $(this).hide();
+    $(this).siblings("i").show();
+    if (this.className.includes("expand")){
+        $(this).parent().find(".report-answer-description").show();
+    }
+    else if (this.className.includes("collapse")){
+        $(this).parent().find(".report-answer-description").hide();
+    }
+});
 
 /**
  * update questions container including question and answer
@@ -289,9 +303,13 @@ function generateReport(report){
         `);
         item["answers"].forEach(function (answerItem, index) {
             $("#" + item["QID"]).find(".report-answers").append(`
-                <h3><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
-                + answerItem["answer"] + `</h3>
-                <p>` + answerItem["description"] + `</p>
+                <div class="report-answer">
+                    <i class="fas fa-caret-down report-expand"></i>
+                    <i class="fas fa-caret-up report-collapse"></i>
+                    <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
+                    + answerItem["answer"] + `</h3>
+                    <p class="report-answer-description">` + answerItem["description"] + `</p>
+                </div>
             `);
         });
     });

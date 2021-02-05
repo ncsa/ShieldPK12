@@ -196,10 +196,6 @@ p {
     padding:5px;
 }
 
-#result-container h1 {
-    margin: 55px 0;
-}
-
 .checklist-container,
 .report {
     border: 2px solid #CFCFCF;
@@ -236,6 +232,36 @@ p {
     text-decoration: underline;
 }
 
+.reports-header,
+.results-header{
+    margin: 55px 0;
+}
+
+
+.download-pdf{
+    color:white;
+    background: #20558A;
+    border-radius: 8px;
+    display:block;
+    margin:60px auto 0 auto;
+    padding:8px 19px;
+    text-transform: capitalize;
+}
+
+.reports-header h1,
+.reports-header .download-pdf,
+.results-header h1,
+.results-header .download-pdf{
+    display:inline;
+    margin:auto;
+}
+
+.results-header .download-pdf,
+.reports-header .download-pdf{
+    vertical-align: text-bottom;
+    float:right;
+}
+
 .report-question{
     font-family: Lato;
     font-style: normal;
@@ -244,6 +270,23 @@ p {
     line-height: 30px;
     letter-spacing: 0.78125px;
     color: #000000;
+}
+
+.report-answer{
+    position: relative;
+}
+
+.report-expand,
+.report-collapse{
+    position:absolute;
+    right:0;
+    color: #20558A;
+    font-size: 30px;
+    cursor: pointer;
+}
+.report-collapse,
+.report-answer-description{
+    display:none;
 }
 
 .report h3{
@@ -282,12 +325,3 @@ p {
     vertical-align: bottom;
 }
 
-#download-pdf{
-    color:white;
-    background: #20558A;
-    border-radius: 8px;
-    display:block;
-    margin:60px auto 0 auto;
-    padding:8px 19px;
-    text-transform: capitalize;
-}
