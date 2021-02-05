@@ -100,7 +100,7 @@ p {
 #qna-container,
 #result-container {
     max-width: 100%;
-    min-height: 90vh;
+    min-height: calc(100vh - 82px - 70px);
     padding: 0;
 }
 
@@ -172,13 +172,11 @@ p {
 
 .answer-description {
     font-size: 18px;
-    visibility: hidden;
-    height: 0;
+    display:none;
 }
 
 .answer-description.selected {
-    visibility: visible;
-    height: auto;
+    display:block;
     margin-top: 16px;
 }
 
