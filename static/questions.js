@@ -267,6 +267,7 @@ function generateChecklist(checklist) {
     checklist.forEach(function (item, index) {
         $(".checklists").append(`
             <div class="checklist">
+                <input type="checkbox"/>
                 <a class="checklist-activity" href="#" target="_blank">` + item["activity"] + `</a>
             </div>
         `);
