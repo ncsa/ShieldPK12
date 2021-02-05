@@ -1,3 +1,18 @@
+body{
+    background: #F2F2F2;
+}
+
+.row{
+    width:100%;
+    margin:0;
+}
+
+.container{
+    padding:0;
+    max-width: none;
+    width:100%;
+}
+
 .navbar{
     background: #20558A;
     min-height: 70px;
@@ -17,7 +32,7 @@
 
 #module-name{
     color: #FFFFFF;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display:inline-block;
     font-size:22px;
 }
@@ -47,14 +62,10 @@
 }
 
 #navigation-btns .btn-secondary{
-    background: rgba(255, 255, 255, 0.3);
+    background: #FFFFFF;
+    color:#20558A;
     border-radius: 8px;
     text-transform: capitalize;
-    color:#FFFFFF;
-}
-
-#survey {
-    background: #F2F2F2;
 }
 
 h1 {

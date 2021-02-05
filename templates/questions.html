@@ -24,6 +24,7 @@
         </script>
         <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
     </head>
 
     <body>
@@ -92,7 +93,7 @@
                         </div>
                     </ul>
                     <ul class="navbar-nav ml-auto my-auto mt-2">
-                        <span class="navbar-text"><p class="prompt">leave & finish it later</p></span>
+                        <span class="navbar-text"><p class="prompt">Leave & Finish it later</p></span>
                     </ul>
 
                 </span>
@@ -133,9 +134,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-<!--             <button type="button" id="download-zip">Download Complete Resources</button>-->
-        </div>
+        {% include 'footer.html' %}
         <script type="text/javascript" src="{{url_for('static', filename='questions.js')}}"></script>
     </body>
 </html>

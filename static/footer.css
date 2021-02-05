@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 100px;
+    background: #20558A;
+    height:82px;
+    color:#FFFFFF;
+}
+
+.footer a{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.4375px;
+    color: #FFFFFF;
+    margin-right:20px;
+}
+
+.footer p{
+    margin: auto auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.4375px;
+    color: #FFFFFF;
+}
