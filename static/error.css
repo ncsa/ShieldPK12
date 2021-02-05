@@ -6,8 +6,8 @@
 
 #background-img {
     width: 100%;
-    /*view port minus footer height 82px*/
-    min-height: calc(100vh - 82px);;
+     /*view port minus footer height 82px*/
+    height: calc(100vh - 82px);
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }

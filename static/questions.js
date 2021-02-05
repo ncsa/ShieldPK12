@@ -40,8 +40,7 @@ $(document).ready(function () {
             }
         },
         error: function (jqXHR, exception) {
-            $("#error").find("#error-message").empty().append(jqXHR.responseText);
-            $("#error").modal("show");
+             window.location.href = "/error";
         }
     });
 })
@@ -91,8 +90,7 @@ $("#next").on("click", function () {
                 }
             },
             error: function (jqXHR, exception) {
-                $("#error").find("#error-message").empty().append(jqXHR.responseText);
-                $("#error").modal("show");
+                window.location.href = "/error";
             }
         });
     } else {
@@ -125,8 +123,7 @@ $("#prev").on("click", function () {
             updateQuestions(data, pastQNA.length);
         },
         error: function (jqXHR, exception) {
-            $("#error").find("#error-message").empty().append(jqXHR.responseText);
-            $("#error").modal("show");
+            window.location.href = "/error";
         }
     });
 });
@@ -150,8 +147,7 @@ $("#restart").on("click", function () {
             updateQuestions(data, JSON.parse(localStorage.getItem("pastQNA")).length);
         },
         error: function (jqXHR, exception) {
-            $("#error").find("#error-message").empty().append(jqXHR.responseText);
-            $("#error").modal("show");
+             window.location.href = "/error";
         }
     });
 });
