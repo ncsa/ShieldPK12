@@ -174,11 +174,12 @@ $(".download-pdf").on("click", function () {
 $(".report-container").on("click", "i", function(){
     $(this).hide();
     $(this).siblings("i").show();
+    var answerDescription = $(this).parent().find(".report-answer-description");
     if (this.className.includes("expand")){
-        $(this).parent().find(".report-answer-description").show();
+        answerDescription.show();
     }
     else if (this.className.includes("collapse")){
-        $(this).parent().find(".report-answer-description").hide();
+        answerDescription.hide();
     }
 });
 
@@ -337,7 +338,11 @@ $("#answers").on("click", ".answer", function () {
         $(".answer").removeClass("selected");
         $(".answer-description").removeClass("selected");
     }
-    $(this).toggleClass("selected").find(".answer-description").toggleClass("selected");
+    $(this).toggleClass("selected");
+    if ($(this).find(".answer-description").html() !== ""){
+        $(this).find(".answer-description").toggleClass("selected");
+    }
+
     var selection = $(this).find("input");
     selection.prop("checked") ? selection.prop("checked", false) : selection.prop("checked", true);
 })
