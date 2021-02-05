@@ -81,10 +81,24 @@ h4 {
     margin:31px 0;
 }
 
-#regress{
+#start{
     background: #20558A;
     border-radius: 11px;
+    border:none;
     padding:19px 39px;
+}
+
+#regress{
+    font-family: Lato;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.5625px;
+    color: #616265;
+    text-decoration: underline;
+    display:block;
+    margin:15px 0;
 }
 
 #header-img{
