@@ -255,7 +255,6 @@ p {
     margin: 55px 0;
 }
 
-
 .download-pdf{
     color:white;
     background: #20558A;
@@ -327,6 +326,52 @@ p {
     letter-spacing: 0.65625px;
     color: #21202C;
 }
+
+/* for pdf */
+.result-pdf.print h1{
+    font-size: 18px;
+    text-align: center;
+    display:block;
+}
+.result-pdf.print .report,
+.result-pdf.print .checklist-container{
+    border:none;
+    margin: 0;
+    border-radius: 0;
+    padding:10px 0;
+}
+.result-pdf.print .report p{
+    font-size:13px;
+}
+.result-pdf.print .report h3{
+    font-size:16px;
+}
+.result-pdf.print .report .report-question{
+    font-size: 16px;
+}
+.result-pdf.print .report .report-collapse,
+.result-pdf.print .report .report-expand{
+    display: none;
+}
+.result-pdf.print .report .report-answer-description{
+    display: block;
+}
+
+.result-pdf.print .checklist-activity{
+    font-size:13px;
+}
+
+.result-pdf.print .checklist-container h3,
+.result-pdf.print .checklist-container hr{
+    display: None;
+}
+
+.result-pdf.print .reports-header,
+.result-pdf.print .results-header{
+    margin: 20px 0;
+}
+
+
 
 .answer-pretty-id,
 .answer-pretty-id.selected{

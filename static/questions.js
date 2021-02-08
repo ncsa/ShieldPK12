@@ -157,9 +157,19 @@ $(".download-pdf").on("click", function () {
     html2pdf()
         .set({
             margin: 1,
-            pagebreak: {mode: ['avoid-all', 'css', 'legacy']},
-            filename: "my-playbook-report.pdf",
-            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+            pagebreak: {mode: ['css', 'legacy']},
+            filename: "my-" + module + "-decision-report.pdf",
+            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'},
+            html2canvas:{
+                onclone: function (document){
+                    var resultPDF = document.getElementsByClassName("result-pdf");
+                    for (i=0; i<resultPDF.length; i++){
+                        resultPDF[i].className += " print";
+                    }
+                },
+                // ignore button
+                ignoreElements: function (el){return el.tagName.toLowerCase() === "button"}},
+            enableLinks: true,
         })
         .from(document.getElementById("result-pdf"))
         .save();
