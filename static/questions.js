@@ -6,12 +6,12 @@ ROOT_QUESTION_ID = "1"
 var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module);
 
-if (localStorage.getItem("QID") === null
-    || localStorage.getItem(module) === null
+if (localStorage.getItem(module + "-QID") === null
+    || localStorage.getItem(module + "-pastQNA") === null
 ){
     // intialized
-    localStorage.setItem("QID", ROOT_QUESTION_ID);
-    localStorage.setItem(module, "[]");
+    localStorage.setItem(module + "-QID", ROOT_QUESTION_ID);
+    localStorage.setItem(module + "-pastQNA", "[]");
 }
 
 /**
@@ -23,16 +23,16 @@ $(document).ready(function () {
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "QID": localStorage.getItem("QID"),
-            "qna": JSON.parse(localStorage.getItem(module))
+            "QID": localStorage.getItem(module + "-QID"),
+            "qna": JSON.parse(localStorage.getItem(module + "-pastQNA"))
         }),
         success: function (data) {
             if ("page" in data) {
-                localStorage.setItem("QID", data.page["QID"]);
-            var answerNumQ = JSON.parse(localStorage.getItem(module)).length;
+                localStorage.setItem(module + "-QID", data.page["QID"]);
+            var answerNumQ = JSON.parse(localStorage.getItem(module + "-pastQNA")).length;
             updateQuestions(data, answerNumQ);
             } else if ("report" in data && "checklist" in data) {
-                localStorage.setItem("QID", null);
+                localStorage.setItem(module + "-QID", null);
                 updateResult(data);
             }
         },
@@ -47,7 +47,7 @@ $(document).ready(function () {
  * submit the selection and go to next step
  */
 $("#next").on("click", function () {
-    var QID = localStorage.getItem("QID");
+    var QID = localStorage.getItem(module + "-QID");
     var AID = [];
 
     if ($("#answers").attr("multiple-answers") === "true") {
@@ -70,19 +70,19 @@ $("#next").on("click", function () {
             data: JSON.stringify({
                 "QID": QID,
                 "AID": AID,
-                "qna": JSON.parse(localStorage.getItem(module))
+                "qna": JSON.parse(localStorage.getItem(module + "-pastQNA"))
             }),
             success: function (data) {
                 // add past question and answer to the stack
-                let pastQNA = JSON.parse(localStorage.getItem(module));
+                let pastQNA = JSON.parse(localStorage.getItem(module + "-pastQNA"));
                 updatedPastQNA = addQNAtoHistory(QID, AID, pastQNA)
-                localStorage.setItem(module, JSON.stringify(updatedPastQNA));
+                localStorage.setItem(module + "-pastQNA", JSON.stringify(updatedPastQNA));
 
                 if ("page" in data) {
-                    localStorage.setItem("QID", data.page["QID"]);
+                    localStorage.setItem(module + "-QID", data.page["QID"]);
                     updateQuestions(data, pastQNA.length);
                 } else if ("report" in data && "checklist" in data) {
-                    localStorage.setItem("QID", null);
+                    localStorage.setItem(module + "-QID", null);
                     updateResult(data);
                 }
             },
@@ -101,7 +101,7 @@ $("#next").on("click", function () {
  */
 $("#prev").on("click", function () {
     // look at the stack top to see what's the preivous question ID
-    let pastQNA = JSON.parse(localStorage.getItem(module));
+    let pastQNA = JSON.parse(localStorage.getItem(module + "-pastQNA"));
     var prevQID = pastQNA[0]["QID"];
     $.ajax({
         url: "prev",
@@ -113,10 +113,10 @@ $("#prev").on("click", function () {
         success: function (data) {
             // pop the fisrt item in stack
             pastQNA.shift();
-            localStorage.setItem(module, JSON.stringify(pastQNA));
+            localStorage.setItem(module + "-pastQNA", JSON.stringify(pastQNA));
 
             // update the current page id
-            localStorage.setItem("QID", data.page["QID"]);
+            localStorage.setItem(module + "-QID", data.page["QID"]);
             updateQuestions(data, pastQNA.length);
         },
         error: function (jqXHR, exception) {
@@ -130,18 +130,18 @@ $("#prev").on("click", function () {
  * jump to the root and restart the survey questions, clear all past histories
  */
 $("#restart").on("click", function () {
-    localStorage.setItem("QID", ROOT_QUESTION_ID);
-    localStorage.setItem(module, "[]");
+    localStorage.setItem(module + "-QID", ROOT_QUESTION_ID);
+    localStorage.setItem(module + "-pastQNA", "[]");
     $.ajax({
         url: "questions",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            "QID":localStorage.getItem("QID"),
+            "QID":localStorage.getItem(module + "-QID"),
             "qna":[]
         }),
         success: function (data) {
-            updateQuestions(data, JSON.parse(localStorage.getItem(module)).length);
+            updateQuestions(data, JSON.parse(localStorage.getItem(module + "-pastQNA")).length);
         },
         error: function (jqXHR, exception) {
              window.location.href = "/error";

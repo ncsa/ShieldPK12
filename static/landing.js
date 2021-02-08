@@ -2,7 +2,7 @@
 var modules = ["cleaning", "distancing", "data-infrastructure", "mask", "testing", "ventilation"];
 
 modules.forEach(function (module, index) {
-    let moduleQNA = localStorage.getItem(module);
+    let moduleQNA = localStorage.getItem(module + "-pastQNA");
     if (moduleQNA !== null && JSON.parse(moduleQNA).length > 0)
     {
         $("#" + module).html("Resume <i class=\"fas fa-arrow-right\"></i>");
