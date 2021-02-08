@@ -332,6 +332,7 @@ p {
     font-size: 18px;
     text-align: center;
     display:block;
+    line-height: inherit;
 }
 .result-pdf.print .report,
 .result-pdf.print .checklist-container{
@@ -342,19 +343,23 @@ p {
 }
 .result-pdf.print .report p{
     font-size:13px;
+    line-height: inherit;
 }
 .result-pdf.print .report h3{
     margin:5px 0;
     font-size:16px;
-    line-height:18px;
+    line-height: inherit;
 }
 .result-pdf.print .answer-pretty-id{
     font-size:10px;
     margin-right:3px;
     padding:2px 4px;
+    line-height: inherit;
+    vertical-align: middle;
 }
 .result-pdf.print .report .report-question{
     font-size: 16px;
+    line-height: inherit;
 }
 .result-pdf.print .report .report-collapse,
 .result-pdf.print .report .report-expand{
@@ -366,6 +371,7 @@ p {
 
 .result-pdf.print .checklist-activity{
     font-size:13px;
+    line-height:inherit;
 }
 
 .result-pdf.print .checklist-container h3,
