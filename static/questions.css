@@ -1,7 +1,7 @@
 body{
     background: #F2F2F2;
 }
-
+s
 .row{
     width:100%;
     margin:0;
@@ -66,6 +66,15 @@ body{
     color:#20558A;
     border-radius: 8px;
     text-transform: capitalize;
+    border: 1px solid #20558A;
+}
+
+#navigation-btns .btn-secondary:hover,
+#navigation-btns .btn-secondary:active,
+#navigation-btns .btn-secondary:focus {
+    background: #20558A;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 
 h1 {

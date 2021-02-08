@@ -84,21 +84,15 @@ h4 {
 #start{
     background: #20558A;
     border-radius: 11px;
-    border:none;
-    padding:19px 39px;
+    border: 2px solid #20558A;
+    padding: 19px 39px;
 }
 
-#regress{
-    font-family: Lato;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.5625px;
-    color: #616265;
-    text-decoration: underline;
-    display:block;
-    margin:15px 0;
+#start:hover,
+#start:active,
+#start:focus {
+    background: #FFFFFF;
+    color: #20558A;
 }
 
 #header-img{
