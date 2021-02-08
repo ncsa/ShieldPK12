@@ -8,13 +8,12 @@ $("#module-name").empty().text(module);
 
 if (localStorage.getItem("QID") === null
     || localStorage.getItem("module") === null
-    || localStorage.getItem("pastQNA") === null
-    || localStorage.getItem("module") !== module
+    || localStorage.getItem(module) === null
 ){
     // intialized
     localStorage.setItem("module", module);
     localStorage.setItem("QID", ROOT_QUESTION_ID);
-    localStorage.setItem("pastQNA", "[]");
+    localStorage.setItem(module, "[]");
 }
 
 /**
@@ -27,12 +26,12 @@ $(document).ready(function () {
         contentType: "application/json",
         data: JSON.stringify({
             "QID": localStorage.getItem("QID"),
-            "qna": JSON.parse(localStorage.getItem("pastQNA"))
+            "qna": JSON.parse(localStorage.getItem(module))
         }),
         success: function (data) {
             if ("page" in data) {
                 localStorage.setItem("QID", data.page["QID"]);
-            var answerNumQ = JSON.parse(localStorage.getItem("pastQNA")).length;
+            var answerNumQ = JSON.parse(localStorage.getItem(module)).length;
             updateQuestions(data, answerNumQ);
             } else if ("report" in data && "checklist" in data) {
                 localStorage.setItem("QID", null);
@@ -73,13 +72,13 @@ $("#next").on("click", function () {
             data: JSON.stringify({
                 "QID": QID,
                 "AID": AID,
-                "qna": JSON.parse(localStorage.getItem("pastQNA"))
+                "qna": JSON.parse(localStorage.getItem(module))
             }),
             success: function (data) {
                 // add past question and answer to the stack
-                let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+                let pastQNA = JSON.parse(localStorage.getItem(module));
                 updatedPastQNA = addQNAtoHistory(QID, AID, pastQNA)
-                localStorage.setItem("pastQNA", JSON.stringify(updatedPastQNA));
+                localStorage.setItem(module, JSON.stringify(updatedPastQNA));
 
                 if ("page" in data) {
                     localStorage.setItem("QID", data.page["QID"]);
@@ -104,7 +103,7 @@ $("#next").on("click", function () {
  */
 $("#prev").on("click", function () {
     // look at the stack top to see what's the preivous question ID
-    let pastQNA = JSON.parse(localStorage.getItem("pastQNA"));
+    let pastQNA = JSON.parse(localStorage.getItem(module));
     var prevQID = pastQNA[0]["QID"];
     $.ajax({
         url: "prev",
@@ -116,7 +115,7 @@ $("#prev").on("click", function () {
         success: function (data) {
             // pop the fisrt item in stack
             pastQNA.shift();
-            localStorage.setItem("pastQNA", JSON.stringify(pastQNA));
+            localStorage.setItem(module, JSON.stringify(pastQNA));
 
             // update the current page id
             localStorage.setItem("QID", data.page["QID"]);
@@ -134,7 +133,7 @@ $("#prev").on("click", function () {
  */
 $("#restart").on("click", function () {
     localStorage.setItem("QID", ROOT_QUESTION_ID);
-    localStorage.setItem("pastQNA", "[]");
+    localStorage.setItem(module, "[]");
     $.ajax({
         url: "questions",
         type: "POST",
@@ -144,7 +143,7 @@ $("#restart").on("click", function () {
             "qna":[]
         }),
         success: function (data) {
-            updateQuestions(data, JSON.parse(localStorage.getItem("pastQNA")).length);
+            updateQuestions(data, JSON.parse(localStorage.getItem(module)).length);
         },
         error: function (jqXHR, exception) {
              window.location.href = "/error";
