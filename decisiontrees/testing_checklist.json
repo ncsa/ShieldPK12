@@ -220,19 +220,6 @@
     }
   },
   {
-    "activityID": "16",
-    "activity": "Test timing plan",
-    "links": [],
-    "rules": {
-      "operator": "AND",
-      "criteria": [
-        {
-          "AID": "4b"
-        }
-      ]
-    }
-  },
-  {
     "activityID": "17",
     "activity": "Supply of extra kits",
     "links": [],

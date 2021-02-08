@@ -1,7 +1,7 @@
 body{
     background: #F2F2F2;
 }
-s
+
 .row{
     width:100%;
     margin:0;
@@ -338,13 +338,20 @@ p {
     border:none;
     margin: 0;
     border-radius: 0;
-    padding:10px 0;
+    padding:0;
 }
 .result-pdf.print .report p{
     font-size:13px;
 }
 .result-pdf.print .report h3{
+    margin:5px 0;
     font-size:16px;
+    line-height:18px;
+}
+.result-pdf.print .answer-pretty-id{
+    font-size:10px;
+    margin-right:3px;
+    padding:2px 4px;
 }
 .result-pdf.print .report .report-question{
     font-size: 16px;
@@ -368,9 +375,8 @@ p {
 
 .result-pdf.print .reports-header,
 .result-pdf.print .results-header{
-    margin: 20px 0;
+    margin: 10px 0;
 }
-
 
 
 .answer-pretty-id,

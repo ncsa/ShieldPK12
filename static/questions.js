@@ -156,10 +156,13 @@ $("#restart").on("click", function () {
 $(".download-pdf").on("click", function () {
     html2pdf()
         .set({
-            margin: 1,
-            pagebreak: {mode: ['css', 'legacy']},
+            margin: 0.5,
+            // pagebreak: {mode: ['css']},
             filename: "my-" + module + "-decision-report.pdf",
-            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'},
+            jsPDF: {
+                unit: 'in',
+                format: 'letter',
+                orientation: 'portrait'},
             html2canvas:{
                 onclone: function (document){
                     var resultPDF = document.getElementsByClassName("result-pdf");
