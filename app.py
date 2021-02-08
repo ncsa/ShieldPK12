@@ -47,14 +47,6 @@ def error():
 #     return render_template('landing.html')
 
 
-@app.route('/regress', methods=['GET'])
-def regress():
-    if request.args.get("module"):
-        return redirect("/" + request.args.get("module") + "/questions")
-    else:
-        return redirect("/cleaning/questions")
-
-
 @app.route('/<module>/questions', methods=['GET'])
 def questions(module):
     # TODO can have different template for different modules

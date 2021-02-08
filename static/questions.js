@@ -7,11 +7,9 @@ var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module);
 
 if (localStorage.getItem("QID") === null
-    || localStorage.getItem("module") === null
     || localStorage.getItem(module) === null
 ){
     // intialized
-    localStorage.setItem("module", module);
     localStorage.setItem("QID", ROOT_QUESTION_ID);
     localStorage.setItem(module, "[]");
 }
