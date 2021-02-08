@@ -91,7 +91,7 @@ $("#next").on("click", function () {
             }
         });
     } else {
-        alert("You have to select an option!");
+        $("#alert").show();
     }
 
 });
@@ -329,7 +329,13 @@ function updateProgressBar(minNumQ, answeredNumQ) {
     $("#progress-container p").html(progress + "% Complete");
 }
 
+/**
+ * if any of the answer is selected
+ */
 $("#answers").on("click", ".answer", function () {
+    // if any of them selected, dismiss the alert
+    $("#alert").hide();
+
     // if radio button, also need to disable other selections first
     if ($("#answers").attr("multiple-answers") === "false") {
         $(".answer").removeClass("selected");
@@ -343,6 +349,13 @@ $("#answers").on("click", ".answer", function () {
     var selection = $(this).find("input");
     selection.prop("checked") ? selection.prop("checked", false) : selection.prop("checked", true);
 })
+
+/**
+ * close the alert forcefully
+ */
+$("#alert-close").on("click", function(){
+    $("#alert").hide();
+});
 
 /**
  * update pastQNA

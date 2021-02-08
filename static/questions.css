@@ -97,6 +97,17 @@ p {
     color: #21202C;
 }
 
+#alert{
+    background: linear-gradient(0deg, rgba(175, 215, 255, 0.2), rgba(175, 215, 255, 0.2)), #FFFFFF;
+    color:#20558A;
+    border:none;
+    display: none;
+}
+#alert-close{
+    color:#20558A;
+    opacity: 0.8;
+}
+
 #qna-container,
 #result-container {
     max-width: 100%;
