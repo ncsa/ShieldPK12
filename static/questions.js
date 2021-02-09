@@ -289,7 +289,7 @@ function generateChecklist(checklist) {
         $(".checklists").append(`
             <div class="checklist">
                 <input type="checkbox"/>
-                <a class="checklist-activity" href="#" target="_blank">` + item["activity"] + `</a>
+                <a class="checklist-activity" href="`+ item["links"][0] + `" target="_blank">` + item["activity"] + `</a>
             </div>
         `);
     });
