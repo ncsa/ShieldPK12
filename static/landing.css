@@ -88,9 +88,7 @@ h4 {
     padding: 19px 39px;
 }
 
-#start:hover,
-#start:active,
-#start:focus {
+#start:hover {
     background: #FFFFFF;
     color: #20558A;
 }

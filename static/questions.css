@@ -81,8 +81,6 @@ body {
 }
 
 .sidenav .list-group-item:hover,
-.sidenav .list-group-item:focus,
-.sidenav .list-group-item:active,
 .sidenav .list-group-item.active{
     color: #946C3B;
     background: #FFFFFF;
@@ -152,9 +150,7 @@ body {
     border: 1px solid #20558A;
 }
 
-#navigation-btns .btn-secondary:hover,
-#navigation-btns .btn-secondary:active,
-#navigation-btns .btn-secondary:focus {
+#navigation-btns .btn-secondary:hover{
     background: #20558A;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -254,9 +250,7 @@ p {
     color: #20558A;
 }
 
-.answer:hover,
-.answer:focus,
-.answer:active {
+.answer:hover{
     border: 2px solid rgba(32, 85, 138, 0.5);
 }
 
