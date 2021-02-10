@@ -56,8 +56,16 @@ body {
     background-color: #20558A;
 }
 
+.sidenav .overlay-block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: calc(100vw - 360px);
+}
+
 .sidenav .list-group-header{
-    background: #FFFFFF;
+    background: #F2F2F2;;
     height:70px;
     padding: 15px 34px;
 }
@@ -70,6 +78,14 @@ body {
     background: none;
     border: none;
     padding: 25px 34px;
+}
+
+.sidenav .list-group-item:hover,
+.sidenav .list-group-item:focus,
+.sidenav .list-group-item:active,
+.sidenav .list-group-item.active{
+    color: #946C3B;
+    background: #FFFFFF;
 }
 
 .dropdownMenuLink {

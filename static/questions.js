@@ -5,6 +5,7 @@ ROOT_QUESTION_ID = "1"
 // assume pattern will be /module/questions
 var module = $(location).attr('href').split("/").slice(-2)[0];
 $("#module-name").empty().text(module);
+$(".sidenav").find("#sidenav-" + module).addClass("active");
 
 if (localStorage.getItem(module + "-QID") === null
     || localStorage.getItem(module + "-pastQNA") === null
@@ -17,6 +18,10 @@ if (localStorage.getItem(module + "-QID") === null
 $(".dropdownMenuLink").on("click", function(){
     $(".sidenav").toggleClass("active");
 });
+
+$(".overlay-block").on("click", function(){
+    $(".sidenav").removeClass("active");
+})
 
 /**
  * update page when document ready
