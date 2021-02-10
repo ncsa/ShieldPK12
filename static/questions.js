@@ -14,6 +14,10 @@ if (localStorage.getItem(module + "-QID") === null
     localStorage.setItem(module + "-pastQNA", "[]");
 }
 
+$(".dropdownMenuLink").on("click", function(){
+    $(".sidenav").toggleClass("active");
+});
+
 /**
  * update page when document ready
  */

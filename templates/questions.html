@@ -28,6 +28,24 @@
     </head>
 
     <body>
+        <div class="container sidenav">
+            <div class="overlay">
+                 <div class="list-group">
+                     <div class="list-group-header">
+                         <button class="dropdownMenuLink" role="button"><i class="fas fa-bars"></i></button>
+                         <a href="/"><img src="{{url_for('static', filename='shieldpk12-logo-d.svg')}}"
+                                          alt="shieldpk12-logo-d" height="36"></a>
+                     </div>
+                     <a href="/cleaning/questions" class="list-group-item list-group-item-action">Cleaning</a>
+                     <a href="/distancing/questions" class="list-group-item list-group-item-action">Distancing</a>
+                     <a href="/it/questions" class="list-group-item list-group-item-action">IT</a>
+                     <a href="/mask/questions" class="list-group-item list-group-item-action">Mask</a>
+                     <a href="/testing/questions" class="list-group-item list-group-item-action">Testing</a>
+                     <a href="/ventilation/questions" class="list-group-item list-group-item-action">Ventilation</a>
+                 </div>
+            </div>
+
+        </div>
         <div id="survey">
             <nav class="navbar navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -37,22 +55,8 @@
                 </button>
                 <span class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <div class="nav-item dropdown show" id="navigation-dropdown">
-                            <a class="nav-link" href="#" role="button"
-                               id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bars"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/">HOME</a>
-                                <a class="dropdown-item" href="/testing/questions">Testing</a>
-                                <a class="dropdown-item" href="/distancing/questions">Distancing</a>
-                                <a class="dropdown-item" href="/ventilation/questions">Ventilation</a>
-                                <a class="dropdown-item" href="/mask/questions">Mask</a>
-                                <a class="dropdown-item" href="/cleaning/questions">Cleaning</a>
-                                <a class="dropdown-item" href="/IT/questions">IT</a>
-                            </div>
-                        </div>
-                        <span class="navbar-text"><p class="prompt" id="module-name"></p></span>
+                        <button class="dropdownMenuLink" role="button"><i class="fas fa-bars"></i></button>
+                        <p class="prompt" id="module-name"></p>
                     </ul>
                     <ul class="navbar-nav mr-3">
                         <div class="nav-item" id="progress-container">
@@ -131,8 +135,8 @@
                     </button>
                 </div>
             </div>
+            {% include 'footer.html' %}
         </div>
-        {% include 'footer.html' %}
         <script type="text/javascript" src="{{url_for('static', filename='questions.js')}}"></script>
     </body>
 </html>

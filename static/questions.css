@@ -1,36 +1,102 @@
-body{
+body {
     background: #F2F2F2;
 }
 
-.row{
-    width:100%;
-    margin:0;
+.row {
+    width: 100%;
+    margin: 0;
 }
 
-.container{
-    padding:0;
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
     max-width: none;
-    width:100%;
+    width: 100%;
 }
 
-.navbar{
+.navbar {
     background: #20558A;
     min-height: 70px;
-    width:100%;
+    width: 100%;
+    padding: 0 34px;
 }
 
-.navbar-text{
+.navbar-text {
     padding-bottom: 0;
 }
 
-#navigation-dropdown #dropdownMenuLink {
-    border: none;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-size: 22px;
+.sidenav{
+    display: none;
 }
 
-#module-name{
+.sidenav.active{
+    display: block;
+}
+
+.sidenav .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(97, 98, 101, 0.55);
+    /*display: none; !* making it hidden by default *!*/
+}
+
+.sidenav .list-group {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 360px;
+    background-color: #20558A;
+}
+
+.sidenav .list-group-header{
+    background: #FFFFFF;
+    height:70px;
+    padding: 15px 34px;
+}
+
+.sidenav .list-group-item{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    padding: 25px 34px;
+}
+
+.dropdownMenuLink {
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding:0;
+    margin-right: 15px;
+    background: none;
+}
+
+.sidenav .dropdownMenuLink {
+     color: #20558A;
+}
+
+#survey {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width:100%;
+}
+
+.navbar-nav .dropdownMenuLink {
+    color: #FFFFFF !important;
+}
+
+#module-name {
     color: #FFFFFF;
     text-transform: capitalize;
     display:inline-block;
@@ -43,6 +109,7 @@ body{
     font-size: 14px;
     letter-spacing: 0.5625px;
     color: #FFFFFF;
+    margin:auto auto;
 }
 
 #progress-container > .prompt{
