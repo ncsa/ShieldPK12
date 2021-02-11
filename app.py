@@ -5,6 +5,9 @@ from flask import Flask, render_template, request, abort, redirect
 from decisiontrees.module import Module
 
 app = Flask(__name__)
+app.add_url_rule('/static/css/', endpoint='css', view_func=app.send_static_file)
+app.add_url_rule('/static/js/', endpoint='js', view_func=app.send_static_file)
+app.add_url_rule('/static/img/', endpoint='img', view_func=app.send_static_file)
 
 # initialize the module
 # TODO put the path in a config file
