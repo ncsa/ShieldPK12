@@ -4,7 +4,16 @@ ROOT_QUESTION_ID = "1"
 // GET current module
 // assume pattern will be /module/questions
 var module = $(location).attr('href').split("/").slice(-2)[0];
-$("#module-name").empty().text(module);
+$(".module-name").empty().text(module);
+
+// get current date
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+$("#timestamp").empty().text(mm + '/' + dd + '/' + yyyy)
+
+// set active module in sidenav
 $(".sidenav").find("#sidenav-" + module).addClass("active");
 
 if (localStorage.getItem(module + "-QID") === null
@@ -15,7 +24,7 @@ if (localStorage.getItem(module + "-QID") === null
     localStorage.setItem(module + "-pastQNA", "[]");
 }
 
-$(".dropdownMenuLink").on("click", function(){
+$(".module-menu").on("click", function(){
     $(".sidenav").toggleClass("active");
 });
 

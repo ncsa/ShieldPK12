@@ -22,6 +22,9 @@ button{
     margin-bottom: 23px;
 }
 
+.modal a{
+    color:#20558A;
+}
 .modal p {
     font-family: Lato;
     font-style: normal;

@@ -33,7 +33,7 @@
             <div class="overlay">
                  <div class="list-group">
                      <div class="list-group-header">
-                         <button class="dropdownMenuLink" role="button"><i class="fas fa-bars"></i></button>
+                         <button class="module-menu" role="button"><i class="fas fa-bars"></i></button>
                          <a href="/"><img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}"
                                           alt="shieldpk12-logo-d" height="36"></a>
                      </div>
@@ -62,8 +62,8 @@
                 </button>
                 <span class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <button class="dropdownMenuLink" role="button"><i class="fas fa-bars"></i></button>
-                        <p class="prompt" id="module-name"></p>
+                        <button class="module-menu" role="button"><i class="fas fa-bars"></i></button>
+                        <p class="module-name"></p>
                     </ul>
                     <ul class="navbar-nav mr-3">
                         <div class="nav-item" id="progress-container">
@@ -124,9 +124,18 @@
             </div>
             <div class="container" id="result-container">
                 <div class="result-pdf" id="result-pdf">
+                    <div class="result-pdf-header">
+                        <div>
+                            <img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}" />
+                        </div>
+                        <div>
+                            <h1 class="module-name"></h1><h1> Module Report</h1>
+                            <p id="timestamp"></p>
+                        </div>
+                    </div>
                     <div class="col col-lg-12 col-md-12 col-sm-12">
                         <div class="reports-header">
-                            <h1>Your Decision Report:</h1>
+                            <h1 class="module-name"></h1><h1> Decision Report:</h1>
                             <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;
                                 Report</button>
                         </div>
@@ -134,9 +143,7 @@
                     </div>
                     <div class="col col-lg-12 col-md-12 col-sm-12">
                         <div class="results-header">
-                            <h1>Your Checklist</h1>
-                            <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;
-                                Report</button>
+                            <h1 class="module-name"></h1><h1> Checklist</h1>
                         </div>
                         <div class="checklist-container">
                             <h3>Activities To Complete</h3>

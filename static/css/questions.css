@@ -91,7 +91,7 @@ a{
     background: #FFFFFF;
 }
 
-.dropdownMenuLink {
+.module-menu {
     border: none;
     cursor: pointer;
     font-size: 22px;
@@ -100,7 +100,7 @@ a{
     background: none;
 }
 
-.sidenav .dropdownMenuLink {
+.sidenav .module-menu {
      color: #20558A;
 }
 
@@ -111,15 +111,19 @@ a{
     width:100%;
 }
 
-.navbar-nav .dropdownMenuLink {
+.navbar-nav .module-menu {
     color: #FFFFFF !important;
 }
 
-#module-name {
-    color: #FFFFFF;
+.module-name{
     text-transform: capitalize;
     display:inline-block;
+}
+
+.navbar .module-name {
+    color: #FFFFFF;
     font-size:22px;
+    margin:auto auto;
 }
 
 .prompt{
@@ -441,7 +445,7 @@ p {
     margin:22px 0;
 }
 
-.report p{
+.report p {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -451,16 +455,50 @@ p {
     color: #21202C;
 }
 
+.result-pdf-header {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 27px;
+}
+
+.result-pdf-header > div:last-of-type {
+    margin-left: auto
+}
+
+.result-pdf-header img {
+    width: 142px;
+    height: 37px;
+}
+
+.result-pdf-header p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.75px;
+    color: #20558A;
+    text-align: right;
+}
+
 /* for pdf */
-.result-pdf.print h1{
+.result-pdf.print .result-pdf-header {
+    display: flex;
+}
+
+.result-pdf.print h1 {
     font-size: 18px;
     text-align: center;
-    display:block;
+    display: inline;
     line-height: inherit;
 }
+.result-pdf.print .reports-header{
+    display: none;
+}
 .result-pdf.print .report,
-.result-pdf.print .checklist-container{
-    border:none;
+.result-pdf.print .checklist-container {
+    border: none;
     margin: 0;
     border-radius: 0;
     padding:0;
