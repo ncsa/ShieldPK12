@@ -534,6 +534,7 @@ p {
 .result-pdf.print .checklist-activity{
     font-size:13px;
     line-height:inherit;
+    text-decoration: none;
 }
 
 .result-pdf.print .checklist-container h3,

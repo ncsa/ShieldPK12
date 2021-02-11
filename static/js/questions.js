@@ -190,7 +190,6 @@ $(".download-pdf").on("click", function () {
                 },
                 // ignore button
                 ignoreElements: function (el){return el.tagName.toLowerCase() === "button"}},
-            enableLinks: true,
         })
         .from(document.getElementById("result-pdf"))
         .save();
