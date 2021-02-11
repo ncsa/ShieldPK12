@@ -24,6 +24,7 @@
         </script>
         <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='questions.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='about-us.css')}}">
         <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
     </head>
 
@@ -149,6 +150,7 @@
                     </button>
                 </div>
             </div>
+            {% include 'about-us.html' %}
             {% include 'footer.html' %}
         </div>
         <script type="text/javascript" src="{{url_for('static', filename='questions.js')}}"></script>
