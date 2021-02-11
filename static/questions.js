@@ -55,7 +55,7 @@ $(document).ready(function () {
 /**
  * submit the selection and go to next step
  */
-$("#next").on("click", function () {
+$("#next button").on("click", function () {
     var QID = localStorage.getItem(module + "-QID");
     var AID = [];
 
@@ -108,7 +108,7 @@ $("#next").on("click", function () {
 /**
  * going to the previous option
  */
-$("#prev").on("click", function () {
+$("#prev button").on("click", function () {
     // look at the stack top to see what's the preivous question ID
     let pastQNA = JSON.parse(localStorage.getItem(module + "-pastQNA"));
     var prevQID = pastQNA[0]["QID"];

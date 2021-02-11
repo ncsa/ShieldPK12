@@ -2,6 +2,11 @@ body {
     background: #F2F2F2;
 }
 
+button,
+a{
+    outline:none !important;
+}
+
 .row {
     width: 100%;
     margin: 0;
@@ -142,7 +147,7 @@ body {
     border-radius: 4.5px;
 }
 
-#navigation-btns .btn-secondary{
+.btn-secondary{
     background: #FFFFFF;
     color:#20558A;
     border-radius: 8px;
@@ -150,10 +155,39 @@ body {
     border: 1px solid #20558A;
 }
 
-#navigation-btns .btn-secondary:hover{
+.btn-secondary:hover,
+.navigation-btn i:hover{
     background: #20558A;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
+}
+
+.navigation-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navigation-btn:last-of-type{
+    margin-left: auto;
+}
+.navigation-btn p{
+    color:#20558A;
+    font-size: 21px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.navigation-btn i{
+    border-radius: 50%;
+    font-size: 51px;
+}
+
+.navigation-btn button{
+    color:#20558A;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -186,13 +220,14 @@ p {
 }
 
 #alert{
-    background: linear-gradient(0deg, rgba(175, 215, 255, 0.2), rgba(175, 215, 255, 0.2)), #FFFFFF;
-    color:#20558A;
+    background:#946C3B;
+    color:#FFFFFF;
     border:none;
+    border-radius: 0;
     display: none;
 }
 #alert-close{
-    color:#20558A;
+    color:#FFFFFF;;
     opacity: 0.8;
 }
 
@@ -215,7 +250,8 @@ p {
     margin-top: 18px;
 }
 
-.answer-container {
+.answer-container,
+.navigation-btns{
     padding: 32px;
 }
 
@@ -251,7 +287,7 @@ p {
 }
 
 .answer:hover{
-    border: 2px solid rgba(32, 85, 138, 0.5);
+    border: 2px solid rgba(148, 108, 59, 0.7);
 }
 
 /*radio and checkbox*/
