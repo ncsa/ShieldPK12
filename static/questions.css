@@ -131,6 +131,9 @@ a{
     margin:auto auto;
 }
 
+#progress-container{
+    width:190px;
+}
 #progress-container > .prompt{
     text-align: center;
     margin-bottom: 5px;
@@ -243,7 +246,7 @@ p {
 }
 
 .question-container {
-    padding: 100px 32px 32px 100px;
+    padding: 68px 54px 68px 54px;
 }
 
 #question-description {
