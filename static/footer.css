@@ -12,7 +12,10 @@
     line-height: 19px;
     letter-spacing: 0.4375px;
     color: #FFFFFF;
+    margin:auto;
     margin-right:20px;
+    display:block;
+    cursor: pointer;
 }
 
 .footer p{
@@ -24,9 +27,4 @@
     line-height: 17px;
     letter-spacing: 0.4375px;
     color: #FFFFFF;
-}
-
-#footer-logo{
-    width:28px;
-    height:29px;
 }

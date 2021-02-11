@@ -131,6 +131,16 @@ h4 {
     position: relative;
 }
 
+.module:hover{
+    background: #FAFAF8;
+    border: 2px solid rgba(148, 108, 59, 0.7);
+
+}
+.module:hover h4,
+.module:hover a{
+    color:#946C3B;
+}
+
 .module h4{
     margin-bottom:16px;
 }
