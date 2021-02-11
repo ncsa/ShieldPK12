@@ -260,7 +260,7 @@ function updateQuestions(data, answeredNumQ) {
 
             // add recommended badge
             if ("recommended" in option && option["recommended"] === true) {
-                answer.find("h2").after(`<i class="fas fa-star recommended"></i>`);
+                answer.find("h2").after(`<div class="recommended"><i class="fas fa-star"></i></div>`);
             }
         }
         else{

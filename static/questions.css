@@ -282,13 +282,21 @@ p {
     position: absolute;
     right: 20px;
     top: 0;
-    background: #946C3B;
-    color: white;
+    color: #ffffff;
     height: 42px;
     width: 32px;
     border-radius: 0;
     text-align: center;
-    padding:5px;
+    border: 16px solid #946C3B; /* All borders set */
+    border-top: 0; /* Remove left border */
+    border-bottom: 12px solid transparent; /* Right transparent */
+}
+
+.recommended i{
+    position: relative;
+    right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .checklist-container,
