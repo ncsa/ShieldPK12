@@ -118,6 +118,9 @@ $("#next button").on("click", function () {
  * going to the previous option
  */
 $("#prev button").on("click", function () {
+    // if alert on display, hide alert
+    $("#alert").hide();
+
     // look at the stack top to see what's the preivous question ID
     let pastQNA = JSON.parse(localStorage.getItem(module + "-pastQNA"));
     var prevQID = pastQNA[0]["QID"];
