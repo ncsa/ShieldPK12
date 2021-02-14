@@ -303,12 +303,14 @@ function updateResult(data) {
 function generateChecklist(checklist) {
     $(".checklists").empty();
     checklist.forEach(function (item, index) {
-        $(".checklists").append(`
-            <div class="checklist">
-                <input type="checkbox"/>
-                <a class="checklist-activity" href="`+ item["links"][0] + `" target="_blank">` + item["activity"] + `</a>
-            </div>
-        `);
+        var checkList =
+            $(`<div class="checklist"><input type="checkbox"/>
+            <p class="checklist-activity">` + item["activity"] +`</p>
+            </div><hr>`);
+        item["links"].forEach(function (link, index){
+           checkList.find(".checklist-activity").after(`<a href="`+ link + `" target="_blank">` + link +`</a>`);
+        });
+        $(".checklists").append(checkList);       
     });
 }
 

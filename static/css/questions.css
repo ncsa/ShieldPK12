@@ -375,7 +375,7 @@ p {
     line-height: 33px;
     letter-spacing: 0.75px;
     color: #000000;
-    text-decoration: underline;
+    display: inline;
 }
 
 .reports-header,
@@ -482,6 +482,15 @@ p {
     text-align: right;
 }
 
+.result-pdf .checklist a{
+    font-size:13px;
+    line-height:inherit;
+    text-decoration: none;
+    display: block;
+    color: #20558A;
+    cursor: pointer;
+}
+
 /* for pdf */
 .result-pdf.print .result-pdf-header {
     display: flex;
@@ -534,12 +543,14 @@ p {
 .result-pdf.print .checklist-activity{
     font-size:13px;
     line-height:inherit;
-    text-decoration: none;
 }
 
-.result-pdf.print .checklist-container h3,
-.result-pdf.print .checklist-container hr{
+.result-pdf.print .checklist-container h3{
     display: None;
+}
+
+.result-pdf.print .checklist-container hr {
+    border: 1px solid #CFCFCF;
 }
 
 .result-pdf.print .reports-header,
