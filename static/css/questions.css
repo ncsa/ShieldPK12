@@ -1,5 +1,5 @@
 body {
-    background: #F2F2F2;
+    background: #FFFFFF;
 }
 
 button,
@@ -70,7 +70,7 @@ a{
 }
 
 .sidenav .list-group-header{
-    background: #F2F2F2;;
+    background: #FFFFFF;;
     height:70px;
     padding: 15px 34px;
 }
@@ -89,6 +89,9 @@ a{
 .sidenav .list-group-item.active{
     color: #946C3B;
     background: #FFFFFF;
+}
+.sidenav .list-group-item:hover{
+    border-top:1px solid #946C3B;
 }
 
 .module-menu {
@@ -166,7 +169,6 @@ a{
 .navigation-btn i:hover{
     background: #20558A;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
 }
 
 .navigation-btns{
@@ -295,6 +297,9 @@ p {
 
 .answer:hover{
     border: 2px solid rgba(148, 108, 59, 0.7);
+}
+.answer:hover > h2{
+    color: #946C3B;
 }
 
 /*radio and checkbox*/

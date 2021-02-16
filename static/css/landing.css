@@ -1,5 +1,5 @@
 body{
-    background: #F2F2F2;
+    background: #FFFFFF;
 }
 
 button,
@@ -131,7 +131,7 @@ h4 {
     box-sizing: border-box;
     border-radius: 11px;
     padding:35px;
-    height: 260px;
+    height: 240px;
     margin:16px;
     position: relative;
 }

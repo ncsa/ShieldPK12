@@ -1,49 +1,212 @@
 [
   {
-    "QID": "1",
-    "question": "Data Governance",
-    "description": "Setting up the fundamental governance, and leveraging any existing governance processes about data will be important.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1",
-        "prettyAID": "",
-        "answer": "",
-        "description": "",
-        "resources": [],
-        "nextQID": "1a-i"
-      }
-    ]
-  },
-  {
-    "QID": "1a-i",
+    "QID": "1a",
     "question": "Who will see any testing data that you collect",
+    "multiple": true,
     "description": "This can include not only results, but the fact that someone tested, when and where, the number of times they have tested. Think about roles more so than individuals in this item.",
     "resources": [],
     "answers": [
       {
         "AID": "1a-i",
-        "prettyAID": "",
-        "answer": "",
+        "prettyAID": "a",
+        "answer": "Administrators",
         "description": "",
         "resources": [],
-        "nextQID": "1a-ii"
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-ii",
+        "prettyAID": "b",
+        "answer": "Nurses",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-iii",
+        "prettyAID": "c",
+        "answer": "Public Health",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-iv",
+        "prettyAID": "d",
+        "answer": "Project coordinators/managers",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+       {
+        "AID": "1a-v",
+        "prettyAID": "e",
+        "answer": "Volunteers",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+      {
+        "AID": "1a-vi",
+        "prettyAID": "f",
+        "answer": "Testing site workers",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+      {
+        "AID": "1a-vii",
+        "prettyAID": "g",
+        "answer": "IT staff",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b"
+      },
+      {
+        "AID": "1a-viii",
+        "prettyAID": "h",
+        "answer": "Others",
+        "description": "Please document who and why.",
+        "resources": [],
+        "nextQID": "1b"
       }
     ]
   },
-  {
-    "QID": "1a-ii",
-    "question": "Decisions based on what is shared based on role within the organization",
+   {
+    "QID": "1b",
+    "question": "What training is needed based on the role and the type of information a particular person will see?",
+     "mutliple": true,
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "1a-ii",
-        "prettyAID": "",
-        "answer": "",
+        "AID": "1b-i",
+        "prettyAID": "a",
+        "answer": "HIPAA training",
         "description": "",
         "resources": [],
-        "nextQID": "1a-ii-1"
+        "nextQID": "1b-i-a"
+      },
+      {
+        "AID": "1b-ii",
+        "prettyAID": "b",
+        "answer": "Other data privacy training",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-ii-a"
+      }
+    ]
+  },
+  {
+    "QID": "1b-i-a",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b-i"
+        }
+      ]
+    },
+    "question": "Do you have HIPAA training available already in your org?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-i-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-i-a-i-1"
+      },
+      {
+        "AID": "1b-i-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "You will need to find a source of HIPAA training.",
+        "resources": [],
+        "nextQID": "1b-ii-a"
+      }
+    ]
+  },
+   {
+    "QID": "1b-ii-a",
+     "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "1b-ii"
+        }
+      ]
+    },
+    "question": "Do you have training available already?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-ii-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-ii-a-i-1"
+      },
+      {
+        "AID": "1b-ii-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-iii"
+      }
+    ]
+  },
+   {
+    "QID": "1b-ii-a-i-1",
+    "question": "Do you have the needed licenses?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-ii-a-i-1-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-iii"
+      },
+      {
+        "AID": "1b-ii-a-i-1-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-iii"
+      }
+    ]
+  },
+
+   {
+    "QID": "1b-i-a-i-1",
+    "question": "Do the licenses cover then number of users that you need to take the training?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-i-a-i-1-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      },
+       {
+        "AID": "1b-i-a-i-1-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
       }
     ]
   },
