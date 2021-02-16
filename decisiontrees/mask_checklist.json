@@ -38,9 +38,35 @@
       ]
     }
   },
-   {
-    "activity": "Guidelines as to whether individual teachers may require masks",
+  {
+    "activity": "List of what qualifies as an approved mask",
     "activityID": "4",
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html",
+      "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#anchor_1604967124156",
+      "https://portal.ct.gov/-/media/SDE/COVID-19/Addendum11-Interim-Guidance-for-the-Use-of-Facemasks.pdf"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Process for submitting medical documentation for mask exemption",
+    "activityID": "5",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-1"}
+      ]
+    }
+  },
+  {
+    "activity": "Guidelines as to whether individual teachers may require masks",
+    "activityID": "6",
     "links": [
       "https://search.cdc.gov/search/?query=clear%20mask"
     ],
@@ -53,7 +79,7 @@
   },
   {
     "activity": "Educational materials and curricula for all age groups on the wearing and proper removal of masks",
-    "activityID": "5",
+    "activityID": "7",
     "links": [
       "https://www.cdc.gov/coronavirus/2019-ncov/global-covid-19/how-to-wear-take-off-mask.html",
       "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html#planning-in-person-classes"
@@ -68,7 +94,7 @@
   },
   {
     "activity": "Lists for each class of students with mask exemptions",
-    "activityID": "6",
+    "activityID": "8",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -79,7 +105,7 @@
   },
   {
     "activity": "Clear guidelines as to when masks may be removed during class",
-    "activityID": "7",
+    "activityID": "9",
     "links": [
       "https://portal.ct.gov/-/media/SDE/COVID-19/CTReopeningSchools.pdf"
     ],
@@ -92,7 +118,7 @@
   },
   {
     "activity": "Consequence and escalation guidelines for refusal to wear masks or tampering with another’s mask",
-    "activityID": "8",
+    "activityID": "10",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -103,7 +129,7 @@
   },
   {
     "activity": "Plan for hallway mask monitors",
-    "activityID": "9",
+    "activityID": "11",
     "links": [
       "https://portal.ct.gov/-/media/SDE/COVID-19/CTReopeningSchools.pdf"
     ],
@@ -116,7 +142,7 @@
   },
    {
     "activity": "Plan for recess monitors to check on mask wearing",
-    "activityID": "10",
+    "activityID": "12",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -127,7 +153,7 @@
   },
   {
     "activity": "Supply of spare/replacement masks in recess areas",
-    "activityID": "11",
+    "activityID": "13",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -138,7 +164,7 @@
   },
   {
     "activity": "Signs for the cafeteria to show when and how to remove masks for eating",
-    "activityID": "12",
+    "activityID": "14",
     "links": [],
     "rules": {
       "operator": "OR",
@@ -150,7 +176,7 @@
   },
   {
     "activity": "Plan to provide paper towels or napkins for masks to be placed on during eating",
-    "activityID": "13",
+    "activityID": "15",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -161,7 +187,7 @@
   },
   {
     "activity": "Instruction to teachers and extracurricular staff on mask wearing and safe removal",
-    "activityID": "14",
+    "activityID": "16",
     "links": [
       "https://www.cdc.gov/coronavirus/2019-ncov/global-covid-19/how-to-wear-take-off-mask.html"
     ],
@@ -175,7 +201,7 @@
   },
   {
     "activity": "Consequence guidelines for refusal to wear masks during extracurricular activities",
-    "activityID": "15",
+    "activityID": "17",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -186,7 +212,7 @@
   },
   {
     "activity": "Guideline for each sport as to when masks may be removed for safety",
-    "activityID": "16",
+    "activityID": "18",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -197,7 +223,7 @@
   },
   {
     "activity": "Plan for each sport for safe placement of masks when not worn, including supervision",
-    "activityID": "17",
+    "activityID": "19",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -208,7 +234,7 @@
   },
   {
     "activity": "Email to staff with full explanation of the mask policy",
-    "activityID": "18",
+    "activityID": "20",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -219,7 +245,7 @@
   },
   {
     "activity": "Schedule information sessions to present and answer questions about the mask policy",
-    "activityID": "19",
+    "activityID": "21",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -230,7 +256,7 @@
   },
   {
     "activity": "Schedule for reminding staff about mask policy",
-    "activityID": "20",
+    "activityID": "22",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -241,7 +267,7 @@
   },
   {
     "activity": "Email to parents with both full and short explanations of the mask policy",
-    "activityID": "21",
+    "activityID": "23",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -252,7 +278,7 @@
   },
   {
     "activity": "FAQ or other written explanation of your mask policy posted on the school website and easily findable",
-    "activityID": "22",
+    "activityID": "24",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -263,7 +289,7 @@
   },
   {
     "activity": "Mailing to parent explaining the mask policy and all related information",
-    "activityID": "23",
+    "activityID": "25",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -274,7 +300,7 @@
   },
   {
     "activity": "Wording for reminders to parents about mask policy and plan for when to send them",
-    "activityID": "24",
+    "activityID": "26",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -285,7 +311,7 @@
   },
   {
     "activity": "Set of announcement messages for reminding students about the mask policy and schedule for airing them",
-    "activityID": "25",
+    "activityID": "27",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -296,7 +322,7 @@
   },
   {
     "activity": "Entrance signs for mask policy",
-    "activityID": "26",
+    "activityID": "28",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -307,7 +333,7 @@
   },
   {
     "activity": "Hallway signs for mask policy",
-    "activityID": "27",
+    "activityID": "29",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -318,7 +344,7 @@
   },
    {
     "activity": "Classroom signs for mask policy",
-    "activityID": "28",
+    "activityID": "30",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -329,7 +355,7 @@
   },
   {
     "activity": "List of all places needing a mask sign",
-    "activityID": "29",
+    "activityID": "31",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -340,7 +366,7 @@
   },
   {
     "activity": "Signs for mask policy in all other areas identified",
-    "activityID": "30",
+    "activityID": "32",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -351,7 +377,7 @@
   },
   {
     "activity": "Bulk purchase of disposable masks",
-    "activityID": "31",
+    "activityID": "33",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -362,7 +388,7 @@
   },
   {
     "activity": "Collection of reusable masks",
-    "activityID": "32",
+    "activityID": "34",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -373,18 +399,20 @@
   },
   {
     "activity": "Protocol for providing a mask when needed (where to go, and who will be responsible for the supply)",
-    "activityID": "33",
+    "activityID": "35",
     "links": [
       "https://www.k12.wa.us/sites/default/files/public/communications/Employer-Health-and-Safety-Requirements-for-School-Scenarios.pdf"
     ],
     "rules": {
-      "operator": "ALL",
-      "criteria": []
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-1"}
+      ]
     }
   },
   {
     "activity": "Supply of masks sufficient to provide to all students",
-    "activityID": "34",
+    "activityID": "36",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -395,7 +423,7 @@
   },
   {
     "activity": "Supply of masks sufficient to provide to all staff",
-    "activityID": "35",
+    "activityID": "37",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -406,7 +434,7 @@
   },
   {
     "activity": "Supply of clear facemasks for those who need them",
-    "activityID": "36",
+    "activityID": "38",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -417,7 +445,7 @@
   },
   {
     "activity": "List of all who will need clear facemasks",
-    "activityID": "37",
+    "activityID": "39",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -428,7 +456,7 @@
   },
   {
     "activity": "Centralized bins for mask disposal",
-    "activityID": "38",
+    "activityID": "40",
     "links": [
       "https://www2.health.vic.gov.au/public-health/infectious-diseases/infection-control-guidelines/cleaning-waste-disposal"
     ],
@@ -441,21 +469,27 @@
   },
   {
     "activity": "PPE for garbage collectors",
-    "activityID": "39",
+    "activityID": "41",
     "links": [],
     "rules": {
-      "operator": "ALL",
+      "operator": "AND",
       "criteria": [
+        {
+          "AID": "3b-ii"
+        }
       ]
     }
   },
   {
     "activity": "Training on safe collection and disposal of discarded masks",
-    "activityID": "40",
+    "activityID": "42",
     "links": [],
     "rules": {
-      "operator": "ALL",
+      "operator": "AND",
       "criteria": [
+        {
+          "AID": "3b-iii"
+        }
       ]
     }
   }
