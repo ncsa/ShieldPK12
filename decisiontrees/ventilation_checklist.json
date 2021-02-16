@@ -2,7 +2,9 @@
   {
     "activity": "Calculate base air change rate in each room/area",
     "activityID": "1",
-    "links": ["https://schools.forhealth.org/ventilation-guide/"],
+    "links": [
+      "https://schools.forhealth.org/ventilation-guide/"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": []
@@ -42,7 +44,9 @@
   {
     "activity": "Check with your HVAC team if your system can the airflow impact of a MERV 13 filter",
     "activityID": "5",
-    "links": [],
+    "links": [
+      "https://www.epa.gov/indoor-air-quality-iaq/what-merv-rating-1"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -64,7 +68,10 @@
   {
     "activity": "Determine the size and type of portable air cleaner needed for each space",
     "activityID": "7",
-    "links": ["https://docs.google.com/spreadsheets/d/1NEhk1IEdbEi_b3wa6gI_zNs8uBJjlSS-86d4b7bW098/edit#gid=1882881703"],
+    "links": [
+      "https://tinyurl.com/portableaircleanertool",
+      "https://docs.google.com/spreadsheets/d/1NEhk1IEdbEi_b3wa6gI_zNs8uBJjlSS-86d4b7bW098/edit#gid=1882881703"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -86,7 +93,9 @@
   {
     "activity": "Schedule empty time for shared spaces",
     "activityID": "9",
-    "links": [],
+    "links": [
+      "https://templates.office.com/en-us/my-class-schedule-tm00000002"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -97,7 +106,9 @@
   {
     "activity": "Reassess air change rate in each room/area after mitigations in place",
     "activityID": "10",
-    "links": [],
+    "links": [
+      "https://schools.forhealth.org/ventilation-guide/"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
