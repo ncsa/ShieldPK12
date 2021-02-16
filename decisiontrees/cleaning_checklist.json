@@ -103,7 +103,7 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-ii-1"}
+        {"AID": "1b-ii-2"}
       ]
     }
   },
@@ -156,7 +156,9 @@
   {
     "activity": "A supply of disinfectant",
     "activityID": "15",
-    "links": [],
+    "links": [
+      "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -167,7 +169,9 @@
   {
     "activity": "A supply of EPA-approved wipes",
     "activityID": "16",
-    "links": [],
+    "links": [
+      "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -175,7 +179,7 @@
       ]
     }
   },
-   {
+  {
     "activity": "Schedule for cleaning and replacing air filters",
     "activityID": "17",
     "links": [],
