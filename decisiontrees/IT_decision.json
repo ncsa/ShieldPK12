@@ -625,7 +625,7 @@
         "answer": "Yes",
         "description": "You will need to establish a way to integrate between systems",
         "resources": [],
-        "nextQID": ""
+        "nextQID": "10"
       },
       {
         "AID": "9b",
@@ -633,7 +633,7 @@
         "answer": "No",
         "description": "",
         "resources": [],
-        "nextQID": ""
+        "nextQID": "10"
       }
     ]
   },
@@ -1404,7 +1404,7 @@
         "answer": "Yes",
         "description": "",
         "resources": [],
-        "nextQID": ""
+        "nextQID": "17"
       },
        {
         "AID": "16a-ii-2",
@@ -2165,8 +2165,8 @@
       },
       {
         "AID": "24b-i-2",
-        "prettyAID": "Hand all questions to the partner",
-        "answer": "",
+        "prettyAID": "b",
+        "answer": "Hand all questions to the partner",
         "description": "",
         "resources": [],
         "nextQID": "25"
