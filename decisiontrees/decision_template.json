@@ -14,5 +14,29 @@
         "nextQID": ""
       }
     ]
+  },
+  {
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": ""
+        }
+      ]
+    },
+    "QID": "",
+    "question": "",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "",
+        "prettyAID": "",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      }
+    ]
   }
 ]
