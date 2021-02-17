@@ -1271,4 +1271,278 @@
       }
     ]
   },
+  {
+    "QID": "14",
+    "question": "Are there any special considerations(including regulations and laws) with respect to security and privacy of this data? ",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "14a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "15"
+      },
+      {
+        "AID": "14b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "15"
+      }
+    ]
+  },
+  {
+    "QID": "15",
+    "question": "How will you secure access to the data?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "15a",
+        "prettyAID": "a",
+        "answer": "Authentication and authorization process",
+        "description": "",
+        "resources": [],
+        "nextQID": "16"
+      },
+       {
+        "AID": "15b",
+        "prettyAID": "b",
+        "answer": "Limited access to parts of the data by role",
+        "description": "",
+        "resources": [],
+        "nextQID": "16"
+      },
+       {
+        "AID": "15c",
+        "prettyAID": "c",
+        "answer": "Data access audits",
+        "description": "",
+        "resources": [],
+        "nextQID": "16"
+      },
+       {
+        "AID": "15d",
+        "prettyAID": "d",
+        "answer": "Copy protections",
+        "description": "",
+        "resources": [],
+        "nextQID": "16"
+      }
+    ]
+  },
+  {
+    "QID": "16",
+    "question": "Where will your systems be located?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16a",
+        "prettyAID": "a",
+        "answer": "On-premises",
+        "description": "",
+        "resources": [],
+        "nextQID": "16a-i"
+      },
+      {
+        "AID": "16b",
+        "prettyAID": "b",
+        "answer": "Cloud",
+        "description": "",
+        "resources": [],
+        "nextQID": "16b-i"
+      },
+      {
+        "AID": "16c",
+        "prettyAID": "c",
+        "answer": "Hybrid",
+        "description": "",
+        "resources": [],
+        "nextQID": "16c-i"
+      }
+    ]
+  },
+  {
+    "QID": "16a-i",
+    "question": "do you have sufficient capacity of both the facilities and the hardware/software?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16a-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "16a-ii"
+      },
+       {
+        "AID": "16a-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "16a-ii"
+      }
+    ]
+  },
+  {
+    "QID": "16a-ii",
+    "question": "Does your on-premises infrastructure meet the availability requirements of the system you are creating?",
+    "description": "For example, if you want your system to be available over the weekend, are you already running infrastructure with similar uptime requirements.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16a-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": ""
+      },
+       {
+        "AID": "16a-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "16a-ii-2-a"
+      }
+    ]
+  },
+  {
+    "QID": "16a-ii-2-a",
+    "question": "How will you meet those requirements?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16a-ii-2-a-i",
+        "prettyAID": "a",
+        "answer": "Leveraging cloud resources to meet availability requirements rather than investing in on-premises hardware.",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      },
+       {
+        "AID": "16a-ii-2-a-ii",
+        "prettyAID": "b",
+        "answer": "Evaluate what is needed to meet availability needsand procure, configure, install equipment to meet the new needs.",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      },
+       {
+        "AID": "16a-ii-2-a-iii",
+        "prettyAID": "c",
+        "answer": "Adjust availability expectations with the appropriate audiences.  ",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      }
+    ]
+  },
+  {
+    "QID": "16b-i",
+    "question": "will you need additional budget? ",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16b-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "16b-ii"
+      },
+      {
+        "AID": "16b-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "16b-ii"
+      }
+    ]
+  },
+  {
+    "QID": "16b-ii",
+    "question": "Will you need any additional license?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16b-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      },
+       {
+        "AID": "16-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      }
+    ]
+  },
+  {
+    "QID": "16c-i",
+    "question": "Do you have sufficient capacity of both the facilities and the hardware/software?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16c-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "16c-ii"
+      },
+      {
+        "AID": "16c-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "16c-ii"
+      }
+    ]
+  },
+  {
+    "QID": "16c-ii",
+    "question": "Will you need additional budget? ",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "16c-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      },
+      {
+        "AID": "16c-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "17"
+      }
+    ]
+  },
+
 ]
