@@ -1544,5 +1544,666 @@
       }
     ]
   },
-
+  {
+    "QID": "17",
+    "question": "What additional infrastructure will you need tohandle the demand made by various components of your ecosystem?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "17a",
+        "prettyAID": "a",
+        "answer": "Additional capacity for anticipated load of people accessing the reports/dashboards",
+        "description": "",
+        "resources": [],
+        "nextQID": "18"
+      },
+      {
+        "AID": "17b",
+        "prettyAID": "b",
+        "answer": "Additional compute power for analysis",
+        "description": "",
+        "resources": [],
+        "nextQID": "18"
+      },
+      {
+        "AID": "17c",
+        "prettyAID": "c",
+        "answer": "Additional storage for data collection",
+        "description": "",
+        "resources": [],
+        "nextQID": "18"
+      },
+      {
+        "AID": "17d",
+        "prettyAID": "d",
+        "answer": "Additional infrastructure to meet availability expectations",
+        "description": "",
+        "resources": [],
+        "nextQID": "18"
+      },
+       {
+        "AID": "17e",
+        "prettyAID": "e",
+        "answer": "None",
+        "description": "",
+        "resources": [],
+        "nextQID": "18"
+      }
+    ]
+  },
+   {
+    "QID": "18",
+    "question": "What integrations between various components will be needed to make this work?",
+     "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18a",
+        "prettyAID": "a",
+        "answer": "Leverage an existing system to generate testing lists",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-i"
+      },
+      {
+        "AID": "18b",
+        "prettyAID": "b",
+        "answer": "Leverage existing messaging capability to notify students or parents",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-i"
+      }
+    ]
+  },
+   {
+    "QID": "18b-i",
+     "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "18b"
+        }
+      ]
+    },
+    "question": "Do you have capacity for the anticipated scale of messages?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18b-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-ii"
+      },
+      {
+        "AID": "18b-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-ii"
+      }
+    ]
+  },
+   {
+    "QID": "18b-ii",
+     "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "18b"
+        }
+      ]
+    },
+    "question": "Are there any budget implications for leveraging this messaging system?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18b-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-iii"
+      },
+      {
+        "AID": "18b-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-iii"
+      }
+    ]
+  },
+   {
+    "QID": "18b-iii",
+     "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "18b"
+        }
+      ]
+    },
+    "question": "Are there any technical or business processes that need to be modified to use this messaging capability?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18b-iii",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-iv"
+      },
+       {
+        "AID": "18b-iii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-iv"
+      }
+    ]
+  },
+  {
+    "QID": "18b-iv",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "18b"
+        }
+      ]
+    },
+    "question": "Is this within the expectations of the end user for how you will use this messaging system?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18b-iv-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "19"
+      },
+      {
+        "AID": "18b-iv-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-iv-2-a"
+      }
+    ]
+  },
+  {
+    "QID": "18b-iv-2-a",
+    "question": "Do you have an established policy for notifying users of change?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18b-iv-2-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "19"
+      },
+        {
+        "AID": "18b-iv-2-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "19"
+      }
+    ]
+  },
+  {
+    "QID": "19",
+    "question": "No matter where systems are located, do you need additional work to securethemadequately for this type of data?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "19a",
+        "prettyAID": "a",
+        "answer": "Physical Security",
+        "description": "This would include access to laptops/desktops, securing laptops against theft, security of data centers / server rooms.  (Leverage existing organization security policies and procedures when possible).",
+        "resources": [],
+        "nextQID": "20"
+      },
+      {
+        "AID": "19b",
+        "prettyAID": "b",
+        "answer": "Digital Security",
+        "description": "This would include appropriate password policies, malware protection, firewalls, logging, auditing, endpoint system management",
+        "resources": [],
+        "nextQID": "20"
+      },
+      {
+        "AID": "19c",
+        "prettyAID": "c",
+        "answer": "Security Policies",
+        "description": "Does your organization have appropriate policies related to system security and usage?",
+        "resources": [],
+        "nextQID": "20"
+      }
+    ]
+  },
+  {
+    "QID": "20",
+    "question": "How will theITinfrastructure for this effort be supported?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "20a",
+        "prettyAID": "a",
+        "answer": "FAQ",
+        "description": "",
+        "resources": [],
+        "nextQID": "21"
+      },
+      {
+        "AID": "20b",
+        "prettyAID": "b",
+        "answer": "Helpline (phone number)",
+        "description": "",
+        "resources": [],
+        "nextQID": "21"
+      },
+      {
+        "AID": "20c",
+        "prettyAID": "c",
+        "answer": "Email support",
+        "description": "",
+        "resources": [],
+        "nextQID": "21"
+      },
+      {
+        "AID": "20d",
+        "prettyAID": "d",
+        "answer": "Online support",
+        "description": "",
+        "resources": [],
+        "nextQID": "21"
+      }
+    ]
+  },
+  {
+    "QID": "21",
+    "question": "What is the support expectation?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "21a",
+        "prettyAID": "a",
+        "answer": "24/7",
+        "description": "",
+        "resources": [],
+        "nextQID": "22"
+      },
+      {
+        "AID": "21b",
+        "prettyAID": "b",
+        "answer": "business hours",
+        "description": "",
+        "resources": [],
+        "nextQID": "22"
+      },
+      {
+        "AID": "21c",
+        "prettyAID": "c",
+        "answer": "school hours",
+        "description": "",
+        "resources": [],
+        "nextQID": "22"
+      }
+    ]
+  },
+  {
+    "QID": "22",
+    "question": "Will you need any additional resources to provide IT support for this effort?",
+    "description": "Consider here not just end user support, but the support of infrastructure, integrations, and automations.  What roles will be needed to support any IT/digital infrastructure you are leveraging for this effort.  This might also include managing partners or external vendors.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "22a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23"
+      },
+       {
+        "AID": "22b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23"
+      }
+    ]
+  },
+  {
+    "QID": "23",
+    "question": "Are there any knownissues with digital equity with respect any members of the organization being able to access any aspect of the ecosystem?",
+    "description": "Results, communications, etc.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-i"
+      },
+      {
+        "AID": "23b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "24"
+      }
+    ]
+  },
+  {
+    "QID": "23a-i",
+    "question": "Are there community resources that can be leveraged?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii"
+      },
+      {
+        "AID": "23a-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii"
+      }
+    ]
+  },
+  {
+    "QID": "23a-ii",
+    "question": "Is there a way to lessen any impact because of digital equity?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii-1-a"
+      },
+      {
+        "AID": "23a-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-iii"
+      }
+    ]
+  },
+  {
+    "QID": "23a-ii-1-a",
+    "question": "Are there non-digital ways to deliver service/ service component?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-ii-1-a-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii-1-b"
+      },
+      {
+        "AID": "23a-ii-1-a-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii-1-b"
+      }
+    ]
+  },
+  {
+    "QID": "23a-ii-1-b",
+    "question": "Are there resources that can be loaned?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-ii-1-b-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii-1-c"
+      },
+      {
+        "AID": "23a-ii-1-b-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-ii-1-c"
+      }
+    ]
+  },
+  {
+    "QID": "23a-ii-1-c",
+    "question": "Are there grants or other resources to address issue?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-ii-1-c-i",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-iii"
+      },
+      {
+        "AID": "23a-ii-1-c-ii",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "23a-iii"
+      }
+    ]
+  },
+  {
+    "QID": "23a-iii",
+    "question": "How will you communicate with users that may have issues because of digital equity the know limitations and any possible solutions for them?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "23a-iii-1",
+        "prettyAID": "a",
+        "answer": "Phone calls",
+        "description": "",
+        "resources": [],
+        "nextQID": "24"
+      },
+      {
+        "AID": "23a-iii-2",
+        "prettyAID": "b",
+        "answer": "Mailings/handouts",
+        "description": "",
+        "resources": [],
+        "nextQID": "24"
+      },
+      {
+        "AID": "23a-iii-3",
+        "prettyAID": "c",
+        "answer": "Posters",
+        "description": "",
+        "resources": [],
+        "nextQID": "24"
+      }
+    ]
+  },
+  {
+    "QID": "24",
+    "question": "Who will provide end user support to the ecosystem?",
+    "description": "Users may have questions about testing, how to access results, etc.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "24a",
+        "prettyAID": "a",
+        "answer": "Internal staff",
+        "description": "",
+        "resources": [],
+        "nextQID": "24a-i"
+      },
+      {
+        "AID": "24b",
+        "prettyAID": "b",
+        "answer": "System partners",
+        "description": "",
+        "resources": [],
+        "nextQID": "24b-i"
+      }
+    ]
+  },
+  {
+    "QID": "24a-i",
+    "question": "Is there sufficient capacityin the organization to support the community?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "24a-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "24a-ii"
+      },
+      {
+        "AID": "24a-i-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "24a-ii"
+      }
+    ]
+  },
+  {
+    "QID": "24a-ii",
+    "question": "Do they need additional training because people may disclose health information?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "24a-ii-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "25"
+      },
+      {
+        "AID": "24a-ii-2",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "25"
+      }
+    ]
+  },
+  {
+    "QID": "24b-i",
+    "question": "How will you coordinate with the partner?",
+    "description": "You will need to determine the level of disclosure required and if any HIPPA training is needed.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "24b-i-1",
+        "prettyAID": "a",
+        "answer": "Hand off questions between the partner and your organization",
+        "description": "",
+        "resources": [],
+        "nextQID": "25"
+      },
+      {
+        "AID": "24b-i-2",
+        "prettyAID": "Hand all questions to the partner",
+        "answer": "",
+        "description": "",
+        "resources": [],
+        "nextQID": "25"
+      }
+    ]
+  },
+  {
+    "QID": "25",
+    "question": "How will you communicate to end users about who to contact with questions?",
+    "multiple": true,
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "25a",
+        "prettyAID": "a",
+        "answer": "Digital notification",
+        "description": "",
+        "resources": [],
+        "nextQID": null
+      },
+      {
+        "AID": "25b",
+        "prettyAID": "b",
+        "answer": "Mailings/handouts",
+        "description": "",
+        "resources": [],
+        "nextQID": null
+      },
+      {
+        "AID": "25c",
+        "prettyAID": "c",
+        "answer": "Posters",
+        "description": "",
+        "resources": [],
+        "nextQID": null
+      }
+    ]
+  }
 ]
