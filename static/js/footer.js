@@ -1,4 +1,4 @@
-$(".about-us").on("click", function(e){
+$(".about-creators").on("click", function(e){
     e.preventDefault();
-    $("#about-us-modal").modal("show");
+    $("#about-creators-modal").modal("show");
 })
