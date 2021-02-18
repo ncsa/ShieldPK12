@@ -31,6 +31,10 @@ cleaning_decision = Module("decisiontrees/cleaning_decision.json")
 with open("decisiontrees/cleaning_checklist.json", "r") as f:
     cleaning_checklist_ref = json.load(f)
 
+IT_decision = Module("decisiontrees/IT_decision.json")
+with open("decisiontrees/IT_checklist.json", "r") as f:
+    IT_checklist_ref = json.load(f)
+
 resource_foldername = "resources"
 
 
@@ -154,8 +158,8 @@ def _populate(module):
         decision = cleaning_decision
         checklist_ref = cleaning_checklist_ref
     elif module == "IT":
-        decision = None
-        checklist_ref = None
+        decision = IT_decision
+        checklist_ref = IT_checklist_ref
     else:
         decision = None
         checklist_ref = None
