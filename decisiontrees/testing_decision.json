@@ -279,7 +279,7 @@
         "AID": "5d",
         "prettyAID": "d",
         "answer": "Varied by risk",
-        "description": "It is possible to use varied testing frequency effectively. For instance, high-risk individuals (such as those in team sports) may require more frequent testing. If test supplies arelimited, more frequent testing of teachers, especially those in contact with a larger number of students, could be used.",
+        "description": "It is possible to use varied testing frequency effectively. For instance, high-risk individuals (such as those in team sports) may require more frequent testing. If test supplies are limited, more frequent testing of teachers, especially those in contact with a larger number of students, could be used.",
         "resources": [],
         "nextQID": "6"
       }
@@ -377,7 +377,7 @@
         "AID": "6a-v",
         "prettyAID": "e",
         "answer": "Phone call",
-        "description": "A direct phone call to the number on recordis appropriate if the recipient has consented to receive results by phone. The call should begin with name and contact details, and should be short. If the caller reaches voicemail, they must leave a toll-free number that can be called to receive results.",
+        "description": "A direct phone call to the number on record is appropriate if the recipient has consented to receive results by phone. The call should begin with name and contact details, and should be short. If the caller reaches voicemail, they must leave a toll-free number that can be called to receive results.",
         "resources": [],
         "nextQID": "6b"
       }
@@ -474,7 +474,7 @@
         "AID": "6d-ii",
         "prettyAID": "b",
         "answer": "Through the school",
-        "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of anentire class would be a strong precaution but might be justified.",
+        "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.",
         "resources": [],
         "nextQID": "7a"
       }
@@ -498,7 +498,7 @@
         "AID": "7a-ii",
         "prettyAID": "b",
         "answer": "Antigen",
-        "description": "This looks for proteinson the surface of the virus. It may not detect cases that have a low viral load (low infectivity), butis generally reliable for highly infectious cases.",
+        "description": "This looks for proteins on the surface of the virus. It may not detect cases that have a low viral load (low infectivity), but is generally reliable for highly infectious cases.",
         "resources": [],
         "nextQID": "7b"
       },

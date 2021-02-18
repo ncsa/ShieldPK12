@@ -65,7 +65,7 @@
   },
   {
     "activityID": "6",
-    "activity": "Collection supplykits",
+    "activity": "Collection supply kits",
     "links": [],
     "rules": {
       "operator": "AND",

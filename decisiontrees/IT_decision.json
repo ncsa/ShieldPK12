@@ -1067,7 +1067,7 @@
         }
       ]
     },
-    "question": "How will you know that there aren’t any copies lost?",
+    "question": "How will you know that there are not any copies lost?",
     "description": "",
     "resources": [],
     "answers": [
@@ -1206,7 +1206,7 @@
         }
       ]
     },
-    "question": "How will you know that there aren’t any copies lost?",
+    "question": "How will you know that there are not any copies lost?",
     "description": "",
     "resources": [],
     "answers": [
@@ -1264,7 +1264,7 @@
         "AID": "13a",
         "prettyAID": "a",
         "answer": "Public dashboards",
-        "description": "For the general public to provide overall visibility into the organization.  Examples for this might be total numbers of tests provided, positivity rates.  This would be aggregate data, non-personally identifying numbers.  You wouldn’t need authentication for these reports.",
+        "description": "For the general public to provide overall visibility into the organization.  Examples for this might be total numbers of tests provided, positivity rates.  This would be aggregate data, non-personally identifying numbers.  You would not need authentication for these reports.",
         "resources": [],
         "nextQID": "13b-1"
       },

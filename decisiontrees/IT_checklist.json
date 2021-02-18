@@ -38,7 +38,7 @@
   },
   {
     "activityID": "4",
-    "activity": "List of individuals who will access data and requiredtraining",
+    "activity": "List of individuals who will access data and required training",
     "links": [],
     "rules": {
       "operator": "ALL",
