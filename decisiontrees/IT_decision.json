@@ -1,5 +1,30 @@
 [
   {
+    "QID": "1",
+    "question": "Will you set up data governance?",
+    "description": "Setting up the fundamental governance, and leveraging any existing governance processes about data will be important.",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1-yes",
+        "prettyAID": "a",
+        "recommended": true,
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1a"
+      },
+       {
+        "AID": "1-no",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "2"
+      }
+    ]
+  },
+  {
     "QID": "1a",
     "question": "Who will see any testing data that you collect",
     "multiple": true,
@@ -140,7 +165,7 @@
         "answer": "Yes",
         "description": "",
         "resources": [],
-        "nextQID": "1b-ii"
+        "nextQID": "1b-ii-a"
       },
       {
         "AID": "1b-i-a-i-1-b",
@@ -148,7 +173,7 @@
         "answer": "No",
         "description": "",
         "resources": [],
-        "nextQID": "1b-ii"
+        "nextQID": "1b-ii-a"
       }
     ]
   },
@@ -162,7 +187,7 @@
         }
       ]
     },
-    "question": "Do you have training available already?",
+    "question": "Do you have other data privacy training available already?",
     "description": "",
     "resources": [],
     "answers": [
@@ -940,6 +965,14 @@
         "description": "Both Digital and Physical considerations come into play.",
         "resources": [],
         "nextQID": "12c-i"
+      },
+      {
+        "AID": "12d",
+        "prettyAID": "d",
+        "answer": "None",
+        "description": "",
+        "resources": [],
+        "nextQID": "13"
       }
     ]
   },
@@ -1288,6 +1321,14 @@
   },
   {
     "QID": "13b-1",
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "13b"
+        }
+      ]
+    },
     "question": "What authentication and authorization source(s) will you use for dashboards?",
     "description": "",
     "resources": [],

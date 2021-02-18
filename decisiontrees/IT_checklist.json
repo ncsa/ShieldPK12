@@ -1020,7 +1020,7 @@
     "activity": "Develop and post posters related to digital equity solutions",
     "links": [],
     "rules": {
-      "operator": "OR|AND|NOT|ALL",
+      "operator": "AND",
       "criteria": [
         {"AID": "23a-iii-3"}
       ]

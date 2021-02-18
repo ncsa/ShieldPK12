@@ -157,7 +157,7 @@ def _populate(module):
     elif module == "cleaning":
         decision = cleaning_decision
         checklist_ref = cleaning_checklist_ref
-    elif module == "IT":
+    elif module == "data-infrastructure":
         decision = IT_decision
         checklist_ref = IT_checklist_ref
     else:
