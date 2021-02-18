@@ -222,5 +222,884 @@
         {"AID": "3a-i-1"}
       ]
     }
+  },
+  {
+    "activityID": "21",
+    "activity": "Assign task of correlating data",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "22",
+    "activity": "Digitize information needed for correlation",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-ii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "23",
+    "activity": "Notification system to clean classroom of positive",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "4a"}
+      ]
+    }
+  },
+  {
+    "activityID": "24",
+    "activity": "Notification system to inform staff of positive",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "4b"}
+      ]
+    }
+  },
+  {
+    "activityID": "25",
+    "activity": "Notification system to inform parents and students of positive",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "4c"}
+      ]
+    }
+  },
+  {
+    "activityID": "26",
+    "activity": "List of all groups to be notified of positive, with contact methods",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "4d"}
+      ]
+    }
+  },
+  {
+    "activityID": "27",
+    "activity": "Testing roster",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+   {
+    "activityID": "28",
+    "activity": "Roster information update process",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "6a"},
+        {"AID": "6b"}
+      ]
+    }
+  },
+  {
+    "activityID": "29",
+    "activity": "Roster updating plan",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+  {
+    "activityID": "30",
+    "activity": "Process for integrating between data systems",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "9a"}
+      ]
+    }
+  },
+  {
+    "activityID": "31",
+    "activity": "Process for updating contact information",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "8e-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "32",
+    "activity": "Data analytics plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "10a"}
+      ]
+    }
+  },
+  {
+    "activityID": "33",
+    "activity": "Identify data analyst",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "10a-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "34",
+    "activity": "Hire data analyst",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "10a-ii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "35",
+    "activity": "Recruit and ethics train volunteer for data analysis",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "10a-ii-3"}
+      ]
+    }
+  },
+  {
+    "activityID": "36",
+    "activity": "Identify and acquire needed hardware, software, and skills for data analysis",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "10a-iii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "37",
+    "activity": "Compliance monitoring plan",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a"}
+      ]
+    }
+  },
+  {
+    "activityID": "38",
+    "activity": "Automated compliance reporting process",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a-i-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "39",
+    "activity": "Person and process tasked with manual compliance checks",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "40",
+    "activity": "Out-of-compliance notification process",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a"}
+      ]
+    }
+  },
+  {
+    "activityID": "41",
+    "activity": "Union discussion over compliance notification and consequences",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a"}
+      ]
+    }
+  },
+  {
+    "activityID": "42",
+    "activity": "Legal review of compliance requirements and consequences",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "11a"}
+      ]
+    }
+  },
+  {
+    "activityID": "43",
+    "activity": "Report(s) framework",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12a"},
+        {"AID": "12b"},
+        {"AID": "12c"}
+      ]
+    }
+  },
+  {
+    "activityID": "44",
+    "activity": "Report distribution plan",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12a"},
+        {"AID": "12b"},
+        {"AID": "12c"}
+      ]
+    }
+  },
+  {
+    "activityID": "45",
+    "activity": "Digital security plan for digital reports",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12a-i-1"},
+        {"AID": "12c-i-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "46",
+    "activity": "Digital report destruction reporting process",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12a-i-2"},
+        {"AID": "12c-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "47",
+    "activity": "Digital report security expectations",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12a-i-3"},
+        {"AID": "12c-i-3"}
+      ]
+    }
+  },
+  {
+    "activityID": "48",
+    "activity": "Authentication and authorization source for your digital reports (if 12a(ii)=1)",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "12a-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "49",
+    "activity": "Training for digital report security",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "12a-ii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "50",
+    "activity": "Shredder for physical reports",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12b-i-1"},
+        {"AID": "12c-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "51",
+    "activity": "Filing system for physical reports",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12b-i-3"},
+        {"AID": "12c-ii-3"}
+      ]
+    }
+  },
+  {
+    "activityID": "52",
+    "activity": "Process to collect physical reports",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12b-ii-1"},
+        {"AID": "12c-iii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "53",
+    "activity": "Physical report security expectations",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "12b-ii-2"},
+        {"AID": "12c-iii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "54",
+    "activity": "Public dashboard creation",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "13a"}
+      ]
+    }
+  },
+  {
+    "activityID": "55",
+    "activity": "Private dashboard creation",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "13b"}
+      ]
+    }
+  },
+  {
+    "activityID": "56",
+    "activity": "Authentication and authorization source for your private dashboard",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "13b"}
+      ]
+    }
+  },
+  {
+    "activityID": "57",
+    "activity": "Dashboard security review",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "13b-1-c"}
+      ]
+    }
+  },
+  {
+    "activityID": "58",
+    "activity": "Data security and privacy regulation review",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+  {
+    "activityID": "59",
+    "activity": "Authentication and authorization source for your database(s)",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "15a"}
+      ]
+    }
+  },
+  {
+    "activityID": "60",
+    "activity": "Data access roster",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "15b"}
+      ]
+    }
+  },
+  {
+    "activityID": "61",
+    "activity": "Data access audit procedure",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "15c"}
+      ]
+    }
+  },
+  {
+    "activityID": "62",
+    "activity": "Check copy protections on all data",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "15d"}
+      ]
+    }
+  },
+  {
+    "activityID": "63",
+    "activity": "Increase IT system capacity",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "16a-i-2"},
+        {"AID": "16c-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "64",
+    "activity": "Budget for cloud storage",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "16b-i-1"},
+        {"AID": "16c-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "65",
+    "activity": "Supplement on-premises system with cloud resources",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "16a-ii-2-a-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "66",
+    "activity": "Acquire additional equipment for on-premises system",
+    "links": [],
+    "rules": {
+      "operator": "OR",
+      "criteria": [
+        {"AID": "16a-ii-2-a-ii"},
+        {"AID": "17d"}
+      ]
+    }
+  },
+  {
+    "activityID": "67",
+    "activity": "Explain system capacity limitations with appropriate audiences",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "16a-ii-2-a-iii"}
+      ]
+    }
+  },
+  {
+    "activityID": "68",
+    "activity": "System demand capacity expansion",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "17a"}
+      ]
+    }
+  },
+  {
+    "activityID": "69",
+    "activity": "System compute power expansion",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "17b"}
+      ]
+    }
+  },
+  {
+    "activityID": "70",
+    "activity": "System storage expansion",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "17c"}
+      ]
+    }
+  },
+  {
+    "activityID": "71",
+    "activity": "Engage partner/vendor in leveraging existing systems for testing list generation",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "18a-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "72",
+    "activity": "Obtain additional capacity for messaging system",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "18b-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "73",
+    "activity": "Budget for increased use of messaging system",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "18b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "74",
+    "activity": "Document and modify processes around messaging for use in testing program",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "18b-iii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "75",
+    "activity": "Communicate with messaging system users about changes to system related to testing",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "18b-iv-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "76",
+    "activity": "Create policy to notify system users about system changes",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "19c"}
+      ]
+    }
+  },
+  {
+    "activityID": "77",
+    "activity": "FAQ for all IT components",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "20a"}
+      ]
+    }
+  },
+  {
+    "activityID": "78",
+    "activity": "Helpline phone number and staffing arranged",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "20b"}
+      ]
+    }
+  },
+  {
+    "activityID": "79",
+    "activity": "Helpline announced",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "20b"}
+      ]
+    }
+  },
+  {
+    "activityID": "80",
+    "activity": "Email and staffing arranged for email-based IT support",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "20c"}
+      ]
+    }
+  },
+  {
+    "activityID": "81",
+    "activity": "Online system and staffing arranged for online IT support",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "20d"}
+      ]
+    }
+  },{
+    "activityID": "82",
+    "activity": "IT support plan and expectations communicated broadly",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },{
+    "activityID": "83",
+    "activity": "Identify and obtain necessary resources for IT support",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "22a"}
+      ]
+    }
+  },{
+    "activityID": "84",
+    "activity": "Equity review",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23b"}
+      ]
+    }
+  },{
+    "activityID": "85",
+    "activity": "Leverage existing community resources for digital equity: reach out, build partnerships, and document and share resources",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-i-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "86",
+    "activity": "Develop new resources for digital equity",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "87",
+    "activity": "Use non-digital methods to deliver services",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-ii-1-a-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "88",
+    "activity": "Loan resources to address digital equity",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-ii-1-b-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "89",
+    "activity": "Apply for/leverage grants to address digital equity issues",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-ii-1-c-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "90",
+    "activity": "Develop phone script to inform people of digital equity solutions",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-iii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "91",
+    "activity": "Develop and send mailings/handouts related to digital equity solutions",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "23a-iii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "92",
+    "activity": "Develop and post posters related to digital equity solutions",
+    "links": [],
+    "rules": {
+      "operator": "OR|AND|NOT|ALL",
+      "criteria": [
+        {"AID": "23a-iii-3"}
+      ]
+    }
+  },{
+    "activityID": "93",
+    "activity": "Increase internal capacity for end user support",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "24a-i-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "94",
+    "activity": "Provide training for end user support staff",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "24a-ii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "95",
+    "activity": "Decision process for which end user questions to handle internally, and which to pass to partners",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "24b-i-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "96",
+    "activity": "Process for connecting end users to partners for support",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "24b"}
+      ]
+    }
+  },
+  {
+    "activityID": "97",
+    "activity": "Develop and send digital notifications about end user support contacts",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "25a"}
+      ]
+    }
+  },
+  {
+    "activityID": "98",
+    "activity": "Develop and send mailings/handouts about end user support contacts",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "25b"}
+      ]
+    }
+  },
+  {
+    "activityID": "99",
+    "activity": "Develop and post posters about end user support contacts",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "25c"}
+      ]
+    }
   }
 ]

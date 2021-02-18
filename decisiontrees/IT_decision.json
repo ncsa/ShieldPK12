@@ -823,69 +823,69 @@
     ]
   },
   {
-    "QID": "11-a-i",
+    "QID": "11a-i",
     "question": "How will you determine if someone is in compliance?",
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "11-a-i-1",
+        "AID": "11a-i-1",
         "prettyAID": "a",
         "answer": "Automated report",
         "description": "",
         "resources": [],
-        "nextQID": "11-a-ii"
+        "nextQID": "11a-ii"
       },
        {
-        "AID": "11-a-i-2",
+        "AID": "11a-i-2",
         "prettyAID": "b",
         "answer": "Manual report",
         "description": "",
         "resources": [],
-        "nextQID": "11-a-ii"
+        "nextQID": "11a-ii"
       }
     ]
   },
   {
-    "QID": "11-a-ii",
+    "QID": "11a-ii",
     "question": "How do you notify the person of their being in or out of compliance?",
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "11-a-ii-1",
+        "AID": "11a-ii-1",
         "prettyAID": "a",
         "answer": "Phone call",
         "description": "",
         "resources": [],
-        "nextQID": "11-a-iii"
+        "nextQID": "11a-iii"
       },
       {
-        "AID": "11-a-ii-2",
+        "AID": "11a-ii-2",
         "prettyAID": "b",
         "answer": "Email/digital notification",
         "description": "",
         "resources": [],
-        "nextQID": "11-a-iii"
+        "nextQID": "11a-iii"
       },
       {
-        "AID": "11-a-ii-3",
+        "AID": "11a-ii-3",
         "prettyAID": "c",
         "answer": "In-person",
         "description": "",
         "resources": [],
-        "nextQID": "11-a-iii"
+        "nextQID": "11a-iii"
       }
     ]
   },
   {
-    "QID": "11-a-iii",
+    "QID": "11a-iii",
     "question": "What consequences will there be for being out of compliance?",
     "description": "",
     "resources": [],
     "answers": [
       {
-        "AID": "11-a-iii-1",
+        "AID": "11a-iii-1",
         "prettyAID": "a",
         "answer": "Blocked from in-person",
         "description": "",
@@ -893,7 +893,7 @@
         "nextQID": "12"
       },
       {
-        "AID": "11-a-iii-2",
+        "AID": "11a-iii-2",
         "prettyAID": "b",
         "answer": "Loss of privileges",
         "description": "",
@@ -901,7 +901,7 @@
         "nextQID": "12"
       },
       {
-        "AID": "11-a-iii-3",
+        "AID": "11a-iii-3",
         "prettyAID": "c",
         "answer": "None",
         "description": "",
@@ -1653,12 +1653,44 @@
         "answer": "Leverage an existing system to generate testing lists",
         "description": "",
         "resources": [],
-        "nextQID": "18b-i"
+        "nextQID": "18a-i"
       },
       {
         "AID": "18b",
         "prettyAID": "b",
         "answer": "Leverage existing messaging capability to notify students or parents",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-i"
+      }
+    ]
+  },
+  {
+    "QID": "18a-i",
+     "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "18a"
+        }
+      ]
+    },
+    "question": "Do you have the integration resources in house, or will you need to leverage a partner/vendor to do the integration?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "18a-i-1",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "18b-i"
+      },
+      {
+        "AID": "18a-i-2",
+        "prettyAID": "b",
+        "answer": "No",
         "description": "",
         "resources": [],
         "nextQID": "18b-i"
@@ -1744,7 +1776,7 @@
     "resources": [],
     "answers": [
       {
-        "AID": "18b-iii",
+        "AID": "18b-iii-1",
         "prettyAID": "a",
         "answer": "Yes",
         "description": "",
@@ -1752,7 +1784,7 @@
         "nextQID": "18b-iv"
       },
        {
-        "AID": "18b-iii",
+        "AID": "18b-iii-2",
         "prettyAID": "b",
         "answer": "No",
         "description": "",
