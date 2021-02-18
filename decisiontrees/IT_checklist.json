@@ -1,1 +1,226 @@
-[]
+[
+  {
+    "activityID": "1",
+    "activity": "Assess system capacity for access, compute power, and storage",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+  {
+    "activityID": "2",
+    "activity": "Description of type data to be collected,who can access each piece, and how it will be maintained/retained",
+    "links": [
+      "https://docs.google.com/spreadsheets/d/1mRWA6SrT4C9qdHQsHENXJjJ4Fg1oA4HiLlwob5xOA_M/edit#gid=0"
+    ],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+  {
+    "activityID": "3",
+    "activity": "Training materials for data privacy",
+    "links": [
+      "https://www.hhs.gov/hipaa/for-professionals/special-topics/hipaa-covid19/index.html"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii"}
+      ]
+    }
+  },
+  {
+    "activityID": "4",
+    "activity": "List of individuals who will access data and requiredtraining",
+    "links": [],
+    "rules": {
+      "operator": "ALL",
+      "criteria": [
+        {"AID": ""}
+      ]
+    }
+  },
+   {
+    "activityID": "5",
+    "activity": "HIPAA training source identification",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-a-ii"}
+      ]
+    }
+  },
+  {
+    "activityID": "6",
+    "activity": "Expand HIPAA training license",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-i-a-i-1-b"}
+      ]
+    }
+  },
+  {
+    "activityID": "7",
+    "activity": "Expand other data privacy training license",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-a-i-1-b"}
+      ]
+    }
+  },
+  {
+    "activityID": "8",
+    "activity": "Other data privacy training source identification",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-a-ii"}
+      ]
+    }
+  },
+  {
+    "activityID": "9",
+    "activity": "Set up training report within HIPAA training source",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-iii-1"}
+      ]
+    }
+  },
+  {
+    "activityID": "10",
+    "activity": "Method for self-reporting training",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-iii-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "11",
+    "activity": "Assign training compliance tracking responsibility",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-iv-2"}
+      ]
+    }
+  },
+  {
+    "activityID": "12",
+    "activity": "Determine and document legal responsibilities for data retention",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1c-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "13",
+    "activity": "Determine useful business life of data",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1c-ii"}
+      ]
+    }
+  },
+  {
+    "activityID": "14",
+    "activity": "Adjust data deletion process for retention time",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1d-i"}
+      ]
+    }
+  },
+  {
+    "activityID": "15",
+    "activity": "Create automation to delete data on schedule",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1d-ii"}
+      ]
+    }
+  },
+  {
+    "activityID": "16",
+    "activity": "Write SOP for manual data deletion based on data retention policy",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1d-iii"}
+      ]
+    }
+  },
+  {
+    "activityID": "17",
+    "activity": "Database for case information",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2a"}
+      ]
+    }
+  },
+  {
+    "activityID": "18",
+    "activity": "Database for quarantine information",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b"}
+      ]
+    }
+  },
+  {
+    "activityID": "19",
+    "activity": "List of data correlations needed",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a"}
+      ]
+    }
+  },
+  {
+    "activityID": "20",
+    "activity": "Automation process for data correlation",
+    "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "3a-i-1"}
+      ]
+    }
+  }
+]

@@ -75,7 +75,7 @@
    {
     "QID": "1b",
     "question": "What training is needed based on the role and the type of information a particular person will see?",
-     "mutliple": true,
+     "multiple": true,
     "description": "",
     "resources": [],
     "answers": [
@@ -126,6 +126,29 @@
         "description": "You will need to find a source of HIPAA training.",
         "resources": [],
         "nextQID": "1b-ii-a"
+      }
+    ]
+  },
+  {
+    "QID": "1b-i-a-i-1",
+    "description": "Do the licenses cover then number of users that you need to take the training?",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-i-a-i-1-a",
+        "prettyAID": "a",
+        "answer": "Yes",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-ii"
+      },
+      {
+        "AID": "1b-i-a-i-1-b",
+        "prettyAID": "b",
+        "answer": "No",
+        "description": "",
+        "resources": [],
+        "nextQID": "1b-ii"
       }
     ]
   },
@@ -197,7 +220,7 @@
         "answer": "A module within the training",
         "description": "",
         "resources": [],
-        "nextQID": "1c"
+        "nextQID": "1b-iv"
       },
       {
         "AID": "1b-iii-2",
@@ -205,13 +228,37 @@
         "answer": "A process for staff to report their training completion",
         "description": "a copy of certificate, etc.",
         "resources": [],
-        "nextQID": "1c"
+        "nextQID": "1b-iv"
       },
       {
         "AID": "1b-iii-3",
         "prettyAID": "c",
         "answer": "A spreadsheet of all team members with their required trainings and their completion status",
         "description": "",
+        "resources": [],
+        "nextQID": "1b-iv"
+      }
+    ]
+  },
+  {
+    "QID": "1b-iv",
+    "question": "What role is responsible for auditing training compliance?",
+    "description": "",
+    "resources": [],
+    "answers": [
+      {
+        "AID": "1b-iv-1",
+        "prettyAID": "a",
+        "answer": "Existing processes to track and report on compliance",
+        "description": "",
+        "resources": [],
+        "nextQID": "1c"
+      },
+      {
+        "AID": "1b-iv-2",
+        "prettyAID": "b",
+        "answer": "Newly established role (Project coordinator of manager)",
+        "description": "At minimum, this should involve a spreadsheet to track compliance along with what reports on training compliance are needed.  Consider if this persists over several years if training will need to be repeated by an individual.",
         "resources": [],
         "nextQID": "1c"
       }
@@ -258,7 +305,7 @@
        {
         "AID": "1d-ii",
         "prettyAID": "b",
-        "answer": "Newly createdautomation to delete the data",
+        "answer": "Newly created automation to delete the data",
         "description": "",
         "resources": [],
         "nextQID": "2"
@@ -331,7 +378,7 @@
   },
   {
     "QID": "3a-i",
-    "question": "Can you automate correlating dataand it is worth the effort?",
+    "question": "Can you automate correlating data and it is worth the effort?",
     "description": "",
     "resources": [],
     "answers": [
@@ -411,7 +458,7 @@
        {
         "AID": "4d",
         "prettyAID": "d",
-        "answer": "Other downstreams that need to notified, for example,bus service",
+        "answer": "Other down streams that need to notified, for example,bus service",
         "description": "",
         "resources": [],
         "nextQID": "5"
@@ -493,7 +540,7 @@
   },
   {
     "QID": "7",
-    "question": "What frequency do you need to updatethe roster?",
+    "question": "What frequency do you need to update the roster?",
     "description": "",
     "resources": [],
     "answers": [
@@ -549,7 +596,7 @@
       {
         "AID": "8b",
         "prettyAID": "b",
-        "answer": "Removing someone fromthe system",
+        "answer": "Removing someone from the system",
         "description": "",
         "resources": [],
         "nextQID": "8e-i"
@@ -615,7 +662,7 @@
   },
   {
     "QID": "9",
-    "question": "Will you need to do integrationsbetween testing and other data systems?",
+    "question": "Will you need to do integrations between testing and other data systems?",
     "description": "",
     "resources": [],
     "answers": [
@@ -906,7 +953,7 @@
         }
       ]
     },
-    "question": "How do you know reportswon’t be digitally copied, retained at the end of useful life?",
+    "question": "How do you know reports won’t be digitally copied, retained at the end of useful life?",
     "description": "",
     "resources": [],
     "answers": [
@@ -1208,8 +1255,8 @@
   },
   {
     "QID": "13",
-    "question": "What kind of dashboardwill you have?",
-    "multipe": true,
+    "question": "What kind of dashboard will you have?",
+    "multiple": true,
     "description": "Dashboards are useful and you may want to consider having targeted dashboards based on audience. ",
     "resources": [],
     "answers": [
@@ -1433,7 +1480,7 @@
        {
         "AID": "16a-ii-2-a-ii",
         "prettyAID": "b",
-        "answer": "Evaluate what is needed to meet availability needsand procure, configure, install equipment to meet the new needs.",
+        "answer": "Evaluate what is needed to meet availability needs and procure, configure, install equipment to meet the new needs.",
         "description": "",
         "resources": [],
         "nextQID": "17"
@@ -1546,7 +1593,7 @@
   },
   {
     "QID": "17",
-    "question": "What additional infrastructure will you need tohandle the demand made by various components of your ecosystem?",
+    "question": "What additional infrastructure will you need to handle the demand made by various components of your ecosystem?",
     "multiple": true,
     "description": "",
     "resources": [],
@@ -1772,7 +1819,7 @@
   },
   {
     "QID": "19",
-    "question": "No matter where systems are located, do you need additional work to securethemadequately for this type of data?",
+    "question": "No matter where systems are located, do you need additional work to secure them adequately for this type of data?",
     "multiple": true,
     "description": "",
     "resources": [],
@@ -1805,7 +1852,7 @@
   },
   {
     "QID": "20",
-    "question": "How will theITinfrastructure for this effort be supported?",
+    "question": "How will the IT infrastructure for this effort be supported?",
     "multiple": true,
     "description": "",
     "resources": [],
@@ -1902,7 +1949,7 @@
   },
   {
     "QID": "23",
-    "question": "Are there any knownissues with digital equity with respect any members of the organization being able to access any aspect of the ecosystem?",
+    "question": "Are there any known issues with digital equity with respect any members of the organization being able to access any aspect of the ecosystem?",
     "description": "Results, communications, etc.",
     "resources": [],
     "answers": [
@@ -2103,7 +2150,7 @@
   },
   {
     "QID": "24a-i",
-    "question": "Is there sufficient capacityin the organization to support the community?",
+    "question": "Is there sufficient capacity in the organization to support the community?",
     "description": "",
     "resources": [],
     "answers": [
@@ -2152,7 +2199,7 @@
   {
     "QID": "24b-i",
     "question": "How will you coordinate with the partner?",
-    "description": "You will need to determine the level of disclosure required and if any HIPPA training is needed.",
+    "description": "You will need to determine the level of disclosure required and if any HIPAA training is needed.",
     "resources": [],
     "answers": [
       {
