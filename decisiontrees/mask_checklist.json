@@ -56,7 +56,10 @@
   {
     "activity": "Process for submitting medical documentation for mask exemption",
     "activityID": "5",
-    "links": [],
+    "links": [
+      "https://www.bu.edu/hr/hr-covid-19-resources/face-covering-exemption-process/",
+      "https://resources.finalsite.net/images/v1598562593/madison/qkjrycadmzw5uhcdi9h6/FaceMaskExemptionForm.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -119,11 +122,13 @@
   {
     "activity": "Consequence and escalation guidelines for refusal to wear masks or tampering with another’s mask",
     "activityID": "10",
-    "links": [],
+    "links": [
+      "https://www.knoxnews.com/story/news/education/2020/08/12/knox-county-schools-sets-consequences-students-who-wont-wear-masks/3360314001/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b"}
+        {"AID": "1b-ii-1"}
       ]
     }
   },
