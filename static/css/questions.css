@@ -83,6 +83,7 @@ a{
     background: none;
     border: none;
     padding: 25px 34px;
+    text-transform: capitalize;
 }
 
 .sidenav .list-group-item:hover,
@@ -199,6 +200,39 @@ a{
     cursor: pointer;
 }
 
+.next-module-prompt,
+#next-module-btn{
+    display:inline-block;
+    margin:auto 5px;
+}
+
+.next-module-prompt p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.78125px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.next-module-name{
+    font-weight: bold!important;
+    font-size: 20px!important;
+    text-transform: capitalize!important;
+}
+
+#next-module-btn{
+    color: #FFFFFF;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#next-module-btn i{
+    border-radius: 50%;
+    font-size: 40px;
+}
 h1 {
     font-family: Merriweather;
     font-style: normal;

@@ -1,10 +1,32 @@
 // Default root ID always 1
 ROOT_QUESTION_ID = "1"
 
-// GET current module
 // assume pattern will be /module/questions
-var module = $(location).attr('href').split("/").slice(-2)[0];
+let moduleList = ["cleaning", "distancing", "data-infrastructure", "mask", "testing", "ventilation"]
+
+// current module
+module = $(location).attr('href').split("/").slice(-2)[0];
 $(".module-name").empty().text(module);
+
+// next module
+var currModuleInd = moduleList.indexOf(module);
+if (currModuleInd > -1 && currModuleInd < moduleList.length - 1) {
+    var nextModule = moduleList[currModuleInd + 1]
+    $(".next-module-name").text(nextModule)
+    $("#next-module-btn").attr("href", `/${nextModule}/questions`)
+} else {
+    $(".next-module-name").text("Home");
+}
+
+// populate sidebar
+$("#list-group-items").empty();
+moduleList.forEach(function (m, i) {
+    $("#list-group-items").append(`<a href="/` + m + `/questions" class="list-group-item list-group-item-action"
+       id="sidenav-` + m + `">` + m + `</a>`
+    );
+    // set active module in sidenav
+    $(".sidenav").find("#sidenav-" + module).addClass("active");
+})
 
 // get current date
 var today = new Date();
@@ -12,9 +34,6 @@ var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 $("#timestamp").empty().text(mm + '/' + dd + '/' + yyyy)
-
-// set active module in sidenav
-$(".sidenav").find("#sidenav-" + module).addClass("active");
 
 if (localStorage.getItem(module + "-QID") === null
     || localStorage.getItem(module + "-pastQNA") === null
