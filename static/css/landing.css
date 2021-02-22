@@ -71,19 +71,31 @@ h4 {
 #header-logo{
     position:absolute;
     top:35px;
-    left:20%;
+    left:10%;
 }
 
 #header-text{
     position:absolute;
     top:20%;
-    left:20%;
-    right:20%;
+    left:10%;
+    right:10%;
 }
 
 #header-title,
 #header-description{
     margin:31px 0;
+}
+
+#header-scroll-prompt{
+    display: block;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.65625px;
+    color: #20558A;
+    margin-top:30px;
 }
 
 #start{
@@ -101,6 +113,7 @@ h4 {
 #header-img{
     position:relative;
     width:100%;
+    background-image: linear-gradient(rgb(18 40 76), rgb(32 85 138));
 }
 
 #header-links{
