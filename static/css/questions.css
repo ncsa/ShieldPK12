@@ -82,6 +82,7 @@ a{
     color: #FFFFFF;
     background: none;
     border: none;
+    border-radius: 0;
     padding: 25px 34px;
     text-transform: capitalize;
 }
@@ -233,6 +234,11 @@ a{
     border-radius: 50%;
     font-size: 40px;
 }
+#next-module-btn i:hover{
+    background: #FFFFFF;
+    color: #20558A;
+}
+
 h1 {
     font-family: Merriweather;
     font-style: normal;
