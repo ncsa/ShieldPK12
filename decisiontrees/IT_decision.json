@@ -1111,36 +1111,12 @@
         "recommended": true,
         "description": "",
         "resources": [],
-        "nextQID": "12b-iii"
+        "nextQID": "12c-i"
       },
        {
         "AID": "12b-ii-2",
         "prettyAID": "b",
         "answer": "Written expectation of physical report security",
-        "description": "",
-        "resources": [],
-        "nextQID": "12b-iii"
-      }
-    ]
-  },
-  {
-    "QID": "12b-iii",
-    "rules": {
-      "operator": "AND",
-      "criteria": [
-        {
-          "AID": "12b"
-        }
-      ]
-    },
-    "question": "How will you limit unauthorized roles from seeing any sensitive data?",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "12b-iii",
-        "prettyAID": "",
-        "answer": "",
         "description": "",
         "resources": [],
         "nextQID": "12c-i"
@@ -1250,36 +1226,12 @@
         "recommended": true,
         "description": "",
         "resources": [],
-        "nextQID": "12c-iv"
+        "nextQID": "13"
       },
       {
         "AID": "12c-iii-2",
         "prettyAID": "b",
         "answer": "Written expectation of physical report security",
-        "description": "",
-        "resources": [],
-        "nextQID": "12c-iv"
-      }
-    ]
-  },
-  {
-    "QID": "12c-iv",
-    "rules": {
-      "operator": "AND",
-      "criteria": [
-        {
-          "AID": "12c"
-        }
-      ]
-    },
-    "question": "How will you limit unauthorized roles from seeing any sensitive data?",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "12c-iv",
-        "prettyAID": "",
-        "answer": "",
         "description": "",
         "resources": [],
         "nextQID": "13"
