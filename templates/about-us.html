@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SHIELDPK12</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+    <link href="http://fonts.googleapis.com/css?family=Merriweather"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato"
+          rel="stylesheet" type="text/css">
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/about-us.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/about-creators.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
+</head>
+
+<body>
+<div class="container about-this-playbook">
+    <div class="row">
+        <div class="header-container">
+            <img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}" id="header-logo">
+            <div id="header-text">
+                <h1 id="header-title">About This Playbook</h1>
+            </div>
+        </div>
+        <div class="header-container">
+            <div id="header-links">
+                <a>About Us</a>
+                <a href="/cleaning/questions">Playbook</a>
+            </div>
+            <p id="header-description">
+                    The purpose of this playbook is to provide a user-friendly guide to the decisions that need to be
+                    made around school management during a pandemic. The guide is organized into independent modules,
+                    each covering a different topic.<br>
+                    In each module, you will be asked to answer questions. Your answers will inform the next questions
+                    to be asked. If you want to change your answers, you can always step back through the process or
+                    start over completely.<br>
+                    At the end of a module, you will beprovided with a checklist associated with your choices, as well
+                    as a record of all the answers you provided. You will be able to download this final report. The
+                    checklist items will include links to useful support documents, websites, and examples.<br>
+                </p>
+        </div>
+    </div>
+</div>
+<div class="container module-container" id="module-container">
+    <div class="row module-title">
+        <h2>Playbook Modules</h2>
+    </div>
+    <div class="row module-row">
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">1</span>Cleaning</h4>
+                <p>Additional cleaning measures for disease control</p>
+                <a href="/cleaning/questions" id="cleaning">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">2</span>Distancing</h4>
+                <p>Minimizing potentially infectious contacts</p>
+                <a href="/distancing/questions" id="distancing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">3</span>IT</h4>
+                <p>Collecting, managing, and sharing health data</p>
+                <a href="/data-infrastructure/questions" id="data-infrastructure">Start
+                    &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row module-row">
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">4</span>Mask</h4>
+                <p>The when, where, and how of masks</p>
+                <a href="/mask/questions" id="mask">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">5</span>Testing</h4>
+                <p>Use of tests and test results</p>
+                <a href="/testing/questions" id="testing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+            <div class="module">
+                <h4><span class="module-label">6</span>Ventilation</h4>
+                <p>Assessing and improving air flow</p>
+                <a href="/ventilation/questions" id="ventilation">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+{% include 'about-creators.html' %}
+<script type="text/javascript" src="{{url_for('static', filename='js/landing.js')}}"></script>
+</body>
+</html>

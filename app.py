@@ -48,10 +48,10 @@ def homepage():
 def error():
     return render_template("error.html")
 
-# @app.route('/<module>', methods=['GET'])
-# def module_homepage(module):
-#     # TODO can have different landing page for different modules
-#     return render_template('landing.html')
+
+@app.route('/about-us', methods=['GET'])
+def about():
+    return render_template("about-us.html")
 
 
 @app.route('/<module>/questions', methods=['GET'])

@@ -1,0 +1,208 @@
+body {
+    background: #FFFFFF;
+}
+
+button,
+a {
+    outline: none !important;
+}
+
+.container {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+h1 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 1.25px;
+}
+
+h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 1.25px;
+}
+
+h4 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.65625px;
+}
+
+p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.65625px;
+}
+
+.about-this-playbook {
+    height:788px;
+    background: #20558A;
+    color: #FFFFFF;
+}
+
+.header-container {
+    position: relative;
+    width: 50%;
+}
+
+#header-logo {
+    position: absolute;
+    top: 35px;
+    left: 10%;
+}
+
+#header-text,
+#header-description{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    right: 10%;
+}
+
+#header-title
+{
+    margin: 31px 0;
+}
+
+#header-scroll-prompt {
+    display: block;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.65625px;
+    color: #20558A;
+    margin-top: 30px;
+}
+
+#start {
+    background: #20558A;
+    border-radius: 11px;
+    border: 2px solid #20558A;
+    padding: 19px 39px;
+}
+
+#start:hover {
+    background: #FFFFFF;
+    color: #20558A;
+}
+
+#header-img {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgb(18 40 76), rgb(32 85 138));
+}
+
+#header-links {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+#header-links a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.65625px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin: 0 30px;
+}
+
+.module-container {
+    margin-bottom: 100px;
+}
+
+.module {
+    background: #FFFFFF;
+    border: 2px solid rgba(207, 207, 207, 0.8);
+    box-sizing: border-box;
+    border-radius: 11px;
+    padding: 35px;
+    height: 240px;
+    margin: 16px;
+    position: relative;
+}
+
+.module:hover {
+    background: #FAFAF8;
+    border: 2px solid rgba(148, 108, 59, 0.7);
+
+}
+
+.module:hover h4,
+.module:hover a {
+    color: #946C3B;
+}
+
+.module h4 {
+    margin-bottom: 16px;
+}
+
+.module p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.65625px;
+    color: #21202C;
+}
+
+.module a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.65625px;
+    color: #20558A;
+    position: absolute;
+    bottom: 40px;
+    right: 33px;
+}
+
+.module-title h2 {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.module-label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #20558A;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
