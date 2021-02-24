@@ -89,8 +89,8 @@ h4 {
 #start{
     position: absolute;
     top:567px;
-    left:35%;
-    right:31%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #946C3B;
     color:#FFFFFF;
     width: 417px;

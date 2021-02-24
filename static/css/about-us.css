@@ -139,8 +139,8 @@ p {
 .who-use-text {
     position: absolute;
     top: 186px;
-    left: 20%;
-    right: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 760px;
     text-align: center;
 }
@@ -172,8 +172,8 @@ p {
 .want-to-try-text {
     position: absolute;
     top: 116px;
-    left: 20%;
-    right: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 760px;
     text-align: center;
 }
