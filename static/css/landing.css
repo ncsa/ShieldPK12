@@ -86,28 +86,23 @@ h4 {
     margin:31px 0;
 }
 
-#header-scroll-prompt{
-    display: block;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 17px;
-    letter-spacing: 0.65625px;
-    color: #20558A;
-    margin-top:30px;
-}
-
 #start{
-    background: #20558A;
+    position: absolute;
+    top:567px;
+    left:35%;
+    right:31%;
+    background: #946C3B;
+    color:#FFFFFF;
+    width: 417px;
     border-radius: 11px;
-    border: 2px solid #20558A;
+    border: 2px solid #946C3B;
     padding: 19px 39px;
+    font-size: 24px;
 }
 
 #start:hover {
     background: #FFFFFF;
-    color: #20558A;
+    color: #946C3B;
 }
 
 #header-img{
@@ -143,7 +138,8 @@ h4 {
 }
 
 .module-container{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    background: #EFF4F9;
 }
 
 .module{
