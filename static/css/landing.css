@@ -114,6 +114,14 @@ h4 {
     position:relative;
     width:100%;
     background-image: linear-gradient(rgb(18 40 76), rgb(32 85 138));
+    
+    background: rgba(18, 40, 76, 1);
+    background: -moz-linear-gradient(top, rgba(18, 40, 76, 1), rgba(32, 85, 138, 1)); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(18, 40, 76, 1)), color-stop(100%, rgba(32, 85, 138, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(18, 40, 76, 1), rgba(32, 85, 138, 1)); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(18, 40, 76, 1), rgba(32, 85, 138, 1)); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(18, 40, 76, 1), rgba(32, 85, 138, 1)); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(18, 40, 76, 1), rgba(32, 85, 138, 1)); /* W3C */
 }
 
 #header-links{

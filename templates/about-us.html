@@ -33,78 +33,83 @@
     <div class="row">
         <div class="header-container">
             <img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}" id="header-logo">
-            <div id="header-text">
-                <h1 id="header-title">About This Playbook</h1>
+            <div class="header-text">
+                <h1 class="header-title">About This Playbook</h1>
             </div>
         </div>
         <div class="header-container">
             <div id="header-links">
-                <a>About Us</a>
-                <a href="/cleaning/questions">Playbook</a>
+                <a href="/about-us">About Us</a>
+                <a href="/">Playbook</a>
             </div>
-            <p id="header-description">
+            <div class="header-description">
+                <p>
                     The purpose of this playbook is to provide a user-friendly guide to the decisions that need to be
                     made around school management during a pandemic. The guide is organized into independent modules,
-                    each covering a different topic.<br>
+                    each covering a different topic.
+                </p>
+                <p>
                     In each module, you will be asked to answer questions. Your answers will inform the next questions
                     to be asked. If you want to change your answers, you can always step back through the process or
-                    start over completely.<br>
+                    start over completely.</p>
+                <p>
                     At the end of a module, you will beprovided with a checklist associated with your choices, as well
                     as a record of all the answers you provided. You will be able to download this final report. The
-                    checklist items will include links to useful support documents, websites, and examples.<br>
+                    checklist items will include links to useful support documents, websites, and examples.
                 </p>
+            </div>
         </div>
     </div>
 </div>
-<div class="container module-container" id="module-container">
-    <div class="row module-title">
-        <h2>Playbook Modules</h2>
-    </div>
-    <div class="row module-row">
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">1</span>Cleaning</h4>
-                <p>Additional cleaning measures for disease control</p>
-                <a href="/cleaning/questions" id="cleaning">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">2</span>Distancing</h4>
-                <p>Minimizing potentially infectious contacts</p>
-                <a href="/distancing/questions" id="distancing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">3</span>IT</h4>
-                <p>Collecting, managing, and sharing health data</p>
-                <a href="/data-infrastructure/questions" id="data-infrastructure">Start
-                    &nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
+<div class="container who-use" >
+    <div class="row">
+        <img src="{{url_for('static', filename='img/shieldpk12-about.png')}}">
+        <div class="who-use-text">
+            <h2>Who should use this playbook?</h2>
+            <p>Anyone involved in school administration can benefit from this playbook. Individual modules may be best
+                completed by different staff members.</p>
         </div>
     </div>
-    <div class="row module-row">
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">4</span>Mask</h4>
-                <p>The when, where, and how of masks</p>
-                <a href="/mask/questions" id="mask">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="container what-to-know">
+    <div class="row">
+        <div class="header-container">
+            <div class="header-text">
+                <h1 class="header-title">What Should I Know Before Starting?</h1>
             </div>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">5</span>Testing</h4>
-                <p>Use of tests and test results</p>
-                <a href="/testing/questions" id="testing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+        <div class="header-container">
+            <div class="header-description">
+                <p>
+                    The decision to reopen a school during the COVID-19 pandemic will rely on many factors: risk of
+                    infection, need to care for students, ability to provide remote education, and others. Here we
+                    will address only the risk of infection, as the other factors are best decided by individual
+                    districts. This playbook is meant to provide the best information possible to limit the spread
+                    of infection within a school. First, we must make this abundantly clear:
+                </p>
+                <h4>There Will Be Cases Within Your School</h4>
+                <br>
+                <p>
+                    Given the level of spread throughout the world, it is highly likely that at least one person 
+                    (student, faculty, or staff) will become infected during the semester. No school can prevent 
+                    cases that occur in the community. That is not the goal of this playbook. The goal of this 
+                    playbook is to limit the spread of infection <b>WITHIN</b> your school.Because we know that there
+                    will be infectious people in your school building at some point, how do we limit transmission
+                    (spread of the infection to other people)? There are 10 layers to limiting disease spread, which
+                    can be combined in many ways.
+                </p>
             </div>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">6</span>Ventilation</h4>
-                <p>Assessing and improving air flow</p>
-                <a href="/ventilation/questions" id="ventilation">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
+    </div>
+</div>
+<div class="container want-to-try" >
+    <div class="row">
+        <div class="want-to-try-text">
+            <h2>Want to Try this playbook?</h2>
+            <p>Anyone involved in school administration can benefit from this playbook. Individual modules may be best
+                completed by different staff members</p>
+            <a class="btn btn-primary" id="start" href="/cleaning/questions">Get Started</a>
+
         </div>
     </div>
 </div>
