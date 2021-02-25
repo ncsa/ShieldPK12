@@ -258,7 +258,7 @@ function updateQuestions(data, answeredNumQ) {
     var questionTitle = data.page["question"]
     $("#question-title").html(questionTitle);
     if ("multiple" in data.page && data.page["multiple"] === true){
-        $("#answer-prompt").html("Select Multiple Answer");
+        $("#answer-prompt").html("Select Multiple Answers");
     }
     else{
         $("#answer-prompt").html("Select One Answer");
