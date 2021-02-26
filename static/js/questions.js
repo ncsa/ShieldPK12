@@ -83,7 +83,7 @@ $(document).ready(function () {
 /**
  * submit the selection and go to next step
  */
-$("#next button").on("click", function () {
+$(".next button").on("click", function () {
     var QID = localStorage.getItem(module + "-QID");
     var AID = [];
 
@@ -136,7 +136,7 @@ $("#next button").on("click", function () {
 /**
  * going to the previous option
  */
-$("#prev button").on("click", function () {
+$(".prev button").on("click", function () {
     // if alert on display, hide alert
     $("#alert").hide();
 
@@ -243,13 +243,13 @@ function updateQuestions(data, answeredNumQ) {
 
     // if it's the root node hide prev button
     if (data.page["QID"] === ROOT_QUESTION_ID) {
-        $("#prev").hide();
+        $(".prev").hide();
     } else {
-        $("#prev").show();
+        $(".prev").show();
     }
 
     // enable next
-    $("#next").show();
+    $(".next").show();
 
     // update progress bar
     updateProgressBar(data.minNumQ, answeredNumQ)
@@ -310,7 +310,7 @@ function updateResult(data) {
     $("#qna-container").hide();
 
     // hide next
-    $("#next").hide();
+    $(".next").hide();
 
     // update status bar
     updateProgressBar(1, 1);
