@@ -8,9 +8,16 @@ services:
       - 5000
   nginx:
     build: ./nginx
-#    volumes:
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
 #      - static_volume:/home/app/web/project/static
     ports:
       - 80:80
     depends_on:
       - web
+  certbot:
+    image: certbot/certbot
+    volumes:
+    - ./data/certbot/conf:/etc/letsencrypt
+    - ./data/certbot/www:/var/www/certbot
