@@ -42,3 +42,6 @@ dist/
 /appconfigservice/.python-version
 
 exec.sh
+
+# where certificates live
+data
