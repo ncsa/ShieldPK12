@@ -171,6 +171,22 @@ a{
 .navigation-btn i:hover{
     background: #20558A;
     color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+#restart{
+    margin-left:20px;
+    background: #20558A;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-transform: capitalize;
+    border: 1px solid #FFFFFF;
+}
+
+#restart:hover{
+    background: #FFFFFF;
+    color: #20558A;
+    border: 1px solid #20558A;
 }
 
 .navigation-btns{
