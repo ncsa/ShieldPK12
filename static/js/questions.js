@@ -1,3 +1,6 @@
+//enable tooltip
+$('[data-toggle="tooltip"]').tooltip({html:true});
+
 // Default root ID always 1
 ROOT_QUESTION_ID = "1"
 
@@ -271,26 +274,36 @@ function updateQuestions(data, answeredNumQ) {
         // do not display empty question
         if (option["answer"] !== ""){
             if ("multiple" in data.page && data.page["multiple"] === true) {
-                var answer = $(`<div class="answer">
-                    <input type="checkbox" name="choice" value="` + option["AID"] + `">
-                    <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] +
-                    `</span>` + option["answer"] + `</h2>
-                    <p class="answer-description">` + option["description"] + `</p>
+                var answer = $(`
+                    <div class="answer">
+                        <input type="checkbox" name="choice" value="` + option["AID"] + `">
+                        <h2 class="answer-text" data-toggle="tooltip" data-placement="top" 
+                                data-html="true" 
+                                title="` + option["description"].replace(/<|>|"/g, "") +`">
+                        <span class="answer-pretty-id">` + option["prettyAID"] +
+                        `</span>` + option["answer"] + `</h2>
+                        <p class="answer-description">` + option["description"] + `</p>
                     </div>`);
                 $("#answers").attr("multiple-answers", true).append(answer);
             } else {
-                var answer = $(`<div class="answer">
-                    <input type="radio" name="choice" value="` + option["AID"] + `">
-                    <h2 class="answer-text"><span class="answer-pretty-id">` + option["prettyAID"] + `</span>`
-                    + option["answer"] + `</h2>
-                    <p class="answer-description">` + option["description"] + `</p>
+                var answer = $(`
+                    <div class="answer">
+                        <input type="radio" name="choice" value="` + option["AID"] + `">
+                        <h2 class="answer-text" data-toggle="tooltip" data-placement="top" 
+                                data-html="true" 
+                                title="` + option["description"].replace(/<|>|"/g, "") +`">
+                        <span class="answer-pretty-id">` + option["prettyAID"]
+                        + `</span>` + option["answer"] + `</h2>
+                        <p class="answer-description">` + option["description"] + `</p>
                     </div>`);
                 $("#answers").attr("multiple-answers", false).append(answer);
             }
 
             // add recommended badge
             if ("recommended" in option && option["recommended"] === true) {
-                answer.find("h2").after(`<div class="recommended"><i class="fas fa-star"></i></div>`);
+                answer.find("h2").after(`<div class="recommended" data-toggle="tooltip" 
+                    data-placement="top" data-html="true" title="This is recommended.">
+                    <i class="fas fa-star"></i></div>`);
             }
         }
         else{
