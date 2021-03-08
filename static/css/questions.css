@@ -550,6 +550,8 @@ p {
     display: block;
     color: #20558A;
     cursor: pointer;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
 }
 
 /* for pdf */
