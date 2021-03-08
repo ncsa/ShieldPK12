@@ -258,7 +258,7 @@ function updateQuestions(data, answeredNumQ) {
     updateProgressBar(data.minNumQ, answeredNumQ)
 
     // for questions
-    var questionTitle = data.page["question"]
+    var questionTitle = data.page["question"].endsWith("?") ? data.page["question"]: data.page["question"] + "?"
     $("#question-title").html(questionTitle);
     if ("multiple" in data.page && data.page["multiple"] === true){
         $("#answer-prompt").html("Select Multiple Answers");
@@ -356,9 +356,10 @@ function generateChecklist(checklist) {
 function generateReport(report){
     $(".report-container").empty();
     report.forEach(function (item, index) {
+        var questionTitle = item["question"].endsWith("?") ? item["question"]: item["question"] + "?"
         $(".report-container").append(`
             <div class="report" id="`+ item["QID"] + `">
-                <h2 class="report-question">`+ item["question"] +`</h2>
+                <h2 class="report-question">`+ questionTitle +`</h2>
                 <div class="report-answers"></div>
             </div>
         `);
