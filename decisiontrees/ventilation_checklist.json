@@ -13,7 +13,9 @@
   {
     "activity": "Assessment of rooms requiring increased ventilation",
     "activityID": "2",
-    "links": [],
+    "links": [
+      "https://docs.google.com/spreadsheets/d/1NXGvgRi0CeRP25rI-O3iyQyZ2nmZAcyeXQUWP-CydVk/edit?usp=sharing"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": []
@@ -22,7 +24,9 @@
   {
     "activity": "Check that all windows can be opened and remain open safely",
     "activityID": "3",
-    "links": [],
+    "links": [
+      "https://docs.google.com/spreadsheets/d/1NXGvgRi0CeRP25rI-O3iyQyZ2nmZAcyeXQUWP-CydVk/edit?usp=sharing"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
