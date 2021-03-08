@@ -2,7 +2,10 @@
   {
     "activity": "Signs next to all cleaning supplies to remind cleaners about hand washing and not touching their face",
     "activityID": "1",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/Six-Steps-for-Cleaning-Disinfecting-school.pdf",
+      "https://www.cdc.gov/handwashing/pdf/wash-your-hands-poster-english2020-p.pdf"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": []
@@ -22,7 +25,9 @@
   {
     "activity": "Classroom cleaning schedule starting at least 1 hour after end of school",
     "activityID": "3",
-    "links": [],
+    "links": [
+      "https://infohub.nyced.org/docs/default-source/default-document-library/reopening-and-safety-planning-template.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -33,7 +38,9 @@
   {
     "activity": "A supply of gloves for janitorial staff",
     "activityID": "4",
-    "links": [],
+    "links": [
+      "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -44,7 +51,9 @@
   {
     "activity": "A supply of masks for janitorial staff",
     "activityID": "5",
-    "links": [],
+    "links": [
+      "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -55,7 +64,9 @@
   {
     "activity": "A supply of goggles or face shields for janitorial staff",
     "activityID": "6",
-    "links": [],
+    "links": [
+      "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -66,7 +77,9 @@
   {
     "activity": "Instructions to teachers about cleaning expectations",
     "activityID": "7",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/cleaning-disinfecting-school-classrooms.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -77,7 +90,9 @@
   {
     "activity": "Guidelines for teachers about times that extra cleaning might be needed",
     "activityID": "8",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/key-times-clean-childcare-poster.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -86,8 +101,21 @@
     }
   },
   {
-    "activity": "A supply of disposable gloves in every classroom",
+    "activity": "Instructions on safe removal and disposal of gloves",
     "activityID": "9",
+    "links": [
+      "https://www.cdc.gov/vhf/ebola/pdf/poster-how-to-remove-gloves.pdf"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "1b-ii-1"}
+      ]
+    }
+  },
+  {
+    "activity": "A supply of disposable gloves in every classroom",
+    "activityID": "10",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -98,7 +126,7 @@
   },
   {
     "activity": "Face shields for each teacher",
-    "activityID": "10",
+    "activityID": "11",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -109,7 +137,7 @@
   },
   {
     "activity": "A supply of cleaning wipes for each classroom",
-    "activityID": "11",
+    "activityID": "12",
     "links": [],
     "rules": {
       "operator": "OR",
@@ -120,9 +148,11 @@
     }
   },
   {
-    "activity": "A cleaning spray bottle and supply of paper towels in each classroom",
-    "activityID": "12",
-    "links": [],
+    "activity": "A cleaning spray bottle and supply of paper towels with instructions for use in each classroom",
+    "activityID": "13",
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/Six-Steps-for-Cleaning-Disinfecting-school.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -132,7 +162,7 @@
   },
   {
     "activity": "A schedule for janitors to refill classroom cleaning supplies",
-    "activityID": "13",
+    "activityID": "14",
     "links": [],
     "rules": {
       "operator": "OR",
@@ -144,8 +174,10 @@
   },
   {
     "activity": "Instructions to students for cleaning their own space",
-    "activityID": "14",
-    "links": [],
+    "activityID": "15",
+    "links": [
+      "https://www.leeschools.net/cms/one.aspx?portalId=676305&pageId=30860574#panel-22"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -155,7 +187,7 @@
   },
   {
     "activity": "A supply of disinfectant",
-    "activityID": "15",
+    "activityID": "16",
     "links": [
       "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
     ],
@@ -168,7 +200,7 @@
   },
   {
     "activity": "A supply of EPA-approved wipes",
-    "activityID": "16",
+    "activityID": "17",
     "links": [
       "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
     ],
@@ -181,17 +213,6 @@
   },
   {
     "activity": "Schedule for cleaning and replacing air filters",
-    "activityID": "17",
-    "links": [],
-    "rules": {
-      "operator": "AND",
-      "criteria": [
-        {"AID": "2b"}
-      ]
-    }
-  },
-  {
-    "activity": "A supply of replacement air filters",
     "activityID": "18",
     "links": [],
     "rules": {
@@ -202,9 +223,22 @@
     }
   },
   {
-    "activity": "Checklists for cleaning areas posted publicly",
+    "activity": "A supply of replacement air filters",
     "activityID": "19",
     "links": [],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "2b"}
+      ]
+    }
+  },
+  {
+    "activity": "Checklists for cleaning areas posted publicly",
+    "activityID": "20",
+    "links": [
+      "https://static1.squarespace.com/static/5de4ebae5719bc363911df16/t/5f40f7effd699801ae42c807/1598093308623/COVID-19+Cleaning+Guidance+and+Sample+Checklists.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -214,8 +248,10 @@
   },
   {
     "activity": "Cleaning flip tags on all classroom doors",
-    "activityID": "20",
-    "links": [],
+    "activityID": "21",
+    "links": [
+      "https://static1.squarespace.com/static/5de4ebae5719bc363911df16/t/5f40f7effd699801ae42c807/1598093308623/COVID-19+Cleaning+Guidance+and+Sample+Checklists.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -225,7 +261,7 @@
   },
   {
     "activity": "SOP for requesting additional cleaning",
-    "activityID": "21",
+    "activityID": "22",
     "links": [],
     "rules": {
       "operator": "AND",
