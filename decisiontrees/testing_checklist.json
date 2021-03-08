@@ -2,7 +2,10 @@
   {
     "activityID": "1",
     "activity": "Consent Document",
-    "links": [],
+    "links": [
+      "https://uofi.app.box.com/file/749550705976",
+      "https://uofi.app.box.com/file/734345013688"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -15,7 +18,9 @@
   {
     "activityID": "2",
     "activity": "Testing population description",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-testing.html#table2"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -59,15 +64,6 @@
     "activity": "Collection schedule",
     "links": [],
     "rules": {
-      "operator": "ALL",
-      "criteria": []
-    }
-  },
-  {
-    "activityID": "6",
-    "activity": "Collection supply kits",
-    "links": [],
-    "rules": {
       "operator": "AND",
       "criteria": [
         {
@@ -92,7 +88,9 @@
   {
     "activityID": "7",
     "activity": "Collection inventory",
-    "links": [],
+    "links": [
+      "https://whentotest.org/calculator/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -105,7 +103,9 @@
   {
     "activityID": "8",
     "activity": "Home collection instructions",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/testing/at-home-testing.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -157,7 +157,9 @@
   {
     "activityID": "12",
     "activity": "Ventilation plan for testing site",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/ventilation.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -183,7 +185,9 @@
   {
     "activityID": "14",
     "activity": "Cleaning protocol for testing site",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/pdf/Reopening_America_Guidance.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -196,7 +200,9 @@
   {
     "activityID": "15",
     "activity": "Testing frequency plan",
-    "links": [],
+    "links": [
+      "https://www.rockefellerfoundation.org/wp-content/uploads/2020/09/A-National-Decision-Point-Effective-Testing-Screening-for-Covid-19-Full-Report.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -248,7 +254,9 @@
   {
     "activityID": "19",
     "activity": "Method for transporting samples",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-nCoV/lab/guidelines-clinical-specimens.html#shipping"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -261,7 +269,9 @@
   {
     "activityID": "20",
     "activity": "Testing center setup",
-    "links": [],
+    "links": [
+      "https://azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/healthcare-providers/testing-site-setup.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -287,7 +297,9 @@
   {
     "activityID": "22",
     "activity": "Testing center ventilation assessment",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/ventilation.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -300,7 +312,9 @@
   {
     "activityID": "23",
     "activity": "Testing center cleaning plan",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/pdf/Reopening_America_Guidance.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -313,7 +327,9 @@
   {
     "activityID": "24",
     "activity": "Identification of high-risk individuals for testing",
-    "links": [],
+    "links": [
+      "https://www.rockefellerfoundation.org/wp-content/uploads/2020/09/A-National-Decision-Point-Effective-Testing-Screening-for-Covid-19-Full-Report.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -326,7 +342,9 @@
   {
     "activityID": "25",
     "activity": "Parent communication plan",
-    "links": [],
+    "links": [
+      "https://www.louisianabelieves.com/docs/default-source/strong-start-2020/weekly-family-message-example.pdf?sfvrsn=bd49981f_2"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -436,7 +454,9 @@
   {
     "activityID": "33",
     "activity": "Phone script",
-    "links": [],
+    "links": [
+      "https://uofi.app.box.com/file/772346606096"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -462,7 +482,9 @@
   {
     "activityID": "35",
     "activity": "Contact tracing flow chart",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/school-screening-flowchrt-print.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -475,7 +497,9 @@
   {
     "activityID": "36",
     "activity": "Community communication plan",
-    "links": [],
+    "links": [
+      "https://uofi.app.box.com/file/772350946089"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -488,7 +512,9 @@
   {
     "activityID": "37",
     "activity": "Dashboard development",
-    "links": [],
+    "links": [
+      "https://statsiq.co1.qualtrics.com/public-dashboard/v0/dashboard/5f62eaee4451ae001535c839#/dashboard/5f62eaee4451ae001535c839?pageId=Page_1ac6a6bc-92b6-423e-9f7a-259a18648318"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -501,7 +527,9 @@
   {
     "activityID": "38",
     "activity": "Form letter/post for reporting positives",
-    "links": [],
+    "links": [
+      "https://uofi.app.box.com/file/772346606096"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -514,7 +542,9 @@
   {
     "activityID": "39",
     "activity": "Nose bleed protocol",
-    "links": [],
+    "links": [
+      "https://www.nationaljewish.org/conditions/health-information/health-infographics/12-nose-bleed-tips"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -540,7 +570,9 @@
   {
     "activityID": "41",
     "activity": "Immediate reporting plan for staff",
-    "links": [],
+    "links": [
+      "http://publichealth.lacounty.gov/media/Coronavirus/docs/education/ScreeningEducationSettings.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -569,7 +601,12 @@
   {
     "activityID": "43",
     "activity": "Plan to quarantine while awaiting test results",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html",
+      "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/what-everyone-needs/return-from-isolation-guidance-covid-results.pdf",
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/php/318271-A_FS_KeyStepsWhenWaitingForCOVID-19Results_3.pdf",
+      "http://publichealth.lacounty.gov/media/Coronavirus/docs/protocols/ExposureManagementPlan_K12Schools.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -608,7 +645,9 @@
   {
     "activityID": "46",
     "activity": "Funding drive",
-    "links": [],
+    "links": [
+      "https://uofi.app.box.com/file/740051908895"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -621,7 +660,9 @@
   {
     "activityID": "47",
     "activity": "Pooling plan",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/lab/pooling-procedures.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
