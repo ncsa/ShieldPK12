@@ -3,8 +3,8 @@
     "activityID": "1",
     "activity": "Consent Document",
     "links": [
-      "https://uofi.app.box.com/file/749550705976",
-      "https://uofi.app.box.com/file/734345013688"
+      "https://uofi.box.com/s/xrau4p5jghrrel991tu1f8asn7s5az3h",
+      "https://uofi.box.com/s/vh2s8i4x3d9yazvrvffzlkjtj5765qmn"
     ],
     "rules": {
       "operator": "AND",
@@ -646,7 +646,7 @@
     "activityID": "46",
     "activity": "Funding drive",
     "links": [
-      "https://uofi.app.box.com/file/740051908895"
+      "https://uofi.box.com/s/lcq00d815ajgtg1ceph4olbi4laex0mq"
     ],
     "rules": {
       "operator": "AND",

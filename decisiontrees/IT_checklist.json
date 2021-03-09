@@ -2,7 +2,10 @@
   {
     "activityID": "1",
     "activity": "Assess system capacity for access, compute power, and storage",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Data%20Governance%20Checklist_0.pdf",
+      "https://uofi.box.com/s/bsp6aycnzg9nfb8b4xtb20q639gdaqi3"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
@@ -39,7 +42,9 @@
   {
     "activityID": "4",
     "activity": "List of individuals who will access data and required training",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/contact-tracing.html"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
@@ -47,10 +52,12 @@
       ]
     }
   },
-   {
+  {
     "activityID": "5",
     "activity": "HIPAA training source identification",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/php/open-america/FS-Training-Contact-Tracing-Workforce.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -61,7 +68,9 @@
   {
     "activityID": "6",
     "activity": "Expand HIPAA training license",
-    "links": [],
+    "links": [
+      "https://www.hipaacompliance.org/hipaa-certified/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -72,7 +81,9 @@
   {
     "activityID": "7",
     "activity": "Expand other data privacy training license",
-    "links": [],
+    "links": [
+      "https://www.hhs.gov/hipaa/for-professionals/training/index.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -83,7 +94,10 @@
   {
     "activityID": "8",
     "activity": "Other data privacy training source identification",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/FERPA%20and%20Coronavirus%20Frequently%20Asked%20Questions.pdf",
+      "https://www.osha.gov/sites/default/files/publications/OSHA3990.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -116,7 +130,9 @@
   {
     "activityID": "11",
     "activity": "Assign training compliance tracking responsibility",
-    "links": [],
+    "links": [
+      "https://www.hipaajournal.com/hipaa-training-requirements/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -127,7 +143,9 @@
   {
     "activityID": "12",
     "activity": "Determine and document legal responsibilities for data retention",
-    "links": [],
+    "links": [
+      "http://niqca.org/documents/RecordRetentionSamplePolicy.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -138,7 +156,9 @@
   {
     "activityID": "13",
     "activity": "Determine useful business life of data",
-    "links": [],
+    "links": [
+      "http://niqca.org/documents/RecordRetentionSamplePolicy.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -149,7 +169,9 @@
   {
     "activityID": "14",
     "activity": "Adjust data deletion process for retention time",
-    "links": [],
+    "links": [
+      "http://niqca.org/documents/RecordRetentionSamplePolicy.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -160,7 +182,9 @@
   {
     "activityID": "15",
     "activity": "Create automation to delete data on schedule",
-    "links": [],
+    "links": [
+      "https://pureinfotech.com/delete-files-older-than-days-windows-10/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -171,7 +195,9 @@
   {
     "activityID": "16",
     "activity": "Write SOP for manual data deletion based on data retention policy",
-    "links": [],
+    "links": [
+      "https://www.fda.gov/media/73870/download"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -182,7 +208,9 @@
   {
     "activityID": "17",
     "activity": "Database for case information",
-    "links": [],
+    "links": [
+      "https://docs.google.com/document/d/1OyN6_1UeDePwPwKi6UKZB8GwNC7-kSf1-BO2af8kqVA/edit"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -193,7 +221,9 @@
   {
     "activityID": "18",
     "activity": "Database for quarantine information",
-    "links": [],
+    "links": [
+      "https://www.dph.illinois.gov/covid19/contact-tracing-data?DV=1"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -237,7 +267,9 @@
   {
     "activityID": "22",
     "activity": "Digitize information needed for correlation",
-    "links": [],
+    "links": [
+      "https://www.jotform.com/tables/210604164733044/210604734233042"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -248,7 +280,9 @@
   {
     "activityID": "23",
     "activity": "Notification system to clean classroom of positive",
-    "links": [],
+    "links": [
+      "https://www.cmu.edu/coronavirus/assets/documents/covid_flowchart_classroomrosterlabnotificationprocess_r22.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -259,7 +293,9 @@
   {
     "activityID": "24",
     "activity": "Notification system to inform staff of positive",
-    "links": [],
+    "links": [
+      "https://hr.arizona.edu/sites/default/files/Protocol-positive-test.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -270,7 +306,10 @@
   {
     "activityID": "25",
     "activity": "Notification system to inform parents and students of positive",
-    "links": [],
+    "links": [
+      "https://kpogrebabrown.faculty.arizona.edu/content/safer",
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/FERPAModelNotificationSchools.docx"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -281,7 +320,9 @@
   {
     "activityID": "26",
     "activity": "List of all groups to be notified of positive, with contact methods",
-    "links": [],
+    "links": [
+      "https://hr.arizona.edu/content/covid-19-positive-case-notification-protocol#Notifications"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -292,7 +333,9 @@
   {
     "activityID": "27",
     "activity": "Testing roster",
-    "links": [],
+    "links": [
+      "https://www.ohio-k12.help/wp-content/uploads/2021/01/Guidelines-for-Roster-Verification-2021.pdf"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
@@ -300,7 +343,7 @@
       ]
     }
   },
-   {
+  {
     "activityID": "28",
     "activity": "Roster information update process",
     "links": [],
@@ -315,7 +358,9 @@
   {
     "activityID": "29",
     "activity": "Roster updating plan",
-    "links": [],
+    "links": [
+      "https://www.ohio-k12.help/wp-content/uploads/2021/01/Alert-Guidelines-RV-2021.pdf"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
@@ -326,7 +371,9 @@
   {
     "activityID": "30",
     "activity": "Process for integrating between data systems",
-    "links": [],
+    "links": [
+      "https://www.dataintegration.info/data-integration"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -348,7 +395,9 @@
   {
     "activityID": "32",
     "activity": "Data analytics plan",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/surveillance-data-analytics.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -359,7 +408,9 @@
   {
     "activityID": "33",
     "activity": "Identify data analyst",
-    "links": [],
+    "links": [
+      "https://www.northeastern.edu/graduate/blog/data-analyst-skills/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -370,7 +421,9 @@
   {
     "activityID": "34",
     "activity": "Hire data analyst",
-    "links": [],
+    "links": [
+      "https://www.umass.edu/sphhs/data-analyst-covid-19-oregon"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -381,7 +434,9 @@
   {
     "activityID": "35",
     "activity": "Recruit and ethics train volunteer for data analysis",
-    "links": [],
+    "links": [
+      "https://www.samhsa.gov/sites/default/files/volunteer_handbook.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -392,7 +447,9 @@
   {
     "activityID": "36",
     "activity": "Identify and acquire needed hardware, software, and skills for data analysis",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/global-covid-19/compare-digital-tools.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -414,7 +471,9 @@
   {
     "activityID": "38",
     "activity": "Automated compliance reporting process",
-    "links": [],
+    "links": [
+      "https://www.bu.edu/hr/covid-19-testing-and-screening-compliance/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -469,7 +528,9 @@
   {
     "activityID": "43",
     "activity": "Report(s) framework",
-    "links": [],
+    "links": [
+      "https://www.hhs.gov/sites/default/files/hhs-guidance-implementation.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -482,7 +543,9 @@
   {
     "activityID": "44",
     "activity": "Report distribution plan",
-    "links": [],
+    "links": [
+      "https://www.hhs.gov/sites/default/files/covid-19-laboratory-data-reporting-guidance.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -495,7 +558,9 @@
   {
     "activityID": "45",
     "activity": "Digital security plan for digital reports",
-    "links": [],
+    "links": [
+      "https://transition.fcc.gov/cyber/cyberplanner.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -507,7 +572,9 @@
   {
     "activityID": "46",
     "activity": "Digital report destruction reporting process",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Best%20Practices%20for%20Data%20Destruction%20%282019-3-26%29.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -519,7 +586,9 @@
   {
     "activityID": "47",
     "activity": "Digital report security expectations",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Issue%20Brief%20Data%20Security%20Top%20Threats%20to%20Data%20Protection_0.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -531,7 +600,9 @@
   {
     "activityID": "48",
     "activity": "Authentication and authorization source for your digital reports (if 12a(ii)=1)",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Identity_Authentication_Best_Practices_0.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -542,7 +613,9 @@
   {
     "activityID": "49",
     "activity": "Training for digital report security",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Data%20Security%20and%20Management%20Training_1.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -553,7 +626,9 @@
   {
     "activityID": "50",
     "activity": "Shredder for physical reports",
-    "links": [],
+    "links": [
+      "https://privacyrights.org/resources/disposing-records-containing-personal-informationFiling system for physical reports (if 12b(i)=3 or 12c(ii)=3)"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -589,7 +664,9 @@
   {
     "activityID": "53",
     "activity": "Physical report security expectations",
-    "links": [],
+    "links": [
+      "https://www.hhs.gov/hipaa/for-professionals/faq/575/what-does-hipaa-require-of-covered-entities-when-they-dispose-information/index.html"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -601,7 +678,11 @@
   {
     "activityID": "54",
     "activity": "Public dashboard creation",
-    "links": [],
+    "links": [
+      "https://guides.dml.georgetown.edu/datastudio/covid19dashboard",
+      "https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate",
+      "https://towardsdatascience.com/building-covid-19-dashboard-with-python-and-tableau-296b0016920f"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -612,7 +693,11 @@
   {
     "activityID": "55",
     "activity": "Private dashboard creation",
-    "links": [],
+    "links": [
+      "https://guides.dml.georgetown.edu/datastudio/covid19dashboard",
+      "https://mdl.library.utoronto.ca/technology/tutorials/creating-tableau-dashboard-using-covid-19-data-intermediate",
+      "https://towardsdatascience.com/building-covid-19-dashboard-with-python-and-tableau-296b0016920f"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -623,7 +708,9 @@
   {
     "activityID": "56",
     "activity": "Authentication and authorization source for your private dashboard",
-    "links": [],
+    "links": [
+      "https://swoopnow.com/website-authentication/#:~:text=1.-,What%20is%20web%20authentication%3F,personal%20accounts%20on%20a%20website"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -634,7 +721,9 @@
   {
     "activityID": "57",
     "activity": "Dashboard security review",
-    "links": [],
+    "links": [
+      "https://transparencyreport.google.com/safe-browsing/search?hl=en"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -645,7 +734,9 @@
   {
     "activityID": "58",
     "activity": "Data security and privacy regulation review",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/Data%20Security%20Checklist_0.pdf"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
@@ -656,7 +747,9 @@
   {
     "activityID": "59",
     "activity": "Authentication and authorization source for your database(s)",
-    "links": [],
+    "links": [
+      "https://swoopnow.com/website-authentication/#:~:text=1.-,What%20is%20web%20authentication%3F,personal%20accounts%20on%20a%20website"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -678,7 +771,9 @@
   {
     "activityID": "61",
     "activity": "Data access audit procedure",
-    "links": [],
+    "links": [
+      "https://studentprivacy.ed.gov/sites/default/files/resource_document/file/issue-brief-responding-to-security-audits_0.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -689,7 +784,9 @@
   {
     "activityID": "62",
     "activity": "Check copy protections on all data",
-    "links": [],
+    "links": [
+      "https://www.youtube.com/watch?v=r4qdRJ65_Bo"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -700,7 +797,9 @@
   {
     "activityID": "63",
     "activity": "Increase IT system capacity",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -712,7 +811,9 @@
   {
     "activityID": "64",
     "activity": "Budget for cloud storage",
-    "links": [],
+    "links": [
+      "https://www.consumerreports.org/cro/2013/11/cloud-storage-services-comparison/index.htm"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -724,7 +825,9 @@
   {
     "activityID": "65",
     "activity": "Supplement on-premises system with cloud resources",
-    "links": [],
+    "links": [
+      "https://www.founderstech.com/2017/10/important-considerations-moving-cloud/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -735,7 +838,9 @@
   {
     "activityID": "66",
     "activity": "Acquire additional equipment for on-premises system",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -758,7 +863,9 @@
   {
     "activityID": "68",
     "activity": "System demand capacity expansion",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -769,7 +876,9 @@
   {
     "activityID": "69",
     "activity": "System compute power expansion",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -780,7 +889,9 @@
   {
     "activityID": "70",
     "activity": "System storage expansion",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -802,7 +913,9 @@
   {
     "activityID": "72",
     "activity": "Obtain additional capacity for messaging system",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -813,7 +926,9 @@
   {
     "activityID": "73",
     "activity": "Budget for increased use of messaging system",
-    "links": [],
+    "links": [
+      "https://wiki.en.it-processmaps.com/index.php/Checklist_Capacity_Plan"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -856,8 +971,49 @@
   },
   {
     "activityID": "77",
+    "activity": "System security assessment and correction as needed",
+    "links": [
+      "https://security.vt.edu/content/dam/security_vt_edu/downloads/risk_assessment/strategy-how-to-conduct-an-effective-it-security-risk-assessment_2411470.pdf"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "19b"}
+      ]
+    }
+  },
+  {
+    "activityID": "78",
+    "activity": "Establish auditing and logging of digital security systems as needed",
+    "links": [
+      "https://informationsecurityprogram.com/security-auditing-and-logging/"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "19b"}
+      ]
+    }
+  },
+  {
+    "activityID": "79",
+    "activity": "Establish and socialize system policies around security",
+    "links": [
+      "https://www.certmike.com/security-policy-framework/#:~:text=The%20security%20policy%20framework%20is,a%20business%2C%20agency%20or%20institution"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {"AID": "19c"}
+      ]
+    }
+  },
+  {
+    "activityID": "80",
     "activity": "FAQ for all IT components",
-    "links": [],
+    "links": [
+      "https://sleeknote.com/blog/how-to-build-an-faq-page"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -866,7 +1022,7 @@
     }
   },
   {
-    "activityID": "78",
+    "activityID": "81",
     "activity": "Helpline phone number and staffing arranged",
     "links": [],
     "rules": {
@@ -877,7 +1033,7 @@
     }
   },
   {
-    "activityID": "79",
+    "activityID": "82",
     "activity": "Helpline announced",
     "links": [],
     "rules": {
@@ -888,9 +1044,11 @@
     }
   },
   {
-    "activityID": "80",
+    "activityID": "83",
     "activity": "Email and staffing arranged for email-based IT support",
-    "links": [],
+    "links": [
+      "https://freshdesk.com/customer-service-skills/five-tips-for-writing-perfect-tech-support-emails-blog/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -899,27 +1057,33 @@
     }
   },
   {
-    "activityID": "81",
+    "activityID": "84",
     "activity": "Online system and staffing arranged for online IT support",
-    "links": [],
+    "links": [
+      "https://www.liveagent.com/customer-support-glossary/online-tech-support/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
         {"AID": "20d"}
       ]
     }
-  },{
-    "activityID": "82",
+  },
+  {
+    "activityID": "85",
     "activity": "IT support plan and expectations communicated broadly",
-    "links": [],
+    "links": [
+      "https://www.teamsupport.com/blog/5-tips-managing-customer-expectations"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": [
         {"AID": ""}
       ]
     }
-  },{
-    "activityID": "83",
+  },
+  {
+    "activityID": "86",
     "activity": "Identify and obtain necessary resources for IT support",
     "links": [],
     "rules": {
@@ -928,20 +1092,26 @@
         {"AID": "22a"}
       ]
     }
-  },{
-    "activityID": "84",
+  },
+  {
+    "activityID": "87",
     "activity": "Equity review",
-    "links": [],
+    "links": [
+      "https://muse.jhu.edu/chapter/2628662"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
         {"AID": "23b"}
       ]
     }
-  },{
-    "activityID": "85",
+  },
+  {
+    "activityID": "88",
     "activity": "Leverage existing community resources for digital equity: reach out, build partnerships, and document and share resources",
-    "links": [],
+    "links": [
+      "https://muse.jhu.edu/chapter/2628662"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -950,9 +1120,11 @@
     }
   },
   {
-    "activityID": "86",
+    "activityID": "89",
     "activity": "Develop new resources for digital equity",
-    "links": [],
+    "links": [
+      "https://www.digitalequity.us/resources/educators-guide-to-digital-equity-resources/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -961,7 +1133,7 @@
     }
   },
   {
-    "activityID": "87",
+    "activityID": "90",
     "activity": "Use non-digital methods to deliver services",
     "links": [],
     "rules": {
@@ -972,7 +1144,7 @@
     }
   },
   {
-    "activityID": "88",
+    "activityID": "91",
     "activity": "Loan resources to address digital equity",
     "links": [],
     "rules": {
@@ -983,9 +1155,11 @@
     }
   },
   {
-    "activityID": "89",
+    "activityID": "92",
     "activity": "Apply for/leverage grants to address digital equity issues",
-    "links": [],
+    "links": [
+      "https://www.digitalequity.us/resources/cra-funding-guide-for-digital-equity/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -994,7 +1168,7 @@
     }
   },
   {
-    "activityID": "90",
+    "activityID": "93",
     "activity": "Develop phone script to inform people of digital equity solutions",
     "links": [],
     "rules": {
@@ -1005,7 +1179,7 @@
     }
   },
   {
-    "activityID": "91",
+    "activityID": "94",
     "activity": "Develop and send mailings/handouts related to digital equity solutions",
     "links": [],
     "rules": {
@@ -1016,7 +1190,7 @@
     }
   },
   {
-    "activityID": "92",
+    "activityID": "95",
     "activity": "Develop and post posters related to digital equity solutions",
     "links": [],
     "rules": {
@@ -1025,10 +1199,13 @@
         {"AID": "23a-iii-3"}
       ]
     }
-  },{
-    "activityID": "93",
+  },
+  {
+    "activityID": "96",
     "activity": "Increase internal capacity for end user support",
-    "links": [],
+    "links": [
+      "https://www.liveagent.com/customer-support-glossary/online-tech-support/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -1037,9 +1214,11 @@
     }
   },
   {
-    "activityID": "94",
+    "activityID": "97",
     "activity": "Provide training for end user support staff",
-    "links": [],
+    "links": [
+      "https://www.codespaces.com/best-it-support-help-desk-courses-certifications-trainings.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -1048,7 +1227,7 @@
     }
   },
   {
-    "activityID": "95",
+    "activityID": "98",
     "activity": "Decision process for which end user questions to handle internally, and which to pass to partners",
     "links": [],
     "rules": {
@@ -1059,7 +1238,7 @@
     }
   },
   {
-    "activityID": "96",
+    "activityID": "99",
     "activity": "Process for connecting end users to partners for support",
     "links": [],
     "rules": {
@@ -1070,7 +1249,7 @@
     }
   },
   {
-    "activityID": "97",
+    "activityID": "100",
     "activity": "Develop and send digital notifications about end user support contacts",
     "links": [],
     "rules": {
@@ -1081,7 +1260,7 @@
     }
   },
   {
-    "activityID": "98",
+    "activityID": "101",
     "activity": "Develop and send mailings/handouts about end user support contacts",
     "links": [],
     "rules": {
@@ -1092,7 +1271,7 @@
     }
   },
   {
-    "activityID": "99",
+    "activityID": "102",
     "activity": "Develop and post posters about end user support contacts",
     "links": [],
     "rules": {
