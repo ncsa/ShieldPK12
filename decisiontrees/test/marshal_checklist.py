@@ -44,16 +44,17 @@ if __name__ == "__main__":
 
 
                     # check if answer ID exists
-                    for entry in activity["rules"]["criteria"]:
-                        found = False
-                        for page in decision:
-                            for answer in page["answers"]:
-                                if entry["AID"] == answer["AID"]:
-                                    found = True
-                        if not found:
-                            print("module:", module['checklist'],
-                                  "activityID:", activity["activityID"],
-                                  "AID: ", entry["AID"])
+                    if activity["rules"]["operator"] != "ALL":
+                        for entry in activity["rules"]["criteria"]:
+                            found = False
+                            for page in decision:
+                                for answer in page["answers"]:
+                                    if entry["AID"] == answer["AID"]:
+                                        found = True
+                            if not found:
+                                print("module:", module['checklist'],
+                                      "activityID:", activity["activityID"],
+                                      "AID: ", entry["AID"])
                 c.seek(0)
                 json.dump(checklist, c, indent=2)
 
