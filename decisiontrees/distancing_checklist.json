@@ -2,7 +2,9 @@
   {
     "activity": "Policy for movement of adults between rooms",
     "activityID": "1",
-    "links": [],
+    "links": [
+      "https://www.edsurge.com/news/2020-06-22-what-does-good-classroom-design-look-like-in-the-age-of-social-distancing"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -13,7 +15,9 @@
   {
     "activity": "Policy for specialists meeting with students",
     "activityID": "2",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/hcp/direct-service-providers.html"
+    ],
     "rules": {
       "operator": "ALL",
       "criteria": []
@@ -22,7 +26,9 @@
   {
     "activity": "Policy for pod formation",
     "activityID": "3",
-    "links": [],
+    "links": [
+      "https://thesimplyorganizedteacher.com/classroom-setup-ideas-for-social-distancing/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -33,7 +39,9 @@
   {
     "activity": "Assignment of all students to pods",
     "activityID": "4",
-    "links": [],
+    "links": [
+      "https://www.oregon.gov/ode/students-and-family/healthsafety/Documents/Guidance%20for%20Limited%20In-Person%20instruction%20during%20CDL.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -44,7 +52,9 @@
   {
     "activity": "Policy on how to avoid mixing between grade levels",
     "activityID": "5",
-    "links": [],
+    "links": [
+      "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/small-groups-child-youth.aspx"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -55,7 +65,10 @@
   {
     "activity": "Lunchroom traffic flow diagram and signage",
     "activityID": "6",
-    "links": [],
+    "links": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgr-JP_f8bIzpsJMqWM4Huyw85aGrAhYnAA&usqp=CAU",
+      "https://www.bluerootsmarketing.com/images/social-distancing-hanging-sign-lg.png"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -67,7 +80,9 @@
   {
     "activity": "Lunchroom space ventilation assessment",
     "activityID": "7",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -101,7 +116,9 @@
   {
     "activity": "Classroom space ventilation assessment",
     "activityID": "10",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -135,7 +152,9 @@
   {
     "activity": "Recess space traffic flow diagram and signage",
     "activityID": "13",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -146,7 +165,10 @@
   {
     "activity": "Hygiene processes for pre-and post-recess",
     "activityID": "14",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/handwashing/pdf/wash-your-hands-poster-english-508.pdf",
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/COVID19-k-12-school-posters-wash-your-hands.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -157,7 +179,9 @@
   {
     "activity": "IT support process for virtual students",
     "activityID": "15",
-    "links": [],
+    "links": [
+      "https://uofi.box.com/s/q7c7yc5dm8q4z5seec4pdz4mofm9a21s"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -170,7 +194,9 @@
   {
     "activity": "Criteria for allowing in-person instruction",
     "activityID": "16",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/pdf/Back-to-School-Planning-for-In-Person-Classes.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -179,8 +205,23 @@
     }
   },
   {
-    "activity": "Process for allowing self-selection for in-person/virtual",
+    "activity": "List of those allowed to be in-person",
     "activityID": "17",
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html#planning-in-person-classes"
+    ],
+    "rules": {
+      "operator": "AND",
+      "criteria": [
+        {
+          "AID": "2a-ii-1-a"
+        }
+      ]
+    }
+  },
+  {
+    "activity": "Process for allowing self-selection for in-person/virtual",
+    "activityID": "18",
     "links": [],
     "rules": {
       "operator": "AND",
@@ -191,8 +232,10 @@
   },
   {
     "activity": "Process for changing from in-person to virtual or vice versa",
-    "activityID": "18",
-    "links": [],
+    "activityID": "19",
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/Teachers-and-Staff-Resuming-In-Person-Learning-checklist.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -202,8 +245,11 @@
   },
   {
     "activity": "Training for teachers on managing virtual and in-person classrooms together",
-    "activityID": "19",
-    "links": [],
+    "activityID": "20",
+    "links": [
+      "https://www.usf.edu/atle/teaching/teaching-dual-audiences.aspx",
+      "https://www.tealsk12.org/wp-content/uploads/2020/03/RemoteBestPractices-TEALSProgram.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -213,8 +259,11 @@
   },
   {
     "activity": "IT support system for classrooms",
-    "activityID": "20",
-    "links": [],
+    "activityID": "21",
+    "links": [
+      "https://www.ringcentral.com/us/en/blog/technology-in-the-classroom/",
+      "https://advclasstech.com/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -225,7 +274,9 @@
   {
     "activity": "Process for distributing teachers to in-person vs. virtual",
     "activityID": "21",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html#:~:text=Students%20and%20teachers%20engage%20in,activities%2C%20and%20events."
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -236,7 +287,9 @@
   {
     "activity": "Assignment of teachers to student groups by virtual vs. in-person",
     "activityID": "22",
-    "links": [],
+    "links": [
+      "https://www.baylor.edu/atl/index.php?id=971019"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -247,7 +300,10 @@
   {
     "activity": "Schedule structure",
     "activityID": "23",
-    "links": [],
+    "links": [
+      "https://drive.google.com/file/d/1_sV5QTZ1VvGSh-oag1d-vQjv-h1ezH4q/view",
+      "https://drive.google.com/file/d/17cVeCXEIvnfObesLukHifttvNnYZtEmm/view"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -259,7 +315,9 @@
   {
     "activity": "Process for assigning students to a schedule",
     "activityID": "24",
-    "links": [],
+    "links": [
+      "https://www.acps.k12.va.us/Page/2838"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -271,7 +329,9 @@
   {
     "activity": "Transportation arrangements by student schedule",
     "activityID": "25",
-    "links": [],
+    "links": [
+      "https://www.doe.mass.edu/covid19/on-desktop/2020-0722transport-guide.docx"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -283,7 +343,9 @@
   {
     "activity": "Support process for students refusing in-person school",
     "activityID": "26",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/schools-faq.html#:~:text=School%20districts%20and%20school%20administrators,%2D19%20is%20available."
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -294,7 +356,9 @@
   {
     "activity": "Support process for high-risk teachers",
     "activityID": "27",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-staff.html#teachers-specialists"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -305,7 +369,9 @@
   {
     "activity": "Decision process for reverting to virtual school",
     "activityID": "28",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/decision-tool.html"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -318,7 +384,9 @@
   {
     "activity": "Schedule for group entrance and exit",
     "activityID": "29",
-    "links": [],
+    "links": [
+      "https://4.files.edl.io/de84/09/28/20/182302-f39ea8bd-f160-416e-b86b-e421344d686e.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -329,7 +397,9 @@
   {
     "activity": "Signage and communication about entry and exit points by group",
     "activityID": "30",
-    "links": [],
+    "links": [
+      "https://www.northwestern.edu/coronavirus-covid-19-updates/university-status/expectations/guidelines/social-physical-distancing/signs-common-spaces.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -340,7 +410,9 @@
   {
     "activity": "Ground markings and communications to enforce spacing between individuals",
     "activityID": "31",
-    "links": [],
+    "links": [
+      "https://www.creativesafetysupply.com/articles/floor-marking-for-social-distancing/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -351,7 +423,9 @@
   {
     "activity": "Maps, signage, and ground markings for hallway directions",
     "activityID": "32",
-    "links": [],
+    "links": [
+      "https://www.northwestern.edu/coronavirus-covid-19-updates/university-status/expectations/guidelines/social-physical-distancing/signs-common-spaces.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -373,7 +447,10 @@
   {
     "activity": "Plan to minimize movement through hallways",
     "activityID": "34",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/",
+      "https://www.cde.state.co.us/planning20-21/physicaldistancing#hallways"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -413,7 +490,8 @@
     "activity": "Policy for when teams would be allowed to compete and when athletic competitions would be stopped",
     "activityID": "37",
     "links": [
-      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/youth-sports.html#risk"
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/youth-sports.html#risk",
+      "https://www.dph.illinois.gov/covid19/community-guidance/sports-safety-guidance"
     ],
     "rules": {
       "operator": "AND",
@@ -425,7 +503,9 @@
    {
     "activity": "Policy for transportation to athletic competitions",
     "activityID": "38",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-in-the-us.html"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -449,7 +529,9 @@
   {
     "activity": "Mask policy for all music and arts facilities",
     "activityID": "40",
-    "links": [],
+    "links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/musicguide.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -460,7 +542,10 @@
   {
     "activity": "Ventilation assessment for all music and arts spaces",
     "activityID": "41",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/",
+      "https://www.health.state.mn.us/diseases/coronavirus/musicguide.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -471,7 +556,10 @@
   {
     "activity": "Outdoor venue for in-person performances",
     "activityID": "42",
-    "links": [],
+    "links": [
+      "https://www.cde.state.co.us/planning20-21/physicaldistancing#performingarts",
+      "https://www.health.state.mn.us/diseases/coronavirus/musicguide.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -482,7 +570,9 @@
   {
     "activity": "Method to limit attendance at in-person performances",
     "activityID": "43",
-    "links": [],
+    "links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/musicguide.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -493,7 +583,9 @@
   {
     "activity": "Space assessment for extracurriculars",
     "activityID": "44",
-    "links": [],
+    "links": [
+      "https://publichealth.yale.edu/research_practice/interdepartmental/covid/schools/spaces/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -504,7 +596,11 @@
   {
     "activity": "Method to enforce mask-wearing on buses",
     "activityID": "45",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/travelers/face-masks-public-transportation.html",
+      "https://www.cdc.gov/quarantine/masks/mask-travel-guidance.html",
+      "https://www.cdc.gov/quarantine/pdf/Mask-Order-CDC_GMTF_01-29-21-p.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -515,7 +611,9 @@
   {
     "activity": "Bus schedule changes to limit capacity",
     "activityID": "46",
-    "links": [],
+    "links": [
+      "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-staff.html#:~:text=Establish%2C%20where%20possible%2C,they%20use%20hand%20sanitizer"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -548,7 +646,10 @@
   {
     "activity": "Signage and communication to enforce parents remaining in cars",
     "activityID": "49",
-    "links": [],
+    "links": [
+      "https://www.graphicproducts.com/assets/images/products/CV1076.png",
+      "https://cdn.shopify.com/s/files/1/0014/3186/3369/products/U-CC-01-2.jpg?v=1560533504"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -559,7 +660,10 @@
   {
     "activity": "Signage and communication to enforce wearing masks in parking lots and walk-up areas",
     "activityID": "50",
-    "links": [],
+    "links": [
+      "https://www.myparkingsign.com/mask-required-wait-in-car-or-outside-until-your-turn-sign/sku-k2-5697",
+      "https://www.signs.com/content/assets/filelibrary/Free-Coronavirus-Downloadable-Template-160-11816.jpg"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -571,7 +675,9 @@
   {
     "activity": "Schedule to limit traffic during pick-up times",
     "activityID": "51",
-    "links": [],
+    "links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/schools/socialdistance.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -582,7 +688,9 @@
   {
     "activity": "Form to collect information about carpool groups",
     "activityID": "52",
-    "links": [],
+    "links": [
+      "https://www.signnow.com/jsfiller-desk17/?requestHash=8f9bb6c568a41065a14c27cd0fcd327c7ebeae69464bfc2bd1d17307444a8f98&ref=https://www.signnow.com&projectId=664959440#1f145b53761a46e8550bd50507d04668"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -593,7 +701,9 @@
   {
     "activity": "Floor markings and signs for keeping distance while walking",
     "activityID": "53",
-    "links": [],
+    "links": [
+      "https://static.gotprint.com/tl/en_US/products/floor-decals/free-samples/social-distancing/img/floor_decal_order_1.jpg"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
