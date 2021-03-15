@@ -364,15 +364,27 @@ function generateReport(report){
             </div>
         `);
         item["answers"].forEach(function (answerItem, index) {
-            $("#" + item["QID"]).find(".report-answers").append(`
-                <div class="report-answer">
-                    <i class="fas fa-caret-down report-expand"></i>
-                    <i class="fas fa-caret-up report-collapse"></i>
-                    <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
-                    + answerItem["answer"] + `</h3>
-                    <p class="report-answer-description">` + answerItem["description"] + `</p>
-                </div>
-            `);
+            var expandIcon = `<i class="fas fa-caret-down report-expand"></i>
+                    <i class="fas fa-caret-up report-collapse"></i>`;
+            if ("description" in answerItem && answerItem["description"] !== ""){
+                $("#" + item["QID"]).find(".report-answers").append(`
+                    <div class="report-answer">` + expandIcon + `
+                        <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
+                        + answerItem["answer"] + `</h3>
+                        <p class="report-answer-description">` + answerItem["description"] + `</p>
+                    </div>
+                `);
+            }
+            else{
+                 $("#" + item["QID"]).find(".report-answers").append(`
+                    <div class="report-answer">
+                        <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
+                        + answerItem["answer"] + `</h3>
+                        <p class="report-answer-description">` + answerItem["description"] + `</p>
+                    </div>
+                `);
+            }
+
         });
     });
 }
