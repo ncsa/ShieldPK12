@@ -54,7 +54,7 @@ if __name__ == "__main__":
                             print("module:", module['checklist'],
                                   "activityID:", activity["activityID"],
                                   "AID: ", entry["AID"])
-
+                c.seek(0)
                 json.dump(checklist, c, indent=2)
 
 

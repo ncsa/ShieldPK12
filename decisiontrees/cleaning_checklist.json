@@ -18,7 +18,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID":"1a-i-1"}
+        {
+          "AID": "1a-i-1"
+        }
       ]
     }
   },
@@ -31,7 +33,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1a-i-2"}
+        {
+          "AID": "1a-i-2"
+        }
       ]
     }
   },
@@ -44,7 +48,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1a-ii-1"}
+        {
+          "AID": "1a-ii-1"
+        }
       ]
     }
   },
@@ -57,7 +63,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1a-ii-2"}
+        {
+          "AID": "1a-ii-2"
+        }
       ]
     }
   },
@@ -70,7 +78,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1a-ii-3"}
+        {
+          "AID": "1a-ii-3"
+        }
       ]
     }
   },
@@ -83,7 +93,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b"}
+        {
+          "AID": "1b"
+        }
       ]
     }
   },
@@ -96,7 +108,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-i-1"}
+        {
+          "AID": "1b-i-1"
+        }
       ]
     }
   },
@@ -109,7 +123,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-ii-1"}
+        {
+          "AID": "1b-ii-1"
+        }
       ]
     }
   },
@@ -120,7 +136,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-ii-1"}
+        {
+          "AID": "1b-ii-1"
+        }
       ]
     }
   },
@@ -131,7 +149,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-ii-2"}
+        {
+          "AID": "1b-ii-2"
+        }
       ]
     }
   },
@@ -142,8 +162,12 @@
     "rules": {
       "operator": "OR",
       "criteria": [
-        {"AID": "1b-iii-1"},
-        {"AID": "1c"}
+        {
+          "AID": "1b-iii-1"
+        },
+        {
+          "AID": "1c"
+        }
       ]
     }
   },
@@ -156,7 +180,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1b-iii-2"}
+        {
+          "AID": "1b-iii-2"
+        }
       ]
     }
   },
@@ -167,8 +193,12 @@
     "rules": {
       "operator": "OR",
       "criteria": [
-        {"AID": "1b"},
-        {"AID": "1c"}
+        {
+          "AID": "1b"
+        },
+        {
+          "AID": "1c"
+        }
       ]
     }
   },
@@ -181,7 +211,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "1c"}
+        {
+          "AID": "1c"
+        }
       ]
     }
   },
@@ -194,7 +226,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "2a-ii"}
+        {
+          "AID": "2a-ii"
+        }
       ]
     }
   },
@@ -207,7 +241,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "2a-i"}
+        {
+          "AID": "2a-i"
+        }
       ]
     }
   },
@@ -218,7 +254,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "2b"}
+        {
+          "AID": "2b"
+        }
       ]
     }
   },
@@ -229,7 +267,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "2b"}
+        {
+          "AID": "2b"
+        }
       ]
     }
   },
@@ -242,7 +282,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "3a"}
+        {
+          "AID": "3a"
+        }
       ]
     }
   },
@@ -255,7 +297,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "3b"}
+        {
+          "AID": "3b"
+        }
       ]
     }
   },
@@ -266,7 +310,9 @@
     "rules": {
       "operator": "AND",
       "criteria": [
-        {"AID": "3c"}
+        {
+          "AID": "3c"
+        }
       ]
     }
   }
