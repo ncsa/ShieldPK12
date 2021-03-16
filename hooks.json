@@ -1,0 +1,8 @@
+[
+  {
+    "id": "redeploy",
+    "execute-command": "./redeploy.sh",
+    "command-working-directory": "/home/ubuntu/ShieldPK12",
+    "response-message": "Redeploying API server."
+  }
+]
