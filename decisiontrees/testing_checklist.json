@@ -33,7 +33,9 @@
   {
     "activityID": "3",
     "activity": "HR/union agreement",
-    "links": [],
+    "links": [
+      "https://www.scribd.com/document/494258993/02-05-21-Prep-Period-Mod-Final"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -49,7 +51,9 @@
   {
     "activityID": "4",
     "activity": "Enforcement policy",
-    "links": [],
+    "links": [
+      "https://www.osha.gov/memos/2020-05-19/updated-interim-enforcement-response-plan-coronavirus-disease-2019-covid-19"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -75,7 +79,10 @@
   {
     "activityID": "6",
     "activity": "Collection supply kits",
-    "links": [],
+    "links": [
+      "https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-frequently-asked-questions#60509f6e59f02",
+      "https://www.pixel.labcorp.com/covid-19?utm_source=google&utm_medium=cpc&utm_campaign=Pixel+-+COVID+At-Home+Test&utm_content=COVID+At-Home&utm_term=pcr+test+at+home&gclid=Cj0KCQjwrsGCBhD1ARIsALILBYpvS622h-kEFyWOB3pk9IEdEjCbyOBBEzT00-dKXb_s4ugyFYol9_QaAgJWEALw_wcB&gclsrc=aw.ds"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -118,7 +125,9 @@
   {
     "activityID": "9",
     "activity": "Chain of custody agreement",
-    "links": [],
+    "links": [
+      "https://www.confirmbiosciences.com/knowledge/terminology/chain-of-custody-form-ccf/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -131,7 +140,9 @@
   {
     "activityID": "10",
     "activity": "Sample return protocol",
-    "links": [],
+    "links": [
+      "https://www.fda.gov/media/138407/download"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -144,7 +155,9 @@
   {
     "activityID": "11",
     "activity": "Sample return drop point",
-    "links": [],
+    "links": [
+      "https://www.fda.gov/media/141798/download"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -172,7 +185,9 @@
   {
     "activityID": "13",
     "activity": "Signs for sample collection",
-    "links": [],
+    "links": [
+      "https://images-na.ssl-images-amazon.com/images/I/61NxsEbnqEL._AC_SL1000_.jpg"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -215,7 +230,9 @@
   {
     "activityID": "16",
     "activity": "Test timing plan",
-    "links": [],
+    "links": [
+      "https://www.elmhurst205.org/resources/open-d205/covid-19-saliva-screening-program#fs-panel-36378"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -363,7 +380,9 @@
   {
     "activityID": "26",
     "activity": "Encryption service for emails",
-    "links": [],
+    "links": [
+      "https://uthsc.edu/its/cybersecurity/encrypt-your-email.php"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -376,7 +395,9 @@
   {
     "activityID": "27",
     "activity": "Online portal agreement",
-    "links": [],
+    "links": [
+      "https://www.atlantapublicschools.us/cms/lib/GA01000924/Centricity/Domain/92/Infinite%20Campus%20Parent-Student%20User%20Agreement.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -402,7 +423,9 @@
   {
     "activityID": "29",
     "activity": "Testing app setup",
-    "links": [],
+    "links": [
+      "https://developer.apple.com/documentation/exposurenotification/building_an_app_to_notify_users_of_covid-19_exposure"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -428,7 +451,9 @@
   {
     "activityID": "31",
     "activity": "Text message service agreement",
-    "links": [],
+    "links": [
+      "https://www.pactsafe.com/blog/one-click-contracts-covid-19-liability-waiver"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -441,7 +466,9 @@
   {
     "activityID": "32",
     "activity": "Text script",
-    "links": [],
+    "links": [
+      "https://www.oregon.gov/ode/students-and-family/healthsafety/Documents/Planning%20and%20Responding%20to%20COVID-19%20Scenarios%20in%20Schools.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -469,7 +496,9 @@
   {
     "activityID": "34",
     "activity": "Public health reporting and coordination process",
-    "links": [],
+    "links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/schools/casehandle.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -557,7 +586,9 @@
   {
     "activityID": "40",
     "activity": "Exemption process for saliva testing",
-    "links": [],
+    "links": [
+      "https://covid19.illinois.edu/health-and-support/on-campus-covid-19-testing/#test-exemption"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -619,7 +650,9 @@
   {
     "activityID": "44",
     "activity": "Test supply chain/laboratory contracts",
-    "links": [],
+    "links": [
+      "https://www.hhs.gov/sites/default/files/covid-19-laboratory-data-reporting-guidance.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
