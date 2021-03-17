@@ -6,6 +6,7 @@ services:
     command: gunicorn app:app --config gunicorn.config.py
     expose:
       - 5000
+    restart: unless-stopped
   nginx:
     build: ./nginx
     volumes:
@@ -18,9 +19,11 @@ services:
     depends_on:
       - web
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    restart: unless-stopped
   certbot:
     image: certbot/certbot
     volumes:
     - ./data/certbot/conf:/etc/letsencrypt
     - ./data/certbot/www:/var/www/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    restart: unless-stopped
