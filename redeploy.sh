@@ -1,16 +1,16 @@
 #!/bin/sh
 
-git checkout develop
+BRANCH=develop
+git checkout $BRANCH
 
-UPSTREAM=${1:-'@{u}'}
-LOCAL=$(git rev-parse @)
-REMOTE=$(git rev-parse "$UPSTREAM")
+OLD_HEAD=$(git rev-parse HEAD)
+git pull origin $BRANCH
+NEW_HEAD=$(git rev-parse HEAD)
 
-if [ $LOCAL = $REMOTE ]; then
+if [ $OLD_HEAD = $NEW_HEAD ]; then
     echo $(date) "Up-to-date"
 elif [ $LOCAL = $BASE ]; then
-    echo $(date) "Need to pull"
-    git pull
+    echo $(date) "Need to redeploy"
     docker-compose down
     docker-compose up --build -d
 else
