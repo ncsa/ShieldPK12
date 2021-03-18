@@ -39,7 +39,9 @@
   {
     "activity": "Set central ventilation system to maximize outdoor air intake",
     "activityID": "4",
-    "links": [],
+    "links": [
+      "https://www.ashrae.org/technical-resources/filtration-disinfection#mechanical"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -67,7 +69,10 @@
   {
     "activity": "Install MERV 13 filter in HVAC",
     "activityID": "6",
-    "links": [],
+    "links": [
+      "https://www.epa.gov/coronavirus/what-kind-filter-should-i-use-my-home-hvac-system-help-protect-my-family-covid-19",
+      "https://www.ashrae.org/technical-resources/filtration-and-disinfection-faq"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -96,7 +101,10 @@
   {
     "activity": "Purchase and place portable air cleaners in each space needed",
     "activityID": "8",
-    "links": [],
+    "links": [
+      "https://www.consumerreports.org/cro/air-purifiers/buying-guide/index.htm",
+      "https://www.grainger.com/know-how/equipment-information/kh-portable-air-purifiers-cleaners-guide"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
