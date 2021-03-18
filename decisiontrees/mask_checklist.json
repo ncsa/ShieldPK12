@@ -401,7 +401,9 @@
   {
     "activity": "Wording for reminders to parents about mask policy and plan for when to send them",
     "activityID": "26",
-    "links": [],
+    "links": [
+      "https://www.ccsdut.org/cms/lib/UT02205719/Centricity/Domain/506/Mask%20letter%2011-20-20.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -619,7 +621,9 @@
   {
     "activity": "PPE for garbage collectors",
     "activityID": "41",
-    "links": [],
+    "links": [
+      "https://www.mdpi.com/2079-9276/9/10/116/pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
