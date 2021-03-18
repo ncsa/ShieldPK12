@@ -14,7 +14,9 @@
   {
     "activity": "Surface cleaning schedule that allows physical distancing",
     "activityID": "2",
-    "links": [],
+    "links": [
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-cleaning-disinfection-log-template.pdf"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -189,7 +191,9 @@
   {
     "activity": "A schedule for janitors to refill classroom cleaning supplies",
     "activityID": "14",
-    "links": [],
+    "links": [
+      "https://blog.bunzlchs.com/wp-content/uploads/2016/07/SIL-16-00012_Bunzl_Cleaning_Checklist.pdf"
+    ],
     "rules": {
       "operator": "OR",
       "criteria": [
@@ -263,7 +267,9 @@
   {
     "activity": "A supply of replacement air filters",
     "activityID": "19",
-    "links": [],
+    "links": [
+      "https://www.glacier-technology.com/replacement-air-filters/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
@@ -292,7 +298,7 @@
     "activity": "Cleaning flip tags on all classroom doors",
     "activityID": "21",
     "links": [
-      "https://static1.squarespace.com/static/5de4ebae5719bc363911df16/t/5f40f7effd699801ae42c807/1598093308623/COVID-19+Cleaning+Guidance+and+Sample+Checklists.pdf"
+      "https://www.thesafetycentre.co.uk/covid-19-room-has-been-sanitised-door-hanger-sign-cv0032"
     ],
     "rules": {
       "operator": "AND",
@@ -306,7 +312,10 @@
   {
     "activity": "SOP for requesting additional cleaning",
     "activityID": "22",
-    "links": [],
+    "links": [
+      "https://www.sgia.org/docs/default-source/default-document-library/covid-19_sanitation_-guide.pdf",
+      "https://www.hsph.harvard.edu/landmark/2020/04/16/cleaning-sop-during-lock-down-for-covid-19/"
+    ],
     "rules": {
       "operator": "AND",
       "criteria": [
