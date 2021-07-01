@@ -42,7 +42,7 @@ def _populate(module_name):
 # reserve for landing page
 @app.route('/', methods=['GET'])
 def homepage():
-    return render_template("landing.html", data=module_descriptions)
+    return render_template("landing.html", data=sorted(module_descriptions, key=lambda k: k["moduleName"]))
 
 
 @app.route('/error', methods=['GET'])
@@ -57,7 +57,7 @@ def about():
 
 @app.route('/<module_name>/questions', methods=['GET'])
 def questions(module_name):
-    return render_template('questions.html')
+    return render_template('questions.html', data=sorted(module_descriptions, key=lambda k: k["moduleName"]))
 
 
 @app.route('/<module_name>/questions', methods=['POST'])

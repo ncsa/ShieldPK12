@@ -4,8 +4,9 @@ $('[data-toggle="tooltip"]').tooltip({html:true});
 // Default root ID always 1
 ROOT_QUESTION_ID = "1"
 
-// assume pattern will be /module/questions
-let moduleList = ["cleaning", "distancing", "data-infrastructure", "mask", "testing", "ventilation"]
+// assume pattern will be /module/questions; data is passed from flask endpoint
+moduleList = [];
+data.forEach(function (item, i) { moduleList.push(item["moduleName"]); });
 
 // current module
 module = $(location).attr('href').split("/").slice(-2)[0];

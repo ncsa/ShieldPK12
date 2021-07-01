@@ -86,7 +86,6 @@
                         </div>
                     </ul>
                     <ul class="navbar-nav ml-auto my-auto mt-2">
-<!--                        <span class="navbar-text"><p class="prompt">Leave & Finish it later</p></span>-->
                         <div class="next-module">
                             <div class="next-module-prompt">
                                 <p>Next Module</p>
@@ -172,6 +171,7 @@
             {% include 'footer.html' %}
         </div>
         {% include 'about-creators.html' %}
+        <script>var data=JSON.parse('{{data|tojson|safe}}');</script>
         <script type="text/javascript" src="{{url_for('static', filename='js/questions.js')}}"></script>
     </body>
 </html>
