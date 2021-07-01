@@ -13,23 +13,20 @@ app.add_url_rule('/static/img/', endpoint='img', view_func=app.send_static_file)
 modules = {}
 module_descriptions = []
 module_config_home = "decisiontrees"
-for folder in os.listdir(module_config_home):
-    if os.path.isdir(os.path.join(module_config_home, folder)):
-        modules[folder] = {}
-        for module_config in os.listdir(os.path.join(module_config_home, folder)):
-            module_config_file_full_path = os.path.join(module_config_home, folder, module_config)
-            if os.path.isfile(module_config_file_full_path):
-                if module_config_file_full_path.endswith("_decision.json"):
-                    with open(module_config_file_full_path, "r") as f:
-                        config = json.load(f)
-                        module_descriptions.append({"moduleName": folder,
-                                                    "moduleDescription":config.get("moduleDescription", "")})
-                        modules[folder]["decision"] = Module(config.get("moduleContent"))
-                elif module_config_file_full_path.endswith("_checklist.json"):
-                    with open(module_config_file_full_path, "r") as f:
-                        modules[folder]["checklist"] = json.load(f)
+for module_config_file in os.listdir(module_config_home):
+    module_config_file_full_path = os.path.join(module_config_home, module_config_file)
+    if os.path.isfile(module_config_file_full_path) and module_config_file_full_path.endswith(".json"):
+        with open(module_config_file_full_path, "r") as f:
+            config = json.load(f)
+            if "moduleName" in config:
+                module_name = config["moduleName"]
+                module_descriptions.append({"moduleName": module_name,
+                                            "moduleDescription": config.get("moduleDescription", "")})
+                modules[module_name] = {}
+                modules[module_name]["decision"] = Module(config.get("moduleContent", {}))
+                modules[module_name]["checklist"] = config.get("checklist", {})
             else:
-                print(module_config_file_full_path, "is not valid config file. Skip...")
+                print(module_config_file_full_path, "is missing required field module name. Skip...")
 
 
 def _populate(module_name):

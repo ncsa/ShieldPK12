@@ -1,0 +1,1033 @@
+{
+  "moduleName": "mask",
+  "moduleDescription": "The when, where, and how of masks",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "Will you have a mask policy",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "Yes",
+          "recommended": true,
+          "description": "You will need to put this policy in writing and share it broadly (see messaging below). You will also need enforcement guidelines, including consequences and escalation steps.",
+          "resources": [],
+          "nextQID": "1b-i"
+        }
+      ]
+    },
+    {
+      "QID": "1b-i",
+      "question": "Will masks be mandatory",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-1",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "You will need to have your policy reviewed by your legal team. You will also need to add language for medical exemptions – these ought to be rare, so the conditions that are acceptable may need to be explicitly listed, and medical documentation can be required. You will also need to be able to provide back-up masks (see supplies below). You will need a list of what is considered an appropriate mask (i.e., will face shields be acceptable? Must they cover the nose? Fabric thickness? Gaping?)",
+          "resources": [],
+          "nextQID": "1b-ii"
+        },
+        {
+          "AID": "1b-i-2",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "Your policy should still encourage mask use strongly. You may need to negotiate with your teachers /staff/building custodians/union as to whether individual teachers may require masks in their classrooms.",
+          "resources": [],
+          "nextQID": "1b-ii"
+        }
+      ]
+    },
+    {
+      "QID": "1b-ii",
+      "question": "Where will the policy apply",
+      "description": "",
+      "multiple": true,
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-ii-1",
+          "prettyAID": "a",
+          "answer": "Classrooms",
+          "description": "If teachers are to be responsible for enforcing mask policies, they must be given resources and authority to do so. They should be educated on the proper wearing and removal of masks and given age-appropriate curricula for teaching their students. Information for students should be posted in classrooms. Students and teachers should be provided with an approved list of times when masks can be removed. Teachers should be provided with a list of students with exemptions. Students should also be informed of the consequences for refusal to wear a mask or for tampering with another’s mask, and when to escalate situations related to mask-wearing.",
+          "resources": [],
+          "nextQID": "2a"
+        },
+        {
+          "AID": "1b-ii-2",
+          "prettyAID": "b",
+          "answer": "Hallways",
+          "description": "There will need to be monitors in charge of checking for mask wearing in hallways.",
+          "resources": [],
+          "nextQID": "2a"
+        },
+        {
+          "AID": "1b-ii-3",
+          "prettyAID": "c",
+          "answer": "Recess",
+          "description": "Recess monitors will need to be taught to observe mask wearing. There will need to be a supply of masks in the recess area for those that become dirty, wet, or broken.",
+          "resources": [],
+          "nextQID": "2a"
+        },
+        {
+          "AID": "1b-ii-4",
+          "prettyAID": "d",
+          "answer": "Cafeteria",
+          "description": "It is not possible to eat with a mask on, so cafeteria rules will need to include when masks may be removed and where they should be placed during eating. Providing each student with a napkin or paper towel to place their mask on may be the simplest approach, but messaging should include signs showing when masks can be removed, how to take the mask off safely, and where to put it to avoid cross-contamination.",
+          "resources": [],
+          "nextQID": "2a"
+        },
+        {
+          "AID": "1b-ii-5",
+          "prettyAID": "e",
+          "answer": "Extracurricular",
+          "description": "If possible, mask policies should extend to all school activities. Extracurricular leaders should be given the same instruction as teachers on mask wearing and safe removal. Consequences for failure to wear masks in extracurricular activities should be transparent and shared widely.",
+          "resources": [],
+          "nextQID": "2a"
+        },
+        {
+          "AID": "1b-ii-6",
+          "prettyAID": "f",
+          "answer": "Contact Sports",
+          "description": "It may not be safe for those participating in contact sports to wear masks. If this is the case, clear guidelines should be made for each sport as to the times when masks should and should not be worn, with a preference for mask wearing as much as possible. These sports will also require a safe place to put masks when they are not being worn, and supervision to ensure that tampering and mask swapping do not occur.",
+          "resources": [],
+          "nextQID": "2a"
+        }
+      ]
+    },
+    {
+      "QID": "2a",
+      "question": "How will you share your policy with the members of your staff",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-i",
+          "prettyAID": "a",
+          "answer": "Emails",
+          "description": "These will need to make clear all aspects of the policy, including the full text.",
+          "resources": [],
+          "nextQID": "2b"
+        },
+        {
+          "AID": "2a-ii",
+          "prettyAID": "b",
+          "answer": "Information sessions",
+          "description": "These should be virtual if possible, and should include a question and answer period.",
+          "resources": [],
+          "nextQID": "2b"
+        },
+        {
+          "AID": "2a-iii",
+          "prettyAID": "c",
+          "answer": "Reminders",
+          "description": "These may be needed periodically. Ideally they should be scheduled for regular intervals, such as at scheduled staff meetings or through weekly emails. You may also want to have reminders ready in case issues arise, such as complaints about compliance.",
+          "resources": [],
+          "nextQID": "2b"
+        }
+      ]
+    },
+    {
+      "QID": "2b",
+      "question": "How will you inform parents of your policy",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i",
+          "prettyAID": "a",
+          "answer": "Emails",
+          "description": "While this should include the full text, you will also need to lead with a simplified explanation that can be read easily on mobile devices.",
+          "resources": [],
+          "nextQID": "2c"
+        },
+        {
+          "AID": "2b-ii",
+          "prettyAID": "b",
+          "answer": "Website/FAQ",
+          "description": "Be sure to cover all aspects of the policy, including consequences, exceptions, and the exemption process.",
+          "resources": [],
+          "nextQID": "2c"
+        },
+        {
+          "AID": "2b-iii",
+          "prettyAID": "c",
+          "answer": "Mailings",
+          "description": "These should include diagrams on how masks should be worn, lists of acceptable mask types, information on the exemption process, and a list of consequences for compliance issues.",
+          "resources": [],
+          "nextQID": "2c"
+        },
+        {
+          "AID": "2b-iv",
+          "prettyAID": "d",
+          "answer": "Reminders",
+          "description": "These may be needed periodically but would most likely be reserved for when issues arise. They should be neutral in tone, avoid blame, and use positive, encouraging language.",
+          "resources": [],
+          "nextQID": "2c"
+        }
+      ]
+    },
+    {
+      "QID": "2c",
+      "question": "How will you teach students about mask-wearing",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2c-i",
+          "prettyAID": "a",
+          "answer": "In-class curricula",
+          "description": "This should be age-appropriate and science-based. At all levels, it should cover proper wearing of the mask, how to remove safely, and washing. At upper levels, it could involve discussion of airborne particles in a physics or earth sciences course, the mechanics of breathing in a biology course, the historical use of masks for infectious disease control in a history course, or the design of masks in an art or home economics course, among other topics.",
+          "resources": [],
+          "nextQID": "2d"
+        },
+        {
+          "AID": "2c-ii",
+          "prettyAID": "b",
+          "answer": "Announcements",
+          "description": "School announcement times are a good opportunity to remind students about mask wearing. These can be creative and fun – this would be a way to engage students and could include (supervised) student-led writing.",
+          "resources": [],
+          "nextQID": "2d"
+        }
+      ]
+    },
+    {
+      "QID": "2d",
+      "question": "What signs will you use",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2d-i",
+          "prettyAID": "a",
+          "answer": "Entrances",
+          "description": "These signs should indicate the basics as simply as possible, and should be posted at every entrance.",
+          "resources": [],
+          "nextQID": "3a"
+        },
+        {
+          "AID": "2d-ii",
+          "prettyAID": "b",
+          "answer": "Hallways",
+          "description": "These should be reminder signs and can be more creative and fun. A sign design competition could be used to create interest and engage students.",
+          "resources": [],
+          "nextQID": "3a"
+        },
+        {
+          "AID": "2d-iii",
+          "prettyAID": "c",
+          "answer": "Classrooms",
+          "description": "These should be reminders and should be targeted towards the age and subject. Individual teachers may want to design their own signs.",
+          "resources": [],
+          "nextQID": "3a"
+        },
+        {
+          "AID": "2d-iv",
+          "prettyAID": "d",
+          "answer": "Cafeteria",
+          "description": "These signs should indicate when and how to remove masks for eating.",
+          "resources": [],
+          "nextQID": "3a"
+        },
+        {
+          "AID": "2d-v",
+          "prettyAID": "e",
+          "answer": "Other areas",
+          "description": "Any area that people within the school will regularly use should have a sign. This could include a teacher’s lounge, gym and weight room, or auditorium, for example.",
+          "resources": [],
+          "nextQID": "3a"
+        }
+      ]
+    },
+    {
+      "QID": "3a",
+      "question": "Will you provide masks",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-yes",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "recommended": true,
+          "description": "You should have, at minimum, a small supply of masks for when masks break, get wet, or get dirty. You may want to provide more.",
+          "resources": [],
+          "nextQID": "3a-i"
+        },
+        {
+          "AID": "3a-no",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3b"
+        }
+      ]
+    },
+    {
+      "QID": "3a-i",
+      "question": "What type",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-i-1",
+          "prettyAID": "a",
+          "answer": "Disposable",
+          "description": "Basic disposable masks can be bought in bulk now. These should not be reused.",
+          "resources": [],
+          "nextQID": "3a-ii"
+        },
+        {
+          "AID": "3a-i-2",
+          "prettyAID": "b",
+          "answer": "Reusable",
+          "description": "Reusable masks reduce waste but are more expensive. It might be possible to have a mask drive to collect a supply of masks. If this is done, all masks should be washed before being provided to students or staff.",
+          "resources": [],
+          "nextQID": "3a-ii"
+        }
+      ]
+    },
+    {
+      "QID": "3a-ii",
+      "question": "For whom",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-ii-1",
+          "prettyAID": "a",
+          "answer": "As needed",
+          "description": "This is the minimum necessary. You should have a process for getting a mask when needed, and it might be necessary to have a supply available at the doors at entrance times, in case of forgotten masks, and in recess and gym areas, in case of broken or dirty masks.",
+          "resources": [],
+          "nextQID": "3b"
+        },
+        {
+          "AID": "3a-ii-2",
+          "prettyAID": "b",
+          "answer": "All students",
+          "description": "If you wish to supply masks to all students, you will need to source enough to provide each student with at least 2, and preferably 5, reusable masks or sufficient disposable masks for a new mask to be worn every day.",
+          "resources": [],
+          "nextQID": "3b"
+        },
+        {
+          "AID": "3a-ii-3",
+          "prettyAID": "c",
+          "answer": "All teachers/staff",
+          "description": "If you do wish to supply masks to all teachers or staff, you should source enough to provide at least 2, preferably 5, reusable masks or sufficient disposable masks for a new mask to be worn every day.",
+          "resources": [],
+          "nextQID": "3b"
+        },
+        {
+          "AID": "3a-ii-4",
+          "prettyAID": "d",
+          "answer": "Clear masks for specific teachers",
+          "description": "As clear masks might be needed for certain teachers or staff (kindergarten, dual language or language, speech pathologists), you will need a supply of these. Be sure that they are snug to the face in the areas around the mouth and nose. Please note that face shields are sufficient for short face-to-face encounters only and are not protective in long-term indoor interactions such as classrooms.",
+          "resources": [],
+          "nextQID": "3b"
+        }
+      ]
+    },
+    {
+      "QID": "3b",
+      "question": "What mask disposal methods will you have",
+      "description": "Mask disposal will be a larger problem if you provide disposable masks, but expect that broken and disposable masks will need to be disposed of.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3b-i",
+          "prettyAID": "a",
+          "answer": "Central bins",
+          "description": "This will be especially useful at exits and at recess/gym/sports. They should be obvious, with large enough openings to allow no-contact deposit.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "3b-ii",
+          "prettyAID": "b",
+          "answer": "Regular garbage",
+          "description": "Be prepared for garbage bins to become full more quickly. Also, be sure that those emptying the garbage bins have masks and gloves, as discarded masks are an infection risk.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "3b-iii",
+          "prettyAID": "c",
+          "answer": "Collection from non-bins",
+          "description": "You can expect that some masks will be discarded outside garbage bins, either on the ground, in hallways, or left on tables or desks. Train your staff to use gloves to pick up any discarded masks, and to avoid touching the mouth and nose covering as much as possible.",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activity": "Written mask policy",
+      "activityID": "1",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/cloth-face-cover.html",
+        "https://portal.ct.gov/-/media/SDE/COVID-19/Addendum11-Interim-Guidance-for-the-Use-of-Facemasks.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Legal review of the mask policy",
+      "activityID": "2",
+      "links": [
+        "https://www.littler.com/publication-press/publication/facing-your-face-mask-duties-list-statewide-orders"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "List of allowable reasons for medical exemptions to masks",
+      "activityID": "3",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html",
+        "https://portal.ct.gov/-/media/SDE/COVID-19/Addendum11-Interim-Guidance-for-the-Use-of-Facemasks.pdf",
+        "https://www.childrensmercy.org/siteassets/media/covid-19/guidance-for-requests-for-exemptions-from-cloth-face-mask-use-in-schools.pdf",
+        "http://www.dph.illinois.gov/sites/default/files/20200818_Pediatric_Letter_Mask_Testi.pdf",
+        "https://jamanetwork.com/channels/health-forum/fullarticle/2768376"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "List of what qualifies as an approved mask",
+      "activityID": "4",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html",
+        "http://nap.edu/25858",
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#anchor_1604967124156",
+        "https://portal.ct.gov/-/media/SDE/COVID-19/Addendum11-Interim-Guidance-for-the-Use-of-Facemasks.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Process for submitting medical documentation for mask exemption",
+      "activityID": "5",
+      "links": [
+        "https://www.bu.edu/hr/hr-covid-19-resources/face-covering-exemption-process/",
+        "https://resources.finalsite.net/images/v1598562593/madison/qkjrycadmzw5uhcdi9h6/FaceMaskExemptionForm.pdf",
+        "https://www.ocps.net/UserFiles/Servers/Server_54619/File/Departments/Office%20of%20Legal%20Services/ADA%20Compliance/Disability%20Media%20Feed/Face%20Covering%20Exemption%20Request%20Process%20and%20Form%20(10-20-2020).pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Guidelines as to whether individual teachers may require masks",
+      "activityID": "6",
+      "links": [
+        "https://search.cdc.gov/search/?query=clear%20mask"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Educational materials and curricula for all age groups on the wearing and proper removal of masks",
+      "activityID": "7",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/global-covid-19/how-to-wear-take-off-mask.html",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html#planning-in-person-classes",
+        "https://www.urmc.rochester.edu/strong-center-developmental-disabilities/resources/masks-toolkit.aspx"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          },
+          {
+            "AID": "2c-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Lists for each class of students with mask exemptions",
+      "activityID": "8",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Clear guidelines as to when masks may be removed during class",
+      "activityID": "9",
+      "links": [
+        "https://portal.ct.gov/-/media/SDE/COVID-19/CTReopeningSchools.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Consequence and escalation guidelines for refusal to wear masks or tampering with another\u2019s mask",
+      "activityID": "10",
+      "links": [
+        "https://www.knoxnews.com/story/news/education/2020/08/12/knox-county-schools-sets-consequences-students-who-wont-wear-masks/3360314001/",
+        "http://bcsd1.ss14.sharpschool.com/UserFiles/Servers/Server_512723/Image/For%20Parents/Parent%20Resource%20Guide/2020-2021/Code%20Pandemic%20Language_ADA.pdf",
+        "https://ny.chalkbeat.org/2020/8/4/21354825/carranza-nyc-schools-mask-requirement"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Plan for hallway mask monitors",
+      "activityID": "11",
+      "links": [
+        "https://portal.ct.gov/-/media/SDE/COVID-19/CTReopeningSchools.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Plan for recess monitors to check on mask wearing",
+      "activityID": "12",
+      "links": [
+        "https://www.npr.org/sections/health-shots/2020/08/06/897295450/how-safe-is-your-schools-reopening-plan-here-s-what-to-look-for",
+        "https://www.health.state.mn.us/diseases/coronavirus/schools/k12planguide.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Supply of spare/replacement masks in recess areas",
+      "activityID": "13",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Signs for the cafeteria to show when and how to remove masks for eating",
+      "activityID": "14",
+      "links": [
+        "https://www.zenefits.com/workest/covid-19-printable-social-distancing-and-facemask-signs-for-restaurants/",
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/Young-Mitigation-recommendations-resources-toolkit.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1b-ii-4"
+          },
+          {
+            "AID": "2d-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Plan to provide paper towels or napkins for masks to be placed on during eating",
+      "activityID": "15",
+      "links": [
+        "https://www.farmanddairy.com/aroundthetable/what-to-do-with-masks-while-eating-or-drinking/613078.html",
+        "https://cfaes.osu.edu/news/articles/chow-line-face-masks-and-eating"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-4"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Instruction to teachers and extracurricular staff on mask wearing and safe removal",
+      "activityID": "16",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/global-covid-19/how-to-wear-take-off-mask.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          },
+          {
+            "AID": "1b-ii-5"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Consequence guidelines for refusal to wear masks during extracurricular activities",
+      "activityID": "17",
+      "links": [
+        "http://bcsd1.ss14.sharpschool.com/UserFiles/Servers/Server_512723/Image/For%20Parents/Parent%20Resource%20Guide/2020-2021/Code%20Pandemic%20Language_ADA.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-5"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Guideline for each sport as to when masks may be removed for safety",
+      "activityID": "18",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/youth-sports.html",
+        "https://www.michigan.gov/documents/coronavirus/2021.02.07_Interim_Guidance_for_Contact_Sports_updated_FINAL_715541_7.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/playing-sports.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-6"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Plan for each sport for safe placement of masks when not worn, including supervision",
+      "activityID": "19",
+      "links": [
+        "https://www.edutopia.org/article/how-keep-physical-education-fun-and-safe-elementary-students"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-6"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Email to staff with full explanation of the mask policy",
+      "activityID": "20",
+      "links": [
+        "https://www.goco.io/blog/coronavirus-mask-policy-work-template/",
+        "https://www.paycor.com/resource-center/coronavirus-mask-policy-work-template"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Schedule information sessions to present and answer questions about the mask policy",
+      "activityID": "21",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Schedule for reminding staff about mask policy",
+      "activityID": "22",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Email to parents with both full and short explanations of the mask policy",
+      "activityID": "23",
+      "links": [
+        "https://www.ormistonriversacademy.co.uk/post/face-masks-letter-from-our-principal",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "FAQ or other written explanation of your mask policy posted on the school website and easily findable",
+      "activityID": "24",
+      "links": [
+        "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Guidance/Universal-Masking-FAQ.aspx",
+        "https://www.isbe.net/Documents/IDPH-School-FAQs.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Mailing to parent explaining the mask policy and all related information",
+      "activityID": "25",
+      "links": [
+        "https://www.ormistonriversacademy.co.uk/post/face-masks-letter-from-our-principal",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/parent-checklist.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Wording for reminders to parents about mask policy and plan for when to send them",
+      "activityID": "26",
+      "links": [
+        "https://www.ccsdut.org/cms/lib/UT02205719/Centricity/Domain/506/Mask%20letter%2011-20-20.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Set of announcement messages for reminding students about the mask policy and schedule for airing them",
+      "activityID": "27",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2c-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Entrance signs for mask policy",
+      "activityID": "28",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/cloth-face-covering-building-entrance.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Hallway signs for mask policy",
+      "activityID": "29",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/cloth-face-covering-building-entrance.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Classroom signs for mask policy",
+      "activityID": "30",
+      "links": [
+        "https://www.google.com/search?rlz=1C5CHFA_enUS706US706&q=where+to+put+mask+sign+in+school&tbm=isch&chips=q:where+to+put+mask+sign+in+school,online_chips:mask+poster&usg=AI4_-kTBw4W2nEdYQvMgVxaebg0sLgTKqw&sa=X&ved=2ahUKEwj9zoKM-t_uAhXSWM0KHfRnA1wQgIoDKAJ6BAgGEBI&biw=1920&bih=912",
+        "https://www.pinterest.com/pin/425942077262196965/"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "List of all places needing a mask sign",
+      "activityID": "31",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d-v"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Signs for mask policy in all other areas identified",
+      "activityID": "32",
+      "links": [
+        "https://www.zenefits.com/workest/download-free-printable-face-mask-required-signs-for-your-businesses/"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d-v"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Bulk purchase of disposable masks",
+      "activityID": "33",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Collection of reusable masks",
+      "activityID": "34",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Protocol for providing a mask when needed (where to go, and who will be responsible for the supply)",
+      "activityID": "35",
+      "links": [
+        "https://www.k12.wa.us/sites/default/files/public/communications/Employer-Health-and-Safety-Requirements-for-School-Scenarios.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Supply of masks sufficient to provide to all students",
+      "activityID": "36",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Supply of masks sufficient to provide to all staff",
+      "activityID": "37",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Supply of clear face masks for those who need them",
+      "activityID": "38",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-4"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "List of all who will need clear face masks",
+      "activityID": "39",
+      "links": [
+        "https://askjan.org/articles/Accommodations-for-Educators-who-are-Deaf-or-Hard-of-Hearing.cfm"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-4"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Centralized bins for mask disposal",
+      "activityID": "40",
+      "links": [
+        "https://www2.health.vic.gov.au/public-health/infectious-diseases/infection-control-guidelines/cleaning-waste-disposal"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "PPE for garbage collectors",
+      "activityID": "41",
+      "links": [
+        "https://www.mdpi.com/2079-9276/9/10/116/pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Training on safe collection and disposal of discarded masks",
+      "activityID": "42",
+      "links": [
+        "https://www.who.int/docs/default-source/epi-win/how-to-use-mask-v0-1-print.pdf?sfvrsn=64ba1493_2",
+        "https://www.osha.gov/coronavirus/control-prevention#interim_increased_risk"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b-iii"
+          }
+        ]
+      }
+    }
+  ]
+}
