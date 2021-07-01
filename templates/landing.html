@@ -65,7 +65,7 @@
                 <div class="module">
                     <h4><span class="module-label">{{loop.index}}</span>{{item.moduleName}}</h4>
                     <p>{{item.moduleDescription}}</p>
-                    <a href="/{{item.moduleName}}/questions" id="cleaning">Start
+                    <a href="/{{item.moduleName}}/questions" id="{{item.moduleName}}">Start
                         &nbsp;<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -74,6 +74,9 @@
 </div>
 {% include 'footer.html' %}
 {% include 'about-creators.html' %}
+
+<!--this is how jinja parse data from flask app-->
+<script>var data=JSON.parse('{{data|tojson|safe}}');</script>
 <script type="text/javascript" src="{{url_for('static', filename='js/landing.js')}}"></script>
 </body>
 </html>

@@ -171,6 +171,7 @@
             {% include 'footer.html' %}
         </div>
         {% include 'about-creators.html' %}
+        <!--this is how jinja parse data from flask app-->
         <script>var data=JSON.parse('{{data|tojson|safe}}');</script>
         <script type="text/javascript" src="{{url_for('static', filename='js/questions.js')}}"></script>
     </body>

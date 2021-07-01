@@ -1,7 +1,9 @@
 // GET start or resume
-var modules = ["cleaning", "distancing", "data-infrastructure", "mask", "testing", "ventilation"];
+// data is passed from flask endpoint
+moduleList = [];
+data.forEach(function (item, i) { moduleList.push(item["moduleName"]); });
 
-modules.forEach(function (module, index) {
+moduleList.forEach(function (module, index) {
     let moduleQNA = localStorage.getItem(module + "-pastQNA");
     if (moduleQNA !== null && JSON.parse(moduleQNA).length > 0)
     {
