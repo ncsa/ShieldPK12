@@ -60,51 +60,16 @@
         <h2 id="module-start">Playbook Modules</h2>
     </div>
     <div class="row module-row">
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">1</span>Cleaning</h4>
-                <p>Additional cleaning measures for disease control</p>
-                <a href="/cleaning/questions" id="cleaning">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
+        {% for item in data %}
+            <div class="col col-lg-4 col-md-6 col-sm-6">
+                <div class="module">
+                    <h4><span class="module-label">{{loop.index}}</span>{{item.moduleName}}</h4>
+                    <p>{{item.moduleDescription}}</p>
+                    <a href="/{{item.moduleName}}/questions" id="cleaning">Start
+                        &nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">2</span>Distancing</h4>
-                <p>Minimizing potentially infectious contacts</p>
-                <a href="/distancing/questions" id="distancing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">3</span>IT</h4>
-                <p>Collecting, managing, and sharing health data</p>
-                <a href="/data-infrastructure/questions" id="data-infrastructure">Start
-                    &nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="row module-row">
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">4</span>Mask</h4>
-                <p>The when, where, and how of masks</p>
-                <a href="/mask/questions" id="mask">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">5</span>Testing</h4>
-                <p>Use of tests and test results</p>
-                <a href="/testing/questions" id="testing">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col col-lg-4 col-md-6 col-sm-6">
-            <div class="module">
-                <h4><span class="module-label">6</span>Ventilation</h4>
-                <p>Assessing and improving air flow</p>
-                <a href="/ventilation/questions" id="ventilation">Start&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 {% include 'footer.html' %}

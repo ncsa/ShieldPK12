@@ -1,4 +1,6 @@
-[
+{
+  "moduleDescription": "Collecting, managing, and sharing health data",
+  "moduleContent": [
   {
     "QID": "1",
     "question": "Will you set up data governance?",
@@ -2279,3 +2281,4 @@
     ]
   }
 ]
+}

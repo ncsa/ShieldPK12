@@ -1,4 +1,6 @@
-[
+{
+  "moduleDescription": "Assessing and improving air flow",
+  "moduleContent": [
   {
     "QID": "1",
     "question": "What is the ventilation rate in each of the following areas",
@@ -105,3 +107,4 @@
     ]
   }
 ]
+}

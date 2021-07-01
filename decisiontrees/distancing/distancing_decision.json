@@ -1,4 +1,6 @@
-[
+{
+  "moduleDescription": "Minimizing potentially infectious contactss",
+  "moduleContent": [
   {
     "QID": "1",
     "question": "Will you manage groupings/ pods/ bubbles/ networks?",
@@ -789,3 +791,4 @@
     ]
   }
 ]
+}

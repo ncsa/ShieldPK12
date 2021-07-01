@@ -1,4 +1,6 @@
-[
+{
+  "moduleDescription": "The when, where, and how of masks",
+  "moduleContent": [
   {
     "QID": "1",
     "question": "Will you have a mask policy",
@@ -375,3 +377,4 @@
     ]
   }
 ]
+}

@@ -11,6 +11,7 @@ app.add_url_rule('/static/img/', endpoint='img', view_func=app.send_static_file)
 
 # initialize the module once
 modules = {}
+module_descriptions = []
 module_config_home = "decisiontrees"
 for folder in os.listdir(module_config_home):
     if os.path.isdir(os.path.join(module_config_home, folder)):
@@ -19,7 +20,11 @@ for folder in os.listdir(module_config_home):
             module_config_file_full_path = os.path.join(module_config_home, folder, module_config)
             if os.path.isfile(module_config_file_full_path):
                 if module_config_file_full_path.endswith("_decision.json"):
-                    modules[folder]["decision"] = Module(module_config_file_full_path)
+                    with open(module_config_file_full_path, "r") as f:
+                        config = json.load(f)
+                        module_descriptions.append({"moduleName": folder,
+                                                    "moduleDescription":config.get("moduleDescription", "")})
+                        modules[folder]["decision"] = Module(config.get("moduleContent"))
                 elif module_config_file_full_path.endswith("_checklist.json"):
                     with open(module_config_file_full_path, "r") as f:
                         modules[folder]["checklist"] = json.load(f)
@@ -37,7 +42,7 @@ def _populate(module_name):
 # reserve for landing page
 @app.route('/', methods=['GET'])
 def homepage():
-    return render_template("landing.html")
+    return render_template("landing.html", data=module_descriptions)
 
 
 @app.route('/error', methods=['GET'])
