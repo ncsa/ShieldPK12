@@ -1,5 +1,5 @@
 import json
-
+import os
 from flask import Flask, render_template, request, abort, redirect
 
 from decisiontrees.module import Module
@@ -9,33 +9,29 @@ app.add_url_rule('/static/css/', endpoint='css', view_func=app.send_static_file)
 app.add_url_rule('/static/js/', endpoint='js', view_func=app.send_static_file)
 app.add_url_rule('/static/img/', endpoint='img', view_func=app.send_static_file)
 
-# initialize the module
-# TODO put the path in a config file
-testing_decision = Module("decisiontrees/testing_decision.json")
-with open("decisiontrees/testing_checklist.json", "r") as f:
-    testing_checklist_ref = json.load(f)
+# initialize the module once
+modules = {}
+module_config_home = "decisiontrees"
+for folder in os.listdir(module_config_home):
+    if os.path.isdir(os.path.join(module_config_home, folder)):
+        modules[folder] = {}
+        for module_config in os.listdir(os.path.join(module_config_home, folder)):
+            module_config_file_full_path = os.path.join(module_config_home, folder, module_config)
+            if os.path.isfile(module_config_file_full_path):
+                if module_config_file_full_path.endswith("_decision.json"):
+                    modules[folder]["decision"] = Module(module_config_file_full_path)
+                elif module_config_file_full_path.endswith("_checklist.json"):
+                    with open(module_config_file_full_path, "r") as f:
+                        modules[folder]["checklist"] = json.load(f)
+            else:
+                print(module_config_file_full_path, "is not valid config file. Skip...")
 
-distancing_decision = Module("decisiontrees/distancing_decision.json")
-with open("decisiontrees/distancing_checklist.json", "r") as f:
-    distancing_checklist_ref = json.load(f)
 
-ventilation_decision = Module("decisiontrees/ventilation_decision.json")
-with open("decisiontrees/ventilation_checklist.json", "r") as f:
-    ventilation_checklist_ref = json.load(f)
+def _populate(module_name):
+    decision = modules.get(module_name, {}).get("decision")
+    checklist_ref = modules.get(module_name, {}).get("checklist")
 
-mask_decision = Module("decisiontrees/mask_decision.json")
-with open("decisiontrees/mask_checklist.json", "r") as f:
-    mask_checklist_ref = json.load(f)
-
-cleaning_decision = Module("decisiontrees/cleaning_decision.json")
-with open("decisiontrees/cleaning_checklist.json", "r") as f:
-    cleaning_checklist_ref = json.load(f)
-
-IT_decision = Module("decisiontrees/IT_decision.json")
-with open("decisiontrees/IT_checklist.json", "r") as f:
-    IT_checklist_ref = json.load(f)
-
-resource_foldername = "resources"
+    return decision, checklist_ref
 
 
 # reserve for landing page
@@ -54,25 +50,24 @@ def about():
     return render_template("about-us.html")
 
 
-@app.route('/<module>/questions', methods=['GET'])
-def questions(module):
-    # TODO can have different template for different modules
+@app.route('/<module_name>/questions', methods=['GET'])
+def questions(module_name):
     return render_template('questions.html')
 
 
-@app.route('/<module>/questions', methods=['POST'])
-def update_questions(module):
+@app.route('/<module_name>/questions', methods=['POST'])
+def update_questions(module_name):
     if request.get_json() and request.get_json()['QID'] and 'qna' in request.get_json().keys():
         past_qna = request.get_json()['qna']
         question_id = request.get_json()['QID']
 
-        decision, checklist_ref = _populate(module)
+        decision, checklist_ref = _populate(module_name)
         if decision is None or checklist_ref is None:
             abort(404, "Module does not exist!")
 
         if question_id != "null":
             page = decision.get_current_page(question_id)
-            min_num_q = testing_decision.min_num_q
+            min_num_q = decision.min_num_q
             if page:
                 return {"page": page, "minNumQ": min_num_q}
             else:
@@ -90,8 +85,8 @@ def update_questions(module):
         abort(403, 'Incomplete question id!')
 
 
-@app.route('/<module>/next', methods=['POST'])
-def next_question(module):
+@app.route('/<module_name>/next', methods=['POST'])
+def next_question(module_name):
     if request.get_json() and request.get_json()['QID'] and request.get_json()['AID'] \
             and 'qna' in request.get_json().keys():
         past_qna = request.get_json()['qna']
@@ -102,7 +97,7 @@ def next_question(module):
         if {"QID": question_id, "AID": answer_id_list} not in past_qna:
             past_qna.insert(0, {"QID": question_id, "AID": answer_id_list})
 
-        decision, checklist_ref = _populate(module)
+        decision, checklist_ref = _populate(module_name)
         if decision is None or checklist_ref is None:
             abort(404, "Module does not exist!")
 
@@ -117,17 +112,17 @@ def next_question(module):
             checklist = decision.compile_checklist(past_qna, checklist_ref)
             return {
                 "report": report,
-                "checklist":checklist
+                "checklist": checklist
             }
     else:
         abort(403, 'Incomplete question id and answer id!')
 
 
-@app.route('/<module>/prev', methods=['POST'])
-def prev_question(module):
+@app.route('/<module_name>/prev', methods=['POST'])
+def prev_question(module_name):
     if request.get_json() and request.get_json()['prevQID']:
         prev_question_id = request.get_json()['prevQID']
-        decision, checklist_ref = _populate(module)
+        decision, checklist_ref = _populate(module_name)
         if decision is None or checklist_ref is None:
             abort(404, "Module does not exist!")
 
@@ -139,29 +134,3 @@ def prev_question(module):
             abort(500, "Reach the beginning of the questions!")
     else:
         abort(403, 'need to provide the correct previous question id!')
-
-
-def _populate(module):
-    if module == "testing":
-        decision = testing_decision
-        checklist_ref = testing_checklist_ref
-    elif module == "distancing":
-        decision = distancing_decision
-        checklist_ref = distancing_checklist_ref
-    elif module == "ventilation":
-        decision = ventilation_decision
-        checklist_ref = ventilation_checklist_ref
-    elif module == "mask":
-        decision = mask_decision
-        checklist_ref = mask_checklist_ref
-    elif module == "cleaning":
-        decision = cleaning_decision
-        checklist_ref = cleaning_checklist_ref
-    elif module == "data-infrastructure":
-        decision = IT_decision
-        checklist_ref = IT_checklist_ref
-    else:
-        decision = None
-        checklist_ref = None
-
-    return decision, checklist_ref

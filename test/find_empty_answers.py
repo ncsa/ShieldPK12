@@ -3,12 +3,12 @@ import json
 
 if __name__ == "__main__":
     decision_fnames = [
-        "../cleaning_decision.json",
-        "../distancing_decision.json",
-        "../mask_decision.json",
-        "../testing_decision.json",
-        "../ventilation_decision.json",
-        "../IT_decision.json"
+        "decisiontrees/cleaning/cleaning_decision.json",
+        "decisiontrees/distancing/distancing_decision.json",
+        "decisiontrees/mask/mask_decision.json",
+        "decisiontrees/testing/testing_decision.json",
+        "decisiontrees/ventilation/ventilation_decision.json",
+        "decisiontrees/data-infrastructure/IT_decision.json"
     ]
     for json_fname in decision_fnames:
         with open(json_fname, "r") as f:
