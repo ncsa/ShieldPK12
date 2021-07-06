@@ -1,0 +1,829 @@
+{
+  "moduleName": "vaccine",
+  "moduleDescription": "",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "Will you require vaccination for anyone",
+      "description": "You will need to decide if vaccines will be required only for staff, or if you will require vaccination for students who are eligible. It is also possible to write a policy that will require vaccinations only after they are fully approved by FDA.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-i"
+        },
+         {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "1b-i"
+        }
+      ]
+    },
+     {
+      "QID": "1a-i",
+      "question": "How will you collect vaccination data?",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-i-1",
+          "prettyAID": "a",
+          "answer": "Online",
+          "description": "If using an online reporting system, be sure that there is an offline version available for those without internet access.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        },
+         {
+          "AID": "1a-i-2",
+          "prettyAID": "b",
+          "answer": "Paper",
+          "description": "Remember that vaccine records are health data, and should be stored securely.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        },
+         {
+          "AID": "1a-i-3",
+          "prettyAID": "c",
+          "answer": "Existing vaccine reporting system",
+          "description": "You likely already have a vaccination reporting system for other vaccines that could be used. Be sure to check that the method of reporting allows for COVID-19 vaccine records, as these might not be included in pediatrician records.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "1a-ii",
+      "question": "Who will be required to vaccinate",
+       "multiple": true,
+      "description": "The federal EEO laws do not prevent an employer from requiring all employees physically entering the workplace to be vaccinated for COVID-19.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-ii-1",
+          "prettyAID": "a",
+          "answer": "Teachers",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        },
+        {
+          "AID": "1a-ii-2",
+          "prettyAID": "b",
+          "answer": "Staff",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        },
+        {
+          "AID": "1a-ii-3",
+          "prettyAID": "c",
+          "answer": "Students",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "1a-iii",
+      "question": "Which aspects will you need legal approval for",
+      "description": "See <a href='https://www.eeoc.gov/wysk/what-you-should-know-about-covid-19-and-ada-rehabilitation-act-and-other-eeo-laws' target='_blank'>here</a> for more information",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-iii-1",
+          "prettyAID": "a",
+          "answer": "Longstanding Exemptions",
+          "description": "An employee who does not get vaccinated due to a disability (covered by the ADA) or a sincerely held religious belief, practice, or observance(covered by Title VII) may be entitled to a reasonable accommodation that does not pose an undue hardship on the operation of the employer’s business.  For example, as a reasonable accommodation, an un-vaccinated employee entering the workplace might wear a face mask, work at a social distance from coworkers or non-employees, work a modified shift, get periodic tests for COVID-19, be given the opportunity to telework, or finally, accept a reassignment.",
+          "resources": [],
+          "nextQID": "1a-iv"
+        },
+        {
+          "AID": "1a-iii-2",
+          "prettyAID": "b",
+          "answer": "Temporary Exemptions",
+          "description": "Employees who are not vaccinated because of pregnancy may be entitled (under Title VII) to adjustments to keep working, if the employer makes modifications or exceptions for other employees.  These modifications may be the same as the accommodations made for an employee based on disability or religion.",
+          "resources": [],
+          "nextQID": "1a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "1a-iv",
+      "question": "How will you validate the vaccination status",
+      "description": "Unfortunately, there have already been identified cases of fraud relating to fake COVID-19 vaccination records. If you are concerned about this, you may wish to validate the vaccine records reported to your system.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-iv-1",
+          "prettyAID": "a",
+          "answer": "No validation (honor system)",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-2",
+          "prettyAID": "b",
+          "answer": "State system",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-3",
+          "prettyAID": "c",
+          "answer": "Visual check of vaccine card",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        }
+      ]
+    },
+     {
+      "QID": "1a-v",
+      "question": "How will you message parents about the vaccine requirements",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-v-1",
+          "prettyAID": "a",
+          "answer": "Email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-v-2",
+          "prettyAID": "b",
+          "answer": "Calls",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-v-3",
+          "prettyAID": "c",
+          "answer": "Mailings",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i",
+      "question": "Will you collect vaccine data",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "If you do not collect vaccine data, you will need to rely on an honor system for any policy changes related to vaccine status.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2",
+          "prettyAID": "b",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "1b-i-2-a"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i-2-a",
+      "question": "How will you collect vaccination data",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-2-a-i",
+          "prettyAID": "a",
+          "answer": "Online",
+          "description": "If using an online reporting system, be sure that there is an offline version available for those without internet access",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        },
+        {
+          "AID": "1b-i-2-a-ii",
+          "prettyAID": "b",
+          "answer": "Paper",
+          "description": "Remember that vaccine records are health data, and should be stored securely.",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        },
+        {
+          "AID": "1b-i-2-a-iii",
+          "prettyAID": "c",
+          "answer": "Existing vaccine reporting system",
+          "description": "You likely already have a vaccination reporting system for other vaccines that could be used. Be sure to check that the method of reporting allows for COVID-19 vaccine records, as these might not be included in pediatrician records.",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i-2-b",
+      "question": "How will you validate the vaccination status",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-2-b-i",
+          "prettyAID": "a",
+          "answer": "No validation (honor system)",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-ii",
+          "prettyAID": "b",
+          "answer": "State system",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-iii",
+          "prettyAID": "c",
+          "answer": "Visual check of vaccine card",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-iv",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+     {
+      "QID": "2",
+      "question": "Will you offer vaccine clinics?",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-i"
+        },
+        {
+          "AID": "2b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i"
+        }
+      ]
+    },
+     {
+      "QID": "2a-i",
+      "question": "What consent will you need",
+       "multiple": true,
+      "description": "Your legal counsel will need to guide you through the vaccine consent process",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-i-1",
+          "prettyAID": "a",
+          "answer": "Parental consent",
+          "description": "You will want to check state law to see if parental consent is required for vaccination",
+          "resources": [],
+          "nextQID": "2a-ii"
+        },
+         {
+          "AID": "2a-i-2",
+          "prettyAID": "b",
+          "answer": "Student assent",
+          "description": "If parental consent is required, you may still want to ask students to assent to vaccination. While not legally binding, this is preferred from an ethical standpoint.",
+          "resources": [],
+          "nextQID": "2a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii",
+      "question": "How will you staffthe clinic",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1",
+          "prettyAID": "a",
+          "answer": "school nurse(s)",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        },
+        {
+          "AID": "2a-ii-2",
+          "prettyAID": "b",
+          "answer": "partner with local public health",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        },
+        {
+          "AID": "2a-ii-3",
+          "prettyAID": "c",
+          "answer": "other partnerships",
+          "description": "hospitals, pharmacies, etc.",
+          "resources": [],
+          "nextQID": "2a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iii",
+      "question": "How will you messagepotential participants",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iii-1",
+          "prettyAID": "a",
+          "answer": "email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-2",
+          "prettyAID": "b",
+          "answer": "call",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-3",
+          "prettyAID": "c",
+          "answer": "mailing",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-4",
+          "prettyAID": "d",
+          "answer": "social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iv",
+      "question": "How will you plan the number of doses needed",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iv-1",
+          "prettyAID": "a",
+          "answer": "Require appointments",
+          "description": "While this will make it easier to plan, requiring appointments may limit participation",
+          "resources": [],
+          "nextQID": "2a-v"
+        },
+        {
+          "AID": "2a-iv-2",
+          "prettyAID": "b",
+          "answer": "use surveys to estimate",
+          "description": "Understand that surveys may not give a clear picture. They may also limit participation, as some who don’t take the survey, or who respond that they don’t plan to vaccinate, may not feel they can or should participate.",
+          "resources": [],
+          "nextQID": "2a-v"
+        },
+        {
+          "AID": "2a-iv-3",
+          "prettyAID": "c",
+          "answer": "no planning for doses",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-v"
+        }
+      ]
+    },
+     {
+      "QID": "2a-v",
+      "question": "How will you obtain the vaccine doses",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-v-1",
+          "prettyAID": "a",
+          "answer": "Partner with local public health",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2a-v-2",
+          "prettyAID": "b",
+          "answer": "Other partnerships",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "2b-i",
+      "question": "Will you share information about other ways to be vaccinated",
+      "description": "If you want to encourage vaccination, you can share with your staff and parents the times and locations of different vaccine clinics and other vaccination sites within or near your district.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2b-i-2",
+          "prettyAID": "b",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-a"
+        }
+      ]
+    },
+     {
+      "QID": "2b-i-2-a",
+      "question": "How will you messageabout other ways to be vaccinated",
+       "multiple": "true",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i-2-a-i",
+          "prettyAID": "a",
+          "answer": "email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-ii",
+          "prettyAID": "b",
+          "answer": "call",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-iii",
+          "prettyAID": "c",
+          "answer": "mailing",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-iv",
+          "prettyAID": "d",
+          "answer": "social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+     {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+    {
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": ""
+          }
+        ]
+      },
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activityID": "",
+      "activity": "",
+      "links": [],
+      "rules": {
+        "operator": "OR|AND|NOT|ALL",
+        "criteria": [
+          {
+            "AID": ""
+          }
+        ]
+      }
+    }
+  ]
+}
