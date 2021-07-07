@@ -337,7 +337,7 @@
     },
      {
       "QID": "2a-ii",
-      "question": "How will you staffthe clinic",
+      "question": "How will you staff the clinic",
        "multiple": true,
       "description": "",
       "resources": [],
@@ -370,7 +370,7 @@
     },
      {
       "QID": "2a-iii",
-      "question": "How will you messagepotential participants",
+      "question": "How will you message potential participants",
        "multiple": true,
       "description": "",
       "resources": [],
@@ -491,7 +491,7 @@
     },
      {
       "QID": "2b-i-2-a",
-      "question": "How will you messageabout other ways to be vaccinated",
+      "question": "How will you message about other ways to be vaccinated",
        "multiple": "true",
       "description": "",
       "resources": [],
@@ -590,7 +590,7 @@
           "AID": "3c",
           "prettyAID": "c",
           "answer": "Distancing",
-          "description": "The CDC guidelines state that fully vaccinated people can gather without physical distancing. However, this applies only to fully vaccinated people; unvaccinated or partially vaccinated people should still limit their close contact with other unvaccinated or partially vaccinated people.",
+          "description": "The CDC guidelines state that fully vaccinated people can gather without physical distancing. However, this applies only to fully vaccinated people; un-vaccinated or partially vaccinated people should still limit their close contact with other un-vaccinated or partially vaccinated people.",
           "resources": [],
           "nextQID": "3c-i"
         },
@@ -686,7 +686,7 @@
         {
           "AID": "3b-i-3",
           "prettyAID": "c",
-          "answer": "No, but a negative testwill be requiredto return to activities",
+          "answer": "No, but a negative test will be required to return to activities",
           "description": "",
           "resources": [],
           "nextQID": "3c-i"
@@ -745,7 +745,7 @@
       },
       "QID": "3c-ii",
       "question": "Will distancing requirements change for the school as a whole after a certain vaccination level is reached",
-      "description": "The CDC has said that fully vaccinated people should not be included when setting capacity limits on spaces, meaning that capacity limits only apply to unvaccinated or partially vaccinated people. At a certain vaccination level, that means a school may not have to worry about distancing or capacity.",
+      "description": "The CDC has said that fully vaccinated people should not be included when setting capacity limits on spaces, meaning that capacity limits only apply to un-vaccinated or partially vaccinated people. At a certain vaccination level, that means a school may not have to worry about distancing or capacity.",
       "resources": [],
       "answers": [
         {
@@ -849,7 +849,7 @@
         {
           "AID": "3d-i-5",
           "prettyAID": "e",
-          "answer": "No changein mask requirements",
+          "answer": "No change in mask requirements",
           "recommended": true,
           "description": "",
           "resources": [],
@@ -924,7 +924,7 @@
         ]
       },
       "QID": "3e-ii",
-      "question": "Will any activities be allowed only if vaccinatedor testing",
+      "question": "Will any activities be allowed only if vaccinated or testing",
        "multiple": true,
       "description": "",
       "resources": [],
@@ -1369,7 +1369,7 @@
     },
     {
       "activityID": "26",
-      "activity": "Survey aboutvaccine clinic analyzed",
+      "activity": "Survey about vaccine clinic analyzed",
       "links": [],
       "rules": {
         "operator": "OR",
