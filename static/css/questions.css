@@ -493,7 +493,7 @@ p {
 }
 
 .report h3{
-        font-style: normal;
+    font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -501,6 +501,7 @@ p {
     color: #20558A;
     margin:22px 0;
     display:inline;
+    text-transform: capitalize;
 }
 
 .report p {
