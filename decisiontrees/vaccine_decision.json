@@ -531,282 +531,443 @@
       ]
     },
      {
-      "QID": "",
-      "question": "",
+      "QID": "2b-i-2-b",
+      "question": "How will you get information to share about other vaccine sources",
+       "multiple": true,
       "description": "",
       "resources": [],
       "answers": [
         {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
+          "AID": "2b-i-2-b-i",
+          "prettyAID": "a",
+          "answer": "Partner with local public health",
           "description": "",
           "resources": [],
-          "nextQID": ""
+          "nextQID": "3"
+        },
+         {
+          "AID": "2b-i-2-b-ii",
+          "prettyAID": "b",
+          "answer": "Other partnerships",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+         {
+          "AID": "2b-i-2-b-iii",
+          "prettyAID": "c",
+          "answer": "Watching local news/social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
         }
       ]
     },
      {
-      "QID": "",
-      "question": "",
-      "description": "",
+      "QID": "3",
+      "question": "Which other COVID-19 control requirements will you change based on vaccines",
+       "multiple": true,
+      "description": "One of the advantages of vaccination is that it allows people to more safely return to regular activities. By changing policies for the vaccinated, you may encourage more people to choose vaccination",
       "resources": [],
       "answers": [
         {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
+          "AID": "3a",
+          "prettyAID": "a",
+          "answer": "Testing",
+          "description": "The CDC does not recommend asymptomatic screening for fully vaccinated individuals.",
           "resources": [],
-          "nextQID": ""
+          "nextQID": "3a-i"
+        },
+        {
+          "AID": "3b",
+          "prettyAID": "b",
+          "answer": "Quarantine",
+          "description": "The CDC says that asymptomatic fully vaccinated people should not be required to quarantine after close exposure.",
+          "resources": [],
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3c",
+          "prettyAID": "c",
+          "answer": "Distancing",
+          "description": "The CDC guidelines state that fully vaccinated people can gather without physical distancing. However, this applies only to fully vaccinated people; unvaccinated or partially vaccinated people should still limit their close contact with other unvaccinated or partially vaccinated people.",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3d",
+          "prettyAID": "d",
+          "answer": "Masks",
+          "description": "The CDC has said that fully vaccinated people do not need to wear masks, with the exception of in healthcare facilities, on public transit, and where required by local regulations. However, they recommend that K-12 schools maintain their mask policies at present.",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3e",
+          "prettyAID": "e",
+          "answer": "Activities",
+          "description": "While vaccine requirements for school may be difficult to enforce, vaccine and/or testing requirements for extracurricular activities can be helpful to encourage uptake. This is especially important, as these activities have been associated with higher risk of infection spread.",
+          "resources": [],
+          "nextQID": "3e-i"
         }
       ]
     },
      {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-     {
-      "QID": "",
-      "question": "",
-      "description": "",
-      "resources": [],
-      "answers": [
-        {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
-          "description": "",
-          "resources": [],
-          "nextQID": ""
-        }
-      ]
-    },
-    {
-      "rules": {
+       "rules": {
         "operator": "AND",
         "criteria": [
           {
-            "AID": ""
+            "AID": "3a"
           }
         ]
       },
-      "QID": "",
-      "question": "",
+      "QID": "3a-i",
+      "question": "Will fully vaccinated people be required to test",
       "description": "",
       "resources": [],
       "answers": [
         {
-          "AID": "",
-          "prettyAID": "",
-          "answer": "",
+          "AID": "3a-i-1",
+          "prettyAID": "a",
+          "answer": "No",
           "description": "",
           "resources": [],
-          "nextQID": ""
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3a-i-2",
+          "prettyAID": "b",
+          "answer": "If symptomatic only",
+          "recommended": true,
+          "description": "",
+          "resources": [],
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3a-i-3",
+          "prettyAID": "c",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3b-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b"
+          }
+        ]
+      },
+      "QID": "3b-i",
+      "question": "Will fully vaccinated people be required to quarantine after exposure",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3b-i-2",
+          "prettyAID": "b",
+          "answer": "Only if within a smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3b-i-3",
+          "prettyAID": "c",
+          "answer": "No, but a negative testwill be requiredto return to activities",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3c"
+          }
+        ]
+      },
+      "QID": "3c-i",
+      "question": "How will distancing requirements change for fully vaccinated people",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-i-1",
+          "prettyAID": "a",
+          "answer": "smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        },
+         {
+          "AID": "3c-i-2",
+          "prettyAID": "b",
+          "answer": "larger pods",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        },
+         {
+          "AID": "3c-i-3",
+          "prettyAID": "c",
+          "answer": "all restrictions lifted",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3c"
+          }
+        ]
+      },
+      "QID": "3c-ii",
+      "question": "Will distancing requirements change for the school as a whole after a certain vaccination level is reached",
+      "description": "The CDC has said that fully vaccinated people should not be included when setting capacity limits on spaces, meaning that capacity limits only apply to unvaccinated or partially vaccinated people. At a certain vaccination level, that means a school may not have to worry about distancing or capacity.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-ii-1",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "At what vaccination level will you change distancing requirements?It is recommended that 80-90% of people should be vaccinated to protect against outbreaks",
+          "resources": [],
+          "nextQID": "3c-ii-1-a"
+        },
+        {
+          "AID": "3c-ii-2",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        }
+      ]
+    },
+     {
+      "QID": "3c-ii-1-a",
+      "question": "How will distancing requirements change",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-ii-1-a-i",
+          "prettyAID": "a",
+          "answer": "Smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3c-ii-1-a-ii",
+          "prettyAID": "b",
+          "answer": "Larger pods",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3c-ii-1-a-iii",
+          "prettyAID": "c",
+          "answer": "All restrictions lifted",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3d"
+          }
+        ]
+      },
+      "QID": "3d-i",
+      "question": "What mask requirements will you have for fully vaccinated people",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3d-i-1",
+          "prettyAID": "a",
+          "answer": "No masks required",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-2",
+          "prettyAID": "b",
+          "answer": "No masks in outdoor areas",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-3",
+          "prettyAID": "c",
+          "answer": "No masks in private spaces",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-4",
+          "prettyAID": "d",
+          "answer": "No masks in classrooms, but still required in hallways",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-5",
+          "prettyAID": "e",
+          "answer": "No changein mask requirements",
+          "recommended": true,
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3e"
+          }
+        ]
+      },
+      "QID": "3e-i",
+      "question": "Will any activities be allowed only if vaccinated",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3e-i-1",
+          "prettyAID": "a",
+          "answer": "Sports",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-2",
+          "prettyAID": "b",
+          "answer": "Music",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-3",
+          "prettyAID": "c",
+          "answer": "Theater/debate",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-5",
+          "prettyAID": "e",
+          "answer": "None",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3e"
+          }
+        ]
+      },
+      "QID": "3e-ii",
+      "question": "Will any activities be allowed only if vaccinatedor testing",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3e-ii-1",
+          "prettyAID": "a",
+          "answer": "Sports",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-2",
+          "prettyAID": "b",
+          "answer": "Music",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-3",
+          "prettyAID": "c",
+          "answer": "Theater/debate",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-5",
+          "prettyAID": "e",
+          "answer": "None",
+          "description": "",
+          "resources": [],
+          "nextQID": null
         }
       ]
     }
