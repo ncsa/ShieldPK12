@@ -1,5 +1,6 @@
 body{
     background: #FFFFFF;
+    font-family: Lato;
 }
 
 button,
@@ -54,8 +55,7 @@ h4 {
 }
 
 .header-container p {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -126,8 +126,7 @@ h4 {
 }
 
 #header-links a {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -170,8 +169,7 @@ h4 {
 }
 
 .module p{
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -180,8 +178,7 @@ h4 {
 }
 
 .module a{
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -197,8 +194,7 @@ h4 {
 }
 
 .module-label{
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;

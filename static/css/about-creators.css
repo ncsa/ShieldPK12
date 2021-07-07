@@ -12,8 +12,7 @@ button{
 }
 
 .modal h1 {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -26,8 +25,7 @@ button{
     color:#20558A;
 }
 .modal p {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
