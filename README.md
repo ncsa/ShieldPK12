@@ -1,5 +1,17 @@
 # SHIELD K to 12 Playbook
 
+## How to Run
+
+### For Local Development
+- run`sh exec.sh`
+
+### Remote Auto Redeploy
+- ssh into the remote machine
+- create folder ShieldPK12 `mkdir ShieldPK12`
+- run cronjob `*/5 * * * * (cd /home/ubuntu/ShieldPK12 && sh redeploy.sh > redeploy.log)`. Note you can change the 
+  Git branch by modifying the `BRANCH` variable in `redeploy.sh` script
+
+## Decision Tree Structure
 ### Cleaning Decision
 ![image](test/cleaning_decision_graph.png)
 
