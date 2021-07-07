@@ -1,6 +1,7 @@
 #!/bin/sh
 
 BRANCH=develop
+#BRANCH=vaccine-module
 git checkout $BRANCH
 
 OLD_HEAD=$(git rev-parse HEAD)
