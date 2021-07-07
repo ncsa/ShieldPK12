@@ -974,14 +974,738 @@
   ],
   "checklist": [
     {
-      "activityID": "",
-      "activity": "",
-      "links": [],
+      "activityID": "1",
+      "activity": "Online system for collecting vaccine data",
+      "links": [
+        "https://www.hhs.gov/sites/default/files/2019-hipaa-ferpa-joint-guidance-508.pdf"
+      ],
       "rules": {
-        "operator": "OR|AND|NOT|ALL",
+        "operator": "OR",
         "criteria": [
           {
-            "AID": ""
+            "AID": "1a-i-1"
+          },
+          {
+            "AID": "1b-i-2-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "2",
+      "activity": "Vaccine reporting form",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-i-2"
+          },
+          {
+            "AID": "1b-i-2-a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "3",
+      "activity": "Adapt existing vaccine reporting system to accept COVID vaccine data",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-i-3"
+          },
+          {
+            "AID": "1b-i-2-a-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "4",
+      "activity": "Policy for who will be required to vaccinate",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/essential-workers.html#anchor_1624918112376"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "5",
+      "activity": "Legal review of policy for who will be required to vaccinate",
+      "links": [
+        "https://www.eeoc.gov/laws/guidance/pandemic-preparedness-workplace-and-americans-disabilities-act"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "6",
+      "activity": "List of exceptions to vaccine policy",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "7",
+      "activity": "Process for validating vaccine status through the state system",
+      "links": [
+        "https://www.cdc.gov/vaccines/programs/iis/contacts-locate-records.html#state"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-2"
+          },
+          {
+            "AID": "1b-i-2-b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "8",
+      "activity": "Process for checking vaccine cards",
+      "links": [
+        "https://www.goodrx.com/blog/covid-vaccine-passports/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-3"
+          },
+          {
+            "AID": "1b-i-2-b-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "9",
+      "activity": "Validation system for vaccination",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-4"
+          },
+           {
+            "AID": "1b-i-2-b-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "10",
+      "activity": "Email message about vaccine requirements and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "11",
+      "activity": "Phone script and recording about vaccine requirements and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "12",
+      "activity": "Compose, print, and mail information about vaccine requirements",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "13",
+      "activity": "Consent form for vaccine clinics",
+      "links": [
+        "https://www.intermed.com/content/uploads/COVID-19-Vaccine-Consent-Form-Patients-1.pdf",
+        "https://www.walgreens.com/images/adaptive/si/pdf/1624373-0331_FY21_COVID19_VAR_OffSite_ENG.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "14",
+      "activity": "Check consent law for minors",
+      "links": [
+        "https://www.vaxteen.org/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "15",
+      "activity": "Assent form for vaccine clinics",
+      "links": [
+        "https://www.seattlechildrens.org/research/resources/institutional-review-board/forms-and-policies/assent-consent-forms/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "16",
+      "activity": "Staffing plan for vaccine clinics",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/training-education/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "17",
+      "activity": "Partnership agreement with public health for vaccine clinic support",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/vaccination-provider-support.html",
+        "https://www.cdc.gov/publichealthgateway/healthdirectories/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-ii-2"
+          },
+          {
+            "AID": "2a-v-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "18",
+      "activity": "Partnership agreement for vaccine clinic staffing",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/training-education/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "19",
+      "activity": "Partnership agreement for vaccine clinic doses",
+      "links": [
+        "https://www.cdc.gov/vaccines/hcp/admin/storage/toolkit/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-v-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "20",
+      "activity": "Email message about vaccine clinic and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "21",
+      "activity": "Phone script and recording about vaccine clinic and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "22",
+      "activity": "Compose, print, and mail information about vaccine clinic",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "23",
+      "activity": "Social media posts about vaccine clinic composed and shared across platforms",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-4"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "24",
+      "activity": "Appointment system arranged for vaccine clinic",
+      "links": [
+        "https://www.vaccines.gov/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "25",
+      "activity": "Survey about vaccine clinic composed and disseminated",
+      "links": [
+        "https://www.surveymonkey.com/r/NHPZ2W3"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "26",
+      "activity": "Survey aboutvaccine clinic analyzed",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "27",
+      "activity": "Email message about vaccine sources and schedule for sending",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "28",
+      "activity": "Phone script and recording about vaccine sources and schedule for sending",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "29",
+      "activity": "Compose, print, and mail information about vaccine sources",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "30",
+      "activity": "Social media posts about vaccine sources composed and shared across platforms",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "31",
+      "activity": "Partnership with public health on vaccine source information sharing",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-b-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "32",
+      "activity": "Partnership with other vaccine sources on information sharing",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/reporting/vaccinefinder.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "33",
+      "activity": "Assign employee to be responsible for finding information about vaccine sources",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2b-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "34",
+      "activity": "List of symptoms for which testing of vaccinated people is indicated",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "35",
+      "activity": "Rewrite testing policy to exclude vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "36",
+      "activity": "Rewrite quarantine policy to exclude vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "37",
+      "activity": "Rewrite quarantine policy to change distances for vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "38",
+      "activity": "Rewrite quarantine policy to allow vaccinated people to test out",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "39",
+      "activity": "Rewrite distancing policy to allow closer contact among vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1619526673330"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "40",
+      "activity": "Change pod guidelines based on vaccination status",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-2"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "41",
+      "activity": "Change distancing policy to exempt vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-3"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "42",
+      "activity": "Establish vaccination level at which distancing guidelines will change",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#anchor_1616080121423"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "43",
+      "activity": "Rewrite distancing guidelines to address changes after vaccination reaches the target level",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1619526673330"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "44",
+      "activity": "Prepare and distribute messaging for all staff and parents on what changes will be made at given vaccination levels",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/pdfs/choosingSaferAct.pdf?v=1"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "45",
+      "activity": "Rewrite mask policy for vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3d-i-1"
+          },
+          {
+            "AID": "3d-i-2"
+          },
+          {
+            "AID": "3d-i-3"
+          },
+          {
+            "AID": "3d-i-4"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "46",
+      "activity": "Write and share policy around vaccination requirements for extracurricular activities",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3e-i-1"
+          },
+          {
+            "AID": "3e-i-2"
+          },
+          {
+            "AID": "3e-i-3"
+          },
+          {
+            "AID": "3e-i-4"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "47",
+      "activity": "Write and share policy changes around testing for extracurricular activities in vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3e-ii-1"
+          },
+          {
+            "AID": "3e-ii-2"
+          },
+          {
+            "AID": "3e-ii-3"
+          },
+          {
+            "AID": "3e-ii-4"
           }
         ]
       }
