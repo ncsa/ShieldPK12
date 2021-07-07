@@ -63,7 +63,8 @@
         {% for item in data %}
             <div class="col col-lg-4 col-md-6 col-sm-6">
                 <div class="module">
-                    <h4><span class="module-label">{{loop.index}}</span>{{item.moduleName}}</h4>
+                    <span class="module-label">{{loop.index}}</span>
+                    <h4>{{item.moduleName}}</h4>
                     <p>{{item.moduleDescription}}</p>
                     <a href="/{{item.moduleName}}/questions" id="{{item.moduleName}}">Start
                         &nbsp;<i class="fas fa-arrow-right"></i></a>

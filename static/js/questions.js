@@ -278,11 +278,11 @@ function updateQuestions(data, answeredNumQ) {
                 var answer = $(`
                     <div class="answer">
                         <input type="checkbox" name="choice" value="` + option["AID"] + `">
+                        <span class="answer-pretty-id">` + option["prettyAID"] + `</span>
                         <h2 class="answer-text" data-toggle="tooltip" data-placement="top" 
                                 data-html="true" 
-                                title="` + option["description"].replace(/<|>|"/g, "") +`">
-                        <span class="answer-pretty-id">` + option["prettyAID"] +
-                        `</span>` + option["answer"] + `</h2>
+                                title="` + option["description"].replace(/<|>|"/g, "") +`">`
+                         + option["answer"] + `</h2>
                         <p class="answer-description">` + option["description"] + `</p>
                     </div>`);
                 $("#answers").attr("multiple-answers", true).append(answer);
@@ -290,11 +290,11 @@ function updateQuestions(data, answeredNumQ) {
                 var answer = $(`
                     <div class="answer">
                         <input type="radio" name="choice" value="` + option["AID"] + `">
+                        <span class="answer-pretty-id">` + option["prettyAID"] + `</span>
                         <h2 class="answer-text" data-toggle="tooltip" data-placement="top" 
                                 data-html="true" 
-                                title="` + option["description"].replace(/<|>|"/g, "") +`">
-                        <span class="answer-pretty-id">` + option["prettyAID"]
-                        + `</span>` + option["answer"] + `</h2>
+                                title="` + option["description"].replace(/<|>|"/g, "") +`">`
+                         + option["answer"] + `</h2>
                         <p class="answer-description">` + option["description"] + `</p>
                     </div>`);
                 $("#answers").attr("multiple-answers", false).append(answer);
@@ -369,8 +369,9 @@ function generateReport(report){
                     <i class="fas fa-caret-up report-collapse"></i>`;
             if ("description" in answerItem && answerItem["description"] !== ""){
                 $("#" + item["QID"]).find(".report-answers").append(`
-                    <div class="report-answer">` + expandIcon + `
-                        <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
+                    <div class="report-answer">` + expandIcon +
+                        `<span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>
+                        <h3 class="report-answer-text">`
                         + answerItem["answer"] + `</h3>
                         <p class="report-answer-description">` + answerItem["description"] + `</p>
                     </div>
@@ -379,8 +380,8 @@ function generateReport(report){
             else{
                  $("#" + item["QID"]).find(".report-answers").append(`
                     <div class="report-answer">
-                        <h3 class="report-answer-text"><span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>`
-                        + answerItem["answer"] + `</h3>
+                        <span class="answer-pretty-id">` + answerItem["prettyAID"] + `</span>
+                        <h3 class="report-answer-text">` + answerItem["answer"] + `</h3>
                         <p class="report-answer-description">` + answerItem["description"] + `</p>
                     </div>
                 `);

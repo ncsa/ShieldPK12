@@ -166,6 +166,7 @@ h4 {
 .module h4{
     margin-bottom:16px;
     text-transform: capitalize;
+    display: inline;
 }
 
 .module p{
@@ -205,5 +206,5 @@ h4 {
     padding: 5px 10px;
     border-radius: 50%;
     margin-right: 15px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }

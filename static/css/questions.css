@@ -368,6 +368,7 @@ p {
 }
 
 .answer-text {
+    text-transform: capitalize;
     display: inline;
 }
 
@@ -504,6 +505,7 @@ p {
     letter-spacing: 0.9375px;
     color: #20558A;
     margin:22px 0;
+    display:inline;
 }
 
 .report p {
@@ -634,6 +636,6 @@ p {
     padding: 5px 10px;
     border-radius: 50%;
     margin-right: 15px;
-    vertical-align: bottom;
+    vertical-align: text-bottom;
 }
 
