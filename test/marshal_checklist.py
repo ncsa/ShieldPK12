@@ -20,8 +20,8 @@ if __name__ == "__main__":
             activityID = 0
             for activity in checklist:
                 # sequentially assign activity ID
-                activityID += 1
-                activity["activityID"] = str(activityID)
+                # activityID += 1
+                # activity["activityID"] = str(activityID)
 
 
                 # check if answer ID exists
@@ -36,7 +36,7 @@ if __name__ == "__main__":
                             print("module:", module,
                                   "activityID:", activity["activityID"],
                                   "AID: ", entry["AID"])
-            f.seek(0)
-            json.dump(module_config, f, indent=2)
+            # f.seek(0)
+            # json.dump(module_config, f, indent=2)
 
 
