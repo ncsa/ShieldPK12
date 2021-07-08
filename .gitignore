@@ -45,3 +45,6 @@ exec.sh
 
 # where certificates live
 data
+
+# logs
+redeploy.log
