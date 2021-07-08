@@ -7,7 +7,7 @@
 
 ### Remote Auto Redeploy
 - ssh into the remote machine
-- create folder ShieldPK12 `mkdir ShieldPK12`
+- clone this repository `git clone https://github.com/longshuicy/ShieldPK12.git`
 - run cronjob `*/5 * * * * (cd /home/ubuntu/ShieldPK12 && sh redeploy.sh > redeploy.log)`. Note you can change the 
   Git branch by modifying the `BRANCH` variable in `redeploy.sh` script
 
