@@ -17,6 +17,10 @@
   - placing `*/5 * * * * (cd /home/ubuntu/ShieldPK12 && sh redeploy.sh > redeploy.log)` into a text file, e.g. `job.txt`
   - then run command `crontab job.txt`. You can check if cronjob in place by `crontab -l`
   - Note you can change the which git branch to monitor by modifying the `BRANCH` variable in `redeploy.sh` script. 
+  
+### Deploy without SSL
+- run command `docker-compose -f docker-compose_wo_ssl.yml up --build -d`. Then you can access the web app at 
+  `http://{hostIP}`
 
 ## Decision Tree Structure
 ### Cleaning Decision

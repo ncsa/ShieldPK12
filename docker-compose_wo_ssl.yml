@@ -7,7 +7,7 @@ services:
     expose:
       - 5000
   nginx:
-    build: ./nginx
+    build: ./nginx_wo_ssl
 #    volumes:
 #      - static_volume:/home/app/web/project/static
     ports:
