@@ -1,0 +1,61 @@
+{
+  "moduleName": "",
+  "moduleDescription": "",
+  "moduleContent": [
+    {
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    },
+    {
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": ""
+          }
+        ]
+      },
+      "QID": "",
+      "question": "",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "",
+          "prettyAID": "",
+          "answer": "",
+          "description": "",
+          "resources": [],
+          "nextQID": ""
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activityID": "",
+      "activity": "",
+      "links": [],
+      "rules": {
+        "operator": "OR|AND|NOT|ALL",
+        "criteria": [
+          {
+            "AID": ""
+          }
+        ]
+      }
+    }
+  ]
+}

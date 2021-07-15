@@ -1,297 +1,629 @@
-[
-  {
-    "QID": "1",
-    "question": "Who will be doing cleaning",
-    "description": "Throughout the day, many people may be involved in various cleaning activities. Tasks should be clearly assigned to ensure full coverage.<br>We should note that transmission of SARS-CoV-2 is primarily through aerosol and airborne droplets, not through surfaces. That said, there is a risk to spread from high-touch surfaces. Areas to be most concerned about include bathrooms (particularly door handles), drinking fountains, and elevator buttons.<br>All individuals involved in cleaning should be reminded to wear gloves and masks.  They should avoid touching their faces while wearing masks. Washing hands after or in between use of gloves is recommended. Signage next to cleaning supplies is recommended to help with compliance.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1a",
-        "prettyAID": "a",
-        "answer": "Janitors",
-        "description": "The janitorial staff is the best team to ensure that shared and high-touch surfaces are regularly cleaned. However, their safety should be protected by limiting their exposure to others; this may mean careful scheduling to keep them out of hallways when students are moving at high levels (e.g., during lunch time or recess).",
-        "resources": [],
-        "nextQID": "1a-i"
-      },
-       {
-        "AID": "1b",
-        "prettyAID": "b",
-        "answer": "Teachers",
-        "description": "Throughout the day, it may be prudent to have teachers provide some amount of cleaning in their classroom.",
-        "resources": [],
-        "nextQID": "1b-i"
-      },
-      {
-        "AID": "1c",
-        "prettyAID": "c",
-        "answer": "Students",
-        "description": "Older students may be asked to clean their own spaces. No student should be asked to clean communal spaces.",
-        "resources": [],
-        "nextQID": "1c-i"
-      }
-    ]
-  },
-  {
-    "QID": "1a-i",
-    "question": "When will they be working",
-    "description": "",
-    "multiple": true,
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1a-i-1",
-        "prettyAID": "a",
-        "answer": "During school hours",
-        "description": "High-touch surfaces should be wiped down regularly throughout the day. You should provide a cleaning rotation that will allow janitors to do so while maintaining physical distance from other staff and students.",
-        "resources": [],
-        "nextQID": "1a-ii"
-      },
-      {
-        "AID": "1a-i-2",
-        "prettyAID": "b",
-        "answer": "Outside school hours",
-        "description": "Classroom cleaning should remain outside school hours, preferably with a delay of an hour to allow for room air to be cleared by the ventilation system.",
-        "resources": [],
-        "nextQID": "1a-ii"
-      }
-    ]
-  },
-  {
-    "QID": "1a-ii",
-    "question": "What PPE will you have available",
-    "multiple": true,
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1a-ii-1",
-        "prettyAID": "a",
-        "answer": "Gloves",
-        "description": "Disposable gloves should be changed and discarded regularly (at least once an hour). Reusable gloves should be washed regularly, and should be used by only one person.",
-        "resources": [],
-        "nextQID": "2"
-      },
-      {
-        "AID": "1a-ii-2",
-        "prettyAID": "b",
-        "answer": "Masks",
-        "description": "Any staff working during school hours should be provided with masks that cover both the nose and the chin of a worker.",
-        "resources": [],
-        "nextQID": "2"
-      },
-      {
-        "AID": "1a-ii-3",
-        "prettyAID": "c",
-        "answer": "Goggles or face shields",
-        "description": "As some disinfecting chemicals may be potentially hazardous to eyes or face, goggles or face shields should be provided as needed. These should be used by only one person and cleaned after each use. Check the instructions on your cleaning solutions to determine the need.",
-        "resources": [],
-        "nextQID": "2"
-      },
-      {
-        "AID": "1a-ii-4",
-        "prettyAID": "d",
-        "answer": "Gowns or clothing covers",
-        "description": "Protective gowns or clothing covers should be used for handling trash.",
-        "resources": [],
-        "nextQID": "2"
-      }
-    ]
-  },
-  {
-    "QID": "1b-i",
-    "question": "How often will they be asked to clean",
-    "description": "The cleaning required of teachers should not add an unreasonable burden to their schedule.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1b-i-1",
-        "prettyAID": "a",
-        "answer": "As needed",
-        "description": "You may ask teachers to conduct quick surface cleans only as they feel it is necessary. In this case, it would be good to have guidelines as to when cleaning would be appropriate.",
-        "resources": [],
-        "nextQID": "1b-ii"
-      },
-      {
-        "AID": "1b-i-2",
-        "prettyAID": "b",
-        "answer": "At regular intervals",
-        "description": "In upper grade levels, you may want to ask teachers to wipe down high-touch surfaces (such as door handles) between classes.",
-        "resources": [],
-        "nextQID": "1b-ii"
-      },
-      {
-        "AID": "1b-i-3",
-        "prettyAID": "c",
-        "answer": "At particular times",
-        "description": "If students will be eating in classrooms, cleaning after eating times is recommended. If younger students will be leaving the room for recess or other scheduled activities, that might be a good time to wipe down desks.",
-        "resources": [],
-        "nextQID": "1b-ii"
-      }
-    ]
-  },
-  {
-    "QID": "1b-ii",
-    "question": "What PPE will you have available",
-    "multiple": true,
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1b-ii-1",
-        "prettyAID": "a",
-        "answer": "Gloves",
-        "description": "A supply of cleaning gloves should be available in each classroom. You may want to include instructions on safe removal and disposal of gloves.",
-        "resources": [],
-        "nextQID": "1b-iii"
-      },
-      {
-        "AID": "1b-ii-2",
-        "prettyAID": "b",
-        "answer": "Face Shields",
-        "description": "If you are asking teachers to use certain cleaning sprays, you may want to provide face shields to protect their faces and eyes.",
-        "resources": [],
-        "nextQID": "1b-iii"
-      }
-    ]
-  },
-  {
-    "QID": "1b-iii",
-    "question": "What supplies will they be asked to use",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1b-iii-1",
-        "prettyAID": "a",
-        "answer": "Wipes",
-        "description": "A supply of cleaning wipes should be available in each classroom. This supply should be refilled regularly.",
-        "resources": [],
-        "nextQID": "2"
-      },
-      {
-        "AID": "1b-iii-2",
-        "prettyAID": "b",
-        "answer": "Sprays",
-        "description": "Spray bottles should be provided in each classroom, with a supply of paper towels and instructions for use. Spray bottles should be refilled regularly.",
-        "resources": [],
-        "nextQID": "2"
-      }
-    ]
-  },
-  {
-    "QID": "1c-i",
-    "question": "When will they be asked to clean",
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1c-i-1",
-        "prettyAID": "a",
-        "answer": "Before class",
-        "description": "You may ask students to wipe down their seat and desk at the beginning of each new class period.",
-        "resources": [],
-        "nextQID": "2"
-      },
-      {
-        "AID": "1c-i-2",
-        "prettyAID": "b",
-        "answer": "After class",
-        "recommended": true,
-        "description": "It is better to ask students to wipe down their seat and desk at the end of each new class period, so the disinfectant will have time to work before the next student enters.",
-        "resources": [],
-        "nextQID": "2"
-      }
-    ]
-  },
-  {
-    "QID": "2",
-    "question": "What supplies will you have for cleaning",
-    "multiple": true,
-    "description": "Cleaning resources should never be in short supply. Once the particular type is selected, a sufficient supply should be kept on hand at all times.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "2a",
-        "prettyAID": "a",
-        "answer": "Surface cleaning supplies",
-        "description": "",
-        "resources": [],
-        "nextQID": "2a-i"
-      },
-      {
-        "AID": "2b",
-        "prettyAID": "b",
-        "answer": "Air Filters",
-        "description": "See the <a href='/ventilation/questions'>ventilation module</a>. You should ensure that you are following filter cleaning and replacement guidelines.",
-        "resources": [],
-        "nextQID": "3"
-      }
-    ]
-  },
-  {
-    "QID": "2a-i",
-    "question": "What surface cleaning supplies will you have",
-    "multiple": true,
-    "rules": {
-      "operator": "AND",
-      "criteria": [
+{
+  "moduleName": "cleaning",
+  "moduleDescription": "Additional cleaning measures for disease control",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "Who will be doing cleaning",
+      "description": "Throughout the day, many people may be involved in various cleaning activities. Tasks should be clearly assigned to ensure full coverage.<br>We should note that transmission of SARS-CoV-2 is primarily through aerosol and airborne droplets, not through surfaces. That said, there is a risk to spread from high-touch surfaces. Areas to be most concerned about include bathrooms (particularly door handles), drinking fountains, and elevator buttons.<br>All individuals involved in cleaning should be reminded to wear gloves and masks.  They should avoid touching their faces while wearing masks. Washing hands after or in between use of gloves is recommended. Signage next to cleaning supplies is recommended to help with compliance.",
+      "resources": [],
+      "answers": [
         {
-          "AID": "2a"
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "Janitors",
+          "description": "The janitorial staff is the best team to ensure that shared and high-touch surfaces are regularly cleaned. However, their safety should be protected by limiting their exposure to others; this may mean careful scheduling to keep them out of hallways when students are moving at high levels (e.g., during lunch time or recess).",
+          "resources": [],
+          "nextQID": "1a-i"
+        },
+        {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "Teachers",
+          "description": "Throughout the day, it may be prudent to have teachers provide some amount of cleaning in their classroom.",
+          "resources": [],
+          "nextQID": "1b-i"
+        },
+        {
+          "AID": "1c",
+          "prettyAID": "c",
+          "answer": "Students",
+          "description": "Older students may be asked to clean their own spaces. No student should be asked to clean communal spaces.",
+          "resources": [],
+          "nextQID": "1c-i"
         }
       ]
     },
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "2a-i",
-        "prettyAID": "a",
-        "answer": "Disposable wipes",
-        "description": "Wipes should be at least 70% alcohol or be on the list of EPA-registered disinfectant wipes.",
-        "resources": [],
-        "nextQID": "3"
+    {
+      "QID": "1a-i",
+      "question": "When will they be working",
+      "description": "",
+      "multiple": true,
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-i-1",
+          "prettyAID": "a",
+          "answer": "During school hours",
+          "description": "High-touch surfaces should be wiped down regularly throughout the day. You should provide a cleaning rotation that will allow janitors to do so while maintaining physical distance from other staff and students.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        },
+        {
+          "AID": "1a-i-2",
+          "prettyAID": "b",
+          "answer": "Outside school hours",
+          "description": "Classroom cleaning should remain outside school hours, preferably with a delay of an hour to allow for room air to be cleared by the ventilation system.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        }
+      ]
+    },
+    {
+      "QID": "1a-ii",
+      "question": "What PPE will you have available",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-ii-1",
+          "prettyAID": "a",
+          "answer": "Gloves",
+          "description": "Disposable gloves should be changed and discarded regularly (at least once an hour). Reusable gloves should be washed regularly, and should be used by only one person.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-ii-2",
+          "prettyAID": "b",
+          "answer": "Masks",
+          "description": "Any staff working during school hours should be provided with masks that cover both the nose and the chin of a worker.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-ii-3",
+          "prettyAID": "c",
+          "answer": "Goggles or face shields",
+          "description": "As some disinfecting chemicals may be potentially hazardous to eyes or face, goggles or face shields should be provided as needed. These should be used by only one person and cleaned after each use. Check the instructions on your cleaning solutions to determine the need.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-ii-4",
+          "prettyAID": "d",
+          "answer": "Gowns or clothing covers",
+          "description": "Protective gowns or clothing covers should be used for handling trash.",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+    {
+      "QID": "1b-i",
+      "question": "How often will they be asked to clean",
+      "description": "The cleaning required of teachers should not add an unreasonable burden to their schedule.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-1",
+          "prettyAID": "a",
+          "answer": "As needed",
+          "description": "You may ask teachers to conduct quick surface cleans only as they feel it is necessary. In this case, it would be good to have guidelines as to when cleaning would be appropriate.",
+          "resources": [],
+          "nextQID": "1b-ii"
+        },
+        {
+          "AID": "1b-i-2",
+          "prettyAID": "b",
+          "answer": "At regular intervals",
+          "description": "In upper grade levels, you may want to ask teachers to wipe down high-touch surfaces (such as door handles) between classes.",
+          "resources": [],
+          "nextQID": "1b-ii"
+        },
+        {
+          "AID": "1b-i-3",
+          "prettyAID": "c",
+          "answer": "At particular times",
+          "description": "If students will be eating in classrooms, cleaning after eating times is recommended. If younger students will be leaving the room for recess or other scheduled activities, that might be a good time to wipe down desks.",
+          "resources": [],
+          "nextQID": "1b-ii"
+        }
+      ]
+    },
+    {
+      "QID": "1b-ii",
+      "question": "What PPE will you have available",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-ii-1",
+          "prettyAID": "a",
+          "answer": "Gloves",
+          "description": "A supply of cleaning gloves should be available in each classroom. You may want to include instructions on safe removal and disposal of gloves.",
+          "resources": [],
+          "nextQID": "1b-iii"
+        },
+        {
+          "AID": "1b-ii-2",
+          "prettyAID": "b",
+          "answer": "Face Shields",
+          "description": "If you are asking teachers to use certain cleaning sprays, you may want to provide face shields to protect their faces and eyes.",
+          "resources": [],
+          "nextQID": "1b-iii"
+        }
+      ]
+    },
+    {
+      "QID": "1b-iii",
+      "question": "What supplies will they be asked to use",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-iii-1",
+          "prettyAID": "a",
+          "answer": "Wipes",
+          "description": "A supply of cleaning wipes should be available in each classroom. This supply should be refilled regularly.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-iii-2",
+          "prettyAID": "b",
+          "answer": "Sprays",
+          "description": "Spray bottles should be provided in each classroom, with a supply of paper towels and instructions for use. Spray bottles should be refilled regularly.",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+    {
+      "QID": "1c-i",
+      "question": "When will they be asked to clean",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1c-i-1",
+          "prettyAID": "a",
+          "answer": "Before class",
+          "description": "You may ask students to wipe down their seat and desk at the beginning of each new class period.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1c-i-2",
+          "prettyAID": "b",
+          "answer": "After class",
+          "recommended": true,
+          "description": "It is better to ask students to wipe down their seat and desk at the end of each new class period, so the disinfectant will have time to work before the next student enters.",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+    {
+      "QID": "2",
+      "question": "What supplies will you have for cleaning",
+      "multiple": true,
+      "description": "Cleaning resources should never be in short supply. Once the particular type is selected, a sufficient supply should be kept on hand at all times.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a",
+          "prettyAID": "a",
+          "answer": "Surface cleaning supplies",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-i"
+        },
+        {
+          "AID": "2b",
+          "prettyAID": "b",
+          "answer": "Air Filters",
+          "description": "See the <a href='/ventilation/questions'>ventilation module</a>. You should ensure that you are following filter cleaning and replacement guidelines.",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+    {
+      "QID": "2a-i",
+      "question": "What surface cleaning supplies will you have",
+      "multiple": true,
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a"
+          }
+        ]
       },
-      {
-        "AID": "2a-ii",
-        "prettyAID": "b",
-        "answer": "Cleaning solutions",
-        "description": "Solutions should be EPA-registered disinfectants or diluted bleach. If solutions require dilution, very clear instructions should be provided and personnel in charge of dilution should wear gloves, goggles or face shields, and clothing covers.",
-        "resources": [],
-        "nextQID": "3"
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-i",
+          "prettyAID": "a",
+          "answer": "Disposable wipes",
+          "description": "Wipes should be at least 70% alcohol or be on the list of EPA-registered disinfectant wipes.",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2a-ii",
+          "prettyAID": "b",
+          "answer": "Cleaning solutions",
+          "description": "Solutions should be EPA-registered disinfectants or diluted bleach. If solutions require dilution, very clear instructions should be provided and personnel in charge of dilution should wear gloves, goggles or face shields, and clothing covers.",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+    {
+      "QID": "3",
+      "question": "How will you ensure that cleaning protocols are followed",
+      "multiple": true,
+      "description": "To ensure that no area of cleaning is overlooked, a combination of approaches may be needed.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a",
+          "prettyAID": "a",
+          "answer": "Checklists",
+          "description": "These are lists of all areas that should be cleaned every day. It is best if they are displayed publicly and if those doing the cleaning use initials and time to indicate who was responsible and when cleaning last occurred.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "3b",
+          "prettyAID": "b",
+          "answer": "Flip Tags",
+          "description": "Flip tags can be used on the doors to individual rooms to indicate if cleaning is requested or completed. This allows a quick visual check of the cleaning progress.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "3c",
+          "prettyAID": "c",
+          "answer": "Request Process",
+          "description": "There should be a process for a teacher or staff member to request cleaning. This may be because of sickness within the classroom, or simply because of a spill. This could consist of a verbal system (phone call) or a digital system (such as a digital ticket system or an email inbox). The process should be written out as a standard operating procedure (SOP) and provided to all staff.",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activity": "Signs next to all cleaning supplies to remind cleaners about hand washing and not touching their face",
+      "activityID": "1",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/Six-Steps-for-Cleaning-Disinfecting-school.pdf",
+        "https://www.cdc.gov/handwashing/pdf/wash-your-hands-poster-english2020-p.pdf"
+      ],
+      "rules": {
+        "operator": "ALL",
+        "criteria": []
       }
-    ]
-  },
-  {
-    "QID": "3",
-    "question": "How will you ensure that cleaning protocols are followed",
-    "multiple": true,
-    "description": "To ensure that no area of cleaning is overlooked, a combination of approaches may be needed.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "3a",
-        "prettyAID": "a",
-        "answer": "Checklists",
-        "description": "These are lists of all areas that should be cleaned every day. It is best if they are displayed publicly and if those doing the cleaning use initials and time to indicate who was responsible and when cleaning last occurred.",
-        "resources": [],
-        "nextQID": null
-      },
-      {
-        "AID": "3b",
-        "prettyAID": "b",
-        "answer": "Flip Tags",
-        "description": "Flip tags can be used on the doors to individual rooms to indicate if cleaning is requested or completed. This allows a quick visual check of the cleaning progress.",
-        "resources": [],
-        "nextQID": null
-      },
-       {
-        "AID": "3c",
-        "prettyAID": "c",
-        "answer": "Request Process",
-        "description": "There should be a process for a teacher or staff member to request cleaning. This may be because of sickness within the classroom, or simply because of a spill. This could consist of a verbal system (phone call) or a digital system (such as a digital ticket system or an email inbox). The process should be written out as a standard operating procedure (SOP) and provided to all staff.",
-        "resources": [],
-        "nextQID": null
+    },
+    {
+      "activity": "Surface cleaning schedule that allows physical distancing",
+      "activityID": "2",
+      "links": [
+        "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-cleaning-disinfection-log-template.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a-i-1"
+          }
+        ]
       }
-    ]
-  }
-]
+    },
+    {
+      "activity": "Classroom cleaning schedule starting at least 1 hour after end of school",
+      "activityID": "3",
+      "links": [
+        "https://infohub.nyced.org/docs/default-source/default-document-library/reopening-and-safety-planning-template.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of gloves for janitorial staff",
+      "activityID": "4",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of masks for janitorial staff",
+      "activityID": "5",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a-ii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of goggles or face shields for janitorial staff",
+      "activityID": "6",
+      "links": [
+        "https://www.doe.mass.edu/covid19/on-desktop/2020-0605guidance-safety-supplies-school-reopening.docx"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Instructions to teachers about cleaning expectations",
+      "activityID": "7",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/cleaning-disinfecting-school-classrooms.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Guidelines for teachers about times that extra cleaning might be needed",
+      "activityID": "8",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/key-times-clean-childcare-poster.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Instructions on safe removal and disposal of gloves",
+      "activityID": "9",
+      "links": [
+        "https://www.cdc.gov/vhf/ebola/pdf/poster-how-to-remove-gloves.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of disposable gloves in every classroom",
+      "activityID": "10",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Face shields for each teacher",
+      "activityID": "11",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-ii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of cleaning wipes for each classroom",
+      "activityID": "12",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1b-iii-1"
+          },
+          {
+            "AID": "1c"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A cleaning spray bottle and supply of paper towels with instructions for use in each classroom",
+      "activityID": "13",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/community/schools-childcare/Six-Steps-for-Cleaning-Disinfecting-school.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b-iii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A schedule for janitors to refill classroom cleaning supplies",
+      "activityID": "14",
+      "links": [
+        "https://blog.bunzlchs.com/wp-content/uploads/2016/07/SIL-16-00012_Bunzl_Cleaning_Checklist.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1b"
+          },
+          {
+            "AID": "1c"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Instructions to students for cleaning their own space",
+      "activityID": "15",
+      "links": [
+        "https://www.leeschools.net/cms/one.aspx?portalId=676305&pageId=30860574#panel-22"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1c"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of disinfectant",
+      "activityID": "16",
+      "links": [
+        "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of EPA-approved wipes",
+      "activityID": "17",
+      "links": [
+        "https://www.epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Schedule for cleaning and replacing air filters",
+      "activityID": "18",
+      "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "A supply of replacement air filters",
+      "activityID": "19",
+      "links": [
+        "https://www.glacier-technology.com/replacement-air-filters/"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Checklists for cleaning areas posted publicly",
+      "activityID": "20",
+      "links": [
+        "https://static1.squarespace.com/static/5de4ebae5719bc363911df16/t/5f40f7effd699801ae42c807/1598093308623/COVID-19+Cleaning+Guidance+and+Sample+Checklists.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Cleaning flip tags on all classroom doors",
+      "activityID": "21",
+      "links": [
+        "https://www.thesafetycentre.co.uk/covid-19-room-has-been-sanitised-door-hanger-sign-cv0032"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "SOP for requesting additional cleaning",
+      "activityID": "22",
+      "links": [
+        "https://www.sgia.org/docs/default-source/default-document-library/covid-19_sanitation_-guide.pdf",
+        "https://www.hsph.harvard.edu/landmark/2020/04/16/cleaning-sop-during-lock-down-for-covid-19/"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3c"
+          }
+        ]
+      }
+    }
+  ]
+}

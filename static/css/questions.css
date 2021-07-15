@@ -1,5 +1,7 @@
 body {
     background: #FFFFFF;
+    font-family: Lato;
+
 }
 
 button,
@@ -132,8 +134,7 @@ a{
 }
 
 .prompt{
-    font-family: Lato;
-    font-weight: normal;
+        font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.5625px;
     color: #FFFFFF;
@@ -276,8 +277,7 @@ h2 {
 }
 
 p {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 21px;
     letter-spacing: 0.65625px;
@@ -331,8 +331,7 @@ p {
 }
 
 #answer-prompt {
-    font-family: Lato;
-    font-style: italic;
+        font-style: italic;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
@@ -368,6 +367,7 @@ p {
 }
 
 .answer-text {
+    text-transform: capitalize;
     display: inline;
 }
 
@@ -417,8 +417,7 @@ p {
 }
 
 .checklist-container h3 {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -431,8 +430,7 @@ p {
 }
 
 .checklist-activity {
-    font-family: Lato;
-    font-size: 18px;
+        font-size: 18px;
     line-height: 33px;
     letter-spacing: 0.75px;
     color: #000000;
@@ -469,8 +467,7 @@ p {
 }
 
 .report-question{
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 25px;
     line-height: 30px;
@@ -496,7 +493,6 @@ p {
 }
 
 .report h3{
-    font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -504,11 +500,12 @@ p {
     letter-spacing: 0.9375px;
     color: #20558A;
     margin:22px 0;
+    display:inline;
+    text-transform: capitalize;
 }
 
 .report p {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 21px;
     line-height: 25px;
@@ -533,8 +530,7 @@ p {
 }
 
 .result-pdf-header p {
-    font-family: Lato;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
@@ -624,8 +620,7 @@ p {
 
 .answer-pretty-id,
 .answer-pretty-id.selected{
-    font-family: Lato;
-    font-weight: bold;
+        font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.541667px;
     color: #FFFFFF;
@@ -634,6 +629,6 @@ p {
     padding: 5px 10px;
     border-radius: 50%;
     margin-right: 15px;
-    vertical-align: bottom;
+    vertical-align: text-bottom;
 }
 

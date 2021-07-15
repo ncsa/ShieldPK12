@@ -1,0 +1,1714 @@
+{
+  "moduleName": "vaccine",
+  "moduleDescription": "Incorporating vaccination and vaccine data into a control program",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "Will you require vaccination for anyone",
+      "description": "You will need to decide if vaccines will be required only for staff, or if you will require vaccination for students who are eligible. It is also possible to write a policy that will require vaccinations only after they are fully approved by FDA.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-i"
+        },
+         {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "1b-i"
+        }
+      ]
+    },
+     {
+      "QID": "1a-i",
+      "question": "How will you collect vaccination data?",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-i-1",
+          "prettyAID": "a",
+          "answer": "Online",
+          "description": "If using an online reporting system, be sure that there is an offline version available for those without internet access.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        },
+         {
+          "AID": "1a-i-2",
+          "prettyAID": "b",
+          "answer": "Paper",
+          "description": "Remember that vaccine records are health data, and should be stored securely.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        },
+         {
+          "AID": "1a-i-3",
+          "prettyAID": "c",
+          "answer": "Existing vaccine reporting system",
+          "description": "You likely already have a vaccination reporting system for other vaccines that could be used. Be sure to check that the method of reporting allows for COVID-19 vaccine records, as these might not be included in pediatrician records.",
+          "resources": [],
+          "nextQID": "1a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "1a-ii",
+      "question": "Who will be required to vaccinate",
+       "multiple": true,
+      "description": "The federal EEO laws do not prevent an employer from requiring all employees physically entering the workplace to be vaccinated for COVID-19.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-ii-1",
+          "prettyAID": "a",
+          "answer": "Teachers",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        },
+        {
+          "AID": "1a-ii-2",
+          "prettyAID": "b",
+          "answer": "Staff",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        },
+        {
+          "AID": "1a-ii-3",
+          "prettyAID": "c",
+          "answer": "Students",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "1a-iii",
+      "question": "Which aspects will you need legal approval for",
+      "description": "See <a href='https://www.eeoc.gov/wysk/what-you-should-know-about-covid-19-and-ada-rehabilitation-act-and-other-eeo-laws' target='_blank'>here</a> for more information",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-iii-1",
+          "prettyAID": "a",
+          "answer": "Longstanding Exemptions",
+          "description": "An employee who does not get vaccinated due to a disability (covered by the ADA) or a sincerely held religious belief, practice, or observance(covered by Title VII) may be entitled to a reasonable accommodation that does not pose an undue hardship on the operation of the employer’s business.  For example, as a reasonable accommodation, an un-vaccinated employee entering the workplace might wear a face mask, work at a social distance from coworkers or non-employees, work a modified shift, get periodic tests for COVID-19, be given the opportunity to telework, or finally, accept a reassignment.",
+          "resources": [],
+          "nextQID": "1a-iv"
+        },
+        {
+          "AID": "1a-iii-2",
+          "prettyAID": "b",
+          "answer": "Temporary Exemptions",
+          "description": "Employees who are not vaccinated because of pregnancy may be entitled (under Title VII) to adjustments to keep working, if the employer makes modifications or exceptions for other employees.  These modifications may be the same as the accommodations made for an employee based on disability or religion.",
+          "resources": [],
+          "nextQID": "1a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "1a-iv",
+      "question": "How will you validate the vaccination status",
+      "description": "Unfortunately, there have already been identified cases of fraud relating to fake COVID-19 vaccination records. If you are concerned about this, you may wish to validate the vaccine records reported to your system.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-iv-1",
+          "prettyAID": "a",
+          "answer": "No validation (honor system)",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-2",
+          "prettyAID": "b",
+          "answer": "State system",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-3",
+          "prettyAID": "c",
+          "answer": "Visual check of vaccine card",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        },
+        {
+          "AID": "1a-iv-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "1a-v"
+        }
+      ]
+    },
+     {
+      "QID": "1a-v",
+      "question": "How will you message parents about the vaccine requirements",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a-v-1",
+          "prettyAID": "a",
+          "answer": "Email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-v-2",
+          "prettyAID": "b",
+          "answer": "Calls",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1a-v-3",
+          "prettyAID": "c",
+          "answer": "Mailings",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i",
+      "question": "Will you collect vaccine data",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "If you do not collect vaccine data, you will need to rely on an honor system for any policy changes related to vaccine status.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2",
+          "prettyAID": "b",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "1b-i-2-a"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i-2-a",
+      "question": "How will you collect vaccination data",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-2-a-i",
+          "prettyAID": "a",
+          "answer": "Online",
+          "description": "If using an online reporting system, be sure that there is an offline version available for those without internet access",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        },
+        {
+          "AID": "1b-i-2-a-ii",
+          "prettyAID": "b",
+          "answer": "Paper",
+          "description": "Remember that vaccine records are health data, and should be stored securely.",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        },
+        {
+          "AID": "1b-i-2-a-iii",
+          "prettyAID": "c",
+          "answer": "Existing vaccine reporting system",
+          "description": "You likely already have a vaccination reporting system for other vaccines that could be used. Be sure to check that the method of reporting allows for COVID-19 vaccine records, as these might not be included in pediatrician records.",
+          "resources": [],
+          "nextQID": "1b-i-2-b"
+        }
+      ]
+    },
+     {
+      "QID": "1b-i-2-b",
+      "question": "How will you validate the vaccination status",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1b-i-2-b-i",
+          "prettyAID": "a",
+          "answer": "No validation (honor system)",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-ii",
+          "prettyAID": "b",
+          "answer": "State system",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-iii",
+          "prettyAID": "c",
+          "answer": "Visual check of vaccine card",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b-i-2-b-iv",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+     {
+      "QID": "2",
+      "question": "Will you offer vaccine clinics?",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-i"
+        },
+        {
+          "AID": "2b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i"
+        }
+      ]
+    },
+     {
+      "QID": "2a-i",
+      "question": "What consent will you need",
+       "multiple": true,
+      "description": "Your legal counsel will need to guide you through the vaccine consent process",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-i-1",
+          "prettyAID": "a",
+          "answer": "Parental consent",
+          "description": "You will want to check state law to see if parental consent is required for vaccination",
+          "resources": [],
+          "nextQID": "2a-ii"
+        },
+         {
+          "AID": "2a-i-2",
+          "prettyAID": "b",
+          "answer": "Student assent",
+          "description": "If parental consent is required, you may still want to ask students to assent to vaccination. While not legally binding, this is preferred from an ethical standpoint.",
+          "resources": [],
+          "nextQID": "2a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii",
+      "question": "How will you staff the clinic",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1",
+          "prettyAID": "a",
+          "answer": "school nurse(s)",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        },
+        {
+          "AID": "2a-ii-2",
+          "prettyAID": "b",
+          "answer": "partner with local public health",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        },
+        {
+          "AID": "2a-ii-3",
+          "prettyAID": "c",
+          "answer": "other partnerships",
+          "description": "hospitals, pharmacies, etc.",
+          "resources": [],
+          "nextQID": "2a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iii",
+      "question": "How will you message potential participants",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iii-1",
+          "prettyAID": "a",
+          "answer": "email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-2",
+          "prettyAID": "b",
+          "answer": "call",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-3",
+          "prettyAID": "c",
+          "answer": "mailing",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+         {
+          "AID": "2a-iii-4",
+          "prettyAID": "d",
+          "answer": "social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iv",
+      "question": "How will you plan the number of doses needed",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iv-1",
+          "prettyAID": "a",
+          "answer": "Require appointments",
+          "description": "While this will make it easier to plan, requiring appointments may limit participation",
+          "resources": [],
+          "nextQID": "2a-v"
+        },
+        {
+          "AID": "2a-iv-2",
+          "prettyAID": "b",
+          "answer": "use surveys to estimate",
+          "description": "Understand that surveys may not give a clear picture. They may also limit participation, as some who don’t take the survey, or who respond that they don’t plan to vaccinate, may not feel they can or should participate.",
+          "resources": [],
+          "nextQID": "2a-v"
+        },
+        {
+          "AID": "2a-iv-3",
+          "prettyAID": "c",
+          "answer": "no planning for doses",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-v"
+        }
+      ]
+    },
+     {
+      "QID": "2a-v",
+      "question": "How will you obtain the vaccine doses",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-v-1",
+          "prettyAID": "a",
+          "answer": "Partner with local public health",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2a-v-2",
+          "prettyAID": "b",
+          "answer": "Other partnerships",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "2b-i",
+      "question": "Will you share information about other ways to be vaccinated",
+      "description": "If you want to encourage vaccination, you can share with your staff and parents the times and locations of different vaccine clinics and other vaccination sites within or near your district.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2b-i-2",
+          "prettyAID": "b",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-a"
+        }
+      ]
+    },
+     {
+      "QID": "2b-i-2-a",
+      "question": "How will you message about other ways to be vaccinated",
+       "multiple": "true",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i-2-a-i",
+          "prettyAID": "a",
+          "answer": "email",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-ii",
+          "prettyAID": "b",
+          "answer": "call",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-iii",
+          "prettyAID": "c",
+          "answer": "mailing",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        },
+        {
+          "AID": "2b-i-2-a-iv",
+          "prettyAID": "d",
+          "answer": "social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "2b-i-2-b"
+        }
+      ]
+    },
+     {
+      "QID": "2b-i-2-b",
+      "question": "How will you get information to share about other vaccine sources",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2b-i-2-b-i",
+          "prettyAID": "a",
+          "answer": "Partner with local public health",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+         {
+          "AID": "2b-i-2-b-ii",
+          "prettyAID": "b",
+          "answer": "Other partnerships",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        },
+         {
+          "AID": "2b-i-2-b-iii",
+          "prettyAID": "c",
+          "answer": "Watching local news/social media",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "3",
+      "question": "Which other COVID-19 control requirements will you change based on vaccines",
+       "multiple": true,
+      "description": "One of the advantages of vaccination is that it allows people to more safely return to regular activities. By changing policies for the vaccinated, you may encourage more people to choose vaccination",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a",
+          "prettyAID": "a",
+          "answer": "Testing",
+          "description": "The CDC does not recommend asymptomatic screening for fully vaccinated individuals.",
+          "resources": [],
+          "nextQID": "3a-i"
+        },
+        {
+          "AID": "3b",
+          "prettyAID": "b",
+          "answer": "Quarantine",
+          "description": "The CDC says that asymptomatic fully vaccinated people should not be required to quarantine after close exposure.",
+          "resources": [],
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3c",
+          "prettyAID": "c",
+          "answer": "Distancing",
+          "description": "The CDC guidelines state that fully vaccinated people can gather without physical distancing. However, this applies only to fully vaccinated people; un-vaccinated or partially vaccinated people should still limit their close contact with other un-vaccinated or partially vaccinated people.",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3d",
+          "prettyAID": "d",
+          "answer": "Masks",
+          "description": "The CDC has said that fully vaccinated people do not need to wear masks, with the exception of in healthcare facilities, on public transit, and where required by local regulations. However, they recommend that K-12 schools maintain their mask policies at present.",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3e",
+          "prettyAID": "e",
+          "answer": "Activities",
+          "description": "While vaccine requirements for school may be difficult to enforce, vaccine and/or testing requirements for extracurricular activities can be helpful to encourage uptake. This is especially important, as these activities have been associated with higher risk of infection spread.",
+          "resources": [],
+          "nextQID": "3e-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a"
+          }
+        ]
+      },
+      "QID": "3a-i",
+      "question": "Will fully vaccinated people be required to test",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3a-i-2",
+          "prettyAID": "b",
+          "answer": "If symptomatic only",
+          "recommended": true,
+          "description": "",
+          "resources": [],
+          "nextQID": "3b-i"
+        },
+        {
+          "AID": "3a-i-3",
+          "prettyAID": "c",
+          "answer": "Yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3b-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3b"
+          }
+        ]
+      },
+      "QID": "3b-i",
+      "question": "Will fully vaccinated people be required to quarantine after exposure",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3b-i-1",
+          "prettyAID": "a",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3b-i-2",
+          "prettyAID": "b",
+          "answer": "Only if within a smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        },
+        {
+          "AID": "3b-i-3",
+          "prettyAID": "c",
+          "answer": "No, but a negative test will be required to return to activities",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3c"
+          }
+        ]
+      },
+      "QID": "3c-i",
+      "question": "How will distancing requirements change for fully vaccinated people",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-i-1",
+          "prettyAID": "a",
+          "answer": "smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        },
+         {
+          "AID": "3c-i-2",
+          "prettyAID": "b",
+          "answer": "larger pods",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        },
+         {
+          "AID": "3c-i-3",
+          "prettyAID": "c",
+          "answer": "all restrictions lifted",
+          "description": "",
+          "resources": [],
+          "nextQID": "3c-ii"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3c"
+          }
+        ]
+      },
+      "QID": "3c-ii",
+      "question": "Will distancing requirements change for the school as a whole after a certain vaccination level is reached",
+      "description": "The CDC has said that fully vaccinated people should not be included when setting capacity limits on spaces, meaning that capacity limits only apply to un-vaccinated or partially vaccinated people. At a certain vaccination level, that means a school may not have to worry about distancing or capacity.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-ii-1",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "At what vaccination level will you change distancing requirements?It is recommended that 80-90% of people should be vaccinated to protect against outbreaks",
+          "resources": [],
+          "nextQID": "3c-ii-1-a"
+        },
+        {
+          "AID": "3c-ii-2",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        }
+      ]
+    },
+     {
+      "QID": "3c-ii-1-a",
+      "question": "How will distancing requirements change",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3c-ii-1-a-i",
+          "prettyAID": "a",
+          "answer": "Smaller distance",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3c-ii-1-a-ii",
+          "prettyAID": "b",
+          "answer": "Larger pods",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        },
+        {
+          "AID": "3c-ii-1-a-iii",
+          "prettyAID": "c",
+          "answer": "All restrictions lifted",
+          "description": "",
+          "resources": [],
+          "nextQID": "3d-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3d"
+          }
+        ]
+      },
+      "QID": "3d-i",
+      "question": "What mask requirements will you have for fully vaccinated people",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3d-i-1",
+          "prettyAID": "a",
+          "answer": "No masks required",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-2",
+          "prettyAID": "b",
+          "answer": "No masks in outdoor areas",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-3",
+          "prettyAID": "c",
+          "answer": "No masks in private spaces",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-4",
+          "prettyAID": "d",
+          "answer": "No masks in classrooms, but still required in hallways",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        },
+        {
+          "AID": "3d-i-5",
+          "prettyAID": "e",
+          "answer": "No change in mask requirements",
+          "recommended": true,
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-i"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3e"
+          }
+        ]
+      },
+      "QID": "3e-i",
+      "question": "Will any activities be allowed only if vaccinated",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3e-i-1",
+          "prettyAID": "a",
+          "answer": "Sports",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-2",
+          "prettyAID": "b",
+          "answer": "Music",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-3",
+          "prettyAID": "c",
+          "answer": "Theater/debate",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        },
+         {
+          "AID": "3e-i-5",
+          "prettyAID": "e",
+          "answer": "None",
+          "description": "",
+          "resources": [],
+          "nextQID": "3e-ii"
+        }
+      ]
+    },
+     {
+       "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3e"
+          }
+        ]
+      },
+      "QID": "3e-ii",
+      "question": "Will any activities be allowed only if vaccinated or testing",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3e-ii-1",
+          "prettyAID": "a",
+          "answer": "Sports",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-2",
+          "prettyAID": "b",
+          "answer": "Music",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-3",
+          "prettyAID": "c",
+          "answer": "Theater/debate",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-4",
+          "prettyAID": "d",
+          "answer": "Other",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+         {
+          "AID": "3e-ii-5",
+          "prettyAID": "e",
+          "answer": "None",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activityID": "1",
+      "activity": "Online system for collecting vaccine data",
+      "links": [
+        "https://www.hhs.gov/sites/default/files/2019-hipaa-ferpa-joint-guidance-508.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-i-1"
+          },
+          {
+            "AID": "1b-i-2-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "2",
+      "activity": "Vaccine reporting form",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-i-2"
+          },
+          {
+            "AID": "1b-i-2-a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "3",
+      "activity": "Adapt existing vaccine reporting system to accept COVID vaccine data",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-i-3"
+          },
+          {
+            "AID": "1b-i-2-a-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "4",
+      "activity": "Policy for who will be required to vaccinate",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/essential-workers.html#anchor_1624918112376"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "5",
+      "activity": "Legal review of policy for who will be required to vaccinate",
+      "links": [
+        "https://www.eeoc.gov/laws/guidance/pandemic-preparedness-workplace-and-americans-disabilities-act"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "6",
+      "activity": "List of exceptions to vaccine policy",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "7",
+      "activity": "Process for validating vaccine status through the state system",
+      "links": [
+        "https://www.cdc.gov/vaccines/programs/iis/contacts-locate-records.html#state"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-2"
+          },
+          {
+            "AID": "1b-i-2-b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "8",
+      "activity": "Process for checking vaccine cards",
+      "links": [
+        "https://www.goodrx.com/blog/covid-vaccine-passports/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-3"
+          },
+          {
+            "AID": "1b-i-2-b-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "9",
+      "activity": "Validation system for vaccination",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-iv-4"
+          },
+           {
+            "AID": "1b-i-2-b-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "10",
+      "activity": "Email message about vaccine requirements and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "11",
+      "activity": "Phone script and recording about vaccine requirements and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "12",
+      "activity": "Compose, print, and mail information about vaccine requirements",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "1a-v-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "13",
+      "activity": "Consent form for vaccine clinics",
+      "links": [
+        "https://www.intermed.com/content/uploads/COVID-19-Vaccine-Consent-Form-Patients-1.pdf",
+        "https://www.walgreens.com/images/adaptive/si/pdf/1624373-0331_FY21_COVID19_VAR_OffSite_ENG.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "14",
+      "activity": "Check consent law for minors",
+      "links": [
+        "https://www.vaxteen.org/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "15",
+      "activity": "Assent form for vaccine clinics",
+      "links": [
+        "https://www.seattlechildrens.org/research/resources/institutional-review-board/forms-and-policies/assent-consent-forms/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "16",
+      "activity": "Staffing plan for vaccine clinics",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/training-education/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "17",
+      "activity": "Partnership agreement with public health for vaccine clinic support",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/vaccination-provider-support.html",
+        "https://www.cdc.gov/publichealthgateway/healthdirectories/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-ii-2"
+          },
+          {
+            "AID": "2a-v-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "18",
+      "activity": "Partnership agreement for vaccine clinic staffing",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/training-education/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-ii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "19",
+      "activity": "Partnership agreement for vaccine clinic doses",
+      "links": [
+        "https://www.cdc.gov/vaccines/hcp/admin/storage/toolkit/index.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-v-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "20",
+      "activity": "Email message about vaccine clinic and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "21",
+      "activity": "Phone script and recording about vaccine clinic and schedule for sending",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "22",
+      "activity": "Compose, print, and mail information about vaccine clinic",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "23",
+      "activity": "Social media posts about vaccine clinic composed and shared across platforms",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/toolkits/schools-childcare.html",
+        "https://www.cdc.gov/vaccines/covid-19/planning/slv-communications.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iii-4"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "24",
+      "activity": "Appointment system arranged for vaccine clinic",
+      "links": [
+        "https://www.vaccines.gov/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "25",
+      "activity": "Survey about vaccine clinic composed and disseminated",
+      "links": [
+        "https://www.surveymonkey.com/r/NHPZ2W3"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "26",
+      "activity": "Survey about vaccine clinic analyzed",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a-iv-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "27",
+      "activity": "Email message about vaccine sources and schedule for sending",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "28",
+      "activity": "Phone script and recording about vaccine sources and schedule for sending",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "29",
+      "activity": "Compose, print, and mail information about vaccine sources",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "30",
+      "activity": "Social media posts about vaccine sources composed and shared across platforms",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-a-iv"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "31",
+      "activity": "Partnership with public health on vaccine source information sharing",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-b-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "32",
+      "activity": "Partnership with other vaccine sources on information sharing",
+      "links": [
+        "https://www.cdc.gov/vaccines/covid-19/reporting/vaccinefinder.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-b-ii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "33",
+      "activity": "Assign employee to be responsible for finding information about vaccine sources",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2b-i-2-b-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "34",
+      "activity": "List of symptoms for which testing of vaccinated people is indicated",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3a-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "35",
+      "activity": "Rewrite testing policy to exclude vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "36",
+      "activity": "Rewrite quarantine policy to exclude vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "37",
+      "activity": "Rewrite quarantine policy to change distances for vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "38",
+      "activity": "Rewrite quarantine policy to allow vaccinated people to test out",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3b-i-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "39",
+      "activity": "Rewrite distancing policy to allow closer contact among vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1619526673330"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "40",
+      "activity": "Change pod guidelines based on vaccination status",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-2"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "41",
+      "activity": "Change distancing policy to exempt vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1617376555813"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-i-3"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "42",
+      "activity": "Establish vaccination level at which distancing guidelines will change",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#anchor_1616080121423"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "43",
+      "activity": "Rewrite distancing guidelines to address changes after vaccination reaches the target level",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated-guidance.html#anchor_1619526673330"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "44",
+      "activity": "Prepare and distribute messaging for all staff and parents on what changes will be made at given vaccination levels",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/pdfs/choosingSaferAct.pdf?v=1"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3c-ii-1"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "45",
+      "activity": "Rewrite mask policy for vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3d-i-1"
+          },
+          {
+            "AID": "3d-i-2"
+          },
+          {
+            "AID": "3d-i-3"
+          },
+          {
+            "AID": "3d-i-4"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "46",
+      "activity": "Write and share policy around vaccination requirements for extracurricular activities",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3e-i-1"
+          },
+          {
+            "AID": "3e-i-2"
+          },
+          {
+            "AID": "3e-i-3"
+          },
+          {
+            "AID": "3e-i-4"
+          }
+        ]
+      }
+    },
+     {
+      "activityID": "47",
+      "activity": "Write and share policy changes around testing for extracurricular activities in vaccinated people",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#fully-vacc"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3e-ii-1"
+          },
+          {
+            "AID": "3e-ii-2"
+          },
+          {
+            "AID": "3e-ii-3"
+          },
+          {
+            "AID": "3e-ii-4"
+          }
+        ]
+      }
+    }
+  ]
+}

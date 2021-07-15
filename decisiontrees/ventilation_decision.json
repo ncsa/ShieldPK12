@@ -1,107 +1,267 @@
-[
-  {
-    "QID": "1",
-    "question": "What is the ventilation rate in each of the following areas",
-    "description": "Use the guide to calculate your ventilation rate in each room that will be occupied for any substantial length of time or by a large number of people.",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "1a",
-        "prettyAID": "a",
-        "answer": "Classrooms",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
-      },
-       {
-        "AID": "1b",
-        "prettyAID": "b",
-        "answer": "Hallways",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
-      },
-       {
-        "AID": "1c",
-        "prettyAID": "c",
-        "answer": "Cafeteria",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
-      },
-       {
-        "AID": "1d",
-        "prettyAID": "d",
-        "answer": "Gymnasium",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
-      },
-       {
-        "AID": "1e",
-        "prettyAID": "e",
-        "answer": "Bathrooms",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
-      },
-       {
-        "AID": "1f",
-        "prettyAID": "f",
-        "answer": "Administrative offices, including nurse's office",
-        "description": "",
-        "resources": [],
-        "nextQID": "2"
+{
+  "moduleName": "ventilation",
+  "moduleDescription": "Assessing and improving air flow",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "What is the ventilation rate in each of the following areas",
+      "description": "Use the guide to calculate your ventilation rate in each room that will be occupied for any substantial length of time or by a large number of people.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "Classrooms",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "Hallways",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1c",
+          "prettyAID": "c",
+          "answer": "Cafeteria",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1d",
+          "prettyAID": "d",
+          "answer": "Gymnasium",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1e",
+          "prettyAID": "e",
+          "answer": "Bathrooms",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1f",
+          "prettyAID": "f",
+          "answer": "Administrative offices, including nurse's office",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+    {
+      "QID": "2",
+      "question": "How will you improve ventilation in deficient areas",
+      "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a",
+          "prettyAID": "a",
+          "answer": "Open windows",
+          "description": "You can increase ventilation by opening windows, especially if you can create a cross-breeze by keeping classroom doors open. However, you should not rely on this if weather will be an issue.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "2b",
+          "prettyAID": "b",
+          "answer": "Increase outdoor air intake",
+          "description": "Your central ventilation system should be set to maximize the outdoor air intake. This may increase heating and cooling costs.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "2c",
+          "prettyAID": "c",
+          "answer": "A filtration system",
+          "description": "You can install filters into your central ventilation system. These filters should be MERV13 or greater; you will need to check that your system can handle the impact on air flow",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "2d",
+          "prettyAID": "d",
+          "answer": "Portable air cleaners",
+          "description": "You can supplement your central ventilation system with portable air cleaners. They should be sufficient to the size and configuration of the space. They should be placed as close to the center of the room as possible, but where they will not blow on any occupants.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "2e",
+          "prettyAID": "e",
+          "answer": "Empty time",
+          "description": "Any space that will have changing groups of people should have empty time in between groups, if possible. This is especially important for cafeterias and gyms, where risk is highest.",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activity": "Calculate base air change rate in each room/area",
+      "activityID": "1",
+      "links": [
+        "https://schools.forhealth.org/ventilation-guide/"
+      ],
+      "rules": {
+        "operator": "ALL",
+        "criteria": []
       }
-    ]
-  },
-  {
-    "QID": "2",
-    "question": "How will you improve ventilation in deficient areas",
-    "multiple": true,
-    "description": "",
-    "resources": [],
-    "answers": [
-      {
-        "AID": "2a",
-        "prettyAID": "a",
-        "answer": "Open windows",
-        "description": "You can increase ventilation by opening windows, especially if you can create a cross-breeze by keeping classroom doors open. However, you should not rely on this if weather will be an issue.",
-        "resources": [],
-        "nextQID": null
-      },
-      {
-        "AID": "2b",
-        "prettyAID": "b",
-        "answer": "Increase outdoor air intake",
-        "description": "Your central ventilation system should be set to maximize the outdoor air intake. This may increase heating and cooling costs.",
-        "resources": [],
-        "nextQID": null
-      },
-      {
-        "AID": "2c",
-        "prettyAID": "c",
-        "answer": "A filtration system",
-        "description": "You can install filters into your central ventilation system. These filters should be MERV13 or greater; you will need to check that your system can handle the impact on air flow",
-        "resources": [],
-        "nextQID": null
-      },
-      {
-        "AID": "2d",
-        "prettyAID": "d",
-        "answer": "Portable air cleaners",
-        "description": "You can supplement your central ventilation system with portable air cleaners. They should be sufficient to the size and configuration of the space. They should be placed as close to the center of the room as possible, but where they will not blow on any occupants.",
-        "resources": [],
-        "nextQID": null
-      },
-      {
-        "AID": "2e",
-        "prettyAID": "e",
-        "answer": "Empty time",
-        "description": "Any space that will have changing groups of people should have empty time in between groups, if possible. This is especially important for cafeterias and gyms, where risk is highest.",
-        "resources": [],
-        "nextQID": null
+    },
+    {
+      "activity": "Assessment of rooms requiring increased ventilation",
+      "activityID": "2",
+      "links": [
+        "https://docs.google.com/spreadsheets/d/1NXGvgRi0CeRP25rI-O3iyQyZ2nmZAcyeXQUWP-CydVk/edit?usp=sharing"
+      ],
+      "rules": {
+        "operator": "ALL",
+        "criteria": []
       }
-    ]
-  }
-]
+    },
+    {
+      "activity": "Check that all windows can be opened and remain open safely",
+      "activityID": "3",
+      "links": [
+        "https://docs.google.com/spreadsheets/d/1NXGvgRi0CeRP25rI-O3iyQyZ2nmZAcyeXQUWP-CydVk/edit?usp=sharing"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Set central ventilation system to maximize outdoor air intake",
+      "activityID": "4",
+      "links": [
+        "https://www.ashrae.org/technical-resources/filtration-disinfection#mechanical"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Check with your HVAC team if your system can the airflow impact of a MERV 13 filter",
+      "activityID": "5",
+      "links": [
+        "https://www.epa.gov/indoor-air-quality-iaq/what-merv-rating-1"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2c"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Install MERV 13 filter in HVAC",
+      "activityID": "6",
+      "links": [
+        "https://www.epa.gov/coronavirus/what-kind-filter-should-i-use-my-home-hvac-system-help-protect-my-family-covid-19",
+        "https://www.ashrae.org/technical-resources/filtration-and-disinfection-faq"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2c"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Determine the size and type of portable air cleaner needed for each space",
+      "activityID": "7",
+      "links": [
+        "https://tinyurl.com/portableaircleanertool",
+        "https://docs.google.com/spreadsheets/d/1NEhk1IEdbEi_b3wa6gI_zNs8uBJjlSS-86d4b7bW098/edit#gid=1882881703"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Purchase and place portable air cleaners in each space needed",
+      "activityID": "8",
+      "links": [
+        "https://www.consumerreports.org/cro/air-purifiers/buying-guide/index.htm",
+        "https://www.grainger.com/know-how/equipment-information/kh-portable-air-purifiers-cleaners-guide"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2d"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Schedule empty time for shared spaces",
+      "activityID": "9",
+      "links": [
+        "https://templates.office.com/en-us/my-class-schedule-tm00000002"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2e"
+          }
+        ]
+      }
+    },
+    {
+      "activity": "Reassess air change rate in each room/area after mitigations in place",
+      "activityID": "10",
+      "links": [
+        "https://schools.forhealth.org/ventilation-guide/"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "2a"
+          },
+          {
+            "AID": "2b"
+          },
+          {
+            "AID": "2c"
+          },
+          {
+            "AID": "2d"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 #!/bin/sh
 
-BRANCH=develop
+BRANCH=$(git branch --show-current)
+echo "current branch is: " $BRANCH
 git checkout $BRANCH
 
 OLD_HEAD=$(git rev-parse HEAD)

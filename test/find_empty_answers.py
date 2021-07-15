@@ -3,16 +3,17 @@ import json
 
 if __name__ == "__main__":
     decision_fnames = [
-        "../cleaning_decision.json",
-        "../distancing_decision.json",
-        "../mask_decision.json",
-        "../testing_decision.json",
-        "../ventilation_decision.json",
-        "../IT_decision.json"
+        "../decisiontrees/cleaning_decision.json",
+        "../decisiontrees/distancing_decision.json",
+        "../decisiontrees/mask_decision.json",
+        "../decisiontrees/testing_decision.json",
+        "../decisiontrees/ventilation_decision.json",
+        "../decisiontrees/data-infrastructure_decision.json",
+        "../decisiontrees/vaccine_decision.json"
     ]
     for json_fname in decision_fnames:
         with open(json_fname, "r") as f:
-            module = json.load(f)
+            module = json.load(f)["moduleContent"]
 
             for page in module:
                 for answer in page["answers"]:

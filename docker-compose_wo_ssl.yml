@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    command: gunicorn app:app --config gunicorn.config.py
+    expose:
+      - 5000
+  nginx:
+    build: ./nginx_wo_ssl
+#    volumes:
+#      - static_volume:/home/app/web/project/static
+    ports:
+      - 80:80
+    depends_on:
+      - web

@@ -2,11 +2,10 @@ import json
 
 class Module:
 
-    def __init__(self, json_fname):
-        with open(json_fname, "r") as f:
-            self.module = json.load(f)
-            self.max_num_q = len(self.module)
-            self.min_num_q = len([m for m in self.module if "rules" not in m ])
+    def __init__(self, module):
+        self.module = module
+        self.max_num_q = len(self.module)
+        self.min_num_q = len([m for m in self.module if "rules" not in m ])
 
     def get_current_page(self, question_id="1"):
         for page in self.module:
