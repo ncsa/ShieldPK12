@@ -1,6 +1,6 @@
 {
   "moduleName": "vaccine",
-  "moduleDescription": "",
+  "moduleDescription": "Incorporating vaccination and vaccine data into a control program",
   "moduleContent": [
     {
       "QID": "1",

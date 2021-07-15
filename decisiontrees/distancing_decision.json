@@ -1,6 +1,6 @@
 {
   "moduleName": "distancing",
-  "moduleDescription": "Minimizing potentially infectious contactss",
+  "moduleDescription": "Minimizing potentially infectious contacts",
   "moduleContent": [
     {
       "QID": "1",
