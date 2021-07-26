@@ -21,10 +21,12 @@ moduleList.forEach(function (m, index) {
         $(".module-name").empty().text(m["prettyModuleName"]);
 
         // next module
-        var nextModule = moduleList[index + 1]
-        $(".next-module-name").text(nextModule["prettyModuleName"])
-        $("#next-module-btn").attr("href", `/${nextModule["moduleName"]}/questions`)
-    };
+        if (index < moduleList.length - 1){
+              var nextModule = moduleList[index + 1];
+            $(".next-module-name").text(nextModule["prettyModuleName"]);
+            $("#next-module-btn").attr("href", `/${nextModule["moduleName"]}/questions`);
+        }
+    }
 });
 
 
