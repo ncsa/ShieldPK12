@@ -47,7 +47,7 @@
           "answer": "No",
           "description": "",
           "resources": [],
-          "nextQID": ""
+          "nextQID": "3"
         }
       ]
     },
@@ -117,8 +117,8 @@
     },
      {
       "QID": "2a-ii-1-a",
-      "question": "a",
-      "description": "Will you provide special adaptations",
+      "question": "Will you provide special adaptations",
+      "description": "",
       "resources": [],
       "answers": [
         {
@@ -165,8 +165,8 @@
     },
      {
       "QID": "2a-ii-1-c",
-      "question": "Will you provide guidance for direct service providers (e.g., teachers, paraprofessionals, therapists, and others) regardless of vaccination status when they are working with students with disabilities",
-      "description": "",
+      "question": "Will you provide guidance for direct service providers regardless of vaccination status when they are working with students with disabilities",
+      "description": "e.g., teachers, paraprofessionals, therapists, and others",
       "resources": [],
       "answers": [
         {
@@ -229,7 +229,7 @@
           "AID": "2a-iv-i",
           "prettyAID": "a",
           "answer": "yes",
-          "description": "Please refer to <a href=\"/testing\" target=\"_blank\">testing module</a>",
+          "description": "Please refer to <a href=\"/testing/questions\" target=\"_blank\">testing module</a>",
           "resources": [],
           "nextQID": "3"
         },
@@ -407,7 +407,7 @@
      {
       "QID": "4a-i",
       "question": "Will you schedule students in person and remote",
-      "description": "Please refer to <a href=\"/distancing\" target=\"_blank\">distancing module</a>",
+      "description": "Please refer to <a href=\"/distancing/questions\" target=\"_blank\">distancing module</a>",
       "resources": [],
       "answers": [
         {
