@@ -9,7 +9,8 @@ if __name__ == "__main__":
         "../decisiontrees/testing_decision.json",
         "../decisiontrees/ventilation_decision.json",
         "../decisiontrees/data-infrastructure_decision.json",
-        "../decisiontrees/vaccine_decision.json"
+        "../decisiontrees/vaccine_decision.json",
+        "../decisiontrees/special_education_decision.json"
     ]
     for json_fname in decision_fnames:
         with open(json_fname, "r") as f:

@@ -742,16 +742,16 @@
         "operator": "OR",
         "criteria": [
           {
-            "AID": "3a-iv-a"
+            "AID": "3a-iv-1"
           },
           {
-            "AID": "3a-iv-b"
+            "AID": "3a-iv-2"
           },
           {
-            "AID": "3a-iv-c"
+            "AID": "3a-iv-3"
           },
           {
-            "AID": "3a-iv-d"
+            "AID": "3a-iv-4"
           }
         ]
       }
