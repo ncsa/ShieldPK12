@@ -6,27 +6,33 @@ ROOT_QUESTION_ID = "1"
 
 // assume pattern will be /module/questions; data is passed from flask endpoint
 moduleList = [];
-data.forEach(function (item, i) { moduleList.push(item["moduleName"]); });
+data.forEach(function (item, i) { moduleList.push(
+    {
+        "moduleName": item["moduleName"],
+        "prettyModuleName": item["prettyModuleName"]
+    }
+); });
 
-// current module
+$(".next-module-name").text("Home");
 module = $(location).attr('href').split("/").slice(-2)[0];
-$(".module-name").empty().text(module);
+moduleList.forEach(function (m, index) {
+    if (m["moduleName"] === module){
+        // current module
+        $(".module-name").empty().text(m["prettyModuleName"]);
 
-// next module
-var currModuleInd = moduleList.indexOf(module);
-if (currModuleInd > -1 && currModuleInd < moduleList.length - 1) {
-    var nextModule = moduleList[currModuleInd + 1]
-    $(".next-module-name").text(nextModule)
-    $("#next-module-btn").attr("href", `/${nextModule}/questions`)
-} else {
-    $(".next-module-name").text("Home");
-}
+        // next module
+        var nextModule = moduleList[index + 1]
+        $(".next-module-name").text(nextModule["prettyModuleName"])
+        $("#next-module-btn").attr("href", `/${nextModule["moduleName"]}/questions`)
+    };
+});
+
 
 // populate sidebar
 $("#list-group-items").empty();
 moduleList.forEach(function (m, i) {
-    $("#list-group-items").append(`<a href="/` + m + `/questions" class="list-group-item list-group-item-action"
-       id="sidenav-` + m + `">` + m + `</a>`
+    $("#list-group-items").append(`<a href="/` + m["moduleName"] + `/questions" class="list-group-item list-group-item-action"
+       id="sidenav-` + m["moduleName"] + `">` + m["prettyModuleName"] + `</a>`
     );
     // set active module in sidenav
     $(".sidenav").find("#sidenav-" + module).addClass("active");
