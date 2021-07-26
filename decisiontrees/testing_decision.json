@@ -1,5 +1,6 @@
 {
   "moduleName": "testing",
+  "prettyModuleName": "testing",
   "moduleDescription": "Use of tests and test results",
   "moduleContent": [
     {

@@ -1,5 +1,6 @@
 {
   "moduleName": "IT",
+  "prettyModuleName": "IT",
   "moduleDescription": "Collecting, managing, and sharing health data",
   "moduleContent": [
   {

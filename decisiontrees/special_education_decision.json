@@ -1,5 +1,6 @@
 {
-  "moduleName": "Special Education",
+  "moduleName": "special-education",
+  "prettyModuleName": "Special Education",
   "moduleDescription": "",
   "moduleContent": [
     {
@@ -12,7 +13,7 @@
           "AID": "1a",
           "prettyAID": "a",
           "answer": "Yes",
-          "description": "When communicating with families and guardians about in-person and remote learning, schools must comply with the effective communication requirements of ADA, including the use of accessible formats for family members and guardians with disabilities. For example, documents posted on the school websites must be accessible to individuals with disabilities, <a href=\\\"https://wwwn.cdc.gov/pubs/other-languages?Sort=Lang%3A%3Aasc\\\" target=\\\"_blank\\\">posted in the languages that parents can understand</a>, and use auxiliary aids and services for family members or guardians who are deaf or hard of hearing.",
+          "description": "When communicating with families and guardians about in-person and remote learning, schools must comply with the effective communication requirements of ADA, including the use of accessible formats for family members and guardians with disabilities. For example, documents posted on the school websites must be accessible to individuals with disabilities, <a href=\"https://wwwn.cdc.gov/pubs/other-languages?Sort=Lang%3A%3Aasc\" target=\"_blank\">posted in the languages that parents can understand</a>, and use auxiliary aids and services for family members or guardians who are deaf or hard of hearing.",
           "resources": [],
           "nextQID": "2"
         },

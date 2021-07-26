@@ -1,5 +1,6 @@
 {
   "moduleName": "ventilation",
+  "prettyModuleName": "ventilation",
   "moduleDescription": "Assessing and improving air flow",
   "moduleContent": [
     {

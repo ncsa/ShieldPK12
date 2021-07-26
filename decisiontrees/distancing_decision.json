@@ -1,5 +1,6 @@
 {
   "moduleName": "distancing",
+  "prettyModuleName": "distancing",
   "moduleDescription": "Minimizing potentially infectious contacts",
   "moduleContent": [
     {
