@@ -4,9 +4,9 @@
   "moduleDescription": "Additional considerations for special education situations",
   "moduleContent": [
     {
-      "QID": "0",
-      "question": "Acknowledgment",
-      "description": "You must provide a free and appropriate public education (FAPE) consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic. To ensure the compliance with Individuals with Disabilities Education Act (IDEA),Section 504 of the Rehabilitation Act (Section 504), and Title II of the Americans with Disabilities Act, you should offer educational programs with specialized instruction and related services to address the unique needs for students with disabilities. Whether offering in-person or remote learning, schools must take into consideration the requirements of federal disability laws that require provision of FAPE and prohibit discrimination based on disability.",
+      "QID": "1",
+      "question": "Do you acknowledge that you must provide a free and appropriate public education (FAPE) consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic",
+      "description": "You must provide a <a href=\"https://www2.ed.gov/about/offices/list/ocr/frontpage/faq/rr/policyguidance/Supple%20Fact%20Sheet%203.21.20%20FINAL.pdf\" target=\"_blank\">free and appropriate public education (FAPE)</a> consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic. To ensure the compliance with <a href=\"https://sites.ed.gov/idea/osep-fast-facts-idea-45th-anniversary/\" target=\"_blank\">Individuals with Disabilities Education Act (IDEA)</a>, <a href=\"https://www2.ed.gov/policy/rights/reg/ocr/edlite-34cfr104.html#D\" target=\"_blank\">Section 504 of the Rehabilitation Act (Section 504)</a>, and <a href=\"https://www.ada.gov/\" target=\"_blank\">Title II of the Americans with Disabilities Act</a>, you should offer educational programs with specialized instruction and related services to address the unique needs for students with disabilities. Whether offering in-person or remote learning, schools must take into consideration the requirements of federal disability laws that require provision of FAPE and prohibit discrimination based on disability.",
       "resources": [],
       "answers": [
         {
@@ -15,12 +15,12 @@
           "answer": "Yes, I understand.",
           "description": "",
           "resources": [],
-          "nextQID": "1"
+          "nextQID": "1-start"
         }
       ]
     },
     {
-      "QID": "1",
+      "QID": "1-start",
       "question": "Will you communicate with families and guardians about in-person and remote learning",
       "description": "",
       "resources": [],
