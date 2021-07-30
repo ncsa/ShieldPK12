@@ -1,8 +1,24 @@
 {
   "moduleName": "special-education",
   "prettyModuleName": "Special Education",
-  "moduleDescription": "",
+  "moduleDescription": "Additional considerations for special education situations",
   "moduleContent": [
+    {
+      "QID": "0",
+      "question": "Acknowledgment",
+      "description": "You must provide a free and appropriate public education (FAPE) consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic. To ensure the compliance with Individuals with Disabilities Education Act (IDEA),Section 504 of the Rehabilitation Act (Section 504), and Title II of the Americans with Disabilities Act, you should offer educational programs with specialized instruction and related services to address the unique needs for students with disabilities. Whether offering in-person or remote learning, schools must take into consideration the requirements of federal disability laws that require provision of FAPE and prohibit discrimination based on disability.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "0a",
+          "prettyAID": "a",
+          "answer": "Yes, I understand.",
+          "description": "",
+          "resources": [],
+          "nextQID": "1"
+        }
+      ]
+    },
     {
       "QID": "1",
       "question": "Will you communicate with families and guardians about in-person and remote learning",
