@@ -40,28 +40,37 @@
           "recommended": true,
           "answer": "All (teachers, staff, and students)",
           "resources": [],
-          "description": "",
+          "description": "At this time, the CDC does not recommend testing asymptomatic individuals who are fully vaccinated",
           "nextQID": "3"
         },
         {
           "AID": "2b",
           "prettyAID": "b",
-          "answer": "Adults only",
-          "description": "Testing the teachers and staff only allows you to avoid the process of obtaining consent from and communicating test results to parents. However, children are known to be infectious even if not symptomatic, and it is possible for a large outbreak to develop among students before it becomes apparent in the teachers and staff.",
+          "answer": "Un-vaccinated teachers, staff, and students",
+          "recommended": true,
+          "description": "This is recommended.",
           "resources": [],
           "nextQID": "3"
         },
         {
           "AID": "2c",
           "prettyAID": "c",
-          "answer": "Sample",
-          "description": "If testing is limited, it is possible to use a sampling technique. This could be performed by selecting a cohort of individuals to be tested regularly, but that will limit the effectiveness of testing. A better option is to select a different sample of the population each week. This could be done by selecting from a list of eligible individuals each week, but it would be better to schedule each eligible person to testing days at the beginning of the quarter.<br>If using this method, you may want to have excess tests available for the contacts of any positive individuals, as well as any symptomatic individuals.<br>",
+          "answer": "Adults only",
+          "description": "Testing the teachers and staff only allows you to avoid the process of obtaining consent from and communicating test results to parents. However, children are known to be infectious even if not symptomatic, and it is possible for a large outbreak to develop among students before it becomes apparent in the teachers and staff.",
           "resources": [],
           "nextQID": "3"
         },
         {
           "AID": "2d",
           "prettyAID": "d",
+          "answer": "Sample",
+          "description": "If testing is limited, it is possible to use a sampling technique. This could be performed by selecting a cohort of individuals to be tested regularly, but that will limit the effectiveness of testing. A better option is to select a different sample of the population each week. This could be done by selecting from a list of eligible individuals each week, but it would be better to schedule each eligible person to testing days at the beginning of the quarter.<br>If using this method, you may want to have excess tests available for the contacts of any positive individuals, as well as any symptomatic individuals.<br>",
+          "resources": [],
+          "nextQID": "3"
+        },
+        {
+          "AID": "2e",
+          "prettyAID": "e",
           "answer": "Only high-risk individuals",
           "description": "With very limited testing, it is possible to limit yourself to those most likely to transmit within school. This would include any groups that have close contact (such as sports teams), who may have to be around unmasked students (such as speech pathologists or lunchroom workers), or those who participate in aerosol-generating activities (such as choir members).",
           "resources": [],
@@ -274,8 +283,8 @@
           "AID": "5c",
           "prettyAID": "c",
           "recommended": true,
-          "answer": "Daily testing",
-          "description": "",
+          "answer": "Daily or every other day",
+          "description": "Preferred if using antigen tests.",
           "resources": [],
           "nextQID": "6"
         },
@@ -316,7 +325,7 @@
           "AID": "6c",
           "prettyAID": "c",
           "answer": "With the community",
-          "description": "Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult.Aggregation is the best technique to use to preserve privacy.This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.",
+          "description": "Your school community, and the community at large, will want to know about cases within your school. How you inform them can vary, but it must, at minimum, preserve the privacy of any detected cases. That means that information should be shared publicly only in such a way that the identity of a case cannot be deduced. In a small school, or with specialty teachers and coaches, that can be extremely difficult.Aggregation is the best technique to use to preserve privacy.This refers to reporting results only among groups; for instance, you might report only the grade of a student testing positive.<br>You may want to direct your school community to other sources of testing.",
           "resources": [],
           "nextQID": "6c"
         },
@@ -478,7 +487,7 @@
           "AID": "6d-ii",
           "prettyAID": "b",
           "answer": "Through the school",
-          "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a close contact is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.",
+          "description": "If your local Public Health department is not currently performing contact tracing, it will fall to you to determine if anyone within your school should be notified of a potential exposure. The CDC definition of a <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact\" target=\"_blank\">close contact</a> is someone who has spent at least 15 minutes (cumulative) within 6 feet of the infected individual between 48 hours prior to their diagnosis or the start of their symptoms and the start of their isolation. Among small children, that may be impossible to determine; quarantine of an entire class would be a strong precaution but might be justified.",
           "resources": [],
           "nextQID": "7a"
         }
@@ -593,12 +602,20 @@
           "description": "",
           "resources": [],
           "nextQID": "7e"
+        },
+         {
+          "AID": "7d-iii",
+          "prettyAID": "c",
+          "answer": "Federal funding",
+          "description": "The federal government is providing access to pooled testing for K-12 schools through Operation Expanded Testing.",
+          "resources": [],
+          "nextQID": "7e"
         }
       ]
     },
     {
       "QID": "7e",
-      "question": "Will you use pooling?",
+      "question": "Will you use pooling",
       "description": "It is possible to test groups of samples (pools) together. If any pool tests positive, the individuals within the pool (or their samples) should then be individually tested to identify the infected person(s). This will result in slightly slower test turn-around, but will greatly reduce costs.",
       "resources": [],
       "answers": [
@@ -616,12 +633,59 @@
           "answer": "No",
           "description": "",
           "resources": [],
+          "nextQID": "8"
+        }
+      ]
+    },
+    {
+      "QID": "8",
+      "question": "What will you do with close contacts of those who test positive",
+      "description": "Those who are established as close contacts (within a certain distance of the positive case for at least 15 minutes) should be considered high risk for infection. In our experience, around 10% of those close contacts will be found to be infected.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "8a",
+          "prettyAID": "a",
+          "answer": "Quarantine for 14 days",
+          "description": "Without testing, it is advised that close contacts quarantine for 14 days, which is the length of time at which symptoms will develop if a symptomatic infection has occurred.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "8b",
+          "prettyAID": "b",
+          "answer": "Quarantine with a test at 10 days",
+          "description": "Close contacts may be tested 10 days after the last contact with the infected individual; a negative test at that time should trigger release from quarantine.",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "8c",
+          "prettyAID": "c",
+          "answer": "Test to stay",
+          "description": "Quarantine is considered unnecessary if close contacts are tested frequently enough. Suggested frequencies are daily for 5days or every other day for a week (3 tests). Test results should be as fast as possible; antigen testing or other rapid tests are recommended.",
+          "resources": [],
           "nextQID": null
         }
       ]
     }
   ],
   "checklist": [
+    {
+      "activityID": "0",
+      "activity": "Review CDC guidance",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-guidance.html#anchor_1625662107144"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
     {
       "activityID": "1",
       "activity": "Consent Document",
@@ -1120,7 +1184,8 @@
       "activityID": "34",
       "activity": "Public health reporting and coordination process",
       "links": [
-        "https://www.health.state.mn.us/diseases/coronavirus/schools/casehandle.pdf"
+        "https://www.health.state.mn.us/diseases/coronavirus/schools/casehandle.pdf",
+        "https://simplereport.gov/"
       ],
       "rules": {
         "operator": "AND",
@@ -1135,7 +1200,8 @@
       "activityID": "35",
       "activity": "Contact tracing flow chart",
       "links": [
-        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/school-screening-flowchrt-print.pdf"
+        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/school-screening-flowchrt-print.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/contact-tracing.html#ways-k-12-schools-and-ihes-can-prepare"
       ],
       "rules": {
         "operator": "AND",
@@ -1288,7 +1354,9 @@
     {
       "activityID": "45",
       "activity": "Financial plan",
-      "links": [],
+      "links": [
+        "https://www.cdc.gov/ncezid/dpei/pdf/guidance-elc-reopening-schools-508.pdf"
+      ],
       "rules": {
         "operator": "AND",
         "criteria": [
@@ -1330,6 +1398,96 @@
     },
     {
       "activityID": "48",
+      "activity": "Reach out to Operation Expanded Testing to arrange for tests",
+      "links": [
+        "https://perkinelmer-appliedgenomics.com/wp-content/uploads/2021/06/Federal-Resources-Supporting-School-Screening-Testing-Update-22-June_v2_header_2.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "7d-iii"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "49",
+      "activity": "Definition of close contacts",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact"
+      ],
+      "rules": {
+        "operator": "ALL",
+        "criteria": []
+      }
+    },
+    {
+      "activityID": "50",
+      "activity": "Quarantine policy for close contacts",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/scientific-brief-options-to-reduce-quarantine.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fmore%2Fscientific-brief-options-to-reduce-quarantine.html"
+        ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "8a"
+          },
+          {
+            "AID": "8b"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "51",
+      "activity": "Plan for supporting students in quarantine with remote teaching",
+      "links": [],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "8a"
+          },
+          {
+            "AID": "8b"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "52",
+      "activity": "Testing plan for end of quarantine",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/scientific-brief-options-to-reduce-quarantine.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fmore%2Fscientific-brief-options-to-reduce-quarantine.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "8b"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "53",
+      "activity": "Testing plan for test to stay",
+      "links": [
+        "https://www.pcschools.us/wp-content/uploads/2021/01/Test-to-Stay.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "8c"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "54",
       "activity": "External test reporting protocol",
       "links": [],
       "rules": {
@@ -1342,7 +1500,7 @@
       }
     },
     {
-      "activityID": "49",
+      "activityID": "55",
       "activity": "Support documents for students in isolation/quarantine",
       "links": [],
       "rules": {
@@ -1355,7 +1513,7 @@
       }
     },
     {
-      "activityID": "50",
+      "activityID": "56",
       "activity": "Format for collecting isolation/quarantine information",
       "links": [],
       "rules": {
@@ -1368,7 +1526,7 @@
       }
     },
     {
-      "activityID": "51",
+      "activityID": "57",
       "activity": "Contact tracing flow chart",
       "links": [],
       "rules": {
@@ -1381,7 +1539,7 @@
       }
     },
     {
-      "activityID": "52",
+      "activityID": "58",
       "activity": "Public health reporting and coordination process",
       "links": [],
       "rules": {
@@ -1394,9 +1552,24 @@
       }
     },
     {
-      "activityID": "53",
+      "activityID": "59",
       "activity": "Communication plan",
       "links": [],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1b"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "60",
+      "activity": "Information about community testing shared",
+      "links": [
+        "https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html"
+      ],
       "rules": {
         "operator": "AND",
         "criteria": [
