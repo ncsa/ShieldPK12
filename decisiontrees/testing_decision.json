@@ -46,7 +46,7 @@
         {
           "AID": "2b",
           "prettyAID": "b",
-          "answer": "Un-vaccinated teachers, staff, and students",
+          "answer": "Unvaccinated teachers, staff, and students",
           "recommended": true,
           "description": "This is recommended.",
           "resources": [],
@@ -625,7 +625,7 @@
           "answer": "Yes",
           "description": "This will require a creation of pool groups that is sensible. Pools should be 3-5 people in size, so multiple pools per class/pod may be required. You will need to work with the lab to determine if pooling should be done at the sample collection or at the lab.",
           "resources": [],
-          "nextQID": null
+          "nextQID": "8"
         },
         {
           "AID": "7e-ii",
