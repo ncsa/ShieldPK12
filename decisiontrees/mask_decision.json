@@ -1,5 +1,6 @@
 {
   "moduleName": "mask",
+  "prettyModuleName": "mask",
   "moduleDescription": "The when, where, and how of masks",
   "moduleContent": [
     {

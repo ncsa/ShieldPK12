@@ -21,6 +21,7 @@ for module_config_file in os.listdir(module_config_home):
             if "moduleName" in config:
                 module_name = config["moduleName"]
                 module_descriptions.append({"moduleName": module_name,
+                                            "prettyModuleName": config["prettyModuleName"],
                                             "moduleDescription": config.get("moduleDescription", "")})
                 modules[module_name] = {}
                 modules[module_name]["decision"] = Module(config.get("moduleContent", {}))

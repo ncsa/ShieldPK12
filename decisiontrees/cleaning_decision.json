@@ -1,5 +1,6 @@
 {
   "moduleName": "cleaning",
+  "prettyModuleName": "cleaning",
   "moduleDescription": "Additional cleaning measures for disease control",
   "moduleContent": [
     {

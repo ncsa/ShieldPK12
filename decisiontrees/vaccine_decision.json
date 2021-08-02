@@ -1,5 +1,6 @@
 {
   "moduleName": "vaccine",
+  "prettyModuleName": "vaccine",
   "moduleDescription": "Incorporating vaccination and vaccine data into a control program",
   "moduleContent": [
     {

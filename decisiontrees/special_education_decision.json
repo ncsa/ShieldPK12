@@ -1,0 +1,833 @@
+{
+  "moduleName": "special-education",
+  "prettyModuleName": "Special Education",
+  "moduleDescription": "Additional considerations for special education situations",
+  "moduleContent": [
+    {
+      "QID": "1",
+      "question": "Do you acknowledge that you must provide a free and appropriate public education (FAPE) consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic",
+      "description": "You must provide a <a href=\"https://www2.ed.gov/about/offices/list/ocr/frontpage/faq/rr/policyguidance/Supple%20Fact%20Sheet%203.21.20%20FINAL.pdf\" target=\"_blank\">free and appropriate public education (FAPE)</a> consistent with the need to protect the health and safety of students with disabilities during COVID-19 pandemic. To ensure the compliance with <a href=\"https://sites.ed.gov/idea/osep-fast-facts-idea-45th-anniversary/\" target=\"_blank\">Individuals with Disabilities Education Act (IDEA)</a>, <a href=\"https://www2.ed.gov/policy/rights/reg/ocr/edlite-34cfr104.html#D\" target=\"_blank\">Section 504 of the Rehabilitation Act (Section 504)</a>, and <a href=\"https://www.ada.gov/\" target=\"_blank\">Title II of the Americans with Disabilities Act</a>, you should offer educational programs with specialized instruction and related services to address the unique needs for students with disabilities. Whether offering in-person or remote learning, schools must take into consideration the requirements of federal disability laws that require provision of FAPE and prohibit discrimination based on disability.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "0a",
+          "prettyAID": "a",
+          "answer": "Yes, I understand.",
+          "description": "",
+          "resources": [],
+          "nextQID": "1-start"
+        }
+      ]
+    },
+    {
+      "QID": "1-start",
+      "question": "Will you communicate with families and guardians about in-person and remote learning",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "1a",
+          "prettyAID": "a",
+          "answer": "Yes",
+          "description": "When communicating with families and guardians about in-person and remote learning, schools must comply with the effective communication requirements of ADA, including the use of accessible formats for family members and guardians with disabilities. For example, documents posted on the school websites must be accessible to individuals with disabilities, <a href=\"https://wwwn.cdc.gov/pubs/other-languages?Sort=Lang%3A%3Aasc\" target=\"_blank\">posted in the languages that parents can understand</a>, and use auxiliary aids and services for family members or guardians who are deaf or hard of hearing.",
+          "resources": [],
+          "nextQID": "2"
+        },
+        {
+          "AID": "1b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "2"
+        }
+      ]
+    },
+     {
+      "QID": "2",
+      "question": "Will you require in-person learning for all students",
+      "description": "In returning to the classroom, you must continue to adhere to the Federal requirement that students with disabilities receive their education in the same environment as their typical developing peers.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-i"
+        },
+        {
+          "AID": "2b",
+          "prettyAID": "b",
+          "answer": "No",
+          "description": "",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "2a-i",
+      "question": "Who will need extra precaution for in-person learning",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-i-1",
+          "prettyAID": "a",
+          "answer": "Students with disabilities",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii"
+        },
+        {
+          "AID": "2a-i-2",
+          "prettyAID": "b",
+          "answer": "Direct service providers",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii"
+        },
+        {
+          "AID": "2a-i-3",
+          "prettyAID": "c",
+          "answer": "Teachers",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii"
+        },
+        {
+          "AID": "2a-i-4",
+          "prettyAID": "d",
+          "answer": "paraprofessionals",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii",
+      "question": "Will you require students with disabilities who are not fully vaccinated to wear masks",
+      "description": "Under Section 504, you are required to make modifications for students with disabilities about mask wearing if the student’s disability requires such adjustments. Students with disabilities who cannot wear cannot safely because of their disability in accordance with CDC guidelines should not be required to wear one.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "You will need to add language for medical exemptions.The list of the conditions that are acceptable for exemptions and medical documentation can be required.",
+          "resources": [],
+          "nextQID": "2a-ii-1-a"
+        },
+         {
+          "AID": "2a-ii-2",
+          "prettyAID": "b",
+          "answer": "no",
+           "description": "",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii-1-a",
+      "question": "Will you provide special adaptations",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1-a-i",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii-1-b"
+        },
+        {
+          "AID": "2a-ii-1-a-ii",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii-1-b"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii-1-b",
+      "question": "Will you provide protocol to determine how long the student can tolerate wearing a mask",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1-b-i",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii-1-c"
+        },
+        {
+          "AID": "2a-ii-1-b-ii",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-ii-1-c"
+        }
+      ]
+    },
+     {
+      "QID": "2a-ii-1-c",
+      "question": "Will you provide guidance for direct service providers regardless of vaccination status when they are working with students with disabilities",
+      "description": "e.g., teachers, paraprofessionals, therapists, and others",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-ii-1-c-i",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        },
+        {
+          "AID": "2a-ii-1-c-ii",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "2a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iii",
+      "question": "Which aspect will you have disability-specific distancing guidelines",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iii-1",
+          "prettyAID": "a",
+          "answer": "Specific distancing guidelines/exemptions",
+          "description": "If you have strict guidelines about distance between teachers and students, these may be relaxed or removed for students with disabilities and their teachers/guides/interpreters. This should be identified on a case-by-case basis(e.g., students with deaf-blind)",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+        {
+          "AID": "2a-iii-2",
+          "prettyAID": "b",
+          "answer": "Cohorts/classroom staffing",
+          "description": "It is inadvisable to separate all students with disabilities from the main class, as that could raise issues of equity or cause social separation. However, small cohorts that include students with disabilities would be useful to minimize exposures while maintaining social and educational connections.",
+          "resources": [],
+          "nextQID": "2a-iv"
+        },
+        {
+          "AID": "2a-iii-3",
+          "prettyAID": "c",
+          "answer": "Limit the number of adults working with a student",
+          "description": "Distancing guidelines for adults AND students",
+          "resources": [],
+          "nextQID": "2a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "2a-iv",
+      "question": "Will you offer Covid testing for students",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "2a-iv-i",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "Please refer to <a href=\"/testing/questions\" target=\"_blank\">testing module</a>",
+          "resources": [],
+          "nextQID": "3"
+        },
+         {
+          "AID": "2a-iv-ii",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "Schools are an important part of the communities. You may need to encourage students or parents for in-person instruction.In particular, younger students, students with disabilities, students experiencing homelessness, and/or students who experience challenging in remote learning.",
+          "resources": [],
+          "nextQID": "3"
+        }
+      ]
+    },
+     {
+      "QID": "3",
+      "question": "Will you provide remote learning",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-i"
+        },
+         {
+          "AID": "3b",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "4"
+        }
+      ]
+    },
+     {
+      "QID": "3a-i",
+      "question": "Will you require parents or guardians of students with disabilities to sign a waivers prior to providing services remotely",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-i-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-ii"
+        },
+        {
+          "AID": "3a-i-2",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "3a-ii",
+      "question": "Will it be considered a change in educational placement",
+      "description": "subject to protections when a child with a disability excluded from school during an outbreak of COVID-19 and the school remains open.",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-ii-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-iii"
+        },
+        {
+          "AID": "3a-ii-2",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-iii"
+        }
+      ]
+    },
+     {
+      "QID": "3a-iii",
+      "question": "Will you modify the format of remote instructional content to enable access for students with disabilities",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-iii-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "3a-iv"
+        },
+        {
+          "AID": "3a-iii-2",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "Section 504’s requirements are applicable to all learning environments, including for remote learning and any formats used during all stages of reopening.When materials are not available in an accessible format, such as an inaccessible scanned PDF file of a short article that does not contain numerous charts and tables, educators could meet their legal obligations by providing students with disabilities with equally effective alternate access to the materials or services provided to other students such as an audio recording of the text of the scanned PDF document. However, many disability-related modifications and services might be provided effectively in remote learning. These could include, for example, extensions of time for assignments, videos with accurate captioning or embedded sign language interpreting, accessible reading materials, and many speech or language services through video conferencing.",
+          "resources": [],
+          "nextQID": "3a-iv"
+        }
+      ]
+    },
+     {
+      "QID": "3a-iv",
+      "question": "How will students with disabilities receive their direct services",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "3a-iv-1",
+          "prettyAID": "a",
+          "answer": "After hours at school buildings",
+          "description": "",
+          "resources": [],
+          "nextQID": "4"
+        },
+         {
+          "AID": "3a-iv-2",
+          "prettyAID": "b",
+          "answer": "At private offices",
+          "description": "",
+          "resources": [],
+          "nextQID": "4"
+        },
+         {
+          "AID": "3a-iv-3",
+          "prettyAID": "c",
+          "answer": "Remotely",
+          "description": "",
+          "resources": [],
+          "nextQID": "4"
+        },
+         {
+          "AID": "3a-iv-4",
+          "prettyAID": "d",
+          "answer": "At student homes",
+          "description": "",
+          "resources": [],
+          "nextQID": "4"
+        }
+      ]
+    },
+     {
+      "QID": "4",
+      "question": "Will you provide hybrid learning",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "4a",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "4a-i"
+        },
+         {
+          "AID": "4b",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    },
+     {
+      "QID": "4a-i",
+      "question": "Will you schedule students in person and remote",
+      "description": "Please refer to <a href=\"/distancing/questions\" target=\"_blank\">distancing module</a>",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "4a-i-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "",
+          "resources": [],
+          "nextQID": "4a-ii"
+        },
+        {
+          "AID": "4a-i-2",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": "4a-ii"
+        }
+      ]
+    },
+     {
+      "QID": "4a-ii",
+      "question": "Will you schedule students’ direct services on the in-person day",
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "4a-ii-1",
+          "prettyAID": "a",
+          "answer": "yes",
+          "description": "Please adhere to CDC guidelines.",
+          "resources": [],
+          "nextQID": "4a-ii-1-a"
+        },
+        {
+          "AID": "4a-ii-2",
+          "prettyAID": "b",
+          "answer": "no",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    },
+     {
+      "QID": "4a-ii-1-a",
+      "question": "How will students with disabilities receive their direct services",
+       "multiple": true,
+      "description": "",
+      "resources": [],
+      "answers": [
+        {
+          "AID": "4a-ii-1-a-i",
+          "prettyAID": "a",
+          "answer": "After hours at school buildings",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "4a-ii-1-a-ii",
+          "prettyAID": "b",
+          "answer": "At private offices",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "4a-ii-1-a-iii",
+          "prettyAID": "c",
+          "answer": "Remotely",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        },
+        {
+          "AID": "4a-ii-1-a-iv",
+          "prettyAID": "d",
+          "answer": "At student homes",
+          "description": "",
+          "resources": [],
+          "nextQID": null
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "activityID": "1",
+      "activity": "Communicate with families",
+      "links": [
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/decision-tool.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "1a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "2",
+      "activity": "Extra precaution for in-person learning",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/decision-tool.html",
+        "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-disabilities.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "3",
+      "activity": "List of exemption for wearing mask",
+      "links": [
+        "http://www.dph.illinois.gov/covid19/community-guidance/school-guidance/guidance",
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "4",
+      "activity": "Mask exemption form",
+      "links": [
+        "https://app.smartsheet.com/b/form/cfcaf87e9096405db32fc7b42d79be65",
+        "https://www.maineaap.org/assets/about/Mask-exemption-letter-template.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#not-wear"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "5",
+      "activity": "List of special adaptations",
+      "links": [
+        "https://www.understood.org/articles/en/trouble-wearing-mask",
+        "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#mask-adaptations-alternatives"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "6",
+      "activity": "Social story for wearing mask",
+      "links": [
+        "https://challengingbehavior.cbcs.usf.edu/docs/Wearing-Masks_Story.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1-a-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "7",
+      "activity": "Protocol for tolerating mask wearing",
+      "links": [
+        "https://www.thesummitcenter.org/app/uploads/2020/04/Desensitizing-to-Wearing-Face-Mask-Parent-Resource.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1-b-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "8",
+      "activity": "Guidance for direct service providers",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/direct-service-providers.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fdirect-service-providers.html",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-guidance.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-ii-1-c-i"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "9",
+      "activity": "Specific distancing exemptions",
+      "links": [
+        "http://www.dph.illinois.gov/covid19/community-guidance/school-guidance/guidance",
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-staff.html#teachers-specialists"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-iii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "10",
+      "activity": "Cohort staffing",
+      "links": [
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html",
+        "https://www2.ed.gov/documents/coronavirus/reopening.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-iii-2"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "11",
+      "activity": "Scheduling for teachers and students",
+      "links": [
+        "https://www.ascd.org/el/articles/mastering-the-master-schedule"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2a-iii-3"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "12",
+      "activity": "in-person instruction",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html#anchor_1616080023247"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "2b"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "13",
+      "activity": "Waivers",
+      "links": [
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "14",
+      "activity": "Change in educational placement",
+      "links": [
+        "https://www2.ed.gov/about/offices/list/ocr/docs/qa-reopening-202105.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "15",
+      "activity": "Modification of the remote instructional content",
+      "links": [
+        "https://www.isbe.net/Documents/RL-Recommendations-3-27-20.pdf",
+        "https://www.isbe.net/Documents/SPED-FAQ-04-20-20.pdf"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "3a-iii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "16",
+      "activity": "Schedule of direct services",
+      "links": [
+        "https://education.wm.edu/centers/ttac/resources/articles/inclusion/creatingmasterschedule/index.php",
+        "https://www.pacer.org/parent/php/PHP-c180.pdf"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "3a-iv-1"
+          },
+          {
+            "AID": "3a-iv-2"
+          },
+          {
+            "AID": "3a-iv-3"
+          },
+          {
+            "AID": "3a-iv-4"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "17",
+      "activity": "Schedule of in-person and remoter",
+      "links": [
+        "https://www.schools.nyc.gov/learning/special-education/family-resources/special-education-in-blended-and-remote-settings"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "4a-i-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "18",
+      "activity": "CDC guidelines for direct service",
+      "links": [
+        "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/direct-service-providers.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fdirect-service-providers.html",
+        "https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/operation-strategy.html"
+      ],
+      "rules": {
+        "operator": "AND",
+        "criteria": [
+          {
+            "AID": "4a-ii-1"
+          }
+        ]
+      }
+    },
+    {
+      "activityID": "19",
+      "activity": "Schedule of receiving direct service remotely",
+      "links": [
+        "https://www.uft.org/teaching/remote-teaching/learning-activities-students/special-education-remote-resources"
+      ],
+      "rules": {
+        "operator": "OR",
+        "criteria": [
+          {
+            "AID": "4a-ii-1-a-i"
+          },
+          {
+            "AID": "4a-ii-1-a-ii"
+          },
+          {
+            "AID": "4a-ii-1-a-iii"
+          },
+          {
+            "AID": "4a-ii-1-a-iv"
+          }
+        ]
+      }
+    }
+  ]
+}
