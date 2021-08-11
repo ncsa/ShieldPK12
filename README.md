@@ -216,21 +216,50 @@ If a user chooses `AID = 2a` as the answer, the following Q&A screen will be dis
 Otherwise, this question "2a-i" will be skipped.
 
 --------------------------------  
-## Decision Tree Structure
-### Cleaning Decision
-![image](test/cleaning_decision_graph.png)
+- **checklist** contains a list of action items that will be displayed once the user finish each module
+```angular2html
+"checklist": [
+    {
+      "activityID": "",
+      "activity": "",
+      "links": [],
+      "rules": {
+        "operator": "OR|AND|NOT|ALL",
+        "criteria": [
+          {
+            "AID": ""
+          },
+          ...
+        ]
+      }
+    },
+    ...
+  ]
+```
+- **activityID**: unique ID of action item
+- **activity**: name of the checklist action item. e.g. Signs next to all cleaning supplies to remind cleaners about 
+  hand washing and not touching their face
+- **links**: URLs pointing towards supporting documents
+- **rules** constains a list of rules that determine under what condition a checklist action item will be needed.
+```angular2html
+    "rules": {
+        "operator": "OR|AND|NOT|ALL",
+        "criteria": [
+          {
+            "AID": ""
+          },
+          ...
+        ]
+      }
+```
+- **operator**: allowed boolean operator includes "OR", "AND", "NOT", and "ALL", which if indicates "any", "all" or 
+  "none" of the answer ID should appear in user's answers. Note that when you put down "ALL", you do not need to 
+  list any specific "AID" as it means this checklist item will always be present
+- **cretieria** constains a list of answer IDs
+- **AID**: valid, existing answer id. refer to "moduleContent" --> "answers" --> "AID"
 
-### Distancing Decision
-![image](test/distancing_decision_graph.png)
+TODO add an example
 
-### IT Decision
-- TBD
-
-### Mask Decision
-![image](test/mask_decision_graph.png)
-
-### Testing Decision
-![image](test/testing_decision_graph.png)
-
-### Ventilation Decision
-![image](test/ventilation_decision_graph.png)
+### Integrate the new module into the app
+- Once you have your new module file `{your new module}.json`, simply place it under the `/decisiontrees` folder.
+- Restart the app following section **How to Run**
