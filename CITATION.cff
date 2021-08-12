@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this application, please cite it as below."
+authors:
+- family-names: "Wang"
+  given-names: "Chen"
+  orcid: ""
+- family-names: "Cheung"
+  given-names: "Catherine"
+  orcid: "https://orcid.org/0000-0002-9286-9576"
+- family-names: "Chao"
+  given-names: "Summer"
+  orcid: ""
+- family-names: "Gatzke"
+  given-names: "Lisa"
+  orcid: ""
+- family-names: "Marini"
+  given-names: "Luigi"
+  orcid: "https://orcid.org/0000-0002-8511-0211"
+- family-names: "Smith"
+  given-names: "Rebecca"
+  orcid: "https://orcid.org/0000-0002-8343-794X"
+title: "Shield K-12 Playbook"
+version: 1.0.0
+date-released: 2021-08-18
+url: "https://github.com/longshuicy/ShieldPK12"

@@ -1,4 +1,4 @@
-# SHIELD K to 12 Playbook
+# SHIELD K-12 Playbook
 
 ## How to Run
 
