@@ -21,7 +21,7 @@ visit https://shield-k12-playbook.ncsa.illinois.edu
   sh](init-letsencrypt.sh) for more details.
 5. To see if the whole stack comes together by running command `docker-compose up`
 6. To shut down the running app, run command `docker-compose down`  
-7. **Important note:** you can run cronjob to automatically redploy if there is any change on the code repository. 
+7. **Important note:** you can run cronjob to automatically redploy if there is any change on the code repository.
   To do so, follows the below steps:
     - Change which git branch to monitor by modifying the `BRANCH` variable in [redeploy.sh](redeploy.sh) script. 
       - E.g. point to the current branch: `BRANCH=$(git branch --show-current)`
@@ -47,4 +47,3 @@ for more details.
 #### [Docker and docker compose explained](https://github.com/longshuicy/ShieldPK12/wiki/Use-docker-and-docker-compose-to-start-the-app)
 #### [the Module Class](https://github.com/longshuicy/ShieldPK12/wiki/Logics-to-go-to-%22Next%22-Q&A-explained)
 #### [Guideline of content creation](https://github.com/longshuicy/ShieldPK12/wiki/How-to-create-content-for-a-new-module)
-
