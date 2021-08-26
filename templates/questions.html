@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>SHIELDPK12</title><meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-              integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-              crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather"
-              rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato"
-              rel="stylesheet" type="text/css">
+<head>
+    <title>SHIELDPK12</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato"
+          rel="stylesheet" type="text/css">
 
-        <script src="https://unpkg.com/jquery"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous">
-        </script>
-        <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KJVMCV7');</script>
+    <!-- End Google Tag Manager -->
 
-        <link rel="stylesheet" href="{{url_for('static', filename='css/questions.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/about-creators.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
 
-        <!-- favicon-->
-        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-    </head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/questions.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/about-creators.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
 
-    <body>
-        <div class="container sidenav">
-            <div class="overlay">
-                 <div class="list-group">
-                     <div class="list-group-header">
-                         <button class="module-menu" role="button"><i class="fas fa-bars"></i></button>
-                         <a href="/"><img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}"
-                                          alt="shieldpk12-logo-d" height="36"></a>
-                     </div>
-                     <div id="list-group-items"></div>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
 
-                 </div>
-                <div class="overlay-block"></div>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVMCV7"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="container sidenav">
+    <div class="overlay">
+        <div class="list-group">
+            <div class="list-group-header">
+                <button class="module-menu" role="button"><i class="fas fa-bars"></i></button>
+                <a href="/"><img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}"
+                                 alt="shieldpk12-logo-d" height="36"></a>
             </div>
+            <div id="list-group-items"></div>
+
         </div>
-        <div id="survey">
-            <nav class="navbar navbar-expand-md">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <span class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="overlay-block"></div>
+    </div>
+</div>
+<div id="survey">
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <span class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <button class="module-menu" role="button"><i class="fas fa-bars"></i></button>
                         <p class="module-name"></p>
@@ -97,82 +121,86 @@
                     </ul>
 
                 </span>
-            </nav>
-            <div class="alert alert-primary" role="alert" id="alert">You have to select at least ONE answer.
-                <button type="button" class="close" id="alert-close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    </nav>
+    <div class="alert alert-primary" role="alert" id="alert">You have to select at least ONE answer.
+        <button type="button" class="close" id="alert-close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container" id="qna-container">
+        <div class="row">
+            <div class="col col-lg-6 col-md-6 col-sm-12">
+                <div class="question-container">
+                    <h1 id="question-title"></h1>
+                    <p id="question-description"></p>
+                </div>
             </div>
-            <div class="container" id="qna-container">
-                <div class="row">
-                    <div class="col col-lg-6 col-md-6 col-sm-12">
-                        <div class="question-container">
-                            <h1 id="question-title"></h1>
-                            <p id="question-description"></p>
-                        </div>
+            <div class="col col-lg-6 col-md-6 col-sm-12">
+                <div class="answer-container">
+                    <p id="answer-prompt"></p>
+                    <div id="answers"></div>
+                </div>
+                <div class="navigation-btns">
+                    <div class="navigation-btn prev">
+                        <button type="button">
+                            <i class="fal fa-arrow-circle-left"></i>
+                        </button>
+                        <p>Back</p>
                     </div>
-                    <div class="col col-lg-6 col-md-6 col-sm-12">
-                        <div class="answer-container">
-                            <p id="answer-prompt"></p>
-                            <div id="answers"></div>
-                        </div>
-                        <div class="navigation-btns">
-                            <div class="navigation-btn prev">
-                                <button type="button">
-                                    <i class="fal fa-arrow-circle-left"></i>
-                                </button>
-                                <p>Back</p>
-                            </div>
-                            <div class="navigation-btn next">
-                                <p>Next</p>
-                                <button type="button">
-                                    <i class="fal fa-arrow-circle-right"></i>
-                                </button>
-                            </div>
-                        </div>
+                    <div class="navigation-btn next">
+                        <p>Next</p>
+                        <button type="button">
+                            <i class="fal fa-arrow-circle-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="container" id="result-container">
-                <div class="result-pdf" id="result-pdf">
-                    <div class="result-pdf-header">
-                        <div>
-                            <img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}" />
-                        </div>
-                        <div>
-                            <h1 class="module-name"></h1><h1> Module Report</h1>
-                            <p id="timestamp"></p>
-                        </div>
-                    </div>
-                    <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="reports-header">
-                            <h1 class="module-name"></h1><h1> Decision Report:</h1>
-                            <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;
-                                Report</button>
-                        </div>
-                        <div class="report-container"></div>
-                    </div>
-                    <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="results-header">
-                            <h1 class="module-name"></h1><h1> Checklist</h1>
-                        </div>
-                        <div class="checklist-container">
-                            <h3>Activities To Complete</h3>
-                            <hr>
-                            <div class="checklists"></div>
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <div class="container" id="result-container">
+        <div class="result-pdf" id="result-pdf">
+            <div class="result-pdf-header">
+                <div>
+                    <img src="{{url_for('static', filename='img/shieldpk12-logo-d.svg')}}"/>
                 </div>
-                <div class="row">
-                    <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;Report
+                <div>
+                    <h1 class="module-name"></h1>
+                    <h1> Module Report</h1>
+                    <p id="timestamp"></p>
+                </div>
+            </div>
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+                <div class="reports-header">
+                    <h1 class="module-name"></h1>
+                    <h1> Decision Report:</h1>
+                    <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;
+                        Report
                     </button>
                 </div>
+                <div class="report-container"></div>
             </div>
-            {% include 'footer.html' %}
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+                <div class="results-header">
+                    <h1 class="module-name"></h1>
+                    <h1> Checklist</h1>
+                </div>
+                <div class="checklist-container">
+                    <h3>Activities To Complete</h3>
+                    <hr>
+                    <div class="checklists"></div>
+                </div>
+            </div>
         </div>
-        {% include 'about-creators.html' %}
-        <!--this is how jinja parse data from flask app-->
-        <script>var data=JSON.parse('{{data|tojson|safe}}');</script>
-        <script type="text/javascript" src="{{url_for('static', filename='js/questions.js')}}"></script>
-    </body>
+        <div class="row">
+            <button class="btn btn-primary download-pdf"><i class="fas fa-download"></i>&nbsp;Report
+            </button>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</div>
+{% include 'about-creators.html' %}
+<!--this is how jinja parse data from flask app-->
+<script>var data = JSON.parse('{{data|tojson|safe}}');</script>
+<script type="text/javascript" src="{{url_for('static', filename='js/questions.js')}}"></script>
+</body>
 </html>

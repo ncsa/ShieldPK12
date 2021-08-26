@@ -14,6 +14,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lato"
           rel="stylesheet" type="text/css">
 
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KJVMCV7');</script>
+    <!-- End Google Tag Manager -->
+
     <script src="https://unpkg.com/jquery"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -27,11 +43,18 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/about-creators.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
 
-     <!-- favicon-->
+    <!-- favicon-->
     <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico') }}">
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVMCV7"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="container about-this-playbook">
     <div class="row">
         <div class="header-container">
@@ -64,7 +87,7 @@
         </div>
     </div>
 </div>
-<div class="container who-use" >
+<div class="container who-use">
     <div class="row">
         <img src="{{url_for('static', filename='img/shieldpk12-about.png')}}">
         <div class="who-use-text">
@@ -93,9 +116,9 @@
                 <h4>There Will Be Cases Within Your School</h4>
                 <br>
                 <p>
-                    Given the level of spread throughout the world, it is highly likely that at least one person 
-                    (student, faculty, or staff) will become infected during the semester. No school can prevent 
-                    cases that occur in the community. That is not the goal of this playbook. The goal of this 
+                    Given the level of spread throughout the world, it is highly likely that at least one person
+                    (student, faculty, or staff) will become infected during the semester. No school can prevent
+                    cases that occur in the community. That is not the goal of this playbook. The goal of this
                     playbook is to limit the spread of infection <b>WITHIN</b> your school.Because we know that there
                     will be infectious people in your school building at some point, how do we limit transmission
                     (spread of the infection to other people)? There are 10 layers to limiting disease spread, which
@@ -105,7 +128,7 @@
         </div>
     </div>
 </div>
-<div class="container want-to-try" >
+<div class="container want-to-try">
     <div class="row">
         <div class="want-to-try-text">
             <h2>Want to Try this playbook?</h2>
