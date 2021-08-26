@@ -15,7 +15,7 @@ visit https://shield-k12-playbook.ncsa.illinois.edu
 2. Make suer you already install `git`, `cron`, `docker`:
    - Following the instruction of https://docs.docker.com/engine/install/ubuntu/ to install docker. 
    - Install docker-compose following: https://docs.docker.com/compose/install/
-3. `git clone` this repository `git clone https://github.com/longshuicy/ShieldPK12.git`
+3. `git clone` this repository `git clone https://github.com/ncsa/ShieldPK12.git`
 4. Initialize SSL certificate by run `sh init-letsencrypt.sh`, please change the domain name to ones that you 
   own. Right now this domain is pointing towards `shield-k12-playbook.ncsa.illinois.edu`. Check [init-letsencrypt.
   sh](init-letsencrypt.sh) for more details.
@@ -41,9 +41,9 @@ for more details.
 ---------
    
 ## Tutorials and Useful Links
-#### [How to add new modules](https://github.com/longshuicy/ShieldPK12/wiki/How-to-add-new-modules)
-#### [Code repository structure](https://github.com/longshuicy/ShieldPK12/wiki/Code-Repository-Structure-Explanation)
-#### [Presentations and citations](https://github.com/longshuicy/ShieldPK12/wiki/Presentations-and-citation)
-#### [Docker and docker compose explained](https://github.com/longshuicy/ShieldPK12/wiki/Use-docker-and-docker-compose-to-start-the-app)
-#### [the Module Class](https://github.com/longshuicy/ShieldPK12/wiki/Logics-to-go-to-%22Next%22-Q&A-explained)
-#### [Guideline of content creation](https://github.com/longshuicy/ShieldPK12/wiki/How-to-create-content-for-a-new-module)
+#### [How to add new modules](https://github.com/ncsa/ShieldPK12/wiki/How-to-add-new-modules)
+#### [Code repository structure](https://github.com/ncsa/ShieldPK12/wiki/Code-Repository-Structure-Explanation)
+#### [Presentations and citations](https://github.com/ncsa/ShieldPK12/wiki/Presentations-and-citation)
+#### [Docker and docker compose explained](https://github.com/ncsa/ShieldPK12/wiki/Use-docker-and-docker-compose-to-start-the-app)
+#### [the Module Class](https://github.com/ncsa/ShieldPK12/wiki/Logics-to-go-to-%22Next%22-Q&A-explained)
+#### [Guideline of content creation](https://github.com/ncsa/ShieldPK12/wiki/How-to-create-content-for-a-new-module)
