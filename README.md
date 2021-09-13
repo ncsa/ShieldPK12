@@ -41,9 +41,9 @@ for more details.
 ---------
    
 ## Tutorials and Useful Links
+#### [How to develop a decision tree](https://github.com/ncsa/ShieldPK12/wiki/How-to-develop-a-decision-tree)
 #### [How to add new modules](https://github.com/ncsa/ShieldPK12/wiki/How-to-add-new-modules)
 #### [Code repository structure](https://github.com/ncsa/ShieldPK12/wiki/Code-Repository-Structure-Explanation)
 #### [Presentations and citations](https://github.com/ncsa/ShieldPK12/wiki/Presentations-and-citation)
 #### [Docker and docker compose explained](https://github.com/ncsa/ShieldPK12/wiki/Use-docker-and-docker-compose-to-start-the-app)
-#### [the Module Class](https://github.com/ncsa/ShieldPK12/wiki/Logics-to-go-to-%22Next%22-Q&A-explained)
-#### [Guideline of content creation](https://github.com/ncsa/ShieldPK12/wiki/How-to-create-content-for-a-new-module)
+#### [Module Class](https://github.com/ncsa/ShieldPK12/wiki/Logics-to-go-to-%22Next%22-Q&A-explained)
