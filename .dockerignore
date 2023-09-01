@@ -1,1 +1,4 @@
 exec.sh
+data
+nginx
+nginx_wo_ssl
