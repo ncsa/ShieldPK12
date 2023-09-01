@@ -1,0 +1,41 @@
+apiVersion: v2
+type: application
+
+# Information about application.
+name: simple
+icon: https://brand.illinois.edu/wp-content/uploads/2021/09/block-I-blue-background.png
+home: https://ncsa.illinois.edu
+description: >
+  A short description of your application. This text can be longer than a
+  single line, just needs to be indented.
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 1.0.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+appVersion: v1.5.0
+
+# List of people that maintain this helm chart.
+maintainers:
+  - name: Rob Kooper
+    email: kooper@illinois.edu
+
+# location of source code
+sources:
+    - https://github.com/ncsa/
+
+# Dependencies for the application
+# dependencies:
+
+# Annotations used by artifacthub.io. If your application is listed at artifacthub.io it
+# will use these annotations as well as the README.md to create page.
+annotations:
+  artifacthub.io/links: |
+    - name: Helm Chart
+      url: https://github.com/robkooper/simple-helm
+  artifacthub.io/changes: |
+    - "Initial helm chart"
