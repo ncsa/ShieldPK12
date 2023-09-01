@@ -63,6 +63,8 @@ ingress:
   hosts:
     - host: shieldpk12.software.ncsa.illinois.edu
       path: /
+    - host: shield-k12-playbook.ncsa.illinois.edu
+      path: /
   tls: true
   secretName: ""
 
