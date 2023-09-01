@@ -2,7 +2,7 @@ apiVersion: v2
 type: application
 
 # Information about application.
-name: simple
+name: shieldpk12
 icon: https://brand.illinois.edu/wp-content/uploads/2021/09/block-I-blue-background.png
 home: https://ncsa.illinois.edu
 description: >
@@ -36,6 +36,6 @@ sources:
 annotations:
   artifacthub.io/links: |
     - name: Helm Chart
-      url: https://github.com/robkooper/simple-helm
+      url: https://github.com/ncsa/ShieldPK12
   artifacthub.io/changes: |
     - "Initial helm chart"

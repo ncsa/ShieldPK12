@@ -6,7 +6,7 @@ This is an example helm chart, please modify the readme to match your applicatio
 
 ```bash
 helm repo add ncsa https://opensource.ncsa.illinois.edu/charts/
-helm install simple ncsa/simple --set variable=testing
+helm install shieldpk12 ncsa/shieldpk12 --set variable=testing
 ```
 
 ## Introduction
@@ -23,7 +23,7 @@ This chart is an example to show how to do a deployment on a [Kubernetes](http:/
 To install the chart with the release name `my-release`:
 
 ```bash
-helm install my-release ncsa/simple ---set variable=testing
+helm install my-release ncsa/shieldpk12 ---set variable=testing
 ```
 
 The command deploys this helm chart on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation. 
@@ -61,7 +61,7 @@ A list of values frequently changed.
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```bash
-helm install my-release ncsa/simple --set replicas=3
+helm install my-release ncsa/shieldpk12 --set replicas=3
 ```
 
 The above command sets the number of replicas to 3.
@@ -69,14 +69,14 @@ The above command sets the number of replicas to 3.
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```bash
-helm install my-release ncsa/simple -f myvalues.yaml
+helm install my-release ncsa/shieldpk12 -f myvalues.yaml
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
 
 ## Persistence
 
-This simple application can use storage to hold the data. It will either create a new peristent volume, or you can use an existing volume.
+This shieldpk12 application can use storage to hold the data. It will either create a new peristent volume, or you can use an existing volume.
 
 ### Existing PersistentVolumeClaims
 
@@ -85,10 +85,10 @@ This simple application can use storage to hold the data. It will either create 
 1. Install the chart
 
 ```bash
-helm install my-release ncsa/simple --set persistence.existingClaim=PVC_NAME
+helm install my-release ncsa/shieldpk12 --set persistence.existingClaim=PVC_NAME
 ```
 
 ## Secrets
 
-This simple application needs a secret to work. This secret should be set before installing the helm chart. You can either provide the secret as part of the helm chart install, or use an existing secret. Best is to use an existing secret that is set outside of the helm command.
+This shieldpk12 application needs a secret to work. This secret should be set before installing the helm chart. You can either provide the secret as part of the helm chart install, or use an existing secret. Best is to use an existing secret that is set outside of the helm command.
 
