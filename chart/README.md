@@ -52,11 +52,6 @@ A list of values frequently changed.
 | ------------------------------------ | ------------------------------------------------ | -------------------------------------------------------|
 | replicaCount | Number of replicas of the image to run | 1 |
 | image.tag | Specific version of the image to run, default is the same as specified in the application version. | ""|
-| persistence.existingClaim | Set this to not create a new claim, but use the existing claim | "" |
-| persistence.size | Size of the claim that is created | 10Gi |
-| persistence.storageClass | Specific storage class to use when creating the new PVC | "" |
-| secrets.existingSecret | Set this to point to a secret, if an external secret should be used. This should contain the secret with the name `password`. | "" |
-| secrets.password | Password that is used by the application. | "ncsa" |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -73,22 +68,3 @@ helm install my-release ncsa/shieldpk12 -f myvalues.yaml
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
-
-## Persistence
-
-This shieldpk12 application can use storage to hold the data. It will either create a new peristent volume, or you can use an existing volume.
-
-### Existing PersistentVolumeClaims
-
-1. Create the PersistentVolume
-1. Create the PersistentVolumeClaim
-1. Install the chart
-
-```bash
-helm install my-release ncsa/shieldpk12 --set persistence.existingClaim=PVC_NAME
-```
-
-## Secrets
-
-This shieldpk12 application needs a secret to work. This secret should be set before installing the helm chart. You can either provide the secret as part of the helm chart install, or use an existing secret. Best is to use an existing secret that is set outside of the helm command.
-
